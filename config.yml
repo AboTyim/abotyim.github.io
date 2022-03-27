@@ -1,7 +1,7 @@
 baseURL: "https://abotyim.github.io"
 title: AboTyim
 paginate: 5
-theme: hugo-PaperMod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
