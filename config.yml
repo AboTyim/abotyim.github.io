@@ -1,0 +1,239 @@
+baseURL: "https://abotyim.github.io"
+title: AboTyim
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+DefaultContentLanguage: ar
+defaultContentLanguageInSubdir: true
+# enableMissingTranslationPlaceholders: true
+# copyright: Everything is mine
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    ar:
+        # languageName: ":flag-sa:"
+        languageName: "AR"
+        languagedirection: rtl
+        weight: 1
+        contentDir: content/arabic
+        title: أبو تيم
+                
+        homeInfoParams:
+            Title: <img align="right" alt="السلام عليكم &nbsp;"> <img src="/welcome.gif" width="50" >
+            Content: أنقل لكم زبدة التجارب متضمنة النصائح والحيل.
+
+        # profileMode:
+            # enabled: true
+            # title: أبو تيم ☕
+            # imageTitle: my image
+            # imageWidth: 120
+            # imageUrl: "/icon.jpg"
+            # subtitle: "🕵️ Python 🐍 | Django | Linux 🐧 | Forensics\n\n🐳 Self Hosted | Docker\n\n🤓 Coffee ☕ | Geek"
+            # imageHeight: 120
+            # buttons:
+                # - name: التدوينات
+                  # url: posts
+                # - name: الكاتب
+                  # url: about
+
+        menu:
+            main:
+                - name: التصنيفات 📚
+                  url: categories/
+                  weight: 1
+                  
+                - name: الوسوم 🏷️
+                  url: tags/
+                  weight: 2
+                  
+                - name: السلاسل 🧵
+                  url: series/
+                  weight: 3
+            
+                - name: الأرشيف 🗄️
+                  url: archives/
+                  weight: 4
+                                  
+                - name: البحث 🔎
+                  url: search/
+                  weight: 5
+
+                - name: من 👨‍💻
+                  url: /about/
+                  weight: 6
+
+
+    en:
+        # languageName: ":us:"
+        languageName: "EN"
+        weight: 2
+        contentDir: content/english
+        title: Abo Tyim
+
+        homeInfoParams:
+            Title: <img align="left" alt="Peace be upon you &nbsp;"> <img src="/welcome.gif" width="50" >
+            Content: I offer you the butter of experiments, including tips and tricks.
+
+        menu:
+            main:
+                - name: Categories 📚
+                  url: categories/
+                  weight: 1
+
+                - name: Tags 🏷️
+                  url: tags/
+                  weight: 2
+
+                - name: Series 🧵
+                  url: series/
+                  weight: 3
+                  
+                - name: Archive 🗄️
+                  url: archives/
+                  weight: 4
+                  
+                - name: Search 🔍
+                  url: search/
+                  weight: 5
+
+                - name: About 👨‍💻
+                  url: about/
+                  weight: 6
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "اِبنُ أُمَّةٍ لا تَمُوت"
+    author: AboTyim
+
+    defaultTheme: auto
+    disableThemeToggle: false
+    ShowShareButtons: true
+    ShowReadingTime: true
+    disableSpecial1stPost: false
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowFullTextinRSS: true
+    hideMeta: false
+    hideSummary: false
+    ShowToc: true
+    TocOpen: false
+    comments: true
+    images: ["cover.png"]
+
+
+    socialIcons:
+        - name: Github
+          url: "https://github.com/AboTyim"
+        - name: Twitter
+          url: "https://twitter.com/TyimAllah"
+        - name: Telegram
+          url: "https://t.me/TyimAllah"
+        - name: RSS
+          url: "index.xml"
+        - name: Email
+          url: "AboTyim[at]protonmail[dot]com"
+
+    # editPost:
+        # URL: "https://github.com/AboTyim/abotyim.github.io/content"
+        # Text: "Suggest Changes" # edit text
+        # appendFilePath: true # to append file path to Edit link
+
+    label:
+        # text: "أبو تيم"
+        icon: /icon.jpg
+        iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+    #     bing:
+    #         SiteVerificationTag: "XYZabc"
+    #     yandex:
+    #         SiteVerificationTag: "XYZabc"
+    
+
+    # assets:
+    #     disableHLJS: false
+    #     disableFingerprinting: false
+    #     favicon: "<link / abs url>"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    cover:
+        linkFullImages: true
+        responsiveImages: true
+        # hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        # hiddenInSingle: true # hide on single page
+    
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        anchorLineNos: false
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        noClasses: true
+        style: dracula
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
