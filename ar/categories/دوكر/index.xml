@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>دوكر on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/categories/%D8%AF%D9%88%D9%83%D8%B1/</link>
+    <description>Recent content in دوكر on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/%D8%AF%D9%88%D9%83%D8%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تقنية الـ Docker</title>
+      <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
+      <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLxNoJq6k39G8zg-t26bV-JGLokr0mgNKk">Containerization من Garage Education.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLcWvtt1Kdxjdbz8JzGdR5wgsTfx9Mo4Ei">Docker - Build, Ship, Run - Arabic من Mohamed Rezk.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXgJ7cArk9uTER4dTdOxbryfx-cz6YkoA">Docker Practical Course من عبد العزيز الزعابي </a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC">دوكر باللغة العربية من محمد عيسى.</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYVdPnqpdUc&amp;list=PLCsn73jgrZ7fQOGpnb_KY3ackH9LUjFtC">Docker in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFalxKLBVQc1uASZH5BfbMRj">Docker and Containers من حمد العبسي.</a></li>
+<li><a href="https://www.udemy.com/course/docker-ar/">Learn Docker مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/watch?v=nQ6tflsf0aU">فيديو يشرح مقدمة في Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=wRl4Zzpcblk">GDGMENA: مقدمة إلى تقنية الحاويات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-N3Ob7hHUD4">GDGMENA: ضع تطبيقاتك في حاويات باستخدام Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_vMoUyBr3srNzFgQXbAjcxMfb-JpRyIN">سلسلة تعليم دوكر من صوت المبرمج.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOY76BQBReTszByDaUiOEhC7">تعلم Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdYYj2XLw5Bmx7lN1flO4eXGGyieUkfBa">Docker For Developers Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=oxRjGqjUXFA">ورشة تعليم دوكر بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
+<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
+<ul>
+<li><a href="https://nullplus.plus/episodes/episode5-docker-intro-quick-tips">شرح من بودكاست null++</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
+<li><a href="https://informatic-ar.com/category/programming/docker/">سلسلة مقالات للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
+<li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
+<li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

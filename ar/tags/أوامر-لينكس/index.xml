@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>أوامر لينكس on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</link>
+    <description>Recent content in أوامر لينكس on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>الأمر find</title>
+      <link>https://abotyim.github.io/ar/posts/linux/find/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
+      <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
+<h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
+<ul>
+<li><code>-name</code>: يستخدم للبحث عن الاسم وهو حساس لحالة الأحرف كما يقال <mark>Case sensitivity</mark> أي عندما تبحث عن كلمة <code>Main.py</code> هي ليست مطابقة لـ <code>main.py</code>.</li>
+<li><code>-iname</code>: يستخدم للبحث عن الاسم أيضاًَ وهو مشابه لما سبق مع تجاهل حالة الأحرف، فعندما تبحث عن كلمة <code>MAin.PY</code> سيطابق اسم الملف <code>main.py</code> و &hellip; إلخ.</li>
+<li>ملاحظة: بإمكاننا استخدام <code>*</code> في أي مكان من موقع الكلمة.</li>
+</ul>
+<p><strong>استخدام المعاملات المنطقية:</strong></p>
+<ul>
+<li><code>-not</code>:  تعبر عن المعامل المنطقي <code>NOT</code> بإمكاننا استخدام <code>-not</code>  أو <code>!</code> عندما تريد العثور على كل الملفّات الّتي <strong>لا تُوافق</strong> نمطًا Pattern مُحدّدًا، في حال استخدام <code>!</code> يجب تخليصها Escape حتى لا يحاول سطر الأمر تفسيرها قبل بدء عمل find.</li>
+<li><code>-or</code>: تعبر عن المعامل المنطقي <code>OR</code> بإمكاننا استخدام <code>-or</code> أو <code>-o</code>.</li>
+<li><code>-and</code>: تعبر عن المعامل المنطقي <code>AND</code> بإمكاننا استخدام <code>-and</code> أو <code>-a</code>.</li>
+<li>ملاحظة: في حال لم تضع <code>OR</code> أو <code>AND</code> فسيكون الخيار بشكل تلقائي <code>AND</code>.</li>
+</ul>
+<h3 id="البحث-بواسطة-اسم-الملف-في-المجلد-الحالي">البحث بواسطة اسم الملف في المجلد الحالي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -name main.py
+</span></span></code></pre></div><h3 id="البحث-بواسطة-اسم-الملف-مع-تجاهل-حالة-الأحرف">البحث بواسطة اسم الملف مع تجاهل حالة الأحرف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -iname Main.py
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-المجلدات">البحث فقط عن المجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type d -name Books
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-الملفات">البحث فقط عن الملفات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name main.py
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-ذات-اللاحقة-py">البحث عن كل الملفات ذات اللاحقة <code>py</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;*.py&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-التي-تبدأ-بـ-mian-مع-استثناء-اللاحقة-php">البحث عن كل الملفات التي تبدأ بـ <code>mian</code> مع استثناء اللاحقة <code>php</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;main*&#34;</span> -not -name <span style="color:#f1fa8c">&#34;*.php&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-عدد-المجلدات-الفرعية">البحث بناءً على عدد المجلدات الفرعية:</h2>
+<ul>
+<li><code>-mindepth</code>: تحدد القيمة الصغرى لعدد مستويات المجلدات التي سيبدأ منها البحث، وسيتم تجاهل المجلد الحالي.</li>
+<li><code>-maxdepth</code>: تحدد القيمة الكبرى لعدد مستويات المجلدات التي سينتهي فيها البحث.</li>
+</ul>
+<h3 id="البحث-بعمق-كحد-أدنى-4-مجلدات">البحث بعمق كحد أدنى 4 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -mindepth <span style="color:#bd93f9">4</span>
+</span></span></code></pre></div><h3 id="البحث-بعمق-كحد-أقصى-5-مجلدات">البحث بعمق كحد أقصى 5 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -maxdepth <span style="color:#bd93f9">5</span>
+</span></span></code></pre></div><h2 id="البحث-عن-المجلدات-والملفات-الفارغة-وحذفها">البحث عن المجلدات والملفات الفارغة وحذفها:</h2>
+<ul>
+<li><code>-type</code>: تستخدم لتحديد النوع، لو أردنا عرض النتائج للملفات فقط نستخدم <code>f</code>، ونستخدم <code>d</code> لعرض المجلدات فقط، ونستخدم <code>s</code> لعرض ملفات socket.</li>
+<li><code>-empty</code>: لعرض الملفات أو المجلدات الفارغة.</li>
+<li><code>-print</code>: لبطاعة النتائج فقط.</li>
+<li><code>-delete</code>: تستخدم للحذف.</li>
+</ul>
+<h3 id="البحث-عن-المجلدات-الفارغة">البحث عن المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -print 
+</span></span></code></pre></div><h3 id="حذف-المجلدات-الفارغة">حذف المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -delete 
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-الفارغة">البحث عن الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -print
+</span></span></code></pre></div><h3 id="حذف-الملفات-الفارغة">حذف الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -delete
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المخفية">البحث عن الملفات المخفية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -name <span style="color:#f1fa8c">&#34;.*&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الأذونات">البحث بناءً على الأذونات:</h2>
+<p><code>-perm</code>: وهي اختصار لكلمة permission.</p>
+<h3 id="البحث-عن-الملفات-ذات-الأذونات-777">البحث عن الملفات ذات الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-بدون-الأذونات-777">البحث عن الملفات بدون الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f ! -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-للقراءة-فقط">البحث عن الملفات للقراءة فقط:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /u<span style="color:#ff79c6">=</span>r
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التنفيذية">البحث عن الملفات التنفيذية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /a<span style="color:#ff79c6">=</span>x
+</span></span></code></pre></div><h2 id="البحث-بناء-على-المالكين-والمجموعات">البحث بناءً على المالكين والمجموعات:</h2>
+<ul>
+<li><code>-user</code>: للبحث عن الملفات التي تعود لمستخدم ما.</li>
+<li><code>-group</code>: للبحث عن الملفات التي تعود لمجموعة ما.</li>
+<li><code>-uid</code>: للبحث عن الملفات التي تعود لمستخدم ما بواسطة القيمة الرقمية للمالك.</li>
+<li><code>-gid</code>: للبحث عن الملفات التي تعود لمجموعة ما بواسطة القيمة الرقمية للمجموعة.</li>
+</ul>
+<h3 id="البحث-بناء-على-المالك-ahmed">البحث بناءً على المالك <code>ahmed</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -user ahmed
+</span></span></code></pre></div><h3 id="البحث-بناء-على-المجموعة-muslim">البحث بناءً على المجموعة <code>muslim</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -group muslim
+</span></span></code></pre></div><h2 id="البحث-بناء-على-التاريخ-والوقت">البحث بناءً على التاريخ والوقت:</h2>
+<p>يخزن لينكس بيانات عن تواريخ الوصول Access time، وتواريخ التعديل Modification، وتواريخ التّبديل Change:</p>
+<ul>
+<li>
+<p><strong>تاريخ الوصول:</strong> آخر مرّة قُرئ من الملفّ أو كُتب فيه.</p>
+</li>
+<li>
+<p><strong>تاريخ التّعديل:</strong> آخر مرّة عُدِّل فيها على محتوى الملفّ.</p>
+</li>
+<li>
+<p><strong>تاريخ التّبديل:</strong> آخر مرّة غُيّرت فيها البيانات الوصفيّة Meta-data المُتعلّقة بوضع الملفّ ضمن نظام الملفّات.</p>
+</li>
+<li>
+<p><code>-mtime</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها باليوم.</p>
+</li>
+<li>
+<p><code>-mmin</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها بالدقيقة.</p>
+</li>
+<li>
+<p><code>-atime</code>: للبحث عن الملفّات المقروءة إليها باليوم.</p>
+</li>
+<li>
+<p><code>-amin</code>: للبحث عن الملفّات المقروءة بالدقيقة.</p>
+</li>
+<li>
+<p><code>-ctime</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة باليوم.</p>
+</li>
+<li>
+<p><code>-cmin</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة بالدقيقة.</p>
+</li>
+<li>
+<p>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكثر من، وعند استخدام <code>-</code> تعني أقل من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</p>
+</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المعدلة-آخر-50-يوما">البحث عن الملفات المعدلة آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-أكثر-من-50-يوما">البحث عن الملفات المعدلة أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-من-20-إلى-50-يوما">البحث عن الملفات المعدلة من 20 إلى 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +20 -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تم-الوصول-إليها-آخر-50-يوما">البحث عن الملفات التي تم الوصول إليها آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-الوصول-إليها-أكثر-من-50-يوما">البحث عن الملفات التي الوصول إليها أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تغييرت-بيانات-التعريف-الخاصة-بها--آخر-50-دقيقة">البحث عن الملفات التي تغييرت بيانات التعريف الخاصة بها  آخر 50 دقيقة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find / -cmin -50
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الحجم">البحث بناءً على الحجم:</h2>
+<ul>
+<li><code>c</code>: الحجم بالبايت.</li>
+<li><code>k</code>: الحجم بالكيلوبايت (1024 بت).</li>
+<li><code>M</code>: الحجم بالميغابايت (1048576 بت).</li>
+<li><code>G</code>: الحجم بالجيغابايت (1073741824 بت).</li>
+<li>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكبر من، وعند استخدام <code>-</code> تعني أصغر من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المطابقة-للحجم-10mb">البحث عن الملفات المطابقة للحجم 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size 10M
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-أكبر-من-2mb-وأصغر-من-10mb">البحث عن الملفات أكبر من 2MB وأصغر من 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size +2M -size-10M
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-على-نتائج-البحث">تنفيذ الأوامر على نتائج البحث:</h2>
+<p>يُتيح الأمر <code>find</code> إمكانيّة تنفيذ أوامر على نتائج البحث مباشرةً عن طريق مُعطَى <code>exec-</code>.</p>
+<p>ملاحظة: نستخدم علامة <code>{}</code> هي ماسك مكان Placeholder، تحلّ محلَّ الملفّات المُطابقة لخيارات البحث. تُشير علامة <code>;\</code> إلى نهاية الأمر.</p>
+<h3 id="البحث-عن-الملفات-الفارغة-والتأكد-من-مساحة-كل-ملف">البحث عن الملفات الفارغة والتأكد من مساحة كل ملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -empty -exec du <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-ملفات-pdf-بناء-على-نوع-الملف">البحث عن ملفات <code>PDF</code> بناء على نوع الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file -i <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep -i <span style="color:#f1fa8c">&#34;application/pdf&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-ذات-التنسيق-data">البحث عن الملفات ذات التنسيق <code>data</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep <span style="color:#f1fa8c">&#39;\data$&#39;</span>
+</span></span></code></pre></div><p><mark>تنويه</mark>: تستطيع استخدام <code>-ok</code> بدل من <code>-exec</code> والفرق الوحيد بينهما أنها تعرض رسالة موافقة على تنفيذ الأمر على كل ملف، وهي مفيدة جداً في حال استخدمت أمر الحذف حتى لا تمسح أي ملف بطريقة الخطأ.</p>
+<h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tecmint.com/35-practical-examples-of-linux-find-command/">35 Practical Examples of Linux Find Command.</a></li>
+<li><a href="https://academy.hsoub.com/devops/linux/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%AA%D8%AE%D8%AF%D9%90%D9%85-%D8%A3%D9%85%D8%B1%D9%8E%D9%8A-find-%D9%88-locate-%D9%84%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%81%D9%91%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-linux-r43/">كيف تستخدِم أمرَي find و locate للبحث عن الملفّات على Linux.</a></li>
+<li><a href="https://abgoor.blogspot.com/2010/10/find.html">البحث بواسطة الأمر find في لينكس.</a></li>
+<li></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>الأمر awk</title>
+      <link>https://abotyim.github.io/ar/posts/linux/awk/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/awk/</guid>
+      <description>awk هي لغة برمجة لقراءة النصوص ومعالجتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p><code>AWK</code> هي لغة برمجة مفسرة مصممة لمعالجة النصوص وإنشاء التقارير.  يتم استخدامه عادةً لمعالجة البيانات، مثل البحث عن العناصر داخل البيانات،  وإجراء العمليات الحسابية، وإعادة هيكلة البيانات الأولية لإنشاء التقارير في أنظمة التشغيل <code>Linux</code>.</p>
+<h2 id="الاستخدامات-النموذجية-لـ-awk">الاستخدامات النموذجية لـ <code>AWK</code>:</h2>
+<p>يمكن إنجاز عدد لا يحصى من المهام باستخدام <code>AWK</code>، سنعرض عدد قليل من هذه الاستخدامات:</p>
+<ul>
+<li>معالجة النصوص.</li>
+<li>إنتاج تقارير نصية منسقة.</li>
+<li>إجراء عمليات حسابية.</li>
+<li>إجراء عمليات على السلاسل النصية.</li>
+</ul>
+<h2 id="طريقة-عمل-awk">طريقة عمل <code>AWK</code>:</h2>
+<p>لكي نصبح على دراية في <code>AWK</code> ومعرفة قوية فأنت بحاجة إلى معرفة مكوناته الداخلية، هو يتبع سير عمل بسيط هو:</p>
+<pre><kbd>القراءة ⬅️ التنفيذ ⬅️ التكرار ​♻️​</kbd></pre>
+<p>يوضح المخطط <strong>Flowchart</strong> التالي سير عمل <code>AWK</code>:</p>
+<p><img loading="lazy" src="/posts/linux/awk/awk_workflow.jpg" alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg"  />
+</p>
+<p>هنالك خمس كتل حسب المخطط <strong>Flowchart</strong> وهي:</p>
+<ul>
+<li><code>BEGIN</code>: يتم تنفيذ هذه الكتلة عند بدء تشغيل البرنامج فقط، ويتم تنفيذه مرة واحدة، تعتبر هذه الكتلة اختيارية،<code>BEGIN</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف الكبيرة.</li>
+<li><code>Read</code>: هذه الكتلة مهمتها قراءة سطراً واحداً من المدخلات ويخزنه في الذاكرة.</li>
+<li><code>Execute</code>: تنفيذ أوامر <code>AWK</code> على السطر الحالي، ويكون التنفيذ حسب تسلسل الأوامر التي كتبتها.</li>
+<li><code>Repeat</code>: تكرار هذه العملية وأعني كتلة <code>Read</code> ثم <code>Execute</code> وهكذا حتى يصل الملف إلى نهايته ثم ينتقل للكتلة الأخيرة.</li>
+<li><code>END</code>: يتم تنفيذ هذه الكتلة في نهاية البرنامج فقط، تعتبر هذه الكتلة اختيارية، <code>END</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف كبيرة.</li>
+</ul>
+<h2 id="الطريقة-النحوية-لكتابة-الأمر-awk">الطريقة النحوية لكتابة الأمر <code>awk</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {start_action} /pattern/ { actions } END {stop_action}&#39;</span> filename
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    BEGIN {start_action} 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    /pattern/ { actions }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    /pattern/ { actions }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    ....
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    END {stop_action}
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">	&#39;</span> filename
+</span></span></code></pre></div><p>لنقم بإنشاء ملف <strong>words.txt</strong> يحتوي على الجملة التالية فقط <code>Hollow World!</code> للتأكد نقوم بعرض محتويات الملف عبر الأمر <code>cat</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hollow World!
+</span></span></code></pre></div><h2 id="البدء-باستخدام-awk">البدء باستخدام <code>awk</code>:</h2>
+<h3 id="طباعة-محتويات-الملف">طباعة محتويات الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print}&#39;</span> words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hollow World!
+</span></span></code></pre></div><h3 id="طباعة-سطر-قبل-وبعد-محتويات-الملف">طباعة سطر قبل وبعد محتويات الملف:</h3>
+<p>لنقم بتجربة استخدام الكتلة <code>BEGIN</code> و <code>END</code> عبر كتابة جملة <code>Start Line</code> قبل محتويات الملف و <code>End Line</code> بعد طباعة الملف:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN{printf &#34;Start Line\n&#34;} {print} END{printf &#34;End Line\n&#34;}&#39;</span> words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Start Line
+</span></span><span style="display:flex;"><span>Hollow World!
+</span></span><span style="display:flex;"><span>End Line
+</span></span></code></pre></div><p><strong>ملاحظة</strong>: استخدمنا <code>\n</code> لنقل مؤشر الكتابة في سطر جديد.</p>
+<h3 id="كتابة-البرنامج-النصي-في-ملف-منعزل">كتابة البرنامج النصي في ملف منعزل:</h3>
+<p>قم بإنشاء ملف نصي ليكن باسم <strong>command.awk</strong> وضع بداخله البرنامج أعلاه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">BEGIN</span>{<span style="color:#ff79c6">printf</span> <span style="color:#f1fa8c">&#34;Start Line\n&#34;</span>} {<span style="color:#ff79c6">print</span>} <span style="color:#8be9fd;font-style:italic">END</span>{<span style="color:#ff79c6">printf</span> <span style="color:#f1fa8c">&#34;End Line\n&#34;</span>}
+</span></span></code></pre></div><p>الآن ما نحاول القيام به هو نفس الأمر السابق طباعة سطر قبل وبعد محتويات الملف <strong>words.txt</strong> ولكن سيكون برنامجنا مكتوب بداخل الملف <strong>command.awk</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -f command.awk words.txt
+</span></span></code></pre></div><p>استخدمنا الخيار <code>-f</code> ﻹمكانية استدعاء مسار سكربت <code>awk</code>.</p>
+<h3 id="طباعة-الأعمدة">طباعة الأعمدة:</h3>
+<p>نقوم بإنشاء ملف نصي باسم <strong>marks.txt</strong> يحتوي على المعلومات التالية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1) Amit     Physics   80
+</span></span><span style="display:flex;"><span>2) Rahul    Maths     90
+</span></span><span style="display:flex;"><span>3) Shyam    Biology   87
+</span></span><span style="display:flex;"><span>4) Kedar    English   85
+</span></span><span style="display:flex;"><span>5) Hari     History   89
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -F <span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#f1fa8c">&#39;{print $3 &#34;\t&#34; $4}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Physics	80
+</span></span><span style="display:flex;"><span>Maths	90
+</span></span><span style="display:flex;"><span>Biology	87
+</span></span><span style="display:flex;"><span>English	85
+</span></span><span style="display:flex;"><span>History	89
+</span></span></code></pre></div><p>تم طباعة العامود الثالث والرابع فقط.</p>
+<ul>
+<li><code>-F</code> للفصل بين الكلمات من خلال الفراغ <strong>space</strong> وبإمكانك تغير ذلك حسب النص المراد التعامل معه، نستطيع عدم وضع <code>-F</code> لأن الأمر <code>awk</code> بأخذ بشكل افتراضي الفراغ للفصل بين الكلمات.</li>
+<li><code>$0</code>: يعبر عن الصف (السطر) بشكل كامل.</li>
+<li><code>$1</code>: تعبر عن الكلمة الأولى.</li>
+<li><code>$2</code>: تعبر عن الكلمة الثانية، وهكذا.</li>
+</ul>
+<h3 id="طباعة-السطور-التي-تحتوي-على-حرف-a">طباعة السطور التي تحتوي على حرف <code>a</code>:</h3>
+<p>بشكل افتراضي يطبع <code>awk</code> جميع الأسطر التي تطابق النمط.</p>
+<p>ملاحظة: عند عدم كتابة الأمر <code>{print $0}</code> يتم اتخاذ الإجراء الافتراضي وهو طباعة السجل.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/ {print $0}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>2) Rahul    Maths     90
+</span></span><span style="display:flex;"><span>3) Shyam    Biology   87
+</span></span><span style="display:flex;"><span>4) Kedar    English   85
+</span></span><span style="display:flex;"><span>5) Hari     History   89
+</span></span></code></pre></div><h3 id="طباعة-العمود-4-و-3-من-السطور-التي-تحتوي-على-حرف-a">طباعة العمود 4 و 3 من السطور التي تحتوي على حرف <code>a</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/ {print $4 &#34;\t&#34; $3}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>90   Maths
+</span></span><span style="display:flex;"><span>87   Biology
+</span></span><span style="display:flex;"><span>85   English
+</span></span><span style="display:flex;"><span>89   History
+</span></span></code></pre></div><h3 id="طباعة-عدد-السطور-المطابقة-للبحث">طباعة عدد السطور المطابقة للبحث:</h3>
+<ul>
+<li><code>/a/</code>: البحث في كل سطر يحتوي على حرف <code>a</code>,</li>
+<li><code>{++i}</code>: عدد السطور المطابقة.</li>
+</ul>
+<p><strong>ملاحظة</strong>: بإمكاننا تغير اسم العداد من <code>i</code> إلى أي شيء نريده.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/{++i} END {print &#34;Count = &#34;, i}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Count = 4
+</span></span></code></pre></div><h2 id="المتغيرات-المضمنة-في-awk">المتغيرات المضمنة في <code>awk</code>:</h2>
+<h3 id="المتغير-argc">المتغير <code>ARGC</code>:</h3>
+<p>يشير إلى عدد المعطيات المقدمة إلى <code>awk</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;Arguments =&#34;, ARGC -1 }&#39;</span> One Two Three Four
+</span></span></code></pre></div><h3 id="المتغير-argv">المتغير ARGV:</h3>
+<p>مصفوفة تخزين معطيات سطر الأوامر، فهرس المصفوفة من 0 حتى <code>ARGC</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   for (i = 0; i &lt; ARGC; ++i) { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">      printf &#34;ARGV[%d] = %s\n&#34;, i, ARGV[i] 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   } 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span> one two three four
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ARGV[0] = awk
+</span></span><span style="display:flex;"><span>ARGV[1] = one
+</span></span><span style="display:flex;"><span>ARGV[2] = two
+</span></span><span style="display:flex;"><span>ARGV[3] = three
+</span></span><span style="display:flex;"><span>ARGV[4] = four
+</span></span></code></pre></div><h3 id="المتغير-environ">المتغير <code>ENVIRON</code>:</h3>
+<p>للتعامل مع متغيرات البيئة environment variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print ENVIRON[&#34;USER&#34;] }&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-filename">المتغير <code>FILENAME</code>:</h3>
+<p>يمثل اسم الملف الحالي.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;END {print FILENAME}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>marks.txt
+</span></span></code></pre></div><p>ملاحظة: وضعنا<code>FILENAME</code> في بعد كتلة <code>END</code> حتى لا يتكرر طباعة اسم الملف بعدد سطور الملف.</p>
+<h3 id="المتغير-fs">المتغير <code>FS</code>:</h3>
+<p>يمثل فاصل المدخلات وقيمته الافتراضية هي <strong>space</strong>.  يمكنك أيضًا تغيير هذا باستخدام خيار سطر الأوامر <code>-F</code>، افتراضيًّا يستخدم الفواصل <strong>whitespaces</strong> (<strong>المسافات</strong> <strong>spaces</strong>، <strong>tabs</strong>، إلخ)  للفصل بين الأعمدة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;FS = &#34; FS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-nf">المتغير <code>NF</code>:</h3>
+<p>يمثل عدد الأعمدة في السطر الحالي.  على سبيل المثال، يطبع المثال التالي فقط تلك الأسطر التي تحتوي على أكثر من عمودين.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;One Two\nOne Two Three\nOne Two Three Four&#34;</span> | awk <span style="color:#f1fa8c">&#39;NF &gt; 2&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-nr">المتغير <code>NR</code>:</h3>
+<p>يمثل رقم السطر الحالي.  على سبيل المثال، يقوم المثال التالي بطباعة السطر إذا كان رقم السطر الحالي أقل من ثلاثة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;One Two\nOne Two Three\nOne Two Three Four&#34;</span> | awk <span style="color:#f1fa8c">&#39;NR &lt; 3&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-ofs">المتغير <code>OFS</code>:</h3>
+<p>يمثل الفاصل بين المخرجات وقيمته الافتراضية هي <strong>space</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;OFS = &#34; OFS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-rs">المتغير <code>RS</code>:</h3>
+<p>يمثل فاصل سجل المدخلات وقيمته الافتراضية هي سطر جديد.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;RS = &#34; RS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-rstart">المتغير <code>RSTART</code>:</h3>
+<p>يمثل مكان المحرف الأول في النص الذي يتطابق مع كلمة البحث:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { if (match(&#34;One Two Three&#34;, &#34;Thre&#34;)) { print RSTART } }&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-0">المتغير <code>$0</code>:</h3>
+<p>يمثل السطر بأكمله.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print $0}&#39;</span> marks.txt
+</span></span></code></pre></div><h3 id="المتغير-n">المتغير <code>$n</code>:</h3>
+<p>يمثل العمود الحالي، نقوم باستبدال <code>n</code> بالرقم الذي نريده حسب عدد الأعمدة، ويتم الفصل بين الكلمات بناء على المتغير <code>FS</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print $3 &#34;\t&#34; $4}&#39;</span> marks.txt
+</span></span></code></pre></div><p>المثال أعلاه سيقوم بطباعة العامود الثالث والرابع ويفصل بينهما بالتاب.</p>
+<h3 id="المتغير-argind">المتغير <code>ARGIND</code>:</h3>
+<p>يمثل فهرس الملف الذي يتم معالجته حالياً.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{ 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   print &#34;ARGIND   = &#34;, ARGIND; print &#34;Filename = &#34;, ARGV[ARGIND] 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span> junk1 junk2 junk3
+</span></span></code></pre></div><h3 id="المتغير-ignorecase">المتغير <code>IGNORECASE</code>:</h3>
+<p>يجعل AWK غير حساس لحالة الأحرف لأجل المطابقة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN{IGNORECASE = 1} /amit/&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1) Amit  Physics   80
+</span></span></code></pre></div><h2 id="المعاملات-operators">المعاملات Operators:</h2>
+<p>تدعم AWK الكثير من <strong>Operators</strong> حالها كحال لغات البرمجة الأخرى.</p>
+<h3 id="المعاملات-الحسابية">المعاملات الحسابية:</h3>
+<h4 id="الجمع">الجمع:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a + b) = &#34;, (a + b) }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>(a + b) = 70
+</span></span></code></pre></div><p>قمنا بإنشاء متغير a,b وأسندنا لهم الأرقام، ومن ثم طبعنا رسالة خرج مع القيام بجمع المتغيرين مع بعضهم.</p>
+<h4 id="الطرح">الطرح:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a - b) = &#34;, (a - b) }&#39;</span>
+</span></span></code></pre></div><h4 id="الضرب">الضرب:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a * b) = &#34;, (a * b) }&#39;</span>
+</span></span></code></pre></div><h4 id="القسمة">القسمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a / b) = &#34;, (a / b) }&#39;</span>
+</span></span></code></pre></div><h4 id="باقي-القسمة">باقي القسمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a % b) = &#34;, (a % b) }&#39;</span>
+</span></span></code></pre></div><h3 id="معاملات-الزيادة-والإنقاص">معاملات الزيادة والإنقاص:</h3>
+<h4 id="الزيادة">الزيادة:</h4>
+<p>يتم تمثيله بـ <code>++</code> يقوم بالزيادة بمقدار <code>1</code>، طريقة عمله هو إرجاع القيمة ثم الزيادة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = a++; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 11, b = 10
+</span></span></code></pre></div><h4 id="الزيادة-المسبقة">الزيادة المسبقة:</h4>
+<p>يتم تمثيله بـ <code>++</code> يقوم بالزيادة بمقدار <code>1</code>، طريقة عمله هو الزيادة ثم إرجاع القيمة المتزايدة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = ++a; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 11, b = 11
+</span></span></code></pre></div><h4 id="التناقص">التناقص:</h4>
+<p>يتم تمثيله بـ <code>--</code> يقوم بعملية النقصان بمقدار <code>1</code>، طريقة عمله هو إرجاع القيمة ثم الإنقاص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = a--; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 9, b = 10
+</span></span></code></pre></div><h4 id="التناقص-المسبق">التناقص المسبق:</h4>
+<p>يتم تمثيله بـ <code>--</code> يقوم بعملية النقصان بمقدار <code>1</code>، طريقة عمله هو الإنقاص ثم إرجاع القيمة المتناقصة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = --a; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 9, b = 9
+</span></span></code></pre></div><h3 id="معاملات-الإسناد">معاملات الإسناد:</h3>
+<h4 id="إسناد-القيمة">إسناد القيمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { name = &#34;Ahmed&#34;; print &#34;My name is&#34;, name }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>My name is Ahmed
+</span></span></code></pre></div><h4 id="الإسناد-مع-الجمع">الإسناد مع الجمع:</h4>
+<p>يتم تمثيله بـ <code>+=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 10; cnt += 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 20
+</span></span></code></pre></div><h4 id="الإسناد-مع-الطرح">الإسناد مع الطرح:</h4>
+<p>يتم تمثيله بـ <code>-=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt -= 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 90
+</span></span></code></pre></div><h4 id="الإسناد-مع-الضرب">الإسناد مع الضرب:</h4>
+<p>يتم تمثيله بـ <code>*=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 10; cnt *= 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 100
+</span></span></code></pre></div><h4 id="الإسناد-مع-القسمة">الإسناد مع القسمة:</h4>
+<p>يتم تمثيله بـ <code>/=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt /= 5; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 20
+</span></span></code></pre></div><h4 id="الإسناد-مع-باقي-القسمة">الإسناد مع باقي القسمة:</h4>
+<p>يتم تمثيله بـ <code>%=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt %= 8; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 4
+</span></span></code></pre></div><h4 id="الإسناد-مع-القوة-الأس">الإسناد مع القوة (الأس):</h4>
+<p>يتم تمثيله بـ <code>^=</code> أو <code>**=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 2; cnt ^= 4; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 2; cnt **= 4; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 16
+</span></span></code></pre></div><h3 id="معاملات-القيم-المنطقية">معاملات القيم المنطقية:</h3>
+<h4 id="معامل-equal-to">معامل <code>Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>==</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 10; if (a == b) print &#34;a == b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a == b
+</span></span></code></pre></div><h4 id="معامل-not-equal-to">معامل <code>Not Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>!=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (a != b) print &#34;a != b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a != b
+</span></span></code></pre></div><h4 id="معامل-less-than">معامل <code>Less Than</code>:</h4>
+<p>يتم تمثيله بـ <code>&lt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (a &lt; b) print &#34;a  &lt; b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a &lt; b
+</span></span></code></pre></div><h4 id="معامل-less-than-or-equal-to">معامل <code>Less Than or Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>&lt;=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 10; if (a &lt;= b) print &#34;a &lt;= b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a &lt;= b
+</span></span></code></pre></div><h4 id="معامل-greater-than">معامل <code>Greater Than</code>:</h4>
+<p>يتم تمثيله بـ <code>&gt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (b &gt; a ) print &#34;b &gt; a&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>b &gt; a
+</span></span></code></pre></div><h4 id="معامل-greater-than-or-equal-to">معامل <code>Greater Than or Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>&gt;=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (b &gt; a ) print &#34;b &gt;= a&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>b &gt;= a
+</span></span></code></pre></div><h3 id="المعامل-الثلاثي-إجراء-الشرط-في-سطر-واحد">المعامل الثلاثي (إجراء الشرط في سطر واحد):</h3>
+<p>الصيغة النحوية تكون كالتالي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>condition expression ? statement1 : statement2
+</span></span></code></pre></div><p>يتم إختبار الشرط إن كان صحيحاً يتم تنفيذ العبارة الأولى، وإلا يتم تنفيذ العبارة الثانية.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; (a &gt; b) ? max = a : max = b; print &#34;Max =&#34;, max}&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Max = 20
+</span></span></code></pre></div><h2 id="دمج-النصوص-مع-بعضها">دمج النصوص مع بعضها:</h2>
+<p>الفراغ <strong>Space</strong> هنا يمثل دمج النصوص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { str1 = &#34;Hello, &#34;; str2 = &#34;World&#34;; str3 = str1 str2; print str3 }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hello, World
+</span></span></code></pre></div><h2 id="المرور-على-عناصر-المصفوفة">المرور على عناصر المصفوفة:</h2>
+<p>يتم تمثيله بـ <code>in</code> يتم استخدامه للوصول إلى عناصر المصفوفة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   arr[0] = 1; arr[1] = 2; arr[2] = 3; for (i in arr) printf &#34;arr[%d] = %d\n&#34;, i, arr[i]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>arr[0] = 1
+</span></span><span style="display:flex;"><span>arr[1] = 2
+</span></span><span style="display:flex;"><span>arr[2] = 3
+</span></span></code></pre></div><h2 id="التعابير-المنطقية">التعابير المنطقية:</h2>
+<h3 id="التعبير-dot">التعبير <code>Dot</code>:</h3>
+<p>يستخدم لمطابقة الكلمات مع تعويض النقط. يطابق المثال التالي مع fin, fun, fan عوض النقطة بداخل الحرف المفقود من الكلمة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;cat\nbat\nfun\nfin\nfan&#34;</span> | awk <span style="color:#f1fa8c">&#39;/f.n/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fun
+</span></span><span style="display:flex;"><span>fin
+</span></span><span style="display:flex;"><span>fan
+</span></span></code></pre></div><h3 id="التعبير-start-of-line">التعبير <code>Start of line</code>:</h3>
+<p>يطابق بداية السطر، يطبع المثال التالي جميع الأسطر التي تبدأ بـ <strong>The</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;This\nThat\nThere\nTheir\nthese&#34;</span> | awk <span style="color:#f1fa8c">&#39;/^The/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>There
+</span></span><span style="display:flex;"><span>Their
+</span></span></code></pre></div><h3 id="التعبير-end-of-line">التعبير <code>End of line</code>:</h3>
+<p>يطابق نهاية السطر، يطبع المثال التالي جميع الأسطر التي تنتهي بـ <strong>n</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;knife\nknow\nfun\nfin\nfan\nnine&#34;</span> | awk <span style="color:#f1fa8c">&#39;/n$/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fun
+</span></span><span style="display:flex;"><span>fin
+</span></span><span style="display:flex;"><span>fan
+</span></span></code></pre></div><h3 id="التعبير-match-character-set">التعبير <code>Match character set</code>:</h3>
+<p>يتم استخدامه لمطابقة حرف واحد فقط من بين مجموعة أحرف، المثال التالي يطابق <strong>Call</strong> و <strong>Tall</strong> ولكن لا يطابق <strong>Ball</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/[CT]all/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Call
+</span></span><span style="display:flex;"><span>Tall
+</span></span></code></pre></div><h3 id="التعبير-exclusive-set">التعبير <code>Exclusive set</code>:</h3>
+<p>عكس التعبير السابق، ينفي مجموعة الأحرف الموجودة بين قوسين مربعين، أي لن يتم مطابقتها، المثال التالي يطابق <strong>Ball</strong> فقط.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/[^CT]all/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Ball
+</span></span></code></pre></div><h3 id="التعبير-alteration">التعبير <code>Alteration</code>:</h3>
+<p>يسمح الـ <code>|</code> بطباعة <strong>Call</strong> أو <strong>Ball</strong> أو الاثنين معاً إن توفروا في النص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall\nSmall\nShall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/Call|Ball/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Call
+</span></span><span style="display:flex;"><span>Ball
+</span></span></code></pre></div><h3 id="التعبير-zero-or-more-occurrence">التعبير <code>Zero or More Occurrence</code>:</h3>
+<p>تستخدم <code>*</code> لإكمال الكلمة، في المثال التالي أي كلمة تبدأ بـ <strong>ca</strong> سيتم مطابقتها، أي الحرف اللي يسبق علامة النجمة حتى لو لم يكن موجود سيتم المطابقة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;ca\ncat\ncatt&#34;</span> | awk <span style="color:#f1fa8c">&#39;/cat*/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ca
+</span></span><span style="display:flex;"><span>cat
+</span></span><span style="display:flex;"><span>catt
+</span></span></code></pre></div><h3 id="التعبير-one-or-more-occurrence">التعبير <code>One or More Occurrence</code>:</h3>
+<p>يطابق إن كان هذا الحرف مكرر أم لا، في المثال التالي يطابق أي سطر فيه <strong>2</strong> سواء كتب مرة واحدة أو أكثر.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;111\n22\n123\n234\n456\n222&#34;</span>  | awk <span style="color:#f1fa8c">&#39;/2+/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;111\n22\n123\n234\n456\n222&#34;</span>  | awk <span style="color:#f1fa8c">&#39;/2/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>22
+</span></span><span style="display:flex;"><span>123
+</span></span><span style="display:flex;"><span>234
+</span></span><span style="display:flex;"><span>222
+</span></span></code></pre></div><h3 id="التعبير-grouping">التعبير <code>Grouping</code>:</h3>
+<p>تستخدم الأقواس <code>()</code> للتجميع والمحرف <code>|</code> يستخدم للبدائل، المثال يطابق التعبير التالي مع الأسطر التي تحتوي على <strong>Apple Juice</strong> أو <strong>Apple Cake</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Apple Juice\nApple Pie\nApple Tart\nApple Cake&#34;</span> | awk  <span style="color:#f1fa8c">&#39;/Apple (Juice|Cake)/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Apple Juice
+</span></span><span style="display:flex;"><span>Apple Cake
+</span></span></code></pre></div><h2 id="إعادة-توجيه-المخرجات">إعادة توجيه المخرجات:</h2>
+<p>نحتاج هنا إعادة توجيه المخرجات إلى ملف نصي بدلاً من عرضه على شاشة <strong>Terminal</strong>.</p>
+<h3 id="الكتابة-على-الملف">الكتابة على الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;Hello, World !!!&#34; &gt; &#34;/tmp/message.txt&#34; }&#39;</span>
+</span></span></code></pre></div><h3 id="الإضافة-على-الملف">الإضافة على الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;Hello, World !!!&#34; &gt;&gt; &#34;/tmp/message.txt&#34; }&#39;</span>
+</span></span></code></pre></div><p>إرسال الخرج إلى برنامج آخر بواسطة <strong>Pipe</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;hello, world !!!&#34; | &#34;tr [a-z] [A-Z]&#34; }&#39;</span>
+</span></span></code></pre></div><h2 id="تنسيق-المخرجات">تنسيق المخرجات:</h2>
+<h3 id="الطباعة-في-سطر-جديد">الطباعة في سطر جديد:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Hello\nWorld\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hello
+</span></span><span style="display:flex;"><span>World
+</span></span></code></pre></div><h3 id="طباعة-tab-بشكل-أفقي">طباعة <code>tab</code> بشكل أفقي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Sr No\tName\tSub\tMarks\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sr No   Name    Sub Marks
+</span></span></code></pre></div><h3 id="طباعة-tab-بشكل-عمودي">طباعة <code>tab</code> بشكل عمودي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Sr No\vName\vSub\vMarks\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sr No
+</span></span><span style="display:flex;"><span>   Name
+</span></span><span style="display:flex;"><span>      Sub
+</span></span><span style="display:flex;"><span>         Marks
+</span></span></code></pre></div><h3 id="طباعة-backspace-لمسح-محرف-للخلف">طباعة <code>Backspace</code> لمسح محرف للخلف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Field 1\bField 2\bField 3\bField 4\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Field Field Field Field 4
+</span></span></code></pre></div><h3 id="الطباعة-من-بداية-السطر">الطباعة من بداية السطر:</h3>
+<p><code>\r</code>: بعد الطباعة، نقوم بإرجاع مؤشر الكتابة في أول السطر ونطبع القيمة التالية فوق القيمة الحالية.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Field 1\rField 2\rField 3\rField 4\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Field 4
+</span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/awk/">Awk Tutorial.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

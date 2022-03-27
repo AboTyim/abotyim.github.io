@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Django on Abo Tyim</title>
+    <link>https://abotyim.github.io/en/posts/django/</link>
+    <description>Recent content in Django on Abo Tyim</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/en/posts/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django ORM</title>
+      <link>https://abotyim.github.io/en/posts/django/orm/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/en/posts/django/orm/</guid>
+      <description>Django ORM — Object Relation Mapper is a powerful and elegant way to interact with the database. The Django ORM is an abstraction layer that allows us to play with the database.</description>
+      <content:encoded><![CDATA[<h2 id="methods-that-return-querysets">Methods That Return QuerySets:</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>filter()</code></strong></td>
+<td>Filter by the given lookup parameters. Multiple parameters are joined by SQL <code>AND</code> statements</td>
+</tr>
+<tr>
+<td><strong><code>exclude()</code></strong></td>
+<td>Filter by objects that don’t match the given lookup parameters</td>
+</tr>
+<tr>
+<td><strong><code>order_by()</code></strong></td>
+<td>Change the default ordering of the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>reverse()</code></strong></td>
+<td>Reverse the default ordering of the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>distinct()</code></strong></td>
+<td>Perform an <strong>SQL <code>SELECT DISTINCT</code></strong> query to eliminate duplicate rows</td>
+</tr>
+<tr>
+<td><strong><code>values()</code></strong></td>
+<td>Returns dictionaries instead of model instances</td>
+</tr>
+<tr>
+<td><strong><code>values_list()</code></strong></td>
+<td>Returns tuples instead of model instances</td>
+</tr>
+<tr>
+<td><strong><code>dates()</code></strong></td>
+<td>Returns a QuerySet containing all available dates in the specified date range</td>
+</tr>
+<tr>
+<td><strong><code>datetimes()</code></strong></td>
+<td>Returns a QuerySet containing all available dates in the specified date and time range</td>
+</tr>
+<tr>
+<td><strong><code>none()</code></strong></td>
+<td>Create an empty QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>all()</code></strong></td>
+<td>Return a copy of the current QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>union()</code></strong></td>
+<td>Use the <strong>SQL <code>UNION</code></strong> operator to combine two or more QuerySets</td>
+</tr>
+<tr>
+<td><strong><code>intersection()</code></strong></td>
+<td>Use the <strong>SQL <code>INTERSECT</code></strong> operator to return the shared elements of two or more QuerySets</td>
+</tr>
+<tr>
+<td><strong><code>difference()</code></strong></td>
+<td>Use the <strong>SQL <code>EXCEPT</code></strong> operator to return elements in the first QuerySet that are not in the others</td>
+</tr>
+<tr>
+<td><strong><code>select_related()</code></strong></td>
+<td>Select all related data when executing the query (except many-to-many relationships)</td>
+</tr>
+<tr>
+<td><strong><code>prefetch_related()</code></strong></td>
+<td>Select all related data when executing the query (including many-to-many relationships)</td>
+</tr>
+<tr>
+<td><strong><code>defer()</code></strong></td>
+<td>Do not retrieve the names fields from the database. Used to improve query performance on complex datasets</td>
+</tr>
+<tr>
+<td><strong><code>only()</code></strong></td>
+<td>Opposite of **<code>defer() : </code>**return only the name fields</td>
+</tr>
+<tr>
+<td><strong><code>using()</code></strong></td>
+<td>Select which database the QuerySet will be evaluated against (when using multiple databases)</td>
+</tr>
+<tr>
+<td><strong><code>select_for_update()</code></strong></td>
+<td>Return a QuerySet that will lock rows until the end of the transaction</td>
+</tr>
+<tr>
+<td><strong><code>raw()</code></strong></td>
+<td>Execute a raw SQL statement</td>
+</tr>
+<tr>
+<td><strong><code>AND (&amp;)</code></strong></td>
+<td>Combine two QuerySets with the SQL <code>AND</code> operator. Using <strong><code>AND (&amp;)</code></strong> is functionally equivalent to using <strong><code>filter()</code></strong> with multiple parameters</td>
+</tr>
+<tr>
+<td><strong><code>OR</code> (|)</strong></td>
+<td>Combine two QuerySets with the <strong>SQL <code>OR</code></strong> operator</td>
+</tr>
+<tr>
+<td><strong><code>annotate()</code></strong></td>
+<td>Annotate each object in the QuerySet. Annotations can be simple values, a field reference or an aggregate expression</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s go ahead and use the Django interactive shell to explore a few examples of the more common QuerySet methods.</p>
+<h3 id="filter"><code>filter()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>queryset <span style="color:#ff79c6">=</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Ahmed&#39;</span>)
+</span></span><span style="display:flex;"><span>queryset
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>User: Ahmed<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ahmed<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ahmed<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="exclude"><code>exclude()</code></h3>
+<p>return a QuerySet of objects that don’t match the given lookup parameters, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Venue
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Venue<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>exclude(name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;South Stadium&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Venue: West Park<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Venue: North Stadium<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Venue: East Park<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>Using more than one lookup parameter will use an SQL <code>AND</code> operator under the hood:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">import</span> datetime
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> venue1 <span style="color:#ff79c6">=</span> Venue<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;East Park&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>exclude(venue<span style="color:#ff79c6">=</span>venue1,event_date<span style="color:#ff79c6">=</span>datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>,<span style="color:#bd93f9">10</span>,<span style="color:#bd93f9">8</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="order_by-and-reverse"><code>order_by()</code> and <code>reverse()</code></h3>
+<p><strong><code>order_by()</code></strong> changes the default ordering of the QuerySet. Function parameters are the model fields to use to order the QuerySet. Ordering can be single level:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>order_by(<span style="color:#f1fa8c">&#39;name&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>Or ordering can be multi-level. In the following example, the events are first ordered by event date and then by event name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>order_by(<span style="color:#f1fa8c">&#39;event_date&#39;</span>,<span style="color:#f1fa8c">&#39;name&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>By default, QuerySet fields are ordered in ascending order. To sort in descending order, use the negative sign**(<code>-</code>)**:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>order_by(<span style="color:#f1fa8c">&#39;-name&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p><strong><code>reverse()</code></strong> reverses the default ordering of the QuerySet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>reverse()                     
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p><strong>Note:</strong></p>
+<ul>
+<li>A model must have default ordering (by setting the <code>ordering</code> option of the models <code>Meta</code> class) for <code>reverse()</code> to be useful. If the model is unordered, the sort order of the returned QuerySet will be meaningless.</li>
+<li>Both <code>order_by()</code> and <code>reverse()</code> are not free operations—they come at a time cost to your database and should be used sparingly on large datasets.</li>
+</ul>
+<h3 id="values-and-values_list"><code>values()</code> and <code>values_list()</code></h3>
+<p><strong><code>values()</code></strong> returns Python <strong>dictionaries</strong>, instead of a <strong>QuerySet</strong> object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>values()       
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [{<span style="color:#f1fa8c">&#39;id&#39;</span>: <span style="color:#bd93f9">1</span>, <span style="color:#f1fa8c">&#39;name&#39;</span>: <span style="color:#f1fa8c">&#39;Test Event&#39;</span>, <span style="color:#f1fa8c">&#39;event_date&#39;</span>: datetime<span style="color:#ff79c6">.</span>datetime(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">25</span>, <span style="color:#bd93f9">22</span>, <span style="color:#bd93f9">42</span>, <span style="color:#bd93f9">15</span>, tzinfo<span style="color:#ff79c6">=&lt;</span>UTC<span style="color:#ff79c6">&gt;</span>), <span style="color:#f1fa8c">&#39;venue_id&#39;</span>: <span style="color:#bd93f9">1</span>, <span style="color:#f1fa8c">&#39;manager_id&#39;</span>: <span style="color:#bd93f9">1</span>, <span style="color:#f1fa8c">&#39;description&#39;</span>: <span style="color:#f1fa8c">&#34;It&#39;s all happening here!&#34;</span>}, {<span style="color:#f1fa8c">&#39;id&#39;</span>: <span style="color:#bd93f9">2</span>, <span style="color:#f1fa8c">&#39;name&#39;</span>: <span style="color:#f1fa8c">&#39;Club Presentation - Juniors&#39;</span>, <span style="color:#f1fa8c">&#39;event_date&#39;</span>: datetime<span style="color:#ff79c6">.</span>datetime(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">12</span>, <span style="color:#bd93f9">0</span>, tzinfo<span style="color:#ff79c6">=&lt;</span>UTC<span style="color:#ff79c6">&gt;</span>), <span style="color:#f1fa8c">&#39;venue_id&#39;</span>: <span style="color:#bd93f9">4</span>, <span style="color:#f1fa8c">&#39;manager_id&#39;</span>: <span style="color:#bd93f9">2</span>, <span style="color:#f1fa8c">&#39;description&#39;</span>: <span style="color:#f1fa8c">&#39;&#39;</span>}]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>You can also specify which fields you want returned:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>values(<span style="color:#f1fa8c">&#39;name&#39;</span>,<span style="color:#f1fa8c">&#39;description&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [{<span style="color:#f1fa8c">&#39;name&#39;</span>: <span style="color:#f1fa8c">&#39;Test Event&#39;</span>, <span style="color:#f1fa8c">&#39;description&#39;</span>: <span style="color:#f1fa8c">&#34;It&#39;s all happening here!&#34;</span>}, {<span style="color:#f1fa8c">&#39;name&#39;</span>: <span style="color:#f1fa8c">&#39;Club Presentation - Juniors&#39;</span>, <span style="color:#f1fa8c">&#39;description&#39;</span>: <span style="color:#f1fa8c">&#39;&#39;</span>}]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p><strong><code>values_list()</code></strong> is the same as <strong><code>values()</code></strong>, except it returns <strong>tuples</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>values_list() 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [(<span style="color:#bd93f9">1</span>, <span style="color:#f1fa8c">&#39;Test Event&#39;</span>, datetime<span style="color:#ff79c6">.</span>datetime(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">25</span>, <span style="color:#bd93f9">22</span>, <span style="color:#bd93f9">42</span>, <span style="color:#bd93f9">15</span>, tzinfo<span style="color:#ff79c6">=&lt;</span>UTC<span style="color:#ff79c6">&gt;</span>), <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">1</span>, <span style="color:#f1fa8c">&#34;It&#39;s all happening here!&#34;</span>), (<span style="color:#bd93f9">2</span>, <span style="color:#f1fa8c">&#39;Club Presentation - Juniors&#39;</span>, datetime<span style="color:#ff79c6">.</span>datetime(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">12</span>, <span style="color:#bd93f9">0</span>, tzinfo<span style="color:#ff79c6">=&lt;</span>UTC<span style="color:#ff79c6">&gt;</span>), <span style="color:#bd93f9">4</span>, <span style="color:#bd93f9">2</span>, <span style="color:#f1fa8c">&#39;&#39;</span>)]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>You can also specify which fields to return:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>values_list(<span style="color:#f1fa8c">&#39;name&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [(<span style="color:#f1fa8c">&#39;Test Event&#39;</span>,), (<span style="color:#f1fa8c">&#39;Club Presentation - Juniors&#39;</span>,)]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="dates-and-datetimes"><code>dates()</code> and <code>datetimes()</code></h3>
+<p>You use the <strong><code>dates()</code></strong> and <strong><code>datetimes()</code></strong> methods to return time-bounded records from the database (for example, all the events occuring in a particular month). For <strong><code>dates()</code></strong>, these time bounds are <strong><code>year</code></strong>, <strong><code>month</code></strong>, <strong><code>week</code></strong> and <strong><code>day</code></strong>. <strong><code>datetimes()</code></strong> adds <strong><code>hour</code></strong>, <strong><code>minute</code></strong> and <strong><code>second</code></strong> bounds. Some examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>dates(<span style="color:#f1fa8c">&#39;event_date&#39;</span>, <span style="color:#f1fa8c">&#39;year&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">1</span>)]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>dates(<span style="color:#f1fa8c">&#39;event_date&#39;</span>, <span style="color:#f1fa8c">&#39;month&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">1</span>)]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>dates(<span style="color:#f1fa8c">&#39;event_date&#39;</span>, <span style="color:#f1fa8c">&#39;week&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">7</span>, <span style="color:#bd93f9">29</span>), datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">5</span>), datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">19</span>)]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>dates(<span style="color:#f1fa8c">&#39;event_date&#39;</span>, <span style="color:#f1fa8c">&#39;day&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">1</span>), datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">10</span>), datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">11</span>), datetime<span style="color:#ff79c6">.</span>date(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">25</span>)]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="union"><code>union()</code></h3>
+<p>The UNION operator is used to combine the result-set of two or more  querysets. The querysets can be from the same or from different models. When they  querysets are from different models, the fields and their datatypes  should match.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q1 <span style="color:#ff79c6">=</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(id__gte<span style="color:#ff79c6">=</span><span style="color:#bd93f9">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q1
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>User: Ritesh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Billy<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Radha<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sohan<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Raghu<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: rishab<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q2 <span style="color:#ff79c6">=</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(id__lte<span style="color:#ff79c6">=</span><span style="color:#bd93f9">9</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q2
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>User: yash<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: John<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ricky<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sharukh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ritesh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Billy<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Radha<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sohan<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Raghu<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q1<span style="color:#ff79c6">.</span>union(q2)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>User: yash<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: John<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ricky<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sharukh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ritesh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Billy<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Radha<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sohan<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Raghu<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: rishab<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> q2<span style="color:#ff79c6">.</span>union(q1)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>User: yash<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: John<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ricky<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sharukh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Ritesh<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Billy<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Radha<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: sohan<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: Raghu<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>User: rishab<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>Since <code>Hero</code> and <code>Villain</code> both have the <code>name</code> and <code>gender</code>, we can use <code>values_list</code> to limit the selected fields then do a union.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Hero<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>values_list(
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;name&#34;</span>, <span style="color:#f1fa8c">&#34;gender&#34;</span>
+</span></span><span style="display:flex;"><span>)<span style="color:#ff79c6">.</span>union(
+</span></span><span style="display:flex;"><span>Villain<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>values_list(
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;name&#34;</span>, <span style="color:#f1fa8c">&#34;gender&#34;</span>
+</span></span><span style="display:flex;"><span>))
+</span></span></code></pre></div><p>This would give you all <code>Hero</code> and <code>Villain</code> objects with their name and gender.</p>
+<h3 id="select_related-and-prefetch_related"><code>select_related()</code> and <code>prefetch_related()</code></h3>
+<p>Selecting related information can be a database-intensive operation as each  foreign key relationship requires an additional database lookup. For  example, each <code>Event</code> object in our database has a foreign key realtionship with the <code>Venue</code> table:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> event1 <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(<span style="color:#8be9fd;font-style:italic">id</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> event1<span style="color:#ff79c6">.</span>venue <span style="color:#6272a4"># Foreign key retrieval causes additional database hit</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Venue: South Stadium<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>For our simple example, this is not a problem, but in large databases with many foreign key relationships, the load on the database can be  prohibitive.</p>
+<p>You use <strong><code>select_related()</code></strong> to improve database performance by retrieving all related data the first time the database is hit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> event2 <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>select_related(<span style="color:#f1fa8c">&#39;venue&#39;</span>)<span style="color:#ff79c6">.</span>get(<span style="color:#8be9fd;font-style:italic">id</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">2</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> event2<span style="color:#ff79c6">.</span>venue <span style="color:#6272a4"># venue has already been retrieved. Database is not hit again.</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Venue: East Park<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p><strong><code>prefetch_related()</code></strong> works the same way as <strong><code>select_related()</code></strong>, except it will work across many-to-many relationships.</p>
+<h3 id="only"><code>only()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> queryset <span style="color:#ff79c6">=</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(
+</span></span><span style="display:flex;"><span>    first_name__startswith<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;R&#39;</span>
+</span></span><span style="display:flex;"><span>)<span style="color:#ff79c6">.</span>only(<span style="color:#f1fa8c">&#34;first_name&#34;</span>, <span style="color:#f1fa8c">&#34;last_name&#34;</span>)
+</span></span></code></pre></div><p>The only difference between <code>only</code> and <code>values</code> is <code>only</code> also fetches the <code>id</code>.</p>
+<h3 id="annotate"><code>annotate()</code></h3>
+<p>Annotations can be simple values, a field reference or an aggregate expression. For example, let’s use Django’s <code>Count</code> aggregate function to annotate our Event model with a total of all users attending each event:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> Count
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> qry <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>annotate(total_attendees<span style="color:#ff79c6">=</span>Count(<span style="color:#f1fa8c">&#39;attendees&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">for</span> event <span style="color:#ff79c6">in</span> qry:
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>     <span style="color:#8be9fd;font-style:italic">print</span>(event<span style="color:#ff79c6">.</span>name, event<span style="color:#ff79c6">.</span>total_attendees) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span> 
+</span></span><span style="display:flex;"><span>Test Event <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>Gala Day <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>Club Presentation <span style="color:#ff79c6">-</span> Juniors <span style="color:#bd93f9">5</span>
+</span></span><span style="display:flex;"><span>Club Presentation <span style="color:#ff79c6">-</span> Seniors <span style="color:#bd93f9">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><h3 id="raw"><code>raw()</code></h3>
+<p><strong>Executing Raw SQL</strong></p>
+<p>While Django’s developers provide the <strong><code>raw()</code></strong> query method for executing raw SQL, you are explicitly discouraged from doing so.</p>
+<p>The Django ORM is very powerful and in the vast majority of cases where I  have seen programmers resort to SQL it has been due to an incomplete  knowledge of Django’s ORM on the programmers part, not a deficiency in  the ORM.</p>
+<p>If you find yourself in the situation where a query is so complex you can’t find a way of completing the task with Django’s ORM,  it’s likely you need to create a stored procedure or a new view within  the database itself.</p>
+<h2 id="methods-that-dont-return-querysets">Methods That Don’t Return QuerySets:</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>get()</code></strong></td>
+<td>Returns a single object. Throws an error if lookup returns multiple objects</td>
+</tr>
+<tr>
+<td><strong><code>create()</code></strong></td>
+<td>Shortcut method to create and save an object in one step</td>
+</tr>
+<tr>
+<td><strong><code>get_or_create()</code></strong></td>
+<td>Returns a single object. If the object doesn’t exist, it creates one</td>
+</tr>
+<tr>
+<td><strong><code>update_or_create()</code></strong></td>
+<td>Updates a single object. If the object doesn’t exist, it creates one</td>
+</tr>
+<tr>
+<td><strong><code>bulk_create()</code></strong></td>
+<td>Insert a list of objects in the database</td>
+</tr>
+<tr>
+<td><strong><code>bulk_update()</code></strong></td>
+<td>Update given fields in the listed model instances</td>
+</tr>
+<tr>
+<td><strong><code>count()</code></strong></td>
+<td>Count the number of objects in the returned QuerySet. Returns an integer</td>
+</tr>
+<tr>
+<td><strong><code>in_bulk()</code></strong></td>
+<td>Return a QuerySet containing all objects with the listed IDs</td>
+</tr>
+<tr>
+<td><strong><code>iterator()</code></strong></td>
+<td>Evaluate a QuerySet and return an iterator over the results. Can improve  performance and memory use for queries that return a large number of  objects</td>
+</tr>
+<tr>
+<td><strong><code>latest()</code></strong></td>
+<td>Return the latest object in the database table based on the given field(s)</td>
+</tr>
+<tr>
+<td><strong><code>earliest()</code></strong></td>
+<td>Return the earliest object in the database table based on the given field(s)</td>
+</tr>
+<tr>
+<td><strong><code>first()</code></strong></td>
+<td>Return the first object matched by the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>last()</code></strong></td>
+<td>Return the last object matched by the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>aggregate()</code></strong></td>
+<td>Return a dictionary of aggregate values calculated over the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>exists()</code></strong></td>
+<td>Returns <code>True</code> if the QuerySet contains any results</td>
+</tr>
+<tr>
+<td><strong><code>update()</code></strong></td>
+<td>Performs an SQL <code>UPDATE</code> on the specified field(s)</td>
+</tr>
+<tr>
+<td><strong><code>delete()</code></strong></td>
+<td>Performs an SQL <code>DELETE</code> that deletes all rows in the QuerySet</td>
+</tr>
+<tr>
+<td><strong><code>as_manager()</code></strong></td>
+<td>Return a <code>Manager</code> class instance containing a copy of the QuerySet’s methods</td>
+</tr>
+<tr>
+<td><strong><code>explain()</code></strong></td>
+<td>Returns a string of the QuerySet’s execution plan. Used for analysing query performance</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s return to the Django interactive shell to dig deeper into some common examples:</p>
+<h3 id="get_or_create"><code>get_or_create()</code></h3>
+<p><strong><code>get_or_create()</code></strong> will attempt to retrieve a record matching the search fields. If a record  doesn’t exist, it will create one. The return value will be a tuple—the  created or retrieved object and a boolean value that will be <code>True</code> if a new record was created:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> MyclubUser 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr, boolCreated <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get_or_create(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;John&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>, email<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;johnj@example.com&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> boolCreated
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">True</span>
+</span></span></code></pre></div><p>If we try and create the object a second time, it will retrieve the new record from the database instead.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr, boolCreated <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get_or_create(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;John&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>, email<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;johnj@example.com&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> boolCreated
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">False</span>
+</span></span></code></pre></div><h3 id="update_or_create"><code>update_or_create()</code></h3>
+<p><strong><code>update_or_create()</code></strong> works similar to <strong><code>get_or_create()</code></strong>, except you pass the search fields and a dictionary named <code>defaults</code> that contains the fields to update. If the object doesn’t exist, it will create a new record in the database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr, boolCreated <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>update_or_create(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Mary&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>, defaults<span style="color:#ff79c6">=</span>{<span style="color:#f1fa8c">&#39;email&#39;</span>:<span style="color:#f1fa8c">&#39;maryj@example.com&#39;</span>}) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>MyclubUser: Mary Jones<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> boolCreated
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">True</span>
+</span></span></code></pre></div><p>If the record does exist, Django will update all fields listed in the <code>defaults</code> dictionary:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr, boolCreated <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>update_or_create(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Mary&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>, defaults<span style="color:#ff79c6">=</span>{<span style="color:#f1fa8c">&#39;email&#39;</span>:<span style="color:#f1fa8c">&#39;mary_j@example.com&#39;</span>})    
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>MyclubUser: Mary Jones<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr<span style="color:#ff79c6">.</span>email
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#39;mary_j@example.com&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> boolCreated
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">False</span>
+</span></span></code></pre></div><h3 id="bulk_create-and-bulk_update"><code>bulk_create()</code> and <code>bulk_update()</code></h3>
+<p>The <strong><code>bulk_create()</code></strong> saves time by inserting multiple objects into the database at once, most  often in a single query. The function has on required parameter—a list  of objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>bulk_create([
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>     MyclubUser(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jane&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Smith&#39;</span>, email<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;janes@example.com&#39;</span>),
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>     MyclubUser(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Steve&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Smith&#39;</span>, email<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;steves@example.com&#39;</span>),
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span> ])
+</span></span></code></pre></div><p><strong><code>bulk_update()</code></strong> on the other hand takes a  list of model objects and updates individual fields on selected model  instances. For example, let’s say the first two “Smiths” in the database were entered incorrectly. First, we retrieve all the “Smiths”:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Smith&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smith<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Smith<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Steve Smith<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>We can then modify the <strong><code>last_name</code></strong> field on the first two instances and use the <strong><code>bulk_update</code></strong> function to save the changes to the database in a single query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs[<span style="color:#bd93f9">0</span>]<span style="color:#ff79c6">.</span>last_name <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;Smythe&#39;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs[<span style="color:#bd93f9">1</span>]<span style="color:#ff79c6">.</span>last_name <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;Smythe&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>bulk_update(usrs, [<span style="color:#f1fa8c">&#39;last_name&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Steve Smith<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="count"><code>count()</code></h3>
+<p>Count the number of objects in the QuerySet. Can be used to count all the objects in a database table:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>count()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>
+</span></span></code></pre></div><p>Or used to count the number of objects returned by a query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Smythe&#39;</span>)<span style="color:#ff79c6">.</span>count() 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>
+</span></span></code></pre></div><p><strong><code>count()</code></strong> is functionally equivalent to using the <strong><code>aggregate()</code></strong> function, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>aggregate(Count(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__count&#39;</span>: <span style="color:#bd93f9">9</span>}
+</span></span></code></pre></div><p>But <strong><code>count()</code></strong> has a cleaner syntax and is likely to be faster on larger datasets.</p>
+<h3 id="in_bulk"><code>in_bulk()</code></h3>
+<p><strong><code>in_bulk()</code></strong> takes a list of id values and returns a dictionary mapping each id to an  instance of the object with that id. If you don’t pass a list <code>to **in_bulk()**</code>, all objects will be returned:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>in_bulk()
+</span></span><span style="display:flex;"><span>{<span style="color:#bd93f9">1</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#bd93f9">2</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Doe<span style="color:#ff79c6">&gt;</span>, <span style="color:#bd93f9">3</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>}
+</span></span></code></pre></div><p>Once retrieved, you can access each object by their key value:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs[<span style="color:#bd93f9">3</span>]
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usrs[<span style="color:#bd93f9">3</span>]<span style="color:#ff79c6">.</span>first_name   
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#39;John&#39;</span>
+</span></span></code></pre></div><p>Any non-empty list will retrieve all records with the listed ids:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>in_bulk([<span style="color:#bd93f9">1</span>]) 
+</span></span><span style="display:flex;"><span>{<span style="color:#bd93f9">1</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>}
+</span></span></code></pre></div><p>List ids don’t have to be sequential either:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>in_bulk([<span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">3</span>, <span style="color:#bd93f9">7</span>]) 
+</span></span><span style="display:flex;"><span>{<span style="color:#bd93f9">1</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#bd93f9">3</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#bd93f9">7</span>: <span style="color:#ff79c6">&lt;</span>MyclubUser: Mary Jones<span style="color:#ff79c6">&gt;</span>}
+</span></span></code></pre></div><h3 id="latest-and-earliest"><code>latest()</code> and <code>earliest()</code></h3>
+<p>Return the latest or the earliest date in the database for the provided field(s):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>latest(<span style="color:#f1fa8c">&#39;event_date&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>earliest(<span style="color:#f1fa8c">&#39;event_date&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="first-an-last"><code>first()</code> an <code>last()</code></h3>
+<p>Return the first or last object in the QuerySet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>first()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>last()  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h3 id="aggregate"><code>aggregate()</code></h3>
+<p>Returns a dictionary of aggregate values calculated over the QuerySet. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> Count
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>aggregate(Count(<span style="color:#f1fa8c">&#39;attendees&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;attendees__count&#39;</span>: <span style="color:#bd93f9">7</span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><p>For a list of all aggregate functions available in Django, see Aggregate Functions later in this chapter.</p>
+<h3 id="exists"><code>exists()</code></h3>
+<p>Returns <code>True</code> if the returned QuerySet contains any objects, <code>False</code> if the QuerySet is empty. There are two common use cases—to check if an object is contained in another QuerySet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> MyclubUser
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Let&#39;s retrieve John Jones from the database</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> usr <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;John&#39;</span>, last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># And check to make sure he is one of the Joneses</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> joneses <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> joneses<span style="color:#ff79c6">.</span>filter(pk<span style="color:#ff79c6">=</span>usr<span style="color:#ff79c6">.</span>pk)<span style="color:#ff79c6">.</span>exists() 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">True</span>
+</span></span></code></pre></div><p>And to check if a query returns an object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> joneses<span style="color:#ff79c6">.</span>filter(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Mary&#39;</span>)<span style="color:#ff79c6">.</span>exists()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> joneses<span style="color:#ff79c6">.</span>filter(first_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Peter&#39;</span>)<span style="color:#ff79c6">.</span>exists() 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">False</span>
+</span></span></code></pre></div><h2 id="field-lookups">Field Lookups:</h2>
+<p>Field lookups have a simple double-underscore syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>searchfield<span style="color:#ff79c6">&gt;</span>__<span style="color:#ff79c6">&lt;</span>lookup<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(first_name__exact<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Sally&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Sally Jones<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(first_name__contains<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Sally&#34;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Sally Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Sally<span style="color:#ff79c6">-</span>Anne Jones<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>Under the hood, Django creates SQL <code>WHERE</code> clauses to  construct database queries from the applied lookups. Multiple lookups  are allowed and field lookups can also be chained (where logical):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Get all events in 2019 that occur before September</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(event_date__year<span style="color:#ff79c6">=</span><span style="color:#bd93f9">2019</span>, event_date__month__lt<span style="color:#ff79c6">=</span><span style="color:#bd93f9">9</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Get all events occuring on or after the 10th of the month</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(event_date__day__gte<span style="color:#ff79c6">=</span><span style="color:#bd93f9">10</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>exact</code>/<code>iexact</code></strong></td>
+<td>Exact match. <code>iexact</code> is case-insensitive version</td>
+</tr>
+<tr>
+<td><strong><code>contains</code>/<code>icontains</code></strong></td>
+<td>Field contains search text. <code>icontains</code> is case-insensitive version</td>
+</tr>
+<tr>
+<td><strong><code>in</code></strong></td>
+<td>In a given iterable (list, tuple or QuerySet)</td>
+</tr>
+<tr>
+<td><strong><code>gt</code>/<code>gte</code></strong></td>
+<td>Greater than/greater than or equal</td>
+</tr>
+<tr>
+<td><strong><code>lt</code>/<code>lte</code></strong></td>
+<td>Less than/less than or equal</td>
+</tr>
+<tr>
+<td><strong><code>startswith</code>/<code>istartswith</code></strong></td>
+<td>Starts with search string. <code>istartswith</code> is case-insensitive version</td>
+</tr>
+<tr>
+<td><strong><code>endswith</code>/<code>iendswith</code></strong></td>
+<td>Ends with search string. <code>iendswith</code>is case-insensitive version</td>
+</tr>
+<tr>
+<td><strong><code>range</code></strong></td>
+<td>Range test. Range includes start and finish values</td>
+</tr>
+<tr>
+<td><strong><code>date</code></strong></td>
+<td>Casts the value as a date. For datetime field lookups</td>
+</tr>
+<tr>
+<td><strong><code>year</code></strong></td>
+<td>Searches an exact year match</td>
+</tr>
+<tr>
+<td><strong><code>iso_year</code></strong></td>
+<td>Searches an exact ISO 8601 year match</td>
+</tr>
+<tr>
+<td><strong><code>month</code></strong></td>
+<td>Searches an exact month match</td>
+</tr>
+<tr>
+<td><strong><code>day</code></strong></td>
+<td>Searches an exact day match</td>
+</tr>
+<tr>
+<td><strong><code>week</code></strong></td>
+<td>Searches an exact week match</td>
+</tr>
+<tr>
+<td><strong><code>week_day</code></strong></td>
+<td>Searches an exact day of the week match</td>
+</tr>
+<tr>
+<td><strong><code>quarter</code></strong></td>
+<td>Searches an exact quarter of the year match. Valid integer range: 1–4</td>
+</tr>
+<tr>
+<td><strong><code>time</code></strong></td>
+<td>Casts the value as a time. For datetime field lookups</td>
+</tr>
+<tr>
+<td><strong><code>hour</code></strong></td>
+<td>Searches an exact hour match</td>
+</tr>
+<tr>
+<td><strong><code>minute</code></strong></td>
+<td>Searches an exact minute match</td>
+</tr>
+<tr>
+<td><strong><code>second</code></strong></td>
+<td>Searches an exact second match</td>
+</tr>
+<tr>
+<td><strong><code>isnull</code></strong></td>
+<td>Search if field is null. Takes <code>True</code> or <code>False</code></td>
+</tr>
+<tr>
+<td><strong><code>regex</code>/<code>iregex</code></strong></td>
+<td>Regular expression match. <code>iregex</code> is case-insensitive version</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aggregate-functions">Aggregate Functions:</h2>
+<p>Django includes seven aggregate functions:</p>
+<ul>
+<li><strong><code>Avg</code></strong>. Returns the mean value of the expression</li>
+<li><strong><code>Count</code></strong>. Count the number of returned objects</li>
+<li><strong><code>Max</code></strong>. Returns the maximum value of the expression</li>
+<li><strong><code>Min</code></strong>. Returns the minimum value of the expression</li>
+<li><strong><code>StdDev</code></strong>. Returns the population standard deviation of the data in the expression</li>
+<li><strong><code>Sum</code></strong>. Returns the sum of all values in the expression</li>
+<li><strong><code>Variance</code></strong>. Returns the population variance of the data in the expression</li>
+</ul>
+<p>They are translated to the equivalent SQL by Django’s ORM.</p>
+<p>Aggregate functions can either be used directly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>count()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>
+</span></span></code></pre></div><p>Or with the <strong><code>aggregate()</code></strong> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> Count 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>aggregate(Count(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__count&#39;</span>: <span style="color:#bd93f9">4</span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> Avg, Max, Min, Sum, Count
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>aggregate(Avg(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__avg&#39;</span>: <span style="color:#bd93f9">7.571428571428571</span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>aggregate(Max(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__max&#39;</span>: <span style="color:#bd93f9">15</span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>aggregate(Min(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__min&#39;</span>: <span style="color:#bd93f9">1</span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>all()<span style="color:#ff79c6">.</span>aggregate(Sum(<span style="color:#f1fa8c">&#39;id&#39;</span>))
+</span></span><span style="display:flex;"><span>{<span style="color:#f1fa8c">&#39;id__sum&#39;</span>: <span style="color:#bd93f9">106</span>}
+</span></span></code></pre></div><h2 id="more-complex-queries">More Complex Queries</h2>
+<h3 id="query-expressions"><strong>Query Expressions</strong></h3>
+<p>Query expressions describe a computation or value used as a part of another query. There are six built-in query expressions:</p>
+<ul>
+<li><strong><code>F()</code></strong>—Represents the value of a model field or annotated column</li>
+<li><strong><code>Func()</code></strong>—Base type for database functions like <code>LOWER</code> and <code>SUM</code></li>
+<li><strong><code>Aggregate()</code></strong>—All aggregate functions inherit from <code>Aggregate()</code></li>
+<li><strong><code>Value()</code></strong>—Expression value. Not used directly</li>
+<li><strong><code>ExpressionWrapper()</code></strong>—Used to wrap expressions of different types</li>
+<li><strong><code>SubQuery()</code></strong>—Add a subquery to a QuerySet</li>
+</ul>
+<p>Django supports multiple arithmetic operators with query expressions, including:</p>
+<ul>
+<li>Addition and subtraction</li>
+<li>Multiplication and division</li>
+<li>Negation</li>
+<li>Modulo arithmetic; and</li>
+<li>The power operator</li>
+</ul>
+<p>We have already covered aggregation in this chapter, so let’s have a quick look at the other two commonly used query expressions: <strong><code>F()</code></strong> and <strong><code>Func()</code></strong>.</p>
+<h3 id="f-expressions"><code>F()</code> Expressions:</h3>
+<p>The two primary uses for <strong><code>F()</code></strong> expressions is to move computational arithmetic from Python to the database and to reference other fields in the model.</p>
+<p>Let’s start with a simple example, say we want to delay the first event in  the event calendar by two weeks. A conventional approach would look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">import</span> datetime
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(<span style="color:#8be9fd;font-style:italic">id</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>event_date <span style="color:#ff79c6">+=</span> datetime<span style="color:#ff79c6">.</span>timedelta(days<span style="color:#ff79c6">=</span><span style="color:#bd93f9">14</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>save()
+</span></span></code></pre></div><p>In this example, Django retrieves the information from the database into memory, uses Python to perform the  computation—in this case, add 14 days to the event date—and then saves  the record back to the database.</p>
+<p>For this example, the overhead  for using Python to perform the date arithmetic is not onerous, however  for more complex queries there is a definite advantage to moving the  computational load to the database.</p>
+<p>Now let’s see how we accomplish the same task with an <strong><code>F()</code></strong> expression:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> F
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(<span style="color:#8be9fd;font-style:italic">id</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>)    
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>event_date <span style="color:#ff79c6">=</span> F(<span style="color:#f1fa8c">&#39;event_date&#39;</span>) <span style="color:#ff79c6">+</span> datetime<span style="color:#ff79c6">.</span>timedelta(days<span style="color:#ff79c6">=</span><span style="color:#bd93f9">14</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>save()
+</span></span></code></pre></div><p>In terms of the amount of code necessary to complete the task, we haven’t saved anything, however, by using the <strong><code>F()</code></strong> expression, Django will now create an SQL query that performs the computational  logic inside the database, rather than in memory with Python.</p>
+<p>While this takes a huge load off the Django application in the case of  executing complex computations, there is one drawback—because the  calculations take place inside the database, Django is now out of sync  with the updated state of the database. We can test this by looking at  the <code>Event</code> object instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>event_date 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>CombinedExpression: F(event_date) <span style="color:#ff79c6">+</span> DurationValue(<span style="color:#bd93f9">14</span> days, <span style="color:#bd93f9">0</span>:<span style="color:#bd93f9">00</span>:<span style="color:#bd93f9">00</span>)<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>To retrieve the updated object from the database, we need to use the <strong><code>refresh_from_db()</code></strong> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>refresh_from_db()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>event_date
+</span></span><span style="display:flex;"><span>datetime<span style="color:#ff79c6">.</span>datetime(<span style="color:#bd93f9">2019</span>, <span style="color:#bd93f9">9</span>, <span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">22</span>, <span style="color:#bd93f9">42</span>, <span style="color:#bd93f9">15</span>, tzinfo<span style="color:#ff79c6">=</span>datetime<span style="color:#ff79c6">.</span>timezone(datetime<span style="color:#ff79c6">.</span>timedelta(<span style="color:#bd93f9">0</span>), <span style="color:#f1fa8c">&#39;+0000&#39;</span>))
+</span></span></code></pre></div><p>The second use for <strong><code>F()</code></strong> expressions—referencing other model fields—is straight forward. For example, you can check for  users with the same first and last name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(first_name<span style="color:#ff79c6">=</span>F(<span style="color:#f1fa8c">&#39;last_name&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Don Don<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>This simple syntax works with all of Django’s field lookups and aggregate functions.</p>
+<h3 id="func-expressions"><code>Func()</code> Expressions</h3>
+<p><strong><code>Func()</code></strong> expressions can be used to represent any function supported by the underlying database (e.g. <code>LOWER</code>, <code>UPPER</code>, <code>LEN</code>, <code>TRIM</code>, <code>CONCAT</code>, etc.). For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> MyclubUser
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> F, Func
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> qry <span style="color:#ff79c6">=</span> usrs<span style="color:#ff79c6">.</span>annotate(f_upper<span style="color:#ff79c6">=</span>Func(F(<span style="color:#f1fa8c">&#39;last_name&#39;</span>), function<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;UPPER&#39;</span>)) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">for</span> usr <span style="color:#ff79c6">in</span> qry:
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>     <span style="color:#8be9fd;font-style:italic">print</span>(usr<span style="color:#ff79c6">.</span>first_name, usr<span style="color:#ff79c6">.</span>f_upper)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span> 
+</span></span><span style="display:flex;"><span>Joe SMYTHE
+</span></span><span style="display:flex;"><span>Jane DOE
+</span></span><span style="display:flex;"><span>John JONES
+</span></span><span style="display:flex;"><span>Sally JONES
+</span></span><span style="display:flex;"><span>Sally<span style="color:#ff79c6">-</span>Anne JONES
+</span></span><span style="display:flex;"><span>Sarah JONES
+</span></span><span style="display:flex;"><span>Mary JONES
+</span></span><span style="display:flex;"><span>Jane SMYTHE
+</span></span><span style="display:flex;"><span>Steve SMITH
+</span></span><span style="display:flex;"><span>Don DON
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><p>Notice how we are using <strong><code>F()</code></strong> expressions again to reference another field in the <strong><code>MyclubUser</code></strong> model.</p>
+<h3 id="q-objects"><code>Q()</code> Objects:</h3>
+<p>Like <strong><code>F()</code></strong> expressions, a <strong><code>Q()</code></strong> object encapsulates an SQL expression inside a Python object. <strong><code>Q()</code></strong> objects are most often used to construct complex database queries by chaining together multiple expressions using <strong><code>AND</code> (<code>&amp;</code>)</strong> and <strong><code>OR</code> (<code>|</code>)</strong> operators:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> MyclubUser 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> django.db.models <span style="color:#ff79c6">import</span> Q
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Q1 <span style="color:#ff79c6">=</span> Q(first_name__startswith<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;J&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Q2 <span style="color:#ff79c6">=</span> Q(first_name__endswith<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;e&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(Q1 <span style="color:#ff79c6">&amp;</span> Q2)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Doe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Smythe<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(Q1 <span style="color:#ff79c6">|</span> Q2) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: Joe Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Doe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Sally<span style="color:#ff79c6">-</span>Anne Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Jane Smythe<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Steve Smith<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><p>You can also perform <strong><code>NOT</code></strong> queries using the negate <strong>(<code>~</code>)</strong> character:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(<span style="color:#ff79c6">~</span>Q2)      
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Sally Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Sarah Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Mary Jones<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>MyclubUser: Don Don<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(Q1 <span style="color:#ff79c6">&amp;</span> <span style="color:#ff79c6">~</span>Q2) 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>MyclubUser: John Jones<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><h2 id="model-managers">Model Managers:</h2>
+<p>A <code>Manager</code> is a Django class that provides the interface  between database query operations and a Django model. Each Django model  is provided with a <strong>default <code>Manager</code></strong> named <strong><code>objects</code></strong>. We have been using the default manager every time we query the database, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> newevent <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Xmas Barbeque&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> joneses <span style="color:#ff79c6">=</span> MyclubUser<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>filter(last_name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Jones&#39;</span>)
+</span></span></code></pre></div><p>In each example, <strong><code>objects</code></strong> is the <strong>default <code>Manager</code></strong> for the model instance.</p>
+<p>You can customize the default <strong><code>Manager</code></strong> class, by extending the base <code>Manager</code> class for the model. The two most common use-cases for customizing the default manager are:</p>
+<ul>
+<li>Adding extra manager methods; and</li>
+<li>Modifying initial QuerySet results.</li>
+</ul>
+<h3 id="adding-extra-manager-methods">Adding Extra Manager Methods:</h3>
+<p>Extra manager methods add table-level functionality to models. To add row-level functions, i.e. methods that act on single instances of the  model, you use model methods, which we cover in the next section of the  chapter.</p>
+<p>Extra manager methods are created by inheriting the <code>Manager</code> base class and adding custom functions to the custom <code>Manager</code> class. For example, let’s create an extra manager method for the <code>Event</code> model that retrieves the total number of events for a particular type of event (e.g. gala day or presentation):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># myclub_rooteventsmodels.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">from</span> django.db <span style="color:#ff79c6">import</span> models
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">from</span> django.contrib.auth.models <span style="color:#ff79c6">import</span> User
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">EventManager</span>(models<span style="color:#ff79c6">.</span>Manager):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>      <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">event_type_count</span>(self, event_type):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3</span>          <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>filter(name__icontains<span style="color:#ff79c6">=</span>event_type)<span style="color:#ff79c6">.</span>count()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">6</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Event</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">7</span>      name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Event Name&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">120</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">8</span>      event_date <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>DateTimeField(<span style="color:#f1fa8c">&#39;Event Date&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>      venue <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(Venue, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>CASCADE)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">10</span>     manager <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(User, blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, null<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>SET_NULL)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">11</span>     attendees <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ManyToManyField(MyclubUser)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">12</span>     description <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>TextField(blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">13</span>     objects <span style="color:#ff79c6">=</span> EventManager()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">14</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">15</span>     <span style="color:#ff79c6">def</span> __str__(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">16</span>         <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>name
+</span></span></code></pre></div><ul>
+<li>In <strong>Line 1</strong>, we’ve entered a new class called <code>EventManager</code> that inherits from Django’s <strong><code>models.Manager</code></strong> base class.</li>
+<li><strong>Lines 2 and 3</strong> is the extra <code>Manager</code> method we’re adding to the model. This new method returns the total number of the specified event type. Note we’re using the <code>icontains</code> field lookup to return all events that have the key phrase in the title.</li>
+<li>In <strong>Line 13</strong> we’re replacing the default manager with our new <code>EventManager</code> class. Note that <code>EventManager</code> inherits from the <code>Manager</code> base class, so all the default manager methods like <strong><code>all()</code></strong> and <strong><code>filter()</code></strong> are automatically included in the custom <strong><code>EventManager()</code></strong> class.</li>
+</ul>
+<p>Once it has been created, you can use your new manager method just like any other model menthod:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>event_type_count(<span style="color:#f1fa8c">&#39;Gala Day&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>event_type_count(<span style="color:#f1fa8c">&#39;Presentation&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>
+</span></span></code></pre></div><h3 id="renaming-the-default-model-manager">Renaming the Default Model Manager</h3>
+<p>While the base manager for each model is named <strong><code>objects</code></strong> by default, you can change the name of the default manager in your class  declaration. For example, to change the default manager name for our  Event class from objects to events, we just need to change line 13 in  the code above from:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#bd93f9">13</span>     objects <span style="color:#ff79c6">=</span> EventManager()
+</span></span></code></pre></div><p>To:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#bd93f9">13</span>     events <span style="color:#ff79c6">=</span> EventManager()
+</span></span></code></pre></div><p>Now you can refer to the default manager like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Event<span style="color:#ff79c6">.</span>events<span style="color:#ff79c6">.</span>all()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Event: Test Event<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Juniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Club Presentation <span style="color:#ff79c6">-</span> Seniors<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Event: Gala Day<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> 
+</span></span></code></pre></div><h3 id="overriding-initial-manager-querysets">Overriding Initial Manager QuerySets</h3>
+<p>To modify what is returned by the default manager QuerySet, you override the <code>Manager.get_queryset()</code> method. This is easiest to understand with an example. Let’s say we commonly  have to check what venues are listed in our local city. To cut down on  the number of queries we have to write, we’re going to create a custom  manager for our <code>Venue</code> model (changes in bold):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># myclub_rooteventsmodels.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span>  <span style="color:#ff79c6">from</span> django.db <span style="color:#ff79c6">import</span> models
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>  <span style="color:#ff79c6">from</span> django.contrib.auth.models <span style="color:#ff79c6">import</span> User
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">VenueManager</span>(models<span style="color:#ff79c6">.</span>Manager):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">6</span>      <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">get_queryset</span>(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">7</span>          <span style="color:#ff79c6">return</span> <span style="color:#8be9fd;font-style:italic">super</span>(VenueManager, self)<span style="color:#ff79c6">.</span>get_queryset()<span style="color:#ff79c6">.</span>filter(zip_code<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;00000&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">8</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">10</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Venue</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">11</span>     name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Venue Name&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">120</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">12</span>     address <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">13</span>     zip_code <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Zip/Post Code&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">12</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">14</span>     phone <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Contact Phone&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">20</span>, blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">15</span>     web <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>URLField(<span style="color:#f1fa8c">&#39;Web Address&#39;</span>, blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">16</span>     email_address <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>EmailField(<span style="color:#f1fa8c">&#39;Email Address&#39;</span>,blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">17</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">18</span>     venues <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>Manager()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">19</span>     local_venues <span style="color:#ff79c6">=</span> VenueManager()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">20</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">21</span>     <span style="color:#ff79c6">def</span> __str__(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">22</span>        <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span></code></pre></div><p>Let’s take a look at the changes:</p>
+<ul>
+<li><strong>Lines 5 to 7</strong> is the new <code>VenueManager</code> class. The structure is the same as the <code>EventManager</code> class, except this time we’re overriding the default <code>get_queryset()</code> method and returning a filtered list that only contains local venues.</li>
+<li>In <strong>Line 18</strong> I have renamed the default manager to <code>venues</code></li>
+<li>In <strong>Line 19</strong> we’re adding the custom model manager (<code>VenueManager</code>)</li>
+</ul>
+<p>Note that there is no limit to how many custom managers you can add to a  Django model instance. This makes creating custom filters for commonly  used queries a breeze. Once you have save the <a href="http://models.py/">models.py</a> file, you can use the custom methods in your code. For example, the default  manager method has been renamed, so you can use the more intuitive <code>venues</code>, instead of <code>objects</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Venue<span style="color:#ff79c6">.</span>venues<span style="color:#ff79c6">.</span>all()  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Venue: South Stadium<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Venue: West Park<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Venue: North Stadium<span style="color:#ff79c6">&gt;</span>, <span style="color:#ff79c6">&lt;</span>Venue: East Park<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span></code></pre></div><p>And our new custom manager is also easily accessible:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Venue
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> Venue<span style="color:#ff79c6">.</span>local_venues<span style="color:#ff79c6">.</span>all()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>QuerySet [<span style="color:#ff79c6">&lt;</span>Venue: West Park<span style="color:#ff79c6">&gt;</span>]<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><h2 id="model-methods">Model Methods</h2>
+<p>Django’s <code>Model</code> class comes with many built-in methods. We have already used many of them - <strong><code>save()</code></strong>, <strong><code>delete()</code></strong>, <strong><code>__str__()</code></strong> and others. Where manager methods add table-level functionality to Django’s models, model methods add row-level functions that act on individual  instances of the model.</p>
+<p>There are two common cases where you want to play with model methods:</p>
+<ol>
+<li>When you want to add business logic to the model by adding custom model methods; and</li>
+<li>When you want to override the default behavior of a built-in model method.</li>
+</ol>
+<h3 id="custom-model-methods">Custom Model Methods</h3>
+<p>As always, it’s far easier to understand how custom model methods work by writing a couple, so let’s go ahead and modify our <code>Event</code> class (changes in bold):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># myclub_rooteventsmodels.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Event</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>      name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Event Name&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">120</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3</span>      event_date <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>DateTimeField(<span style="color:#f1fa8c">&#39;Event Date&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>      venue <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(Venue, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>CASCADE)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span>      manager <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(User, blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, null<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>SET_NULL)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">6</span>      attendees <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ManyToManyField(MyclubUser)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">7</span>      description <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>TextField(blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">8</span>      events <span style="color:#ff79c6">=</span> EventManager()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">10</span>     <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">event_timing</span>(self, date):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">11</span>         <span style="color:#ff79c6">if</span> self<span style="color:#ff79c6">.</span>event_date <span style="color:#ff79c6">&gt;</span> date:
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">12</span>             <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;Event is after this date&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">13</span>         <span style="color:#ff79c6">elif</span> self<span style="color:#ff79c6">.</span>event_date <span style="color:#ff79c6">==</span> date:
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">14</span>             <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;Event is on the same day&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">15</span>         <span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">16</span>             <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;Event is befor this date&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">17</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">18</span>     @property
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">19</span>     <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">name_slug</span>(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">20</span>         <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>name<span style="color:#ff79c6">.</span>lower()<span style="color:#ff79c6">.</span>replace(<span style="color:#f1fa8c">&#39; &#39;</span>,<span style="color:#f1fa8c">&#39;-&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">21</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">22</span>     <span style="color:#ff79c6">def</span> __str__(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">23</span>         <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>name
+</span></span></code></pre></div><p>Let’s have a look at what’s happening with this new code:</p>
+<ul>
+<li>In <strong>Line 10</strong> I have added a new method called <code>event_timing</code>. This is a straight forward method that compares the event date to the  date passed to the method and returns a message stating whether the  event occurs before, on or after the date.</li>
+<li>In <strong>Line 19</strong> I have added another custom method that returns a slugified event name. The <strong><code>@property</code></strong> decorator on <strong>Line 18</strong> allows us to access the method directly, like an attribute. Without the <strong><code>@property</code></strong>, you would have to use a method call (<strong><code>name_slug()</code></strong>).</li>
+</ul>
+<p>Let’s test these new methods out in the Django interactive interpreter. Don’t forget to save the model before you start!</p>
+<p>First, the <strong><code>name_slug</code></strong> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> events <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>events<span style="color:#ff79c6">.</span>all()
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">for</span> event <span style="color:#ff79c6">in</span> events:
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>     <span style="color:#8be9fd;font-style:italic">print</span>(event<span style="color:#ff79c6">.</span>name_slug)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span> 
+</span></span><span style="display:flex;"><span>test<span style="color:#ff79c6">-</span>event
+</span></span><span style="display:flex;"><span>club<span style="color:#ff79c6">-</span>presentation<span style="color:#ff79c6">---</span>juniors
+</span></span><span style="display:flex;"><span>club<span style="color:#ff79c6">-</span>presentation<span style="color:#ff79c6">---</span>seniors
+</span></span><span style="display:flex;"><span>gala<span style="color:#ff79c6">-</span>day
+</span></span></code></pre></div><p>This should be easy to follow. Notice how the <strong><code>@property</code></strong> decorator allows us to access the method directly like it was an attribute. I.e. <strong><code>event.name_slug</code></strong> instead of <strong><code>event.name_slug()</code></strong>.</p>
+<p>Now to test the <strong><code>event_timing</code></strong> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> datetime <span style="color:#ff79c6">import</span> datetime, timezone
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>events<span style="color:#ff79c6">.</span>get(name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Gala Day&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>event_timing(datetime<span style="color:#ff79c6">.</span>now(timezone<span style="color:#ff79c6">.</span>utc))          
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#39;Event is befor this date&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><p>Too easy.</p>
+<p><strong>Date and Time in Django</strong></p>
+<p>Something to note when working with dates in Django. Django uses timezone aware  dates, so if you are doing date comparisons like the in any of your  code, not just in class methods, you can’t use <code>datetime.now()</code> as Django will throw a <code>TypeError: can't compare offset-naive and offset-aware datetimes</code>. To avoid this error, you must provide timezone information with your dates.</p>
+<h3 id="overriding-default-model-methods">Overriding Default Model Methods</h3>
+<p>It’s common to want to override built-in model methods like <strong><code>save()</code></strong> and <strong><code>delete()</code></strong> to add business logic to default database behavior.</p>
+<p>To override a built-in model method you define a new method with the same name. For, example, let’s override the <code>Event</code> model’s default <strong><code>save()</code></strong> method to automatically assign management of the event to a staff member (changes in bold):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># myclub_rooteventsmodels.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Event</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>      name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(<span style="color:#f1fa8c">&#39;Event Name&#39;</span>, max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">120</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3</span>      event_date <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>DateTimeField(<span style="color:#f1fa8c">&#39;Event Date&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>      venue <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(Venue, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>CASCADE)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span>      manager <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ForeignKey(User, blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, null<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>, on_delete<span style="color:#ff79c6">=</span>models<span style="color:#ff79c6">.</span>SET_NULL)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">6</span>      attendees <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>ManyToManyField(MyclubUser)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">7</span>      description <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>TextField(blank<span style="color:#ff79c6">=</span><span style="color:#ff79c6">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">8</span>      events <span style="color:#ff79c6">=</span> EventManager()
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">10</span>     <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">save</span>(self, <span style="color:#ff79c6">*</span>args, <span style="color:#ff79c6">**</span>kwargs):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">11</span>         self<span style="color:#ff79c6">.</span>manager <span style="color:#ff79c6">=</span> User<span style="color:#ff79c6">.</span>objects<span style="color:#ff79c6">.</span>get(username<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;abbyb&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">12</span>         <span style="color:#8be9fd;font-style:italic">super</span>(Event, self)<span style="color:#ff79c6">.</span>save(<span style="color:#ff79c6">*</span>args, <span style="color:#ff79c6">**</span>kwargs)
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span></code></pre></div><p>The new <strong><code>save()</code></strong> method starts on <strong>Line 10</strong>. In the overridden <code>save()</code> method, we’re first assigning the staff member with the username “abbyb” to the <code>manager</code> field of the model instance (<strong>Line 11</strong>), and then we call the default <code>save()</code> method with the <strong><code>super()</code></strong> function to save the model instance to the database (<strong>Line 12</strong>).</p>
+<p>Once you save your <strong><code>models.py</code></strong> file, you can test out the overridden model method in the Django interactive shell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Event
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> events.models <span style="color:#ff79c6">import</span> Venue
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#ff79c6">from</span> datetime <span style="color:#ff79c6">import</span> datetime, timezone
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> v <span style="color:#ff79c6">=</span> Venue<span style="color:#ff79c6">.</span>venues<span style="color:#ff79c6">.</span>get(<span style="color:#8be9fd;font-style:italic">id</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e <span style="color:#ff79c6">=</span> Event<span style="color:#ff79c6">.</span>events<span style="color:#ff79c6">.</span>create(name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;New Event&#39;</span>, event_date<span style="color:#ff79c6">=</span>datetime<span style="color:#ff79c6">.</span>now(timezone<span style="color:#ff79c6">.</span>utc), venue<span style="color:#ff79c6">=</span>v)
+</span></span></code></pre></div><p>Once the new record has been created, you can test to see if your override worked by checking the <code>manager</code> field of the <code>Event</code> object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> e<span style="color:#ff79c6">.</span>manager
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>User: abbyb<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span>
+</span></span></code></pre></div><h2 id="model-inheritance">Model Inheritance</h2>
+<p>Models are simply Python classes, so  inheritance works the same way as normal Python class inheritance. The  two most common forms of model inheritance in Django are:</p>
+<ol>
+<li><strong>Multi-table inheritance</strong>, where each model has its own database table; and</li>
+<li><strong>Abstract base classes</strong>, where the parent model holds information common to all its child classes, but doesn’t have a database table.</li>
+</ol>
+<p>You can also create proxy models that modify the Python-level behavior of a model without modifying the underlying model fields, however, we won’t  be covering them here. See the <a href="https://docs.djangoproject.com/en/2.2/topics/db/models/#proxy-models">Django documentation</a> for more information on proxy models.</p>
+<h3 id="multi-table-inheritance">Multi-table Inheritance</h3>
+<p>Multi-table inheritance is straight  forward—the parent class is a normal model and the child inherits the  parent by declaring the parent class in the child class declaration. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">MyclubUser</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span>    first_name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>)
+</span></span><span style="display:flex;"><span>    last_name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>)
+</span></span><span style="display:flex;"><span>    email <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>EmailField(<span style="color:#f1fa8c">&#39;User Email&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> __str__(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>first_name <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#ff79c6">+</span> self<span style="color:#ff79c6">.</span>last_name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Subscriber</span>(MyclubUser):
+</span></span><span style="display:flex;"><span>    date_joined <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>DateTimeField()
+</span></span></code></pre></div><p>The parent model in the example is the <code>MyclubUser</code> model from our <code>events</code> app. The <code>Subscriber</code> model inherits from <code>MyclubUser</code> and adds an additional field (<code>date_joined</code>). As they are both standard Django model classes, a database table will be created for each model.</p>
+<h3 id="abstract-base-classes">Abstract Base Classes</h3>
+<p>Abstract base classes are handy when  you want to put common information into other models without having to  create a database table for the base class.</p>
+<p>You create an abstract base class by adding the <strong><code>abstract = True</code></strong> class <code>Meta</code> option (<strong>Line 7</strong> in this example):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#bd93f9">1</span>  <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">UserBase</span>(models<span style="color:#ff79c6">.</span>Model):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">2</span>      first_name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3</span>      last_name <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>CharField(max_length<span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">4</span>      email <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>EmailField(<span style="color:#f1fa8c">&#39;User Email&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">6</span>      <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Meta</span>:
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">7</span>          abstract <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">8</span>          ordering <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#39;last_name&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">9</span>  
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">10</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">11</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">MyclubUser</span>(UserBase):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">12</span>     <span style="color:#ff79c6">def</span> __str__(self):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">13</span>         <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>first_name <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#ff79c6">+</span> self<span style="color:#ff79c6">.</span>last_name
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">14</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">15</span> 
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">16</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Subscriber</span>(UserBase):
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">17</span>     date_joined <span style="color:#ff79c6">=</span> models<span style="color:#ff79c6">.</span>DateTimeField()
+</span></span></code></pre></div><p>Abstract base classes are also useful for declaring class <strong><code>Meta</code></strong> options that are inherited by all child models (<strong>Line 8</strong>).</p>
+<p>As the <code>MyclubUser</code> model from our <code>events</code> app now inherits the first name, last name and email fields from <code>UserBase</code>, it only needs to declare the <strong><code>__str__()</code></strong> function to behave the same way as the original <strong><code>MyclubUser</code></strong> model we created earlier.</p>
+<p>This example is very similar to the example for multi-table inheritance in  the previous section, and if you saved and migrated these models, you  would get exactly the same result as the above code —Django would create the <strong><code>events_myclubuser</code></strong> and <strong><code>events_subscriber</code></strong> tables in your database, however, because <strong><code>UserBase</code></strong> is and abstract model, it won’t be added to the database as a table.</p>
+<h2 id="references">References:</h2>
+<ul>
+<li><a href="https://raturi.in/blog/everything-about-django-orm-querysets-field-lookups-model-managers-aggregate-functions-tutorial/">https://raturi.in/blog/everything-about-django-orm-querysets-field-lookups-model-managers-aggregate-functions-tutorial/</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml">https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

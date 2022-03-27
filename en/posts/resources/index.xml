@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Resources on Abo Tyim</title>
+    <link>https://abotyim.github.io/en/posts/resources/</link>
+    <description>Recent content in Resources on Abo Tyim</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/en/posts/resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Programming Language</title>
+      <link>https://abotyim.github.io/en/posts/resources/python/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/en/posts/resources/python/</guid>
+      <description>Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</description>
+      <content:encoded><![CDATA[<h3 id="youtube">Youtube:</h3>
+<h4 id="channels">Channels:</h4>
+<ul>
+<li><a href="https://www.youtube.com/c/CSDojo">CS Dojo:</a></li>
+<li><a href="https://www.youtube.com/c/anthonywritescode">anthonywritescode:</a></li>
+<li><a href="https://www.youtube.com/channel/UCWLhIFVgFNexbE_T0e-X5vw">Florian Dahlitz:</a></li>
+<li><a href="https://www.youtube.com/user/sentdex">sentdex:</a></li>
+<li><a href="https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g">Corey Schafer:</a></li>
+<li><a href="https://www.youtube.com/user/Albert10110">Al Sweigart:</a></li>
+<li><a href="https://www.youtube.com/c/realpython">Real Python:</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Django Web Framework</title>
+      <link>https://abotyim.github.io/en/posts/resources/django/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/en/posts/resources/django/</guid>
+      <description>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.</description>
+      <content:encoded><![CDATA[<h3 id="youtube">Youtube:</h3>
+<h4 id="channels">Channels:</h4>
+<ul>
+<li><a href="https://www.youtube.com/c/veryacademy">Very Academy</a>:</li>
+<li><a href="https://www.youtube.com/channel/UC33uwXXDrI5TxG4IXnjS28g">The Dumbfounds</a>:</li>
+<li><a href="https://www.youtube.com/c/CodingEntrepreneurs">CodingEntrepreneurs</a>:</li>
+<li><a href="https://www.youtube.com/c/DennisIvy">Dennis Ivy</a>:</li>
+<li><a href="https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ">JustDjango:</a></li>
+<li><a href="https://www.youtube.com/c/LegionScript">Legion Script:</a></li>
+<li><a href="https://www.youtube.com/c/Codemycom">Codemy.com:</a></li>
+<li><a href="https://www.youtube.com/channel/UC_qbdWG_xbcVI7dlwrhxG5g">Code Artisan Lab:</a></li>
+<li><a href="https://www.youtube.com/channel/UCh9biyYSlMzM9T3Xtxmglww">Code Environment:</a></li>
+<li><a href="https://www.youtube.com/c/Pyplane">Pyplane:</a></li>
+<li><a href="https://www.youtube.com/c/AaravTech">Aarav Tech:</a></li>
+<li><a href="https://www.youtube.com/c/VitorFreitas">Vitor Freitas:</a></li>
+<li><a href="https://www.youtube.com/c/MaxGoodridgeTech">Max Goodridge:</a></li>
+<li><a href="https://www.youtube.com/c/Coreyms">Corey Schafer:</a></li>
+<li><a href="https://www.youtube.com/c/PrettyPrintedTutorials">Pretty Printed</a>:</li>
+<li><a href="https://www.youtube.com/channel/UC3YTUJaWjmCHll2O9w0CrJw">Django Lessons:</a></li>
+</ul>
+<br>
+<h3 id="playlist">Playlist:</h3>
+<h4 id="forms">Forms:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxdcI7OJZoqp-_Mf7QvZMRC">Django Forms</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9EGO3TOlWLgrc46EhTgj1Ih">Build a Dynamic Filter Form</a>.</li>
+</ul>
+<h4 id="selenium">Selenium:</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=XnSQ6sRGKzI&amp;list=PLOLrQ9Pn6cazIlOgYD8w4t_aRoaPb_kmS">Selenium Mastery with Django</a>.</li>
+</ul>
+<h4 id="testing">Testing:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caw3ilqDR8_qezp76QuEOlHY">Pytest Mastery with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cay7t8VZ3wmn6QdAxzTx60F3">Learn Django - Testing Series</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=qwypH3YvMKc&amp;list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM">Django Testing Tutorial - How To Test Your Django Applications (Using The Unittest Module)</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=B-qYGeLpUtE&amp;list=PLbpAWbHbi5rPC8O7WIPXA4V8JLRnTPVGR">Django Pytest Tutorial</a>.</li>
+</ul>
+<h4 id="api">API:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caw0PjVwymNc64NkUNbZlhFw">Learn Django Rest Framework</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cayDs8VMTWyvjrVkbnK15Juo">Next.js | DRF - Ecommerce Project</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cawJi6s118w1et1jj0Prv9RI">Django Project - Quiz API</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxNAoqrwOHx5B1-JL6vdD6C">Django Project - Image API Service</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazAmRKf6t79uaaqJSgGcwRo">Learn Django API</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLbpAWbHbi5rMV3H0S5IDK3cSRC1Jas3VP">Create A REST API with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg3k9JKxT7ExP8Xvt4GeG5zc">Django REST Framework Tutorials</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9HzbIXYN6D3wOZ0wUrqNs_d">Build an API with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9Hl9U5JYWVJHoZ-1uRsBZ_X">Teach Me Django</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=31R1gSvBn1g&amp;list=PLPSM8rIid1a0SMqmFOfoHRbyfQ5ipQX79">Local Reviews Site With NextJS and Django Rest Framework</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPSM8rIid1a2nIuE4mB5Ro-QZtHpMFLse">Todo App Django Rest Framework + React</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLCC34OHNcOtoYO3FuoCEt9r7AbfuDKse_">Build An API With Python and Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmrQMY9hQrslGXBnMRtyP41m">Django REST API</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLmDLs7JbXWNjr5vyJhfGu69sowgIUl8z5">Django Rest Framework</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=7AkTv4Sl9S4&amp;list=PLgjw1dR712jpVqr5zjinNOK2to9hvvuzN">Django, Django Rest Framework and React js tutorial series</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL1WVjBsN-_NJ4urkLt7iVDocVu_ZQgVzF">Django Rest Framework Tutorials</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLxk3TkuAYnrO32ABtQyw2hLRWt1BUrhj">Introduction to Django Rest Framework</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg1gPEHotYAhNAPsisChkyTc">Authentication with Django &amp; React</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxq5Zw2yEKnbDSs1qqD87ko">Next.js | GraphQL | Django - Ecommerce Project</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxz00JcLeOR-Rtq0Yi01oBH">GraphQL</a>.</li>
+</ul>
+<h4 id="models--orm">Models &amp; ORM:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml">Django ORM Mastery Series</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cayWzj2P3eQvnLxuPz1Q4R84">Learn Django - Models</a>.</li>
+</ul>
+<h4 id="translate">Translate:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxBh8bFcdm22gky-e3CeC32">Django Internationalization</a>.</li>
+</ul>
+<h4 id="admin">Admin:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazhaxNDhcOIPYXt2zZhAXKO">Learn Django - Admin</a>.</li>
+</ul>
+<h4 id="packages">Packages:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazxAaLad2ZABVRqS1XpvUrB">Learn Django - Package Reviews</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9H_8wqcxoKTMU5gZE6BOyhm">Django Package Review</a>.</li>
+</ul>
+<h4 id="projects">Projects:</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SlHBNXW1rTk&amp;list=PLEsfXFp6DpzRMby_cSoWTFw8zaMdTEXgL">Try Django 3.2 - Python Web Development Tutorial Series</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxY4Q1U9RjO1bulQp5NDYS_">Django - Ecommerce Project</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cay_cQkyg-WYYiJ_EKU8KWKh">Django - Ecommerce Project v2</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazStWmb0DpaNgFz_RzKawo8">Learn Django - Project Chatrooms</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cawWd-5UZM6CIm0uqFXeBcTd">Django Project - Build a Simple Blog</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=en4fg1F1gRs&amp;list=PLbpAWbHbi5rNUuLTzreCl1g212G7qgzpR">Django 2 Tutorial: Build A Budget Application</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLEsfXFp6DpzT-1RVQVsL7C2XGMeQzfqAL">Django Bootcamp - October 2020</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=6MoemXFRDBE&amp;list=PLEsfXFp6DpzRcxP23Da8aFrQZ9cjn73cb">Django Code Review</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg1pUMaTJ4WSgnyvWfLGmwDm">Python Django 2021 Course Sessions</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng">Django Ecommerce Website</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg38qZ0KHkJj-paDQAAu9HiP">Django Projects</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=xv_bwpA_aEA&amp;list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO">Django (3.0) Crash Course Tutorials | Customer Management App</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9Hp8j_1NRCK6pNVFfSf4G7a">Build an Ecommerce Website with Django and React</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9F2vBXypzzplFjcHUaKWWP5">Build an Ecommerce Website with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9FxCtnLoIHAs6hIkJyd1dEx">Django and React</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPSM8rIid1a1odNhUPUQiuP5lWTTp82qy">Video Sharing Web App Python 3 &amp; Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPSM8rIid1a0qiCpbfujex5lZoXr2SRFC">Food Delivery Web App With Python 3 and Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPSM8rIid1a3TkwEmHyDALNuHhqiUiU5A">Social Media Web App With Python 3 and Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi">Create A Simple Django Blog</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLCC34OHNcOtorVO5N-uxQkjU2_P4VHlqK">Air Quality Weather App With Python and Django</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=B3EU_YByhbg&amp;list=PLgnySyq8qZmpsIXNw-A7oLEHeCHqhc2Ac">GYM Management System in Django and PostgreSQL</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmrxJvJbZC1eb7PD4bu0a-sB">Ecommerce Website in Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmoMdJpofzoxxIJtZE7BRf2d">Django ReactJs</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmoaNY6EoMDVfh7D5uCSTP-l">Employee Register App</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmpa9xwYhI9XbwI9sbNR7bWK">Django News Website</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jrkldk1GFPQkPsp1RsZ3K1u">Quiz App in Django and Javascript</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jqvZ9WBpQ7JvljGO5DqHXfF">Django with Javascript</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jpcMynnYIQQJ8qBgk5cy9AZ">Django Social Network Project v2.0 with  JS</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=HBqYKthsB2E&amp;list=PLgjw1dR712jqjwhvA2V6_DTVVKou_HHlW">Django &amp; Beautiful Soup - Building an Amazon price tracker</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jrFymnggSS1k2uuhd3QO6fL">Django with React js</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jp_TI1wlrifw2Wm02zI14y1">Django with Data Science &amp; OpenCV</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jpsbwDlbuS2tE7UbH-_9OPb">Django realtime crypto app</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712joFJvX_WKIuglbR1SNCeno1">Social Network in Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jqRdvbOYxBugzbqlfcy17DU">django geolocation</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=ZfTWw8V-S0Y&amp;list=PLgnySyq8qZmo2RXuWEpuOFl5l0xm1-iBC">Django Full Project</a>.</li>
+</ul>
+<h4 id="channel">Channel:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9EnQmnfTgUzCfzbbnc-oEbZ">Build a chat application</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=gy8ypTWT4wY&amp;list=PLPSM8rIid1a2UQnLjcAo9vTTtZH2aLpjO">Django Chat App With Django Channels</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPSM8rIid1a0FVeO1qaY1-AavZ5egKiP7">Django Channels 3</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=iDVlcg7APUs&amp;list=PL1WVjBsN-_NL9xe-CfIF5ns7FyNI2YC7X">Django Channels 2</a>.</li>
+</ul>
+<h4 id="deploy">Deploy:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caygLj-lii-zqKkdsx7o6ab9">Learn Django - Deploy</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmqqncy5Pa4PVw661-C6mQhD">Heroku Deployment</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLlM3i4cwc8zBRQOGXuLrCLNfpVOuVLuwZ">Deploy Django - From Zero to Hero</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLlM3i4cwc8zB5EnHSEQ8yGhB2FB-9RzJW">Django Deployments</a>.</li>
+</ul>
+<h4 id="other">Other:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cax_DFymlqwefG9-UbDU3ROL">Learn Django - Theory</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxNb9eFZJ6LfY29nZkKmmXT">Learn Django - Class-Based Views</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6caz-6WpcBYxV84g9gwptoN20">Learn Django - Celery</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazCfL7v4CdaykNoWMQymM_C">Docker Mastery with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOLrQ9Pn6cazTA2QyG2R2UT7MQCAOK3W4">Learn Django</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=JsyySe17gjE&amp;list=PLbpAWbHbi5rNBl6vZhiWkNNeBcJHYwyi2">Django Security - Build More Secure Web Applications</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=GULbDX1q_rM&amp;list=PLbpAWbHbi5rMM3i--gfgjwQ404DZmwwd3">Django Fundamentals For Beginners - Get Started Quickly!</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=cgxkifoS95E&amp;list=PLbpAWbHbi5rM736O4ivIfedpetuRFMB9U">Django Design Patterns - Make Your Applications Cleaner And Maintainable</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg0Im-gJg54CT1Vr7imTDL68">Real Django Website</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL-51WBLyFTg2zfRmcHpJvY4wEfh8EKivh">Django How To&hellip;</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=dXZim_jgaiI&amp;list=PLLRM7ROnmA9GTk309hETb92m_XN7HHiSJ">Custom Django</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=HHx3tTQWUx0&amp;list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy">Django Wednesdays</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmr9HInLBkLT-67cVPNxBq1u">Django 3</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmqqsuIXn1haUU2zF9fPSp0N">Django Tutorials</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgnySyq8qZmppPt0OINwCY6pEz__71lrw">Question Answer Website in Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jr9OIvqyKntapFHndc0SwsP">Practical Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jqq75ZDdow9Cx0L2ahUaE6G">Beyond the basics of Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLgjw1dR712jrU8Ck7aXqvMSMI05UBZ7HW">Django and Stripe payments</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=Sre0SJEpiaU&amp;list=PL1WVjBsN-_NLBFi3lU4xnwy-AFTbdbxiX">Celery with Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PL1WVjBsN-_NIdlnACz0Mxuq8VcuxER-is">Django 2 Tutorials</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=FSHzVJTlCCc&amp;list=PLlM3i4cwc8zC-4AA_uD_MWeBK0Vl22KEW">Django</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLlM3i4cwc8zDBTisCexry-FPoGhHO2uE_">Payments</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLlM3i4cwc8zD_G9jekzE3prY65Lv-p_fY">Celery</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLlM3i4cwc8zB5dz4wtYnHOCYx_36IRyI6">Django Applications</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=tYKRAXIio28&amp;list=PL-51WBLyFTg2rfmjQAPA1_suzrZsai9tR">Live Streams &amp; Guests</a>.</li>
+</ul>
+<h3 id="crash-courses">Crash Courses:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xjMP0hspNLE">Authentication &amp; Refreshing Tokens Implementation</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=EudKs1HPUfE&amp;list=PLlM3i4cwc8zCkU85SfXiwTC-SRsh48BJG">Abstract User, User Profile and Signals in Django (how to add extra fields to the user model).</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

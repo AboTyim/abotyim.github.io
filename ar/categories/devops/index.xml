@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DevOps on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/categories/devops/</link>
+    <description>Recent content in DevOps on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تقنية الـ Kubernetes</title>
+      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
+      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
+<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

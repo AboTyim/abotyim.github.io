@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>تحليل البيانات on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</link>
+    <description>Recent content in تحليل البيانات on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تحليل البيانات مع بايثون</title>
+      <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
+      <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pandas">Pandas:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVwzaWa2Kp7bgIVcJsJ5XGW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGchpgdUPu4vQNQdO4L0UiP">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F">أبو بكر سليمان.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
+</ul>
+<h3 id="numpy">Numpy:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVAMh7Is9PRsM7IMLhLS787">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGDYq-dnVCsELEIq_7HK7Ca">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
+</ul>
+<h3 id="matplotlib">Matplotlib:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
+</ul>
+<h3 id="seaborn">Seaborn:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
+</ul>
+<h3 id="علم-البيانات">علم البيانات:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e">حسام الحوراني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6">مدرسة السايبر: تحليل البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5">إيهاب دياب: Data Analyst Course.</a></li>
+<li><a href="https://www.rwaq.org/courses/sea_python_level1">منصة رواق: مدخل إلى علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB">Ons أنس: Data Science and Machine Learning.</a></li>
+<li><a href="https://www.youtube.com/watch?v=hJZWy-VpDGI&amp;list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM">الصافي حجازي: علم البيانات - Data Science.</a></li>
+<li><a href="https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/">مدونة بايثونات: مكتبات علم البيانات بالبايثون.</a></li>
+</ul>
+<br>
+<blockquote>
+<p><a href="http://www.saaid.net/Doat/sudies/35.htm">« لا يستطاع العلم براحة الجسم »</a></p>
+<ul>
+<li>الإمام الحافظ: يحيى بن أبي كثير</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

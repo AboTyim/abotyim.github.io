@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>أبو تيم</title>
+    <link>https://abotyim.github.io/ar/</link>
+    <description>Recent content on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تعلم نظام إدارة النسخ Git</title>
+      <link>https://abotyim.github.io/ar/posts/resources/git/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/git/</guid>
+      <description>برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
+<li><a href="https://satr.codes/courses/ZlKLfufzmW/view">منصة سطر: Git 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
+<li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="http://lgrth.me/gitbook">خوارزميون: المبرمجون وإدارة الشيفرات البرمجية Git.</a></li>
+<li><a href="https://mulham.github.io/git-qa/">ملهم: أسئلة وأجوبة حول git.</a></li>
+<li><a href="https://bandar.design/blog/%D8%B4%D8%B1%D8%AD-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-git-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81-%D8%A8%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D8%B3%D8%AE-1/">بندر: شرح أساسيات استخدام Git الجزء الأول.</a></li>
+<li><a href="https://bandar.design/blog/%D8%B4%D8%B1%D8%AD-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-git-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81-%D8%A8%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D8%B3%D8%AE-2/">بندر: شرح أساسيات استخدام Git الجزء الثاني.</a></li>
+<li><a href="https://notme20n.wordpress.com/2020/01/24/%d9%85%d8%a7%d9%87%d9%88-git-%d8%9f-%d9%88%d9%85%d8%a7%d9%87%d9%88-github-%d8%9f/">عبير: ماهو Git ؟ وماهو github ؟</a></li>
+</ul>
+<br>
+<blockquote>
+<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>نظام التشغيل جنو لينكس GNU/Linux</title>
+      <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
+      <description>هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ol>
+<li>محمد عيسى:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN88blfl7hvm-wZ-sWtMeTQk">دورة فيدورا للمبتدئين</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN8d2mjL1Nrgj7UPG9nFKIzP">CentOS 7 Server</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-LCv0FUOEol9rkpCu9SdAV">RHEL7 RedHat - RHCSA</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_HT_N4ZutZMmN98C1-7qUP">RHCE 7 RedHat</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9jgJCc3-saDdZRO7Bo29MV">Security Enhanced Linux لتوزيعات ريدهات بالعربية</a></li>
+</ul>
+<br>
+<ol start="2">
+<li>فتحي العامري:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82mPezSNRYO-7zzk66_sAZHU">سطر أوامر لينكس</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82lIo7sn2JyxWtq8jmHte5Aq">دورة أوبنتو Ubuntu</a></li>
+</ul>
+<br>
+<ol start="3">
+<li>مصطفى حمودة:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLy1Fx2HfcmWBpD_PI4AQpjeDK5-5q6TG7">Linux System Administration</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLy1Fx2HfcmWCqqK9nmfsbNVnLMifsgWL5">OpenStack</a></li>
+</ul>
+<br>
+<ol start="4">
+<li>سالم يسلم:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=YreoSmDv4Kk">تثبيت OpenStack مع Yggdrasil.</a></li>
+<li><a href="https://www.youtube.com/watch?v=6eUMIVmpjDs">تثبيت وإعداد Yggdrasil لتخطي CGNAT.</a></li>
+</ul>
+<br>
+<ol start="5">
+<li>محمد الدسوقي:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=x0ogzuMFyoI&amp;list=PLOeEp3fYj7rrfSQVPVrZI8TJLnBW9pLvp">Containerization Thoughts</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOeEp3fYj7rojjhsYYgtM_iOOaPnigrmT">Ansible Administration Course</a></li>
+</ul>
+<br>
+<ol start="6">
+<li>منوع:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EY7KO6xlKBY&amp;list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ">RHCE 8 Complete Course in Arabic لكيرولس خليل</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha">Linux Certified System Administrator 8 (Arabic)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu">Linux Troubleshooting in Arabic آلاء زيدان</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-_imc-4LszS9u5zzSsjQ1_">Red Hat Enterprise Linux 7 (Admin 3) RH254 By Eng-Abeer Hosni</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnznAJG6RAI9RguTMpwJOEmltF689hDL6">أتمتة العمل بإستخدام Ansible لمحمد النجدي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg">Ansible Capsules بالعربي لوليد حسين.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE">arab Devops: Ansible in Arabic.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-86oMSw6pSc">ansible-playbook شرح.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg">دورة تعلم نظام اللينكس للمهندس نادر</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7">دورة أساسيات لينكس من تكناوي دوت نت</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">KVM</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnp3m4Mg2QyJoqDWygdwLck4">NFTables</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi">Jenkins بالعربي</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-">Jenkins in arabic (with Salem)</a></li>
+<li><a href="https://www.flexcourses.com/courses/linux">FlexCourses: دورة إدارة أنظمة لينكس Linux مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLBpclpRCG39qvWLuW94qCBzsr_iGTAyam">linux distributions reviews مراجعات</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://itwadi.com/node/2765">كتاب سطر أوامر لينكس</a></li>
+<li><a href="https://librebooks.org/ubuntu-server-guide-arabic/">كتاب دليل إدارة خواديم أوبنتو 14.04</a></li>
+<li><a href="https://librebooks.org/gnu-linux-advanced-administration/">كتاب الإدارة المتقدمة لجنو/لينكس</a></li>
+<li><a href="https://librebooks.org/simply-ubuntu/">كتاب أوبنتو ببساطة</a></li>
+<li><a href="https://librebooks.org/libreoffice-arabic-manual/">كتاب دليل المستخدم في ليبر أوفيس</a></li>
+</ul>
+<br>
+<h3 id="مواقع-ويب">مواقع ويب:</h3>
+<ul>
+<li><a href="https://itwadi.com/">وادي التقنية</a></li>
+<li><a href="https://gnulinuxsa.org/">جنو/لينكس</a></li>
+<li><a href="https://linuxarabia.co/">لينكس العرب</a></li>
+<li><a href="https://linuxaw.com/">عالم لينكس العربي</a></li>
+<li><a href="https://aosus.org/">أسس</a></li>
+<li><a href="https://linux-2-day.com/">لينكس اليوم</a></li>
+<li><a href="https://io.hsoub.com/linux/">مجتمع لينكس في حسوب</a></li>
+<li><a href="https://www.2linuxdz.com/">مدونة لينكس التقنية</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/c/Linuxtopia">Linuxtopia</a></li>
+<li><a href="https://www.youtube.com/c/iamlinux">I&rsquo;m Linux</a></li>
+<li><a href="https://www.youtube.com/channel/UCYkWmRBvj9sVlRW3ahIxE2g">Alaa Zidan</a></li>
+<li><a href="https://www.youtube.com/channel/UCxUVBDLTSaVxjg0EyCWfFug">Arab Linux Community</a></li>
+<li><a href="https://www.youtube.com/channel/UCiEzlPeTjGHXZlqFV7KxZEQ">Shako Mako Tech شكو ماكو</a></li>
+<li><a href="https://www.youtube.com/user/abdulmogeeb">عرب جنو/لينكس</a></li>
+<li><a href="https://www.youtube.com/c/GnuTux">Gnu Tux</a></li>
+<li><a href="https://www.youtube.com/channel/UCsX5z40As3fslwarTan4C8w">zer0err0r</a></li>
+<li><a href="https://www.youtube.com/channel/UCw-JnwpGHlboG0b9wNYvZ2Q">مفاتيح الحوسبة</a></li>
+<li><a href="https://www.youtube.com/channel/UCMoMDhWBeMZhQ2axH8A1FIw">ITSoft</a></li>
+<li><a href="https://www.youtube.com/channel/UCzNSX45GeudSt-8xcU7wtQw">عالم لينكس العربي</a></li>
+<li><a href="https://www.youtube.com/c/mmbesar/">محمد بيصار.</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/Arab_Linux">مجموعة جنو/لينكس</a></li>
+<li><a href="https://t.me/AGLGUT">إتحاد مجموعات غنو/لينكس والبرمجيات الحرة</a></li>
+<li><a href="https://t.me/linuxac_org">مجموعة مجتمع لينكس العربي</a></li>
+<li><a href="https://t.me/arabfossusers">مجموعة مستخدمي البرمجيات المفتوحة</a></li>
+<li><a href="https://t.me/aosus">مجموعة مجتمع أُسُس</a></li>
+<li><a href="https://t.me/gnugeeksgroup">مجموعة مهووسو جنو Gnu Geeks</a></li>
+<li><a href="https://t.me/gnugeeks">قناة مهووسو جنو Gnu Geeks</a></li>
+<li><a href="https://t.me/GNUTUX">قناة GNUTUX</a></li>
+<li><a href="https://t.me/linuxaw">قناة عالم لينكس العربي</a></li>
+</ul>
+<br>
+<blockquote>
+<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>إدارة الشيفرات البرمجية Git</title>
+      <link>https://abotyim.github.io/ar/posts/programming/git/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/programming/git/</guid>
+      <description>شرح كيفية التعامل مع أوامر Git.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>عملية كتابة الكود البرمجي تمر بعدة مراحل وهي الكتابة والتعديل والمسح و إضافة المزيد من الأكواد وهكذا، وتصل لمرحلة ما، تود أن تتراجع عن هذه التعديلات أو تريد معرفة التعديلات التي أجريت على الملف والتراجع عن تعديل بسيط مثلًا، تعتبر هذه الأشياء من أبسط الأمور التي يقدمها لك <code>git</code>.</p>
+<blockquote>
+<p>يمكن النظر له  بشكل مبسط على أنه ((قاعدة بيانات <strong>Database</strong>)) أو نظام ملفات ((<strong>File System</strong>)) يقوم بتخزين العمليات التي نقوم بها على الملف أو مجموعة الملفات بحيث يمكنك العودة لتلك التعديلات في أي وقت. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<br>
+<h3 id="مخطط-سير-عمل-git-workflow">مخطط سير عمل <strong>Git Workflow</strong>:</h3>
+<ol>
+<li>يقوم المبرمج بتعديل الملفات في مجلد المشروع الذي تعمل عليه.</li>
+<li>بعد ذلك يقوم بإضافة الملفات التي تم تعديلها إلى منطقة <strong>Staging Area</strong>: وهي المنطقة التي تنتقل إليها التعديلات التي قام بها المبرمج قبل تخزينها بشكل نهائي.</li>
+<li>يقوم بعمل <strong>commit</strong>، والتي بدورها تقوم بأخذ جميع التعديلات الموجودة في <strong>Staging Area</strong> ومن ثم تخزينها بشكل دائم إلى المستودع <strong>Repository</strong>.</li>
+</ol>
+<br>
+<h3 id="المتغير-init">المتغير <code>init</code>:</h3>
+<p>يستخدم لإنشاء مستودع ‫‪<strong>Repository</strong>‬‬ جديد، وهو المكان الي سيقوم <code>git</code> بتخزين قائمة التعديلات فيه للمشروع، يجب أن نكون في مجلد المشروع الرئيسي وكتابة الأمر التالي.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p><mark>ملاحظة:</mark> إنشاء المستودع الفارغ لايعني أنه سيقوم بتخزين الملفات أو التعديلات في مشروعك.</p>
+<br>
+<h3 id="المتغير-config">المتغير <code>config</code>:</h3>
+<p>إضافة معلوماتك على <strong>git</strong>، لكي يظهر هوية المستخدم الذي قام بالتعديلات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.email <span style="color:#f1fa8c">&#34;myemail@email.com&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.name <span style="color:#f1fa8c">&#34;myname&#34;</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-add">المتغير <code>add</code>:</h3>
+<p>يستخدم لمتابعة التعديلات على المف ونقله من حالة <strong>Untracked</strong> إلى حالة <strong>Tracked</strong> وله استخدام آخر هو نقل الملفات التي تم تعديلها من منطقة <strong>Staging Area</strong> إلى المستودع <strong>Repository</strong> بشكل دائم.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add views.py
+</span></span><span style="display:flex;"><span>git add models.py
+</span></span><span style="display:flex;"><span>git add urls.py
+</span></span></code></pre></div><p>لمتابعة التعديلات على المجلد كامل:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><p><mark>ملاحظة:</mark> سيتم متابعة التعديلات التي تجري على كافة الملفات في المجلد الحالي الذي نفذت فيه هذا الأمر.</p>
+<br>
+<h3 id="المتغير-status">المتغير <code>status</code>:</h3>
+<p>يستخدم الأمر <code>status</code> لمعرفة الملفات التي تم التعديل عليها، ومعرفة الفرع <strong>branch</strong> الحالي.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><br>
+<h3 id="المتغير-commit">المتغير <code>commit</code>:</h3>
+<p>هذا الأمر ببساطة هو الذي يلتقط الصورة أو حالة الملفات والخيار <strong>m</strong> خاص بوضع رسالة يقوم المبرمج بوضعها لتحفظ مع تلك الصورة، وهي توضح سبب التعديلات أو الخطأ الذي تم إصلاحه أو أي رسالة تبين الهدف من تلك التعديلات.
+أما الخيار <strong>a</strong> يستخدم لإضافة الملفات التي تم التعديل عليها إلى منطقة <strong>Staging Area</strong> ثم عمل <strong>commit</strong> للملفات ونقلها إلى المستودع <strong>Repository</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>‫‪git‬‬ ‫‪commit‬‬ ‫‪-m‬‬ ‫‪<span style="color:#f1fa8c">&#39;My‬‬ ‫&#39;</span>‪message‬‬
+</span></span><span style="display:flex;"><span>‫‪git‬‬ ‫‪commit‬‬ ‫‪-a -m‬‬ ‫‪<span style="color:#f1fa8c">&#39;My‬‬ ‫&#39;</span>‪message
+</span></span></code></pre></div><br>
+<h3 id="المتغير-diff">المتغير <code>diff</code>:</h3>
+<p>يستخدم لإظهار التعديلات التي أجريت على الملفات الحالية ومقارنتها بآخر commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff
+</span></span></code></pre></div><br>
+<h3 id="المتغير-reset">المتغير <code>reset</code>:</h3>
+<p>عند استخدام <code>add</code>، فنحن نقوم بنقل التعديلات إلى <strong>Staging Area</strong> لتصبح جاهزة لتخزينها بشكل دائم في المستودع من خلال <code>commit</code>، وهنا قد يحتاج المبرمج إلى إعادتها من تلك المنطقة، أي ما قبل <code>add</code>، أي التراجع عن التعديلات التي قان بها المبرمج، أي تتحول حالة الملف أو مجموعة الملفات من <strong>Unstaged</strong> إلى <strong>Modified</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git reset HEAD models.py
+</span></span></code></pre></div><p>يمتلك المتغيير <code>reset</code> أحد الخيارات المسماة <code>--hard</code>، واستخدام هذا الخيار قد يكون خطير للغاية كونه قد يتسبب في التراجع عن التعديلات التي قمت بها ليس فقط من <strong>Staging Area</strong> بل من <strong>Repository</strong>.</p>
+<br>
+<h3 id="المتغير-checkout">المتغير <code>checkout</code>:</h3>
+<p>قد تقوم بإجراء تعديلات على ملف أو مجموعة ملفات، وبعد فترة تكتشف لأي سبب أنك تريد إلغاء كل تلك التعديلات والعودة إلى الوضع التي كانت عليه تلك الملفات قبل إجراء تلك التعديلات الأخيرة أي عودة الملف لحالته لآخر <strong>commit</strong>، هنا يوفر <strong>git</strong> أسلوب مبسط لإجراء تلك العملية.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout models.py
+</span></span></code></pre></div><p><mark>ملاحظة:</mark> يستخدم الأمر <code>checkout</code> أيضًا للتنقل من <strong>Branch</strong> لآخر.</p>
+<p>الإنتقال لفرع موجود مسبقًا بشكل محلي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>إنشاء فرع <strong>Branch</strong> جديد والإنتقال إليه بشكل مباشر:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-branch">المتغير <code>branch</code>:</h3>
+<p>عرض كافة الفروع <strong>Branches</strong> الحالية للمستودع المحلي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch
+</span></span></code></pre></div><p>عرض كافة الفروع <strong>Branches</strong> الحالية للمستودع المحلي والبعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch --all
+</span></span><span style="display:flex;"><span>git branch -a
+</span></span></code></pre></div><p>إنشاء فرع <strong>Branch</strong> جديد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>إعادة تسمية فرع <strong>Branch</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -m <span style="color:#ff79c6">{{</span>old_branch_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>حذف فرع <strong>Branch</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-merge">المتغير <code>merge</code>:</h3>
+<p>دمج فرع <strong>Branch</strong> إلى الفرع الحالي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-rm">المتغير <code>rm</code>:</h3>
+<p>لحذف ملف بشكل مباشر من مجلد المشروع ومن المستودع:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm models.py
+</span></span></code></pre></div><p>لحذف مجلد بشكل مباشر من المشروع ومن المستودع:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -r utils
+</span></span></code></pre></div><p>لحذف ملف من git كمتابعة فقط، أي من <strong>Staged Area</strong> ولكن لا تريد حذفه من مجلد المشروع:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm --cached models.py
+</span></span></code></pre></div><br>
+<h3 id="المتغير-mv">المتغير <code>mv</code>:</h3>
+<p>يستخدم لنقل الملفات من مجلد إلى مكان آخر داخل مشروعك:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv <span style="color:#ff79c6">{{</span>path/to/file<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new/path/to/file<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>يستخدم أيضًا لإعادة تسمية الملفات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv <span style="color:#ff79c6">{{</span>filename<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_filename<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-log">المتغير <code>log</code>:</h3>
+<p>لرؤية سجل العمليات التي حدثت على المستودع الذي تعمل عليه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log
+</span></span></code></pre></div><p>سيتم عرض عدد <strong>commits</strong> التي تمت على المستودع الذي تعمل عليه، بالإضافة إلى تفاصيل كل <strong>commit</strong> من خلال عرض رقمها ومن قام بها والتاريخ والرسالة التي توضح سبب أو وصف <strong>commit</strong>، شيء مشابه لما يلي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>commit e524852999ed457e7e888c44f51dd9222bcb34d7
+</span></span><span style="display:flex;"><span>Author: Mr.Ahmed &lt;xyz@gmail.com&gt;
+</span></span><span style="display:flex;"><span>Date:   Mon Apr 12 22:14:11 2022 +0300
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    update page about.md
+</span></span></code></pre></div><p>لرؤية <strong>commits</strong> التي حدثت للمشروع بشكل مختصر:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline
+</span></span></code></pre></div><p>لرؤية <strong>commits</strong> التي حدثت على ملف أو المجلد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log <span style="color:#ff79c6">{{</span>path/to/file_or_directory<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لمعرفة التفاصيل بشكل أكبر على كل commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log -p
+</span></span></code></pre></div><p>عرض الإحصائيات بشكل مختصر:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --stat
+</span></span></code></pre></div><p>عرض معلومات لعدد محدد من <strong>commits</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log -n <span style="color:#ff79c6">{{</span>number<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>للبحث برسائل <strong>commits</strong> التي تحتوي على نص معين:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log -i --grep <span style="color:#ff79c6">{{</span>search_string<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-remote">المتغير <code>remote</code>:</h3>
+<p>لعرض المستودعات التي نتعامل معها عن بعد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div><p>لعرض معلومات المستودع البعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote show <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لتغير اسم مستودع بعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote rename <span style="color:#ff79c6">{{</span>old_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لحذف مستودع بعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote remove <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لإضافة مستودع بعيد جديد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>remote_url<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لتغير رابط مستودع بعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote set-url <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_url<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-clone">المتغير <code>clone</code>:</h3>
+<p>لنسخ مشروع بشكل كامل والحصول على نسخة من المستودع بشكل خاص:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone <span style="color:#ff79c6">{{</span>remote_repository_location<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-pull">المتغير <code>pull</code>:</h3>
+<p>لتحميل نسخة التغيرات التي حصلت في المستودع البعيد مع عمل دمج لها:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull
+</span></span></code></pre></div><br>
+<h3 id="المتغير-push">المتغير <code>push</code>:</h3>
+<p>لرفع التعديلات الموجودة في المستودع المحلي <strong>Local Repository</strong> الموجود في جهازك إلى المستودع البعيد:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>local_branch<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h3 id="المتغير-stash">المتغير <code>stash</code>:</h3>
+<p>يستخدم لحفظ حالة المستودع الحالية، قد تود حفظ حالة المشروع والإنتقال لفرع آخر <strong>Branch</strong> دون أن تقوم بعمل <strong>commit</strong> لأنك لم تنهي التعديلات الحالية فهنا بإمكانك استخدام <strong>Stash</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash
+</span></span></code></pre></div><p><mark>ملاحظة:</mark> تستطيع تخزين أكثر من حالة.</p>
+<p>لمعرفة قائمة الحالات التي قمت بتخزينها لكي تساعدك في الرجوع للحالة التي تريدها:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash list
+</span></span></code></pre></div><p>للرجوع لحالة مخصصة سابقة بعد مشاهدة قائمة الحلات من خلال الأمر السابق:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash apply stash@<span style="color:#ff79c6">{</span>2<span style="color:#ff79c6">}</span>
+</span></span></code></pre></div><p>لحذف كل الحالات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash clear
+</span></span></code></pre></div><br>
+<h3 id="المتغير-clean">المتغير <code>clean</code>:</h3>
+<p>قد تحتاج أحيانًا إلى إزالة جميع الملفات التي تكون حالتها <strong>Untracked</strong> في مشروعك وغير موجودة في ملف <code>.gitignore</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean -f
+</span></span></code></pre></div><p>الأمر التالي نفس الأمر السابق ولكن مع حذف المجلدات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean -f -d
+</span></span><span style="display:flex;"><span>git clean -fd
+</span></span></code></pre></div><p>لحذف الملفات بشكل تفاعلي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean -i
+</span></span></code></pre></div><p>لحذف المجلدات بشكل تفاعلي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean -i -d
+</span></span></code></pre></div><p>لإظهار الملفات التي يستم حذفها ولكن دون اتخاذ أي إجراء:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean --dry-run
+</span></span><span style="display:flex;"><span>git clean --dry-run -f
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git clean -n
+</span></span><span style="display:flex;"><span>git clean -n -f
+</span></span></code></pre></div><p>لإظهار المجلدات التي يستم حذفها ولكن دون اتخاذ أي إجراء:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean --dry-run -d
+</span></span><span style="display:flex;"><span>git clean -n -d
+</span></span></code></pre></div><br>
+<h3 id="المتغير-tag">المتغير <code>tag</code>:</h3>
+<p>يستخدم لإنشاء تسميات للنسخ أو لإصدارات الكود.</p>
+<p>عرض كافة الوسوم:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag
+</span></span></code></pre></div><p>إنشاء تسمية (وسم) مع وضع رسالة:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag <span style="color:#ff79c6">{{</span>tag_name<span style="color:#ff79c6">}}</span> -m <span style="color:#ff79c6">{{</span>tag_message<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><p>لحذف تسمية موجودة مسبقًا:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag -d <span style="color:#ff79c6">{{</span>tag_name<span style="color:#ff79c6">}}</span>
+</span></span></code></pre></div><br>
+<h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="http://lgrth.me/gitbook">خوارزميون: المبرمجون وإدارة الشيفرات البرمجية Git.</a></li>
+<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.</a></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="http://lgrth.me/gitbook">خوارزميون: المبرمجون وإدارة الشيفرات البرمجية Git.</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>لغة البرمجة بايثون</title>
+      <link>https://abotyim.github.io/ar/posts/resources/python/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/python/</guid>
+      <description>تعتبر لغة البرمجة بايثون سهلة الفهم وتتميز بالقوة والبساطة في آن واحد، وتتمتع بشيفرة سهلة القراءة، وتستخدم بشكل واسع في العديد من المجالات، وتعتبر من أسرع اللغات البرمجية تعلماً.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="دورات-شاملة">دورات شاملة:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs">أكاديمية الزيرو: Mastering Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ">كودزيلا: Master Python from Beginner to Advanced.</a></li>
+<li><a href="https://app.barmej.com/%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D8%B9%D9%86-%D9%84%D8%BA%D8%A9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86">منصة برمج: مسار بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN98I0nEXOuR_gK8b4w-NJcN">محمد عيسى: دورة Python 3 أساسيات ومتقدم.</a></li>
+<li><a href="https://www.youtube.com/watch?v=rzqjYKyciUM&amp;list=PLF8OvnCBlEY1j4hxoqXqJk08ASU7D_W87">حسين الربيعي: دورة برمجة بايثون Python Tutorials Arabic.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfExUkG0ANIZ2Z6H6K0QcaE">محمود أحمد: أساسيات بايثون الجزء الأول.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnM9y0sQRwjVz2-IwvnEJep">أكاديمية حسونة: بايثون الكل.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCwV-ZUabT5HVhLliTT9of2I">شبكة علوم: أساسيات Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWn51JDXe4_QKeqCSN0pfP3J">يونس: دورة بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE">عبد الرحمن جمال: Python for Beginners.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOazcliAXXivOrg9GiAVuoQg">أكاديمية الخوارزميات: دورة تعلم بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbiesxZbUuG-kxi7_dKBYkcY">نور حمصي: البايثون بيتكلم عربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82kmwTurwN1v7HgB9piMJrHS">فتحي العامري: دورة أساسيات Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEIpOvuXVDE0U00FDVGaUEOn">الصافي حجازي: Python 3 Basics.</a></li>
+<li><a href="https://www.rwaq.org/courses/introduction-to-programming">منصة رواق: مقدمة إلى برمجة الحاسب باستخدام لغة Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLN_sQXLvUWhWPrV7uLYOia_ZzFexVPrbI">المبرمج العربي: أساسيات Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwR1X4imwck6n1Pc0uXpToDn">محمد شوشان: بايثون المستوى الأول.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLUiXG1lgbv1Ekp8O5IrlfXCddUioSVtzq">مستر ماجد: Python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLEcIK87jo_7tJ42_STpXuZxHJ35VqaiaR">Two Pi: Python course - Level 1.</a></li>
+<li><a href="https://satr.codes/paths/OTZExaETAH/view">منصة سطر: Full-Stack Python.</a></li>
+<li><a href="https://academy.hsoub.com/learn/python-application-development/">أكادمية حسوب: دورة تطوير التطبيقات باستخدام لغة Python مدفوعة.</a></li>
+<li><a href="https://academy.hsoub.com/learn/computer-science/">أكاديمية حسوب: دورة علوم الحاسب - مدفوعة.</a></li>
+<li><a href="https://www.flexcourses.com/courses/python-intensive">فكلس كورسز: دورة برمجة بايثون - مدفوعة.</a></li>
+</ul>
+<h3 id="oop">OOP:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuXY3ddo_8nzUrgCyaX_WEIJljx_We-c1">كودزيلا.</a></li>
+<li><a href="https://www.youtube.com/watch?v=XWOT0qkRKTU">مجتمع بايثون العربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLwerRebku82H_OfcclIG0XU3aHUBNqWb-">محمد المالكي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAlLx-t8NswN3c34237O8VFZQej109y5E">محمد فاضل.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWklZzSwSEzqlwJgrDnSxLIj">يونس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmHvfmFZZ0XuzZYuoosG9kl">أكاديمية حسونة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqePpE7IWDRTDXo_jjGvJsRA">محمود أحمد.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEIcH9GBec7JsQjMmYWavvHL">الصافي حجازي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwQvoI1O-2_e5UcGux1oN6Mh">محمد شوشان.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8Ov3RrFB4jl6h9h6zvsSil5E">عبد الرحمن جمال.</a></li>
+</ul>
+<h3 id="algorithms--data-structures">Algorithms &amp; Data Structures:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLoS1tHBCtbIm28iZfb8orVxRQ3MxulZzi">أكاديمية فينكس للتدريب.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWl1qKoP9KlS7tFFK_5unoxu">يونس.</a></li>
+</ul>
+<h3 id="pyqt">PyQT:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNObq91Hubqi8FKJ0z5YkaAZ1">أكاديمية الخوارزميات PyQT5.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLN_sQXLvUWhXKYBsI1DbJyNkwgdDUIP0C">المبرمج العربي: PyQT5.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLTjpmsGYzQq5OyK7Tp25kx_m5rPr76DEC">محمود أحمد بناء تطبيقات ديسك توب.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnM9y0sQRwjVz2-IwvnEJep">محمود أحمد: تصميم تطبيقات الديسك توب Qt Designer.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdxuWWox8bJAiT1AuRjDM7Z">محمود أحمد: نظام لإدارة مكتبة بفروعها.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqe5fFCnTxameu-UBi2HI-Z0">محمود أحمد: برمجة تطبيق تحميل.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfkZ6qkdXlGyTAGQLFBEszz">محمود أحمد: كيفية اضافة auto-complete.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwRd3yoMoUe1H5QFK2I6sGo9">محمد شوشان.</a></li>
+</ul>
+<h3 id="kivy">Kivy:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGkerqrnl_u9woXKdtUH_hfs">محمود رؤوف.</a></li>
+</ul>
+<h3 id="tkinter">Tkinter:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmMhy8GltKHW5UJ_ZPnGJ0K">أكاديمية حسونة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEJBXcDCBoDGyo8paxECbATK">الصافي حجازي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLF8OvnCBlEY0S3aX6k28GK0mUd_Fm-OKv">حسين الربيعي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGmERb_7Uamn1eI9b3Gunh0g">محمود رؤوف.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwRTfD0_fpfx0VC4VvIN1vGi">محمد شوشان.</a></li>
+</ul>
+<h3 id="database">Database:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeY8rD2K0805eVrdR4qlxkpt">مهدي أحمد: Database ORM.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdlIavCvpToEyFDXaoE21P4">محمود أحمد: التعامل مع الداتا بيز MySQL.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9cLDwcw970ywLMAWQ07tIm">محمد عيسى: قواعد البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwTpy2iVUmTe9oXokzJfgBxe">محمد شوشان: ربط الداتا بيز.</a></li>
+</ul>
+<h3 id="security--network">Security &amp; Network:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9wzmjRlcO1UsqgO6KUTODC">محمد عيسى: برمجة شبكات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN8yzhFaq81BUegzMN_pdXFl">محمد عيسى: Nmap.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN89W45s3c6kbjs0fHM8fe0c">محمد عيسى: Mikrotik.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-k4ADq_kyuyWVSRPC5JxeG">عبد الله السكري.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLqi7yZF-SFcYEU_6u2MJw-pwl7d8wthpK">مجتمع iSecur1ty: إختبار الإختراق.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoRGdNDi17dCfQcTrTAUB-ub">مدرسة السايبر: بايثون شبكات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoRNo6Ud1tVCHfZkUdgL_jwQ">مدرسة السايبر: سيكيورتي المستوى الأول.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoT8Q5KAIrR_MblHRxOu1S69">مدرسة السايبر: سيكيورتي المستوى الثاني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoRSUQ0kRhFtJymJkTAPgp80">مدرسة السايبر: سيكيورتي المستوى الثالث.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQ4KkVI3vho_8FmFFU7fspc">مدرسة السايبر: سيكيورتي المستوى الرابع.</a></li>
+</ul>
+<h3 id="machine-learning">Machine Learning:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHC3uV0T6TTndqNDDR69tN_1">أبو بكر سليمان: The Bedouin Way.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLImVLP5cXFNQSCXVOOzzWjteK8DatmprS">حازم خالد محمد: AI بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7XmflH_eGgsWkwvv6lbXhYjjY">عمر عز الدين: الشبكات العصبية العميقة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7XmfZsTX6pJPMgMHwLXAEPlKe">عمر عز الدين: Neural Network بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7Xmd1urM6kbKuvMTARh-dZ6of">عمر عز الدين: AutoKRAS AutoML.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7XmcKQpCISPLATV7jkuYRhMsB">عمر عز الدين: ML Projects.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxs20w0BOKLVY9JsUaUoYDwW">عبد الله نصر.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxu6UQVBfw8-hXl6iA1MFq_5">عبد الله نصر: Overfitting.</a></li>
+</ul>
+<h3 id="image-processing">Image Processing:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7Xmdc6dc9YuFmGTk3Kn5WvMZL">عمر عز الدين.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLImVLP5cXFNS-TAKeRHpp0_SzGuwBUFnT">حازم خالد.</a></li>
+</ul>
+<h3 id="web-crawling">Web Crawling:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHD1XUJSYfYezvs9gLdaWHId">أبو بكر سليمان: Selenium.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHBxA9uRN_x9r6BrcBqi526F">أبو بكر سليمان: PyQuery.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZwTnMl7MFPUyo_qsh0z_ND">مهدي أحمد: Beautiful Soup.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLwerRebku82Fcw4EBYs1EOlUlP3msNdxg">محمد المالكي: Selenium.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQvuNw2ecZuQqnYMcBnzOtT">مدرسة السايبر.</a></li>
+</ul>
+<h3 id="data-analysis">Data Analysis:</h3>
+<ul>
+<li><a href="../data-analysis/">تحليل البيانات مع بايثون.</a></li>
+</ul>
+<h3 id="flask">Flask:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNObFOYvkcNQG8arJX95TRE47">تعلم Flask من Algorithm Academy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNObli30BibPgVr_9JDDJ_0mZ">موقع شبيه تويتر من Algorithm Academy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHqnUR3OCFAnVs_oFATDk0byWdc4X15PX">محمد عبد السلام: Flask mega.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZo9gNbZ4vNygMHm7a7-E7G">مهدي أحمد.</a></li>
+<li><a href="https://io.hsoub.com/webdev/77681-%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D8%A7%D8%B3%D8%AA%D9%83%D8%B4%D9%81-%D9%81%D9%84%D8%A7%D8%B3%D9%83">كتاب استكشف فلاسك.</a></li>
+<li><a href="https://academy.hsoub.com/programming/python/flask/">مقالات أكاديمية حسوب.</a></li>
+</ul>
+<h3 id="django">Django:</h3>
+<ul>
+<li><a href="../django/">تعلم إطار العمل Django.</a></li>
+</ul>
+<h3 id="os">OS:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLwerRebku82FX7gAhf18zPRhC2B4XZS7i">محمد المالكي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLwerRebku82FnWhSRqLjXml8ZKmnPZvt9">محمد المالكي: autopy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLTjpmsGYzQq78AZPTUnWY1s_wvW3SCwv4">محمود أحمد.</a></li>
+</ul>
+<h3 id="telegram">Telegram:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_FTKGUnmLVeCAn6BblkkbV">محمد عيسى: Python &amp; Telegram.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLi-tESF9Uy_b81CayLzsaFl4fsW0_A2Wx">Painor: تيليثون بالعربي Telethon.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXEgsnUZccKQKcWXZeWthw29Ue8NQm2oR">Telegram bot with lib Pyrogram</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXEgsnUZccKQphfwqadgSGgn37BYA3zgf">Telegram bot with lib telebot</a></li>
+<li><a href="https://3alam.pro/ifiras/series/telegrambot">بناء بوت تلغرام عبر pyrogram.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL-1UAVDVI3ffP10PyEF12HFnLK-MmKBDE">إنشاء بوت تلغرام بلغة بايثون Bot Telegram.</a></li>
+</ul>
+<h3 id="منوع">منوع:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdro121Y1IAbPOydAhyL13a">محمود أحمد: المكتبات في بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdRIJa8fdHeVhDG46G3cA2e">محمود أحمد: برمجة المشاريع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdvEf_NYYV73S4SurIKXD1b">محمود أحمد: Tips &amp; Tricks.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdzCjZAcXF02h4cWiPVnpyD">محمود أحمد: البرمجة في حياتك اليومية Automation.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqf1RMjesQ2BKkZuoQwdbH7e">محمود أحمد: كيفية عمل ملف exe من كود بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8Ov8W5dmyNVUXdbSFEZhStOI">عبد الرحمن جمال: مكتبات بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEIOUiGpb152cuSI_rJ-zyIZ">عبد الرحمن جمال: معسكر بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLN_sQXLvUWhWHkPnaxlgpXJ3P2HNN3a4T">المبرمج العربي: تطبيقات باستخدام بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAlLx-t8NswPqe_-UjzkaS7GMHsTglIro">محمد فاضل: Bioinformatics Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAlLx-t8NswMmn_fMxu6QwiaHhcHSHEvk">محمد فاضل: مكتبات بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWmvD65tMkDl3D-j_VvaRiwz">يونس: Python Tips.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuXY3ddo_8nzCVqXcTFqwcM5R0gZiMRiW">كودزيلا: مشاريع بايثون.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLQM0-hCuSIZ3864Z90raxK7z8tR4q34XM">سلسلة مكتبات بايثونية.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOZcOt2i5dnHcrFAGHPBpuEO">أكاديمية الخوارزميات: CLI Scripts.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGi0T-2WDopKsGbZhSMVZd-X">Mohammed Gh: Python3 crash course.</a></li>
+<li><a href="https://satr.codes/courses/rRUQyVDkwQ/view">منصة سطر: Python 101.</a></li>
+<li><a href="https://satr.codes/courses/VIvMvhyCiV/view">منصة سطر: Python 102.</a></li>
+<li><a href="https://satr.codes/courses/MvNhowmHeB/view">منصة سطر: Python 103.</a></li>
+<li><a href="https://satr.codes/courses/BDtmFNpFMp/view">منصة سطر: Python 104.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj">مجتمع بايثون العربي: لغة بايثون 🐍.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc">عبد الله نصر: التعرف على الوجوه Face recognition.</a></li>
+</ul>
+<h3 id="كتب">كتب:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/files/15-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A8%D9%84%D8%BA%D8%A9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86/">أكاديمية حسوب: البرمجة بلغة بايثون.</a></li>
+<li><a href="https://itwadi.com/node/2621">تعلم البرمجة مع بايثون 3.</a></li>
+</ul>
+<h3 id="مواقع">مواقع:</h3>
+<ul>
+<li><a href="https://wiki.hsoub.com/Python">أكاديمية حسوب: ترجمة توثيق بايثون.</a></li>
+<li><a href="https://pythonat.com/">مدونة بايثونات.</a></li>
+<li><a href="https://harmash.com/python/python-overview/">موقع هرماش.</a></li>
+<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
+<li><a href="https://pythonarabic.github.io/blog/">بايثون بالعربي.</a></li>
+</ul>
+<h3 id="مجتمعات-بايثون-العربية">مجتمعات بايثون العربية:</h3>
+<ul>
+<li><a href="https://t.me/arabipython">تيليغرام: بايثون.</a></li>
+<li><a href="https://io.hsoub.com/python">حسوب: بايثون.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« ليس المهم نوع المضمار الذي تسلكه، لكن المهم إذا اخترتَ مضماراً .. أن تكون بطله ! »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GQfy_wLbKx8">عمار بن ناصر العتيبي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>الأمر find</title>
+      <link>https://abotyim.github.io/ar/posts/linux/find/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
+      <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
+<h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
+<ul>
+<li><code>-name</code>: يستخدم للبحث عن الاسم وهو حساس لحالة الأحرف كما يقال <mark>Case sensitivity</mark> أي عندما تبحث عن كلمة <code>Main.py</code> هي ليست مطابقة لـ <code>main.py</code>.</li>
+<li><code>-iname</code>: يستخدم للبحث عن الاسم أيضاًَ وهو مشابه لما سبق مع تجاهل حالة الأحرف، فعندما تبحث عن كلمة <code>MAin.PY</code> سيطابق اسم الملف <code>main.py</code> و &hellip; إلخ.</li>
+<li>ملاحظة: بإمكاننا استخدام <code>*</code> في أي مكان من موقع الكلمة.</li>
+</ul>
+<p><strong>استخدام المعاملات المنطقية:</strong></p>
+<ul>
+<li><code>-not</code>:  تعبر عن المعامل المنطقي <code>NOT</code> بإمكاننا استخدام <code>-not</code>  أو <code>!</code> عندما تريد العثور على كل الملفّات الّتي <strong>لا تُوافق</strong> نمطًا Pattern مُحدّدًا، في حال استخدام <code>!</code> يجب تخليصها Escape حتى لا يحاول سطر الأمر تفسيرها قبل بدء عمل find.</li>
+<li><code>-or</code>: تعبر عن المعامل المنطقي <code>OR</code> بإمكاننا استخدام <code>-or</code> أو <code>-o</code>.</li>
+<li><code>-and</code>: تعبر عن المعامل المنطقي <code>AND</code> بإمكاننا استخدام <code>-and</code> أو <code>-a</code>.</li>
+<li>ملاحظة: في حال لم تضع <code>OR</code> أو <code>AND</code> فسيكون الخيار بشكل تلقائي <code>AND</code>.</li>
+</ul>
+<h3 id="البحث-بواسطة-اسم-الملف-في-المجلد-الحالي">البحث بواسطة اسم الملف في المجلد الحالي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -name main.py
+</span></span></code></pre></div><h3 id="البحث-بواسطة-اسم-الملف-مع-تجاهل-حالة-الأحرف">البحث بواسطة اسم الملف مع تجاهل حالة الأحرف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -iname Main.py
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-المجلدات">البحث فقط عن المجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type d -name Books
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-الملفات">البحث فقط عن الملفات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name main.py
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-ذات-اللاحقة-py">البحث عن كل الملفات ذات اللاحقة <code>py</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;*.py&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-التي-تبدأ-بـ-mian-مع-استثناء-اللاحقة-php">البحث عن كل الملفات التي تبدأ بـ <code>mian</code> مع استثناء اللاحقة <code>php</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;main*&#34;</span> -not -name <span style="color:#f1fa8c">&#34;*.php&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-عدد-المجلدات-الفرعية">البحث بناءً على عدد المجلدات الفرعية:</h2>
+<ul>
+<li><code>-mindepth</code>: تحدد القيمة الصغرى لعدد مستويات المجلدات التي سيبدأ منها البحث، وسيتم تجاهل المجلد الحالي.</li>
+<li><code>-maxdepth</code>: تحدد القيمة الكبرى لعدد مستويات المجلدات التي سينتهي فيها البحث.</li>
+</ul>
+<h3 id="البحث-بعمق-كحد-أدنى-4-مجلدات">البحث بعمق كحد أدنى 4 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -mindepth <span style="color:#bd93f9">4</span>
+</span></span></code></pre></div><h3 id="البحث-بعمق-كحد-أقصى-5-مجلدات">البحث بعمق كحد أقصى 5 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -maxdepth <span style="color:#bd93f9">5</span>
+</span></span></code></pre></div><h2 id="البحث-عن-المجلدات-والملفات-الفارغة-وحذفها">البحث عن المجلدات والملفات الفارغة وحذفها:</h2>
+<ul>
+<li><code>-type</code>: تستخدم لتحديد النوع، لو أردنا عرض النتائج للملفات فقط نستخدم <code>f</code>، ونستخدم <code>d</code> لعرض المجلدات فقط، ونستخدم <code>s</code> لعرض ملفات socket.</li>
+<li><code>-empty</code>: لعرض الملفات أو المجلدات الفارغة.</li>
+<li><code>-print</code>: لبطاعة النتائج فقط.</li>
+<li><code>-delete</code>: تستخدم للحذف.</li>
+</ul>
+<h3 id="البحث-عن-المجلدات-الفارغة">البحث عن المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -print 
+</span></span></code></pre></div><h3 id="حذف-المجلدات-الفارغة">حذف المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -delete 
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-الفارغة">البحث عن الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -print
+</span></span></code></pre></div><h3 id="حذف-الملفات-الفارغة">حذف الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -delete
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المخفية">البحث عن الملفات المخفية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -name <span style="color:#f1fa8c">&#34;.*&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الأذونات">البحث بناءً على الأذونات:</h2>
+<p><code>-perm</code>: وهي اختصار لكلمة permission.</p>
+<h3 id="البحث-عن-الملفات-ذات-الأذونات-777">البحث عن الملفات ذات الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-بدون-الأذونات-777">البحث عن الملفات بدون الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f ! -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-للقراءة-فقط">البحث عن الملفات للقراءة فقط:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /u<span style="color:#ff79c6">=</span>r
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التنفيذية">البحث عن الملفات التنفيذية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /a<span style="color:#ff79c6">=</span>x
+</span></span></code></pre></div><h2 id="البحث-بناء-على-المالكين-والمجموعات">البحث بناءً على المالكين والمجموعات:</h2>
+<ul>
+<li><code>-user</code>: للبحث عن الملفات التي تعود لمستخدم ما.</li>
+<li><code>-group</code>: للبحث عن الملفات التي تعود لمجموعة ما.</li>
+<li><code>-uid</code>: للبحث عن الملفات التي تعود لمستخدم ما بواسطة القيمة الرقمية للمالك.</li>
+<li><code>-gid</code>: للبحث عن الملفات التي تعود لمجموعة ما بواسطة القيمة الرقمية للمجموعة.</li>
+</ul>
+<h3 id="البحث-بناء-على-المالك-ahmed">البحث بناءً على المالك <code>ahmed</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -user ahmed
+</span></span></code></pre></div><h3 id="البحث-بناء-على-المجموعة-muslim">البحث بناءً على المجموعة <code>muslim</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -group muslim
+</span></span></code></pre></div><h2 id="البحث-بناء-على-التاريخ-والوقت">البحث بناءً على التاريخ والوقت:</h2>
+<p>يخزن لينكس بيانات عن تواريخ الوصول Access time، وتواريخ التعديل Modification، وتواريخ التّبديل Change:</p>
+<ul>
+<li>
+<p><strong>تاريخ الوصول:</strong> آخر مرّة قُرئ من الملفّ أو كُتب فيه.</p>
+</li>
+<li>
+<p><strong>تاريخ التّعديل:</strong> آخر مرّة عُدِّل فيها على محتوى الملفّ.</p>
+</li>
+<li>
+<p><strong>تاريخ التّبديل:</strong> آخر مرّة غُيّرت فيها البيانات الوصفيّة Meta-data المُتعلّقة بوضع الملفّ ضمن نظام الملفّات.</p>
+</li>
+<li>
+<p><code>-mtime</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها باليوم.</p>
+</li>
+<li>
+<p><code>-mmin</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها بالدقيقة.</p>
+</li>
+<li>
+<p><code>-atime</code>: للبحث عن الملفّات المقروءة إليها باليوم.</p>
+</li>
+<li>
+<p><code>-amin</code>: للبحث عن الملفّات المقروءة بالدقيقة.</p>
+</li>
+<li>
+<p><code>-ctime</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة باليوم.</p>
+</li>
+<li>
+<p><code>-cmin</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة بالدقيقة.</p>
+</li>
+<li>
+<p>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكثر من، وعند استخدام <code>-</code> تعني أقل من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</p>
+</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المعدلة-آخر-50-يوما">البحث عن الملفات المعدلة آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-أكثر-من-50-يوما">البحث عن الملفات المعدلة أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-من-20-إلى-50-يوما">البحث عن الملفات المعدلة من 20 إلى 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +20 -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تم-الوصول-إليها-آخر-50-يوما">البحث عن الملفات التي تم الوصول إليها آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-الوصول-إليها-أكثر-من-50-يوما">البحث عن الملفات التي الوصول إليها أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تغييرت-بيانات-التعريف-الخاصة-بها--آخر-50-دقيقة">البحث عن الملفات التي تغييرت بيانات التعريف الخاصة بها  آخر 50 دقيقة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find / -cmin -50
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الحجم">البحث بناءً على الحجم:</h2>
+<ul>
+<li><code>c</code>: الحجم بالبايت.</li>
+<li><code>k</code>: الحجم بالكيلوبايت (1024 بت).</li>
+<li><code>M</code>: الحجم بالميغابايت (1048576 بت).</li>
+<li><code>G</code>: الحجم بالجيغابايت (1073741824 بت).</li>
+<li>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكبر من، وعند استخدام <code>-</code> تعني أصغر من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المطابقة-للحجم-10mb">البحث عن الملفات المطابقة للحجم 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size 10M
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-أكبر-من-2mb-وأصغر-من-10mb">البحث عن الملفات أكبر من 2MB وأصغر من 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size +2M -size-10M
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-على-نتائج-البحث">تنفيذ الأوامر على نتائج البحث:</h2>
+<p>يُتيح الأمر <code>find</code> إمكانيّة تنفيذ أوامر على نتائج البحث مباشرةً عن طريق مُعطَى <code>exec-</code>.</p>
+<p>ملاحظة: نستخدم علامة <code>{}</code> هي ماسك مكان Placeholder، تحلّ محلَّ الملفّات المُطابقة لخيارات البحث. تُشير علامة <code>;\</code> إلى نهاية الأمر.</p>
+<h3 id="البحث-عن-الملفات-الفارغة-والتأكد-من-مساحة-كل-ملف">البحث عن الملفات الفارغة والتأكد من مساحة كل ملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -empty -exec du <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-ملفات-pdf-بناء-على-نوع-الملف">البحث عن ملفات <code>PDF</code> بناء على نوع الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file -i <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep -i <span style="color:#f1fa8c">&#34;application/pdf&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-ذات-التنسيق-data">البحث عن الملفات ذات التنسيق <code>data</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep <span style="color:#f1fa8c">&#39;\data$&#39;</span>
+</span></span></code></pre></div><p><mark>تنويه</mark>: تستطيع استخدام <code>-ok</code> بدل من <code>-exec</code> والفرق الوحيد بينهما أنها تعرض رسالة موافقة على تنفيذ الأمر على كل ملف، وهي مفيدة جداً في حال استخدمت أمر الحذف حتى لا تمسح أي ملف بطريقة الخطأ.</p>
+<h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tecmint.com/35-practical-examples-of-linux-find-command/">35 Practical Examples of Linux Find Command.</a></li>
+<li><a href="https://academy.hsoub.com/devops/linux/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%AA%D8%AE%D8%AF%D9%90%D9%85-%D8%A3%D9%85%D8%B1%D9%8E%D9%8A-find-%D9%88-locate-%D9%84%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%81%D9%91%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-linux-r43/">كيف تستخدِم أمرَي find و locate للبحث عن الملفّات على Linux.</a></li>
+<li><a href="https://abgoor.blogspot.com/2010/10/find.html">البحث بواسطة الأمر find في لينكس.</a></li>
+<li></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>تحليل البيانات مع بايثون</title>
+      <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
+      <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pandas">Pandas:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVwzaWa2Kp7bgIVcJsJ5XGW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGchpgdUPu4vQNQdO4L0UiP">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F">أبو بكر سليمان.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
+</ul>
+<h3 id="numpy">Numpy:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVAMh7Is9PRsM7IMLhLS787">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGDYq-dnVCsELEIq_7HK7Ca">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
+</ul>
+<h3 id="matplotlib">Matplotlib:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
+</ul>
+<h3 id="seaborn">Seaborn:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
+</ul>
+<h3 id="علم-البيانات">علم البيانات:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e">حسام الحوراني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6">مدرسة السايبر: تحليل البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5">إيهاب دياب: Data Analyst Course.</a></li>
+<li><a href="https://www.rwaq.org/courses/sea_python_level1">منصة رواق: مدخل إلى علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB">Ons أنس: Data Science and Machine Learning.</a></li>
+<li><a href="https://www.youtube.com/watch?v=hJZWy-VpDGI&amp;list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM">الصافي حجازي: علم البيانات - Data Science.</a></li>
+<li><a href="https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/">مدونة بايثونات: مكتبات علم البيانات بالبايثون.</a></li>
+</ul>
+<br>
+<blockquote>
+<p><a href="http://www.saaid.net/Doat/sudies/35.htm">« لا يستطاع العلم براحة الجسم »</a></p>
+<ul>
+<li>الإمام الحافظ: يحيى بن أبي كثير</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>تقنية الـ Docker</title>
+      <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
+      <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLxNoJq6k39G8zg-t26bV-JGLokr0mgNKk">Containerization من Garage Education.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLcWvtt1Kdxjdbz8JzGdR5wgsTfx9Mo4Ei">Docker - Build, Ship, Run - Arabic من Mohamed Rezk.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXgJ7cArk9uTER4dTdOxbryfx-cz6YkoA">Docker Practical Course من عبد العزيز الزعابي </a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC">دوكر باللغة العربية من محمد عيسى.</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYVdPnqpdUc&amp;list=PLCsn73jgrZ7fQOGpnb_KY3ackH9LUjFtC">Docker in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFalxKLBVQc1uASZH5BfbMRj">Docker and Containers من حمد العبسي.</a></li>
+<li><a href="https://www.udemy.com/course/docker-ar/">Learn Docker مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/watch?v=nQ6tflsf0aU">فيديو يشرح مقدمة في Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=wRl4Zzpcblk">GDGMENA: مقدمة إلى تقنية الحاويات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-N3Ob7hHUD4">GDGMENA: ضع تطبيقاتك في حاويات باستخدام Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_vMoUyBr3srNzFgQXbAjcxMfb-JpRyIN">سلسلة تعليم دوكر من صوت المبرمج.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOY76BQBReTszByDaUiOEhC7">تعلم Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdYYj2XLw5Bmx7lN1flO4eXGGyieUkfBa">Docker For Developers Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=oxRjGqjUXFA">ورشة تعليم دوكر بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
+<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
+<ul>
+<li><a href="https://nullplus.plus/episodes/episode5-docker-intro-quick-tips">شرح من بودكاست null++</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
+<li><a href="https://informatic-ar.com/category/programming/docker/">سلسلة مقالات للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
+<li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
+<li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>الأمر awk</title>
+      <link>https://abotyim.github.io/ar/posts/linux/awk/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/awk/</guid>
+      <description>awk هي لغة برمجة لقراءة النصوص ومعالجتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p><code>AWK</code> هي لغة برمجة مفسرة مصممة لمعالجة النصوص وإنشاء التقارير.  يتم استخدامه عادةً لمعالجة البيانات، مثل البحث عن العناصر داخل البيانات،  وإجراء العمليات الحسابية، وإعادة هيكلة البيانات الأولية لإنشاء التقارير في أنظمة التشغيل <code>Linux</code>.</p>
+<h2 id="الاستخدامات-النموذجية-لـ-awk">الاستخدامات النموذجية لـ <code>AWK</code>:</h2>
+<p>يمكن إنجاز عدد لا يحصى من المهام باستخدام <code>AWK</code>، سنعرض عدد قليل من هذه الاستخدامات:</p>
+<ul>
+<li>معالجة النصوص.</li>
+<li>إنتاج تقارير نصية منسقة.</li>
+<li>إجراء عمليات حسابية.</li>
+<li>إجراء عمليات على السلاسل النصية.</li>
+</ul>
+<h2 id="طريقة-عمل-awk">طريقة عمل <code>AWK</code>:</h2>
+<p>لكي نصبح على دراية في <code>AWK</code> ومعرفة قوية فأنت بحاجة إلى معرفة مكوناته الداخلية، هو يتبع سير عمل بسيط هو:</p>
+<pre><kbd>القراءة ⬅️ التنفيذ ⬅️ التكرار ​♻️​</kbd></pre>
+<p>يوضح المخطط <strong>Flowchart</strong> التالي سير عمل <code>AWK</code>:</p>
+<p><img loading="lazy" src="/posts/linux/awk/awk_workflow.jpg" alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg"  />
+</p>
+<p>هنالك خمس كتل حسب المخطط <strong>Flowchart</strong> وهي:</p>
+<ul>
+<li><code>BEGIN</code>: يتم تنفيذ هذه الكتلة عند بدء تشغيل البرنامج فقط، ويتم تنفيذه مرة واحدة، تعتبر هذه الكتلة اختيارية،<code>BEGIN</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف الكبيرة.</li>
+<li><code>Read</code>: هذه الكتلة مهمتها قراءة سطراً واحداً من المدخلات ويخزنه في الذاكرة.</li>
+<li><code>Execute</code>: تنفيذ أوامر <code>AWK</code> على السطر الحالي، ويكون التنفيذ حسب تسلسل الأوامر التي كتبتها.</li>
+<li><code>Repeat</code>: تكرار هذه العملية وأعني كتلة <code>Read</code> ثم <code>Execute</code> وهكذا حتى يصل الملف إلى نهايته ثم ينتقل للكتلة الأخيرة.</li>
+<li><code>END</code>: يتم تنفيذ هذه الكتلة في نهاية البرنامج فقط، تعتبر هذه الكتلة اختيارية، <code>END</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف كبيرة.</li>
+</ul>
+<h2 id="الطريقة-النحوية-لكتابة-الأمر-awk">الطريقة النحوية لكتابة الأمر <code>awk</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {start_action} /pattern/ { actions } END {stop_action}&#39;</span> filename
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    BEGIN {start_action} 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    /pattern/ { actions }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    /pattern/ { actions }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    ....
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    END {stop_action}
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">	&#39;</span> filename
+</span></span></code></pre></div><p>لنقم بإنشاء ملف <strong>words.txt</strong> يحتوي على الجملة التالية فقط <code>Hollow World!</code> للتأكد نقوم بعرض محتويات الملف عبر الأمر <code>cat</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hollow World!
+</span></span></code></pre></div><h2 id="البدء-باستخدام-awk">البدء باستخدام <code>awk</code>:</h2>
+<h3 id="طباعة-محتويات-الملف">طباعة محتويات الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print}&#39;</span> words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hollow World!
+</span></span></code></pre></div><h3 id="طباعة-سطر-قبل-وبعد-محتويات-الملف">طباعة سطر قبل وبعد محتويات الملف:</h3>
+<p>لنقم بتجربة استخدام الكتلة <code>BEGIN</code> و <code>END</code> عبر كتابة جملة <code>Start Line</code> قبل محتويات الملف و <code>End Line</code> بعد طباعة الملف:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN{printf &#34;Start Line\n&#34;} {print} END{printf &#34;End Line\n&#34;}&#39;</span> words.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Start Line
+</span></span><span style="display:flex;"><span>Hollow World!
+</span></span><span style="display:flex;"><span>End Line
+</span></span></code></pre></div><p><strong>ملاحظة</strong>: استخدمنا <code>\n</code> لنقل مؤشر الكتابة في سطر جديد.</p>
+<h3 id="كتابة-البرنامج-النصي-في-ملف-منعزل">كتابة البرنامج النصي في ملف منعزل:</h3>
+<p>قم بإنشاء ملف نصي ليكن باسم <strong>command.awk</strong> وضع بداخله البرنامج أعلاه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">BEGIN</span>{<span style="color:#ff79c6">printf</span> <span style="color:#f1fa8c">&#34;Start Line\n&#34;</span>} {<span style="color:#ff79c6">print</span>} <span style="color:#8be9fd;font-style:italic">END</span>{<span style="color:#ff79c6">printf</span> <span style="color:#f1fa8c">&#34;End Line\n&#34;</span>}
+</span></span></code></pre></div><p>الآن ما نحاول القيام به هو نفس الأمر السابق طباعة سطر قبل وبعد محتويات الملف <strong>words.txt</strong> ولكن سيكون برنامجنا مكتوب بداخل الملف <strong>command.awk</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -f command.awk words.txt
+</span></span></code></pre></div><p>استخدمنا الخيار <code>-f</code> ﻹمكانية استدعاء مسار سكربت <code>awk</code>.</p>
+<h3 id="طباعة-الأعمدة">طباعة الأعمدة:</h3>
+<p>نقوم بإنشاء ملف نصي باسم <strong>marks.txt</strong> يحتوي على المعلومات التالية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1) Amit     Physics   80
+</span></span><span style="display:flex;"><span>2) Rahul    Maths     90
+</span></span><span style="display:flex;"><span>3) Shyam    Biology   87
+</span></span><span style="display:flex;"><span>4) Kedar    English   85
+</span></span><span style="display:flex;"><span>5) Hari     History   89
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -F <span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#f1fa8c">&#39;{print $3 &#34;\t&#34; $4}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Physics	80
+</span></span><span style="display:flex;"><span>Maths	90
+</span></span><span style="display:flex;"><span>Biology	87
+</span></span><span style="display:flex;"><span>English	85
+</span></span><span style="display:flex;"><span>History	89
+</span></span></code></pre></div><p>تم طباعة العامود الثالث والرابع فقط.</p>
+<ul>
+<li><code>-F</code> للفصل بين الكلمات من خلال الفراغ <strong>space</strong> وبإمكانك تغير ذلك حسب النص المراد التعامل معه، نستطيع عدم وضع <code>-F</code> لأن الأمر <code>awk</code> بأخذ بشكل افتراضي الفراغ للفصل بين الكلمات.</li>
+<li><code>$0</code>: يعبر عن الصف (السطر) بشكل كامل.</li>
+<li><code>$1</code>: تعبر عن الكلمة الأولى.</li>
+<li><code>$2</code>: تعبر عن الكلمة الثانية، وهكذا.</li>
+</ul>
+<h3 id="طباعة-السطور-التي-تحتوي-على-حرف-a">طباعة السطور التي تحتوي على حرف <code>a</code>:</h3>
+<p>بشكل افتراضي يطبع <code>awk</code> جميع الأسطر التي تطابق النمط.</p>
+<p>ملاحظة: عند عدم كتابة الأمر <code>{print $0}</code> يتم اتخاذ الإجراء الافتراضي وهو طباعة السجل.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/ {print $0}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>2) Rahul    Maths     90
+</span></span><span style="display:flex;"><span>3) Shyam    Biology   87
+</span></span><span style="display:flex;"><span>4) Kedar    English   85
+</span></span><span style="display:flex;"><span>5) Hari     History   89
+</span></span></code></pre></div><h3 id="طباعة-العمود-4-و-3-من-السطور-التي-تحتوي-على-حرف-a">طباعة العمود 4 و 3 من السطور التي تحتوي على حرف <code>a</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/ {print $4 &#34;\t&#34; $3}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>90   Maths
+</span></span><span style="display:flex;"><span>87   Biology
+</span></span><span style="display:flex;"><span>85   English
+</span></span><span style="display:flex;"><span>89   History
+</span></span></code></pre></div><h3 id="طباعة-عدد-السطور-المطابقة-للبحث">طباعة عدد السطور المطابقة للبحث:</h3>
+<ul>
+<li><code>/a/</code>: البحث في كل سطر يحتوي على حرف <code>a</code>,</li>
+<li><code>{++i}</code>: عدد السطور المطابقة.</li>
+</ul>
+<p><strong>ملاحظة</strong>: بإمكاننا تغير اسم العداد من <code>i</code> إلى أي شيء نريده.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;/a/{++i} END {print &#34;Count = &#34;, i}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Count = 4
+</span></span></code></pre></div><h2 id="المتغيرات-المضمنة-في-awk">المتغيرات المضمنة في <code>awk</code>:</h2>
+<h3 id="المتغير-argc">المتغير <code>ARGC</code>:</h3>
+<p>يشير إلى عدد المعطيات المقدمة إلى <code>awk</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;Arguments =&#34;, ARGC -1 }&#39;</span> One Two Three Four
+</span></span></code></pre></div><h3 id="المتغير-argv">المتغير ARGV:</h3>
+<p>مصفوفة تخزين معطيات سطر الأوامر، فهرس المصفوفة من 0 حتى <code>ARGC</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   for (i = 0; i &lt; ARGC; ++i) { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">      printf &#34;ARGV[%d] = %s\n&#34;, i, ARGV[i] 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   } 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span> one two three four
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ARGV[0] = awk
+</span></span><span style="display:flex;"><span>ARGV[1] = one
+</span></span><span style="display:flex;"><span>ARGV[2] = two
+</span></span><span style="display:flex;"><span>ARGV[3] = three
+</span></span><span style="display:flex;"><span>ARGV[4] = four
+</span></span></code></pre></div><h3 id="المتغير-environ">المتغير <code>ENVIRON</code>:</h3>
+<p>للتعامل مع متغيرات البيئة environment variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print ENVIRON[&#34;USER&#34;] }&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-filename">المتغير <code>FILENAME</code>:</h3>
+<p>يمثل اسم الملف الحالي.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;END {print FILENAME}&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>marks.txt
+</span></span></code></pre></div><p>ملاحظة: وضعنا<code>FILENAME</code> في بعد كتلة <code>END</code> حتى لا يتكرر طباعة اسم الملف بعدد سطور الملف.</p>
+<h3 id="المتغير-fs">المتغير <code>FS</code>:</h3>
+<p>يمثل فاصل المدخلات وقيمته الافتراضية هي <strong>space</strong>.  يمكنك أيضًا تغيير هذا باستخدام خيار سطر الأوامر <code>-F</code>، افتراضيًّا يستخدم الفواصل <strong>whitespaces</strong> (<strong>المسافات</strong> <strong>spaces</strong>، <strong>tabs</strong>، إلخ)  للفصل بين الأعمدة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;FS = &#34; FS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-nf">المتغير <code>NF</code>:</h3>
+<p>يمثل عدد الأعمدة في السطر الحالي.  على سبيل المثال، يطبع المثال التالي فقط تلك الأسطر التي تحتوي على أكثر من عمودين.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;One Two\nOne Two Three\nOne Two Three Four&#34;</span> | awk <span style="color:#f1fa8c">&#39;NF &gt; 2&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-nr">المتغير <code>NR</code>:</h3>
+<p>يمثل رقم السطر الحالي.  على سبيل المثال، يقوم المثال التالي بطباعة السطر إذا كان رقم السطر الحالي أقل من ثلاثة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;One Two\nOne Two Three\nOne Two Three Four&#34;</span> | awk <span style="color:#f1fa8c">&#39;NR &lt; 3&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-ofs">المتغير <code>OFS</code>:</h3>
+<p>يمثل الفاصل بين المخرجات وقيمته الافتراضية هي <strong>space</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;OFS = &#34; OFS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-rs">المتغير <code>RS</code>:</h3>
+<p>يمثل فاصل سجل المدخلات وقيمته الافتراضية هي سطر جديد.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN {print &#34;RS = &#34; RS}&#39;</span> | cat -vte
+</span></span></code></pre></div><h3 id="المتغير-rstart">المتغير <code>RSTART</code>:</h3>
+<p>يمثل مكان المحرف الأول في النص الذي يتطابق مع كلمة البحث:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { if (match(&#34;One Two Three&#34;, &#34;Thre&#34;)) { print RSTART } }&#39;</span>
+</span></span></code></pre></div><h3 id="المتغير-0">المتغير <code>$0</code>:</h3>
+<p>يمثل السطر بأكمله.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print $0}&#39;</span> marks.txt
+</span></span></code></pre></div><h3 id="المتغير-n">المتغير <code>$n</code>:</h3>
+<p>يمثل العمود الحالي، نقوم باستبدال <code>n</code> بالرقم الذي نريده حسب عدد الأعمدة، ويتم الفصل بين الكلمات بناء على المتغير <code>FS</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{print $3 &#34;\t&#34; $4}&#39;</span> marks.txt
+</span></span></code></pre></div><p>المثال أعلاه سيقوم بطباعة العامود الثالث والرابع ويفصل بينهما بالتاب.</p>
+<h3 id="المتغير-argind">المتغير <code>ARGIND</code>:</h3>
+<p>يمثل فهرس الملف الذي يتم معالجته حالياً.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;{ 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   print &#34;ARGIND   = &#34;, ARGIND; print &#34;Filename = &#34;, ARGV[ARGIND] 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span> junk1 junk2 junk3
+</span></span></code></pre></div><h3 id="المتغير-ignorecase">المتغير <code>IGNORECASE</code>:</h3>
+<p>يجعل AWK غير حساس لحالة الأحرف لأجل المطابقة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN{IGNORECASE = 1} /amit/&#39;</span> marks.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1) Amit  Physics   80
+</span></span></code></pre></div><h2 id="المعاملات-operators">المعاملات Operators:</h2>
+<p>تدعم AWK الكثير من <strong>Operators</strong> حالها كحال لغات البرمجة الأخرى.</p>
+<h3 id="المعاملات-الحسابية">المعاملات الحسابية:</h3>
+<h4 id="الجمع">الجمع:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a + b) = &#34;, (a + b) }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>(a + b) = 70
+</span></span></code></pre></div><p>قمنا بإنشاء متغير a,b وأسندنا لهم الأرقام، ومن ثم طبعنا رسالة خرج مع القيام بجمع المتغيرين مع بعضهم.</p>
+<h4 id="الطرح">الطرح:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a - b) = &#34;, (a - b) }&#39;</span>
+</span></span></code></pre></div><h4 id="الضرب">الضرب:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a * b) = &#34;, (a * b) }&#39;</span>
+</span></span></code></pre></div><h4 id="القسمة">القسمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a / b) = &#34;, (a / b) }&#39;</span>
+</span></span></code></pre></div><h4 id="باقي-القسمة">باقي القسمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 50; b = 20; print &#34;(a % b) = &#34;, (a % b) }&#39;</span>
+</span></span></code></pre></div><h3 id="معاملات-الزيادة-والإنقاص">معاملات الزيادة والإنقاص:</h3>
+<h4 id="الزيادة">الزيادة:</h4>
+<p>يتم تمثيله بـ <code>++</code> يقوم بالزيادة بمقدار <code>1</code>، طريقة عمله هو إرجاع القيمة ثم الزيادة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = a++; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 11, b = 10
+</span></span></code></pre></div><h4 id="الزيادة-المسبقة">الزيادة المسبقة:</h4>
+<p>يتم تمثيله بـ <code>++</code> يقوم بالزيادة بمقدار <code>1</code>، طريقة عمله هو الزيادة ثم إرجاع القيمة المتزايدة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = ++a; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 11, b = 11
+</span></span></code></pre></div><h4 id="التناقص">التناقص:</h4>
+<p>يتم تمثيله بـ <code>--</code> يقوم بعملية النقصان بمقدار <code>1</code>، طريقة عمله هو إرجاع القيمة ثم الإنقاص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = a--; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 9, b = 10
+</span></span></code></pre></div><h4 id="التناقص-المسبق">التناقص المسبق:</h4>
+<p>يتم تمثيله بـ <code>--</code> يقوم بعملية النقصان بمقدار <code>1</code>، طريقة عمله هو الإنقاص ثم إرجاع القيمة المتناقصة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = --a; printf &#34;a = %d, b = %d\n&#34;, a, b }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a = 9, b = 9
+</span></span></code></pre></div><h3 id="معاملات-الإسناد">معاملات الإسناد:</h3>
+<h4 id="إسناد-القيمة">إسناد القيمة:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { name = &#34;Ahmed&#34;; print &#34;My name is&#34;, name }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>My name is Ahmed
+</span></span></code></pre></div><h4 id="الإسناد-مع-الجمع">الإسناد مع الجمع:</h4>
+<p>يتم تمثيله بـ <code>+=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 10; cnt += 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 20
+</span></span></code></pre></div><h4 id="الإسناد-مع-الطرح">الإسناد مع الطرح:</h4>
+<p>يتم تمثيله بـ <code>-=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt -= 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 90
+</span></span></code></pre></div><h4 id="الإسناد-مع-الضرب">الإسناد مع الضرب:</h4>
+<p>يتم تمثيله بـ <code>*=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 10; cnt *= 10; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 100
+</span></span></code></pre></div><h4 id="الإسناد-مع-القسمة">الإسناد مع القسمة:</h4>
+<p>يتم تمثيله بـ <code>/=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt /= 5; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 20
+</span></span></code></pre></div><h4 id="الإسناد-مع-باقي-القسمة">الإسناد مع باقي القسمة:</h4>
+<p>يتم تمثيله بـ <code>%=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 100; cnt %= 8; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 4
+</span></span></code></pre></div><h4 id="الإسناد-مع-القوة-الأس">الإسناد مع القوة (الأس):</h4>
+<p>يتم تمثيله بـ <code>^=</code> أو <code>**=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 2; cnt ^= 4; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { cnt = 2; cnt **= 4; print &#34;Counter =&#34;, cnt }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Counter = 16
+</span></span></code></pre></div><h3 id="معاملات-القيم-المنطقية">معاملات القيم المنطقية:</h3>
+<h4 id="معامل-equal-to">معامل <code>Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>==</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 10; if (a == b) print &#34;a == b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a == b
+</span></span></code></pre></div><h4 id="معامل-not-equal-to">معامل <code>Not Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>!=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (a != b) print &#34;a != b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a != b
+</span></span></code></pre></div><h4 id="معامل-less-than">معامل <code>Less Than</code>:</h4>
+<p>يتم تمثيله بـ <code>&lt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (a &lt; b) print &#34;a  &lt; b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a &lt; b
+</span></span></code></pre></div><h4 id="معامل-less-than-or-equal-to">معامل <code>Less Than or Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>&lt;=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 10; if (a &lt;= b) print &#34;a &lt;= b&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>a &lt;= b
+</span></span></code></pre></div><h4 id="معامل-greater-than">معامل <code>Greater Than</code>:</h4>
+<p>يتم تمثيله بـ <code>&gt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (b &gt; a ) print &#34;b &gt; a&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>b &gt; a
+</span></span></code></pre></div><h4 id="معامل-greater-than-or-equal-to">معامل <code>Greater Than or Equal to</code>:</h4>
+<p>يتم تمثيله بـ <code>&gt;=</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; if (b &gt; a ) print &#34;b &gt;= a&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>b &gt;= a
+</span></span></code></pre></div><h3 id="المعامل-الثلاثي-إجراء-الشرط-في-سطر-واحد">المعامل الثلاثي (إجراء الشرط في سطر واحد):</h3>
+<p>الصيغة النحوية تكون كالتالي:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>condition expression ? statement1 : statement2
+</span></span></code></pre></div><p>يتم إختبار الشرط إن كان صحيحاً يتم تنفيذ العبارة الأولى، وإلا يتم تنفيذ العبارة الثانية.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { a = 10; b = 20; (a &gt; b) ? max = a : max = b; print &#34;Max =&#34;, max}&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Max = 20
+</span></span></code></pre></div><h2 id="دمج-النصوص-مع-بعضها">دمج النصوص مع بعضها:</h2>
+<p>الفراغ <strong>Space</strong> هنا يمثل دمج النصوص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { str1 = &#34;Hello, &#34;; str2 = &#34;World&#34;; str3 = str1 str2; print str3 }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hello, World
+</span></span></code></pre></div><h2 id="المرور-على-عناصر-المصفوفة">المرور على عناصر المصفوفة:</h2>
+<p>يتم تمثيله بـ <code>in</code> يتم استخدامه للوصول إلى عناصر المصفوفة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">   arr[0] = 1; arr[1] = 2; arr[2] = 3; for (i in arr) printf &#34;arr[%d] = %d\n&#34;, i, arr[i]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>arr[0] = 1
+</span></span><span style="display:flex;"><span>arr[1] = 2
+</span></span><span style="display:flex;"><span>arr[2] = 3
+</span></span></code></pre></div><h2 id="التعابير-المنطقية">التعابير المنطقية:</h2>
+<h3 id="التعبير-dot">التعبير <code>Dot</code>:</h3>
+<p>يستخدم لمطابقة الكلمات مع تعويض النقط. يطابق المثال التالي مع fin, fun, fan عوض النقطة بداخل الحرف المفقود من الكلمة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;cat\nbat\nfun\nfin\nfan&#34;</span> | awk <span style="color:#f1fa8c">&#39;/f.n/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fun
+</span></span><span style="display:flex;"><span>fin
+</span></span><span style="display:flex;"><span>fan
+</span></span></code></pre></div><h3 id="التعبير-start-of-line">التعبير <code>Start of line</code>:</h3>
+<p>يطابق بداية السطر، يطبع المثال التالي جميع الأسطر التي تبدأ بـ <strong>The</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;This\nThat\nThere\nTheir\nthese&#34;</span> | awk <span style="color:#f1fa8c">&#39;/^The/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>There
+</span></span><span style="display:flex;"><span>Their
+</span></span></code></pre></div><h3 id="التعبير-end-of-line">التعبير <code>End of line</code>:</h3>
+<p>يطابق نهاية السطر، يطبع المثال التالي جميع الأسطر التي تنتهي بـ <strong>n</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;knife\nknow\nfun\nfin\nfan\nnine&#34;</span> | awk <span style="color:#f1fa8c">&#39;/n$/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fun
+</span></span><span style="display:flex;"><span>fin
+</span></span><span style="display:flex;"><span>fan
+</span></span></code></pre></div><h3 id="التعبير-match-character-set">التعبير <code>Match character set</code>:</h3>
+<p>يتم استخدامه لمطابقة حرف واحد فقط من بين مجموعة أحرف، المثال التالي يطابق <strong>Call</strong> و <strong>Tall</strong> ولكن لا يطابق <strong>Ball</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/[CT]all/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Call
+</span></span><span style="display:flex;"><span>Tall
+</span></span></code></pre></div><h3 id="التعبير-exclusive-set">التعبير <code>Exclusive set</code>:</h3>
+<p>عكس التعبير السابق، ينفي مجموعة الأحرف الموجودة بين قوسين مربعين، أي لن يتم مطابقتها، المثال التالي يطابق <strong>Ball</strong> فقط.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/[^CT]all/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Ball
+</span></span></code></pre></div><h3 id="التعبير-alteration">التعبير <code>Alteration</code>:</h3>
+<p>يسمح الـ <code>|</code> بطباعة <strong>Call</strong> أو <strong>Ball</strong> أو الاثنين معاً إن توفروا في النص.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Call\nTall\nBall\nSmall\nShall&#34;</span> | awk <span style="color:#f1fa8c">&#39;/Call|Ball/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Call
+</span></span><span style="display:flex;"><span>Ball
+</span></span></code></pre></div><h3 id="التعبير-zero-or-more-occurrence">التعبير <code>Zero or More Occurrence</code>:</h3>
+<p>تستخدم <code>*</code> لإكمال الكلمة، في المثال التالي أي كلمة تبدأ بـ <strong>ca</strong> سيتم مطابقتها، أي الحرف اللي يسبق علامة النجمة حتى لو لم يكن موجود سيتم المطابقة.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;ca\ncat\ncatt&#34;</span> | awk <span style="color:#f1fa8c">&#39;/cat*/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ca
+</span></span><span style="display:flex;"><span>cat
+</span></span><span style="display:flex;"><span>catt
+</span></span></code></pre></div><h3 id="التعبير-one-or-more-occurrence">التعبير <code>One or More Occurrence</code>:</h3>
+<p>يطابق إن كان هذا الحرف مكرر أم لا، في المثال التالي يطابق أي سطر فيه <strong>2</strong> سواء كتب مرة واحدة أو أكثر.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;111\n22\n123\n234\n456\n222&#34;</span>  | awk <span style="color:#f1fa8c">&#39;/2+/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;111\n22\n123\n234\n456\n222&#34;</span>  | awk <span style="color:#f1fa8c">&#39;/2/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>22
+</span></span><span style="display:flex;"><span>123
+</span></span><span style="display:flex;"><span>234
+</span></span><span style="display:flex;"><span>222
+</span></span></code></pre></div><h3 id="التعبير-grouping">التعبير <code>Grouping</code>:</h3>
+<p>تستخدم الأقواس <code>()</code> للتجميع والمحرف <code>|</code> يستخدم للبدائل، المثال يطابق التعبير التالي مع الأسطر التي تحتوي على <strong>Apple Juice</strong> أو <strong>Apple Cake</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> -e <span style="color:#f1fa8c">&#34;Apple Juice\nApple Pie\nApple Tart\nApple Cake&#34;</span> | awk  <span style="color:#f1fa8c">&#39;/Apple (Juice|Cake)/&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Apple Juice
+</span></span><span style="display:flex;"><span>Apple Cake
+</span></span></code></pre></div><h2 id="إعادة-توجيه-المخرجات">إعادة توجيه المخرجات:</h2>
+<p>نحتاج هنا إعادة توجيه المخرجات إلى ملف نصي بدلاً من عرضه على شاشة <strong>Terminal</strong>.</p>
+<h3 id="الكتابة-على-الملف">الكتابة على الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;Hello, World !!!&#34; &gt; &#34;/tmp/message.txt&#34; }&#39;</span>
+</span></span></code></pre></div><h3 id="الإضافة-على-الملف">الإضافة على الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;Hello, World !!!&#34; &gt;&gt; &#34;/tmp/message.txt&#34; }&#39;</span>
+</span></span></code></pre></div><p>إرسال الخرج إلى برنامج آخر بواسطة <strong>Pipe</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { print &#34;hello, world !!!&#34; | &#34;tr [a-z] [A-Z]&#34; }&#39;</span>
+</span></span></code></pre></div><h2 id="تنسيق-المخرجات">تنسيق المخرجات:</h2>
+<h3 id="الطباعة-في-سطر-جديد">الطباعة في سطر جديد:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Hello\nWorld\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hello
+</span></span><span style="display:flex;"><span>World
+</span></span></code></pre></div><h3 id="طباعة-tab-بشكل-أفقي">طباعة <code>tab</code> بشكل أفقي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Sr No\tName\tSub\tMarks\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sr No   Name    Sub Marks
+</span></span></code></pre></div><h3 id="طباعة-tab-بشكل-عمودي">طباعة <code>tab</code> بشكل عمودي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Sr No\vName\vSub\vMarks\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sr No
+</span></span><span style="display:flex;"><span>   Name
+</span></span><span style="display:flex;"><span>      Sub
+</span></span><span style="display:flex;"><span>         Marks
+</span></span></code></pre></div><h3 id="طباعة-backspace-لمسح-محرف-للخلف">طباعة <code>Backspace</code> لمسح محرف للخلف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Field 1\bField 2\bField 3\bField 4\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Field Field Field Field 4
+</span></span></code></pre></div><h3 id="الطباعة-من-بداية-السطر">الطباعة من بداية السطر:</h3>
+<p><code>\r</code>: بعد الطباعة، نقوم بإرجاع مؤشر الكتابة في أول السطر ونطبع القيمة التالية فوق القيمة الحالية.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk <span style="color:#f1fa8c">&#39;BEGIN { printf &#34;Field 1\rField 2\rField 3\rField 4\n&#34; }&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Field 4
+</span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/awk/">Awk Tutorial.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>تقنية الـ Kubernetes</title>
+      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
+      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
+<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>إطار العمل Django</title>
+      <link>https://abotyim.github.io/ar/posts/resources/django/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/django/</guid>
+      <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<h4 id="محمد-شوشان">محمد شوشان:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwT8CbcwHMZkjlmN1BdbOBWB">Django Tutorials for Beginners.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwRCqH9qJSM67ZPBC7MD1Pa3">Django Tutorials Level 2 (REST API).</a></li>
+</ul>
+<h4 id="محمود-أحمد">محمود أحمد:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfv9yQelR4HETqU35alUoW6">الدليل الشامل لتعلم دجانغو 3.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfio_BvIw_sLqHCUQ5XPpyZ">أساسيات برمجة المواقع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqc3cbs0cpSrr1jiGgSbjlik">التعامل مع Class Based Views.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdSdcHeukSUJKxiUpELCnFg">برمجة متجر الكتروني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfm1KN_9qc7vpn5e9XwP9U3">كيفية التعامل مع المستخدمين دجانغو 2.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqcq6ExuyRT0SNw8iKopFpV1">كلام في دجانجو.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqeVCY78dcKJFXItin0BEujT">كيفية رفع مشروع دجانجو على DigitalOcean.</a></li>
+<li><a href="https://code4learn.teachable.com/p/d4a3d7">مكتبات خاصة بدجانجو.</a></li>
+</ul>
+<h4 id="محمد-عيسى">محمد عيسى:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_5wAJRbEoQYl62-qM3aB8t">Django framework python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9JJ7r0APq7O87gucjYWRfD">Python Django Web.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_8KPztmgiAZpsNfXJcI-v5">Django 2 REST API JWT CRUD.</a></li>
+</ul>
+<h4 id="مهدي-أحمد">مهدي أحمد:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYpg51JOvlf-Znj78i_V_n_">Build Advanced Blog.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYrNzeF48o-z53DA14JZ-d9">Blog API.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeaLJsAmb5O2F2T-QDxPc7Ut">Django Forms.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKebUJtwiOm7Yso5HgN3jC8Ll">إنشاء متجر إلكتروني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYoiobPZmO7HtIoFBt6hV0O">Real Time Chat with Django-channels.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZfwfZ9QMb1XlTgwmTrxQBK">To Do List Django 2.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZgn0-oUs8khsXTTRhI9xoN">CRUD system using Django &amp; Ajax.</a></li>
+</ul>
+<h4 id="أسماء-الطويل">أسماء الطويل:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3XUn2HYMWRbAon4z6AQ4CL">Django Tutorial for Beginners.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3dglbz0tvLqJTJPVPgjW1x">Django Rest Framework Tutorial.</a></li>
+</ul>
+<h4 id="عبد-الرحمن-جمال">عبد الرحمن جمال:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OtK_n48UOuYGxJPbSFrICxm">كورس دجانغو كامل للمتدئين.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8Ot_JCzFaQ_XenaOe99VFmcM">نظام إدارة مكتبة.</a></li>
+</ul>
+<h4 id="بايثون-ارابيا-فهد-مناع">بايثون ارابيا فهد مناع:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJWk_u_N01Jjrm9y2_60cjOB">ربط Django مع Elasticsearch.</a></li>
+<li><a href="https://www.youtube.com/watch?v=XZ69ExZKjcI">شرح Django celery وتنفيذ المهام بشكل async.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJV6oWcW2vlPHRzRFF6gVvc3">شرح Django API Rest Framework.</a></li>
+</ul>
+<h4 id="منصة-سطر">منصة سطر:</h4>
+<ul>
+<li><a href="https://satr.codes/courses/FymypsKhJJ/view">Django 101.</a></li>
+<li><a href="https://satr.codes/courses/wxLyJSBxeg/view">Django 102.</a></li>
+</ul>
+<h4 id="منوع">منوع:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCxoyflbe4AuNWMZWulKVbr4">شبكة علوم: Django 2.</a></li>
+<li><a href="https://app.barmej.com/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-Django">منصة برمج: برمجة تطبيقات الويب باستخدام Django.</a></li>
+<li><a href="https://www.youtube.com/watch?v=kv0k2d75a3s&amp;list=PLnznAJG6RAI8egZJ6lR5tuWgNmrRp4DJd">محمد النجدي: سلسلة تعلم تطوير المواقع بإستخدام جانقو.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEKjuYyvITqYc2vL0lAWRvhs">الصافي حجازي: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGn6A_NLDGG4B5AZ-ZexVsPn">محمود رؤوف: إنشاء موقع Vezeta باستخدام Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnYEkYsNi5XJLI57OWMKBjM">أكاديمية حسونة: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLF8OvnCBlEY3VqZkeKeyVdJ_J1Ek0ECbs">حسين الربيعي: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGingAiwV8N56d5mDhlBabdd">Mohammed Gh: Class Based View in Django.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
+<li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
+<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
+<ul>
+<li><a href="https://t.me/DjangoPython">تيليغرام: جانغو.</a></li>
+<li><a href="https://io.hsoub.com/django">حسوب: جانغو.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
+<ul>
+<li>أبو العلاء المعري</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>نبذة عن الكاتب</title>
+      <link>https://abotyim.github.io/ar/about/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/about/</guid>
+      <description>اِبنُ أُمَّةٍ لا تَمُوت، يفخر بانتمائه إليها، يسعى للنهوض بها مع إخوانه لتستعيد دورها ومكانتها بين الأمم، وتكون رائدة العلم والحضارة عما كانت عليه من قبل، أحاول النشر باللغة العربية، وحث الناس على الركوب في  سفينة العلم فطوفان الجهل والتخلف يعصف بنا في كل مكان.</description>
+      <content:encoded><![CDATA[<h4 id="توزيعات-لينكس-">توزيعات لينكس 🐧:</h4>
+<ul>
+<li><a href="https://www.debian.org/">Debian GNU/Linux.</a></li>
+<li><a href="https://www.linuxmint.com/download.php">Linux Mint Cinnamon.</a></li>
+</ul>
+<h4 id="أطر-العمل-في-بايثون-">أطر العمل في بايثون 🐍:</h4>
+<ul>
+<li><a href="https://www.djangoproject.com/">Django: Web Framework.</a></li>
+<li><a href="https://docs.celeryproject.org/en/stable/getting-started/introduction.html">Celery: Asynchronous Task Queue.</a></li>
+<li><a href="https://www.selenium.dev/">Selenium: Automates Browsers.</a></li>
+</ul>
+<h4 id="قواعد-البيانات--">قواعد البيانات 📑 :</h4>
+<ul>
+<li><a href="https://www.postgresql.org/docs/">PostgreSQL.</a></li>
+<li><a href="https://docs.mongodb.com/">Mongodb NoSQL.</a></li>
+<li><a href="https://www.elastic.co/guide/index.html">Elasticsearch Full-text Search Engine.</a></li>
+</ul>
+<h4 id="أدوات-البرمجة--">أدوات البرمجة ❤️ :</h4>
+<ul>
+<li><a href="https://www.jetbrains.com/pycharm/">Pycharm.</a></li>
+<li><a href="https://jupyter.org/">Jupyter Notebook.</a></li>
+<li><a href="https://www.sublimetext.com/3">Sublime.</a></li>
+<li><a href="https://www.zettlr.com/">Zettlr: Markdown Editor.</a></li>
+<li><a href="https://obsidian.md/">Obsidian.</a></li>
+<li><a href="https://www.mongodb.com/products/compass">Mongodb Compass.</a></li>
+<li><a href="https://robomongo.org/">Robo 3T.</a></li>
+<li><a href="https://flathub.org/apps/details/com.github.alecaddd.sequelerSequeler">Sequeler: Friendly SQL Client.</a></li>
+<li><a href="https://sqlitebrowser.org/">Sqlite Browser.</a></li>
+<li><a href="https://www.xmind.net/">XMind: Mind Mapping.</a></li>
+<li><a href="https://zealdocs.org/">Zeal: Offline Documentation Browser.</a></li>
+<li><a href="https://www.docker.com/">Docker.</a></li>
+<li><a href="https://git-scm.com/">Git.</a></li>
+<li><a href="https://gohugo.io/">Hugo: framework for building websites.</a></li>
+</ul>
+<h4 id="أدوات-عامة--">أدوات عامة 💻 :</h4>
+<ul>
+<li><a href="https://www.ventoy.net/en/index.html">Ventoy: Create Bootable USB.</a></li>
+<li><a href="https://www.balena.io/etcher/">Etcher.</a></li>
+<li><a href="https://keepassxc.org/">KeePassXC: Password Manager.</a></li>
+<li><a href="https://hluk.github.io/CopyQ/">CopyQ: Clipboard Manager.</a></li>
+<li><a href="https://github.com/yang991178/fluent-reader/releases">Fluent Reader: RSS Reader.</a></li>
+<li><a href="https://github.com/7aman/wdpass">wdpass: WD Security Unlock.</a></li>
+<li><a href="https://flameshot.org/">Flameshot: Screenshot Software.</a></li>
+<li><a href="https://www.veracrypt.fr/en/Home.html">VeraCrypt.</a></li>
+<li><a href="https://freefilesync.org/">FreeFileSync: Synchronize Files and Folders.</a></li>
+<li><a href="https://github.com/Genymobile/scrcpy">scrcpy: Display and control your Android.</a></li>
+<li><a href="https://github.com/srevinsaju/guiscrcpy">guiscrcpy: Android Screen Mirroring.</a></li>
+<li><a href="https://github.com/antimof/UxPlay">UxPlay: AirPlay Unix mirroring server.</a></li>
+<li><a href="https://deskreen.com/lang-en">Deskreen .</a></li>
+<li><a href="https://www.bleachbit.org/">BleachBit: Clean System.</a></li>
+<li><a href="https://remmina.org/">Remmina: Remote Desktop Client.</a></li>
+<li><a href="https://filezilla-project.org/">FileZilla.</a></li>
+<li><a href="https://iperf.fr/">iperf3: Network Performance Measurement.</a></li>
+<li><a href="https://hisham.hm/htop/">Htop.</a></li>
+</ul>
+<h4 id="أدوات-الطرفية--">أدوات الطرفية 🔥 :</h4>
+<ul>
+<li><a href="https://www.zsh.org/">ZSH.</a></li>
+<li><a href="https://github.com/junegunn/fzf">fzf: Fuzzy Finder.</a></li>
+<li><a href="https://github.com/ranger/ranger">ranger: File Manager.</a></li>
+<li><a href="https://github.com/tmux/tmux/wiki">tmux: Terminal Multiplexer.</a></li>
+<li><a href="https://micro-editor.github.io/">micro: Text Editor.</a></li>
+<li><a href="https://tldr.sh/">tldr: Simplified Man Pages.</a></li>
+</ul>
+<h4 id="التحقيق-الجنائي-الرقمي-">التحقيق الجنائي الرقمي 🕵️:</h4>
+<ul>
+<li><a href="https://accessdata.com/products-services/forensic-toolkit-ftk/ftkimager">FTK® Imager.</a></li>
+<li><a href="https://www.r-studio.com/data-recovery-software/">R-Studio.</a></li>
+<li><a href="https://www.gnu.org/software/ddrescue/">ddrescue.</a></li>
+<li><a href="https://www.linuxlinks.com/dcfldd/">dcfldd.</a></li>
+<li><a href="https://www.cgsecurity.org/wiki/TestDisk">TestDisk.</a></li>
+<li><a href="https://github.com/samueltardieu/recoverjpeg">recoverjpeg.</a></li>
+<li><a href="http://foremost.sourceforge.net/">foremost: Data Carving.</a></li>
+<li><a href="https://devhints.io/adb">ADB: Android Debug Bridge.</a></li>
+<li><a href="https://github.com/pauldreik/rdfind">rdfind: Finds Duplicate Files.</a></li>
+<li><a href="https://ssdeep-project.github.io/ssdeep/index.html">ssdeep: Fuzzy Hashing Program.</a></li>
+<li><a href="https://exiftool.org/">exiftool.</a></li>
+<li><a href="http://manpages.ubuntu.com/manpages/bionic/man8/kpartx.8.html">kpartx.</a></li>
+<li><a href="http://manpages.ubuntu.com/manpages/precise/en/man1/nc.traditional.1.html">netcat.</a></li>
+<li><a href="https://www.smartmontools.org/">Smartmontools.</a></li>
+<li><a href="https://hashcat.net/hashcat/">Hashcat: password recovery tool.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>git on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/categories/git/</link>
+    <description>Recent content in git on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تعلم نظام إدارة النسخ Git</title>
+      <link>https://abotyim.github.io/ar/posts/resources/git/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/git/</guid>
+      <description>برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
+<li><a href="https://satr.codes/courses/ZlKLfufzmW/view">منصة سطر: Git 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
+<li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="http://lgrth.me/gitbook">خوارزميون: المبرمجون وإدارة الشيفرات البرمجية Git.</a></li>
+<li><a href="https://mulham.github.io/git-qa/">ملهم: أسئلة وأجوبة حول git.</a></li>
+<li><a href="https://bandar.design/blog/%D8%B4%D8%B1%D8%AD-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-git-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81-%D8%A8%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D8%B3%D8%AE-1/">بندر: شرح أساسيات استخدام Git الجزء الأول.</a></li>
+<li><a href="https://bandar.design/blog/%D8%B4%D8%B1%D8%AD-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-git-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81-%D8%A8%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D8%B3%D8%AE-2/">بندر: شرح أساسيات استخدام Git الجزء الثاني.</a></li>
+<li><a href="https://notme20n.wordpress.com/2020/01/24/%d9%85%d8%a7%d9%87%d9%88-git-%d8%9f-%d9%88%d9%85%d8%a7%d9%87%d9%88-github-%d8%9f/">عبير: ماهو Git ؟ وماهو github ؟</a></li>
+</ul>
+<br>
+<blockquote>
+<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
