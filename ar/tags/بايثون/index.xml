@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>لغة البرمجة بايثون</title>
+      <title>مصادر لتعلم لغة البرمجة بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/python/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -22,6 +22,8 @@
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs">أكاديمية الزيرو: Mastering Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ">كودزيلا: Master Python from Beginner to Advanced.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OvMsFbU9zo8oJCprAsgc4LO">عبد الرحمن جمال: كورس cs50 بالعربي كامل | Cs50 Tutorial In Arabic</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE">عبد الرحمن جمال: Python for Beginners.</a></li>
 <li><a href="https://app.barmej.com/%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D8%B9%D9%86-%D9%84%D8%BA%D8%A9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86">منصة برمج: مسار بايثون.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN98I0nEXOuR_gK8b4w-NJcN">محمد عيسى: دورة Python 3 أساسيات ومتقدم.</a></li>
 <li><a href="https://www.youtube.com/watch?v=rzqjYKyciUM&amp;list=PLF8OvnCBlEY1j4hxoqXqJk08ASU7D_W87">حسين الربيعي: دورة برمجة بايثون Python Tutorials Arabic.</a></li>
@@ -29,7 +31,6 @@
 <li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnM9y0sQRwjVz2-IwvnEJep">أكاديمية حسونة: بايثون الكل.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCwV-ZUabT5HVhLliTT9of2I">شبكة علوم: أساسيات Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWn51JDXe4_QKeqCSN0pfP3J">يونس: دورة بايثون.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE">عبد الرحمن جمال: Python for Beginners.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOazcliAXXivOrg9GiAVuoQg">أكاديمية الخوارزميات: دورة تعلم بايثون.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbiesxZbUuG-kxi7_dKBYkcY">نور حمصي: البايثون بيتكلم عربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82kmwTurwN1v7HgB9piMJrHS">فتحي العامري: دورة أساسيات Python.</a></li>
@@ -76,6 +77,8 @@
 <h3 id="kivy">Kivy:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGkerqrnl_u9woXKdtUH_hfs">محمود رؤوف.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLV5tcx8nnuVLRJ5E9iD0QWEcTcafZUtS_">Mohamed Al-Kainai: أساسيات Kivy &amp; Kivymd.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLV5tcx8nnuVJ1t_ycHFeHvlgM-B4NPZfm">Mohamed Al-Kainai: تصميم تطبيقات Kivy &amp; Kivymd.</a></li>
 </ul>
 <h3 id="tkinter">Tkinter:</h3>
 <ul>
@@ -120,6 +123,7 @@
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7Xmdc6dc9YuFmGTk3Kn5WvMZL">عمر عز الدين.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLImVLP5cXFNS-TAKeRHpp0_SzGuwBUFnT">حازم خالد.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLO1D3YWS7ep3Pfjls3LjBtp5XdvGpBD6Z">كريم الجزار.</a></li>
 </ul>
 <h3 id="web-crawling">Web Crawling:</h3>
 <ul>
@@ -184,6 +188,8 @@
 <li><a href="https://satr.codes/courses/BDtmFNpFMp/view">منصة سطر: Python 104.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj">مجتمع بايثون العربي: لغة بايثون 🐍.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc">عبد الله نصر: التعرف على الوجوه Face recognition.</a></li>
+<li><a href="https://www.youtube.com/watch?v=apXivooJwoo&amp;list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ">كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.</a></li>
+<li><a href="https://www.youtube.com/watch?v=rixaB3-8OSQ&amp;list=PLO1D3YWS7ep0rsgm301QaSXjvEX0FHImw">كريم الجزار: مشاريع إبصار الآلة.</a></li>
 </ul>
 <h3 id="كتب">كتب:</h3>
 <ul>

@@ -9,9 +9,78 @@
       <link>https://abotyim.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>تعلم نظام إدارة النسخ Git</title>
+      <title>مصادر لتعلم مايكروتك Mikrotik</title>
+      <link>https://abotyim.github.io/ar/posts/resources/mikrotik/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/mikrotik/</guid>
+      <description>هي شركة معروفة عالميًا براوتر مايكروتك الشركة ذات أصول لاتيفية، وتقوم بتصنيع تجهيزات شبكات الحاسوب، وتبيع منتجات الشبكات اللاسلكية والموجهات أو ما يطلق عليها الراوتر. نشأت هذه الشركة في العام 1995 من أجل المنافسة في سوق شبكات الحاسوب الناشئة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="muhammed-essa">Muhammed Essa:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=D2rPL0fenLA">فيديو: مسار مايكروتك لمهندسي الشبكات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9-NtMWJRpOzDZHBhhODKmT">MTCNA - Mikrotik.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN8ruoZD1uvzXmeUMCJGYqZg">Mikrotik - MTCRE training.</a></li>
+</ul>
+<br>
+<h3 id="ahmed-pc">Ahmed PC:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL9eI2I9Wu9rRRj8LYRHDHGdx7IYs-a0BG">MTCNA - Mikrotik.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL9eI2I9Wu9rTJJWx2JVUhyZyBl7zlVvWA">Mikrotik - MTCRE training.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL9eI2I9Wu9rR-dt2PBUim4O-ILA8YfPkd">من أين أبدأ وكيف أبدأ في الشبكات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL9eI2I9Wu9rTpOionF4tRJ0Evo5DSAX9o">إدارة جهاز المايكروتك من خلال سطر الاوامر.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL9eI2I9Wu9rQhlbAtOLkl23T0w-Ilr5i4">دورة كتابة الأكواد أو السكربتات فى الميكروتك.</a></li>
+</ul>
+<br>
+<h3 id="منوع">منوع:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFaLiqBBTNnt8lzBmCBlE4AQ">حمد العبسي: MikroTik Routers مايكروتك.</a></li>
+<li><a href="https://www.youtube.com/watch?v=zNbcdldop3c&amp;list=PLgEjCx61Ee7O0e3qE3N4C1-5XiVWgPAGR">أحمد عزيز: دورة مايكروتك Api.</a>.</li>
+</ul>
+<br>
+<blockquote>
+<p>« لقاح الهِمَّة العالية: النية الصحيحة، فإذا اجتمعا بلغ العبد غاية المراد »</p>
+<ul>
+<li>ابن القيم رحمه الله [الفوائد].</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم OPNSense &amp; pfSense</title>
+      <link>https://abotyim.github.io/ar/posts/resources/firewall/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/firewall/</guid>
+      <description>مصادر عربية لتعلم جدار الحماية pfSense و OPNSense.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pfsense">pfSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ_en3BNcffq2-Lg2mu0BtnS">pfSense شرح بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ8tRlJq6G5Cwt2c_l2GvEWk">pfSense By Eng-Abdallah Mousa - Arabic.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xksxLcrysqy7J50vRT6HDQi">المهندس أحمد: شرح Firewall PFsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xm5eMQ5bBLqSmN35BDouVf2">المهندس أحمد: PFsense Real Scenario.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbI5WInq9BkakI-cNEyJ1ba">حمد العبسي: pfSense FireWall.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLoaiVxx0lqPMolHAJjUvpDlG4vWgirI-x"> SALAMI-TECH : Pfsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLpN4oO_ivZXt-oFf3KoUqXvzzk8rwuZBM">المهندس عبد الله موسى: Pfsense.</a></li>
+</ul>
+<br>
+<h3 id="opnsense">OPNSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFaKQ619N3MBd8jkldqxt7uW">حمد العبسي: OPNSense Firewall.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« لا ينبغي للعاقل أن يُرى إلا ساعيًا في تحصيل حسنة لمعاده أو درهم لمعاشه »</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم Git</title>
       <link>https://abotyim.github.io/ar/posts/resources/git/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -20,13 +89,18 @@
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h3 id="المصادر-المرئية">المصادر المرئية:</h3>
 <ul>
-<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC">محمد عيسى: دورة Git.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
 <li><a href="https://satr.codes/courses/ZlKLfufzmW/view">منصة سطر: Git 101.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
+<li>
+<ul>
+<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git - مدفوعة.</a></li>
+</ul>
+</li>
 </ul>
 <br>
 <h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
@@ -39,21 +113,66 @@
 </ul>
 <br>
 <blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<p>« قال النبي صلى الله عليه وسلم: اللهم إني أعوذ بك من العجز والكسل »</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+<li>رواه البخاري ومسلم.</li>
 </ul>
 </blockquote>
 ]]></content:encoded>
     </item>
     
     <item>
-      <title>نظام التشغيل جنو لينكس GNU/Linux</title>
+      <title>مصادر لتعلم تقنية الـ Kubernetes</title>
+      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
+      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
+<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« إني لأمقت الرجل أراه فارغًا ليس في شيء من عمل دنيا ولا آخرة »</p>
+<ul>
+<li>الصحابي الجليل: عبدالله بن مسعود رضي الله عنه</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
       <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
-      <description>هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
+      <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h3 id="المصادر-المرئية">المصادر المرئية:</h3>
 <ol>
@@ -111,6 +230,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg">Ansible Capsules بالعربي لوليد حسين.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE">arab Devops: Ansible in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=-86oMSw6pSc">ansible-playbook شرح.</a></li>
+<li><a href="https://academy.hsoub.com/devops/deployment/ansible/">أكادمية حسوب: Ansible.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg">دورة تعلم نظام اللينكس للمهندس نادر</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7">دورة أساسيات لينكس من تكناوي دوت نت</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">KVM</a></li>
@@ -118,6 +238,8 @@
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi">Jenkins بالعربي</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-">Jenkins in arabic (with Salem)</a></li>
 <li><a href="https://www.flexcourses.com/courses/linux">FlexCourses: دورة إدارة أنظمة لينكس Linux مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_pZoCY7J3oBFixwgv_J55G">محمد عيسى: حجز واستضافة مواقع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_EBkl8yQsfRFaNIb-0LOXO">محمد عيسى: دورة DevOps.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLBpclpRCG39qvWLuW94qCBzsr_iGTAyam">linux distributions reviews مراجعات</a></li>
 </ul>
 <br>
@@ -140,6 +262,7 @@
 <li><a href="https://linux-2-day.com/">لينكس اليوم</a></li>
 <li><a href="https://io.hsoub.com/linux/">مجتمع لينكس في حسوب</a></li>
 <li><a href="https://www.2linuxdz.com/">مدونة لينكس التقنية</a></li>
+<li><a href="https://discourse.aosus.org/c/linux/">مجتمع أسس.</a></li>
 </ul>
 <br>
 <h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
@@ -172,7 +295,7 @@
 </ul>
 <br>
 <blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<p>« كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
 </ul>
@@ -384,7 +507,165 @@
     </item>
     
     <item>
-      <title>لغة البرمجة بايثون</title>
+      <title>مصادر لتعلم تحليل البيانات مع بايثون</title>
+      <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
+      <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pandas">Pandas:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVwzaWa2Kp7bgIVcJsJ5XGW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGchpgdUPu4vQNQdO4L0UiP">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F">أبو بكر سليمان.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
+</ul>
+<h3 id="numpy">Numpy:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVAMh7Is9PRsM7IMLhLS787">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGDYq-dnVCsELEIq_7HK7Ca">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
+</ul>
+<h3 id="matplotlib">Matplotlib:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
+</ul>
+<h3 id="seaborn">Seaborn:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
+</ul>
+<h3 id="علم-البيانات">علم البيانات:</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e">حسام الحوراني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6">مدرسة السايبر: تحليل البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5">إيهاب دياب: Data Analyst Course.</a></li>
+<li><a href="https://www.rwaq.org/courses/sea_python_level1-2">منصة رواق: مدخل إلى علم البيانات.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB">Ons أنس: Data Science and Machine Learning.</a></li>
+<li><a href="https://www.youtube.com/watch?v=hJZWy-VpDGI&amp;list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM">الصافي حجازي: علم البيانات - Data Science.</a></li>
+<li><a href="https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/">مدونة بايثونات: مكتبات علم البيانات بالبايثون.</a></li>
+</ul>
+<h3 id="منوع">منوع:</h3>
+<ul>
+<li><a href="https://pythonat.com/articles/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA/">تحليل البيانات باستخدام بايثون – سجلات الوفيات والاصابات بفيروس كورونا كمثال.</a></li>
+</ul>
+<br>
+<blockquote>
+<p><a href="http://www.saaid.net/Doat/sudies/35.htm">« لا يستطاع العلم براحة الجسم »</a></p>
+<ul>
+<li>الإمام الحافظ: يحيى بن أبي كثير</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم إطار العمل Django</title>
+      <link>https://abotyim.github.io/ar/posts/resources/django/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/django/</guid>
+      <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<h4 id="محمد-شوشان">محمد شوشان:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwT8CbcwHMZkjlmN1BdbOBWB">Django Tutorials for Beginners.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwRCqH9qJSM67ZPBC7MD1Pa3">Django Tutorials Level 2 (REST API).</a></li>
+</ul>
+<h4 id="محمود-أحمد">محمود أحمد:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfv9yQelR4HETqU35alUoW6">الدليل الشامل لتعلم دجانغو 3.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfio_BvIw_sLqHCUQ5XPpyZ">أساسيات برمجة المواقع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqc3cbs0cpSrr1jiGgSbjlik">التعامل مع Class Based Views.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdSdcHeukSUJKxiUpELCnFg">برمجة متجر الكتروني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfm1KN_9qc7vpn5e9XwP9U3">كيفية التعامل مع المستخدمين دجانغو 2.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqcq6ExuyRT0SNw8iKopFpV1">كلام في دجانجو.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqeVCY78dcKJFXItin0BEujT">كيفية رفع مشروع دجانجو على DigitalOcean.</a></li>
+<li><a href="https://code4learn.teachable.com/p/d4a3d7">مكتبات خاصة بدجانجو.</a></li>
+</ul>
+<h4 id="محمد-عيسى">محمد عيسى:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_5wAJRbEoQYl62-qM3aB8t">Django framework python.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9JJ7r0APq7O87gucjYWRfD">Python Django Web.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_8KPztmgiAZpsNfXJcI-v5">Django 2 REST API JWT CRUD.</a></li>
+</ul>
+<h4 id="مهدي-أحمد">مهدي أحمد:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYpg51JOvlf-Znj78i_V_n_">Build Advanced Blog.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYrNzeF48o-z53DA14JZ-d9">Blog API.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeaLJsAmb5O2F2T-QDxPc7Ut">Django Forms.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKebUJtwiOm7Yso5HgN3jC8Ll">إنشاء متجر إلكتروني.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYoiobPZmO7HtIoFBt6hV0O">Real Time Chat with Django-channels.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZfwfZ9QMb1XlTgwmTrxQBK">To Do List Django 2.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZgn0-oUs8khsXTTRhI9xoN">CRUD system using Django &amp; Ajax.</a></li>
+</ul>
+<h4 id="أسماء-الطويل">أسماء الطويل:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3XUn2HYMWRbAon4z6AQ4CL">Django Tutorial for Beginners.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3dglbz0tvLqJTJPVPgjW1x">Django Rest Framework Tutorial.</a></li>
+</ul>
+<h4 id="عبد-الرحمن-جمال">عبد الرحمن جمال:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OtK_n48UOuYGxJPbSFrICxm">كورس دجانغو كامل للمتدئين.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8Ot_JCzFaQ_XenaOe99VFmcM">نظام إدارة مكتبة.</a></li>
+</ul>
+<h4 id="بايثون-ارابيا-فهد-مناع">بايثون ارابيا فهد مناع:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJWk_u_N01Jjrm9y2_60cjOB">ربط Django مع Elasticsearch.</a></li>
+<li><a href="https://www.youtube.com/watch?v=XZ69ExZKjcI">شرح Django celery وتنفيذ المهام بشكل async.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJV6oWcW2vlPHRzRFF6gVvc3">شرح Django API Rest Framework.</a></li>
+</ul>
+<h4 id="منصة-سطر">منصة سطر:</h4>
+<ul>
+<li><a href="https://satr.codes/courses/FymypsKhJJ/view">Django 101.</a></li>
+<li><a href="https://satr.codes/courses/wxLyJSBxeg/view">Django 102.</a></li>
+</ul>
+<h4 id="منوع">منوع:</h4>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCxoyflbe4AuNWMZWulKVbr4">شبكة علوم: Django 2.</a></li>
+<li><a href="https://app.barmej.com/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-Django">منصة برمج: برمجة تطبيقات الويب باستخدام Django.</a></li>
+<li><a href="https://www.youtube.com/watch?v=kv0k2d75a3s&amp;list=PLnznAJG6RAI8egZJ6lR5tuWgNmrRp4DJd">محمد النجدي: سلسلة تعلم تطوير المواقع بإستخدام جانقو.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEKjuYyvITqYc2vL0lAWRvhs">الصافي حجازي: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGn6A_NLDGG4B5AZ-ZexVsPn">محمود رؤوف: إنشاء موقع Vezeta باستخدام Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnYEkYsNi5XJLI57OWMKBjM">أكاديمية حسونة: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLF8OvnCBlEY3VqZkeKeyVdJ_J1Ek0ECbs">حسين الربيعي: Django.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGingAiwV8N56d5mDhlBabdd">Mohammed Gh: Class Based View in Django.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
+<li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
+<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
+<ul>
+<li><a href="https://t.me/DjangoPython">تيليغرام: جانغو.</a></li>
+<li><a href="https://io.hsoub.com/django">حسوب: جانغو.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
+<ul>
+<li>أبو العلاء المعري</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم لغة البرمجة بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/python/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -395,6 +676,8 @@
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs">أكاديمية الزيرو: Mastering Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ">كودزيلا: Master Python from Beginner to Advanced.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OvMsFbU9zo8oJCprAsgc4LO">عبد الرحمن جمال: كورس cs50 بالعربي كامل | Cs50 Tutorial In Arabic</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE">عبد الرحمن جمال: Python for Beginners.</a></li>
 <li><a href="https://app.barmej.com/%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D8%B9%D9%86-%D9%84%D8%BA%D8%A9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86">منصة برمج: مسار بايثون.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN98I0nEXOuR_gK8b4w-NJcN">محمد عيسى: دورة Python 3 أساسيات ومتقدم.</a></li>
 <li><a href="https://www.youtube.com/watch?v=rzqjYKyciUM&amp;list=PLF8OvnCBlEY1j4hxoqXqJk08ASU7D_W87">حسين الربيعي: دورة برمجة بايثون Python Tutorials Arabic.</a></li>
@@ -402,7 +685,6 @@
 <li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnM9y0sQRwjVz2-IwvnEJep">أكاديمية حسونة: بايثون الكل.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCwV-ZUabT5HVhLliTT9of2I">شبكة علوم: أساسيات Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGmkOBY-mRWn51JDXe4_QKeqCSN0pfP3J">يونس: دورة بايثون.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE">عبد الرحمن جمال: Python for Beginners.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOazcliAXXivOrg9GiAVuoQg">أكاديمية الخوارزميات: دورة تعلم بايثون.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbiesxZbUuG-kxi7_dKBYkcY">نور حمصي: البايثون بيتكلم عربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82kmwTurwN1v7HgB9piMJrHS">فتحي العامري: دورة أساسيات Python.</a></li>
@@ -449,6 +731,8 @@
 <h3 id="kivy">Kivy:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGkerqrnl_u9woXKdtUH_hfs">محمود رؤوف.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLV5tcx8nnuVLRJ5E9iD0QWEcTcafZUtS_">Mohamed Al-Kainai: أساسيات Kivy &amp; Kivymd.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLV5tcx8nnuVJ1t_ycHFeHvlgM-B4NPZfm">Mohamed Al-Kainai: تصميم تطبيقات Kivy &amp; Kivymd.</a></li>
 </ul>
 <h3 id="tkinter">Tkinter:</h3>
 <ul>
@@ -493,6 +777,7 @@
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLAI6JViu7Xmdc6dc9YuFmGTk3Kn5WvMZL">عمر عز الدين.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLImVLP5cXFNS-TAKeRHpp0_SzGuwBUFnT">حازم خالد.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLO1D3YWS7ep3Pfjls3LjBtp5XdvGpBD6Z">كريم الجزار.</a></li>
 </ul>
 <h3 id="web-crawling">Web Crawling:</h3>
 <ul>
@@ -557,6 +842,8 @@
 <li><a href="https://satr.codes/courses/BDtmFNpFMp/view">منصة سطر: Python 104.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj">مجتمع بايثون العربي: لغة بايثون 🐍.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc">عبد الله نصر: التعرف على الوجوه Face recognition.</a></li>
+<li><a href="https://www.youtube.com/watch?v=apXivooJwoo&amp;list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ">كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.</a></li>
+<li><a href="https://www.youtube.com/watch?v=rixaB3-8OSQ&amp;list=PLO1D3YWS7ep0rsgm301QaSXjvEX0FHImw">كريم الجزار: مشاريع إبصار الآلة.</a></li>
 </ul>
 <h3 id="كتب">كتب:</h3>
 <ul>
@@ -581,6 +868,62 @@
 <p>« ليس المهم نوع المضمار الذي تسلكه، لكن المهم إذا اخترتَ مضماراً .. أن تكون بطله ! »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=GQfy_wLbKx8">عمار بن ناصر العتيبي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم تقنية الـ Docker</title>
+      <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
+      <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLxNoJq6k39G8zg-t26bV-JGLokr0mgNKk">Containerization من Garage Education.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLcWvtt1Kdxjdbz8JzGdR5wgsTfx9Mo4Ei">Docker - Build, Ship, Run - Arabic من Mohamed Rezk.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXgJ7cArk9uTER4dTdOxbryfx-cz6YkoA">Docker Practical Course من عبد العزيز الزعابي </a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC">دوكر باللغة العربية من محمد عيسى.</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYVdPnqpdUc&amp;list=PLCsn73jgrZ7fQOGpnb_KY3ackH9LUjFtC">Docker in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFalxKLBVQc1uASZH5BfbMRj">Docker and Containers من حمد العبسي.</a></li>
+<li><a href="https://www.udemy.com/course/docker-ar/">Learn Docker مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/watch?v=nQ6tflsf0aU">فيديو يشرح مقدمة في Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=wRl4Zzpcblk">GDGMENA: مقدمة إلى تقنية الحاويات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-N3Ob7hHUD4">GDGMENA: ضع تطبيقاتك في حاويات باستخدام Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_vMoUyBr3srNzFgQXbAjcxMfb-JpRyIN">سلسلة تعليم دوكر من صوت المبرمج.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOY76BQBReTszByDaUiOEhC7">تعلم Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdYYj2XLw5Bmx7lN1flO4eXGGyieUkfBa">Docker For Developers Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=oxRjGqjUXFA">ورشة تعليم دوكر بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
+<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH">Learn Docker from Zero من عبد الباسط بوشقري.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
+<ul>
+<li><a href="https://nullplus.plus/episodes/episode5-docker-intro-quick-tips">شرح من بودكاست null++</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
+<li><a href="https://informatic-ar.com/category/programming/docker/">سلسلة مقالات للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
+<li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
+<li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
 </ul>
 </blockquote>
 ]]></content:encoded>
@@ -745,119 +1088,6 @@
 <li><a href="https://abgoor.blogspot.com/2010/10/find.html">البحث بواسطة الأمر find في لينكس.</a></li>
 <li></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>تحليل البيانات مع بايثون</title>
-      <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
-      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
-      <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
-      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
-<h3 id="pandas">Pandas:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVwzaWa2Kp7bgIVcJsJ5XGW">Ons أنس.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGchpgdUPu4vQNQdO4L0UiP">ArabPy.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F">أبو بكر سليمان.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
-</ul>
-<h3 id="numpy">Numpy:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVAMh7Is9PRsM7IMLhLS787">Ons أنس.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkGDYq-dnVCsELEIq_7HK7Ca">ArabPy.</a></li>
-<li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
-</ul>
-<h3 id="matplotlib">Matplotlib:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
-</ul>
-<h3 id="seaborn">Seaborn:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
-</ul>
-<h3 id="علم-البيانات">علم البيانات:</h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
-<li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e">حسام الحوراني.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6">مدرسة السايبر: تحليل البيانات.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5">إيهاب دياب: Data Analyst Course.</a></li>
-<li><a href="https://www.rwaq.org/courses/sea_python_level1">منصة رواق: مدخل إلى علم البيانات.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB">Ons أنس: Data Science and Machine Learning.</a></li>
-<li><a href="https://www.youtube.com/watch?v=hJZWy-VpDGI&amp;list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM">الصافي حجازي: علم البيانات - Data Science.</a></li>
-<li><a href="https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/">مدونة بايثونات: مكتبات علم البيانات بالبايثون.</a></li>
-</ul>
-<br>
-<blockquote>
-<p><a href="http://www.saaid.net/Doat/sudies/35.htm">« لا يستطاع العلم براحة الجسم »</a></p>
-<ul>
-<li>الإمام الحافظ: يحيى بن أبي كثير</li>
-</ul>
-</blockquote>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>تقنية الـ Docker</title>
-      <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
-      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
-      <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
-      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
-<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLxNoJq6k39G8zg-t26bV-JGLokr0mgNKk">Containerization من Garage Education.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLcWvtt1Kdxjdbz8JzGdR5wgsTfx9Mo4Ei">Docker - Build, Ship, Run - Arabic من Mohamed Rezk.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLXgJ7cArk9uTER4dTdOxbryfx-cz6YkoA">Docker Practical Course من عبد العزيز الزعابي </a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC">دوكر باللغة العربية من محمد عيسى.</a></li>
-<li><a href="https://www.youtube.com/watch?v=ZYVdPnqpdUc&amp;list=PLCsn73jgrZ7fQOGpnb_KY3ackH9LUjFtC">Docker in Arabic من Ziyaad Qasem.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFalxKLBVQc1uASZH5BfbMRj">Docker and Containers من حمد العبسي.</a></li>
-<li><a href="https://www.udemy.com/course/docker-ar/">Learn Docker مدفوعة.</a></li>
-<li><a href="https://www.youtube.com/watch?v=nQ6tflsf0aU">فيديو يشرح مقدمة في Docker.</a></li>
-<li><a href="https://www.youtube.com/watch?v=wRl4Zzpcblk">GDGMENA: مقدمة إلى تقنية الحاويات.</a></li>
-<li><a href="https://www.youtube.com/watch?v=-N3Ob7hHUD4">GDGMENA: ضع تطبيقاتك في حاويات باستخدام Docker.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL_vMoUyBr3srNzFgQXbAjcxMfb-JpRyIN">سلسلة تعليم دوكر من صوت المبرمج.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOY76BQBReTszByDaUiOEhC7">تعلم Docker.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLdYYj2XLw5Bmx7lN1flO4eXGGyieUkfBa">Docker For Developers Docker.</a></li>
-<li><a href="https://www.youtube.com/watch?v=oxRjGqjUXFA">ورشة تعليم دوكر بالعربي.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
-<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
-</ul>
-<br>
-<h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
-<ul>
-<li><a href="https://nullplus.plus/episodes/episode5-docker-intro-quick-tips">شرح من بودكاست null++</a></li>
-</ul>
-<br>
-<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
-<ul>
-<li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
-<li><a href="https://informatic-ar.com/category/programming/docker/">سلسلة مقالات للأخ وجدي عصام عبد الرحيم.</a></li>
-<li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
-<li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
-<li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
-</ul>
-<br>
-<blockquote>
-<p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
-</ul>
-</blockquote>
 ]]></content:encoded>
     </item>
     
@@ -1215,153 +1445,12 @@
     </item>
     
     <item>
-      <title>تقنية الـ Kubernetes</title>
-      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
-      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
-      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
-<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
-<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
-<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
-</ul>
-<br>
-<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
-<ul>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
-</ul>
-<br>
-<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
-<ul>
-<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
-</ul>
-<br>
-<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
-<ul>
-<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
-</ul>
-<br>
-<blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
-</ul>
-</blockquote>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>إطار العمل Django</title>
-      <link>https://abotyim.github.io/ar/posts/resources/django/</link>
-      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/posts/resources/django/</guid>
-      <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له.</description>
-      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
-<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
-<h4 id="محمد-شوشان">محمد شوشان:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwT8CbcwHMZkjlmN1BdbOBWB">Django Tutorials for Beginners.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwRCqH9qJSM67ZPBC7MD1Pa3">Django Tutorials Level 2 (REST API).</a></li>
-</ul>
-<h4 id="محمود-أحمد">محمود أحمد:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfv9yQelR4HETqU35alUoW6">الدليل الشامل لتعلم دجانغو 3.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfio_BvIw_sLqHCUQ5XPpyZ">أساسيات برمجة المواقع.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqc3cbs0cpSrr1jiGgSbjlik">التعامل مع Class Based Views.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqdSdcHeukSUJKxiUpELCnFg">برمجة متجر الكتروني.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqfm1KN_9qc7vpn5e9XwP9U3">كيفية التعامل مع المستخدمين دجانغو 2.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqcq6ExuyRT0SNw8iKopFpV1">كلام في دجانجو.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLtGOJcWqvbqeVCY78dcKJFXItin0BEujT">كيفية رفع مشروع دجانجو على DigitalOcean.</a></li>
-<li><a href="https://code4learn.teachable.com/p/d4a3d7">مكتبات خاصة بدجانجو.</a></li>
-</ul>
-<h4 id="محمد-عيسى">محمد عيسى:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_5wAJRbEoQYl62-qM3aB8t">Django framework python.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9JJ7r0APq7O87gucjYWRfD">Python Django Web.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_8KPztmgiAZpsNfXJcI-v5">Django 2 REST API JWT CRUD.</a></li>
-</ul>
-<h4 id="مهدي-أحمد">مهدي أحمد:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYpg51JOvlf-Znj78i_V_n_">Build Advanced Blog.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYrNzeF48o-z53DA14JZ-d9">Blog API.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeaLJsAmb5O2F2T-QDxPc7Ut">Django Forms.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKebUJtwiOm7Yso5HgN3jC8Ll">إنشاء متجر إلكتروني.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeYoiobPZmO7HtIoFBt6hV0O">Real Time Chat with Django-channels.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZfwfZ9QMb1XlTgwmTrxQBK">To Do List Django 2.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLl7A6RG4XKeZgn0-oUs8khsXTTRhI9xoN">CRUD system using Django &amp; Ajax.</a></li>
-</ul>
-<h4 id="أسماء-الطويل">أسماء الطويل:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3XUn2HYMWRbAon4z6AQ4CL">Django Tutorial for Beginners.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL2z1gXAKH9c3dglbz0tvLqJTJPVPgjW1x">Django Rest Framework Tutorial.</a></li>
-</ul>
-<h4 id="عبد-الرحمن-جمال">عبد الرحمن جمال:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OtK_n48UOuYGxJPbSFrICxm">كورس دجانغو كامل للمتدئين.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8Ot_JCzFaQ_XenaOe99VFmcM">نظام إدارة مكتبة.</a></li>
-</ul>
-<h4 id="بايثون-ارابيا-فهد-مناع">بايثون ارابيا فهد مناع:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJWk_u_N01Jjrm9y2_60cjOB">ربط Django مع Elasticsearch.</a></li>
-<li><a href="https://www.youtube.com/watch?v=XZ69ExZKjcI">شرح Django celery وتنفيذ المهام بشكل async.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLXqhO5lRtxJV6oWcW2vlPHRzRFF6gVvc3">شرح Django API Rest Framework.</a></li>
-</ul>
-<h4 id="منصة-سطر">منصة سطر:</h4>
-<ul>
-<li><a href="https://satr.codes/courses/FymypsKhJJ/view">Django 101.</a></li>
-<li><a href="https://satr.codes/courses/wxLyJSBxeg/view">Django 102.</a></li>
-</ul>
-<h4 id="منوع">منوع:</h4>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLTcPeoMjkuCxoyflbe4AuNWMZWulKVbr4">شبكة علوم: Django 2.</a></li>
-<li><a href="https://app.barmej.com/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-Django">منصة برمج: برمجة تطبيقات الويب باستخدام Django.</a></li>
-<li><a href="https://www.youtube.com/watch?v=kv0k2d75a3s&amp;list=PLnznAJG6RAI8egZJ6lR5tuWgNmrRp4DJd">محمد النجدي: سلسلة تعلم تطوير المواقع بإستخدام جانقو.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLdZYzC8fohEKjuYyvITqYc2vL0lAWRvhs">الصافي حجازي: Django.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLUgHGaXGKJGn6A_NLDGG4B5AZ-ZexVsPn">محمود رؤوف: إنشاء موقع Vezeta باستخدام Django.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnYEkYsNi5XJLI57OWMKBjM">أكاديمية حسونة: Django.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLF8OvnCBlEY3VqZkeKeyVdJ_J1Ek0ECbs">حسين الربيعي: Django.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGingAiwV8N56d5mDhlBabdd">Mohammed Gh: Class Based View in Django.</a></li>
-</ul>
-<br>
-<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
-<ul>
-<li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
-<li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
-<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
-</ul>
-<br>
-<h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
-<ul>
-<li><a href="https://t.me/DjangoPython">تيليغرام: جانغو.</a></li>
-<li><a href="https://io.hsoub.com/django">حسوب: جانغو.</a></li>
-</ul>
-<br>
-<blockquote>
-<p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
-<ul>
-<li>أبو العلاء المعري</li>
-</ul>
-</blockquote>
-]]></content:encoded>
-    </item>
-    
-    <item>
       <title>نبذة عن الكاتب</title>
       <link>https://abotyim.github.io/ar/about/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/about/</guid>
-      <description>اِبنُ أُمَّةٍ لا تَمُوت، يفخر بانتمائه إليها، يسعى للنهوض بها مع إخوانه لتستعيد دورها ومكانتها بين الأمم، وتكون رائدة العلم والحضارة عما كانت عليه من قبل، أحاول النشر باللغة العربية، وحث الناس على الركوب في  سفينة العلم فطوفان الجهل والتخلف يعصف بنا في كل مكان.</description>
+      <description>اِبنُ أُمَّةٍ لا تَمُوت، يفخر بانتمائه إليها، يسعى للنهوض بها مع إخوانه لتستعيد دورها ومكانتها بين الأمم، وتكون رائدة العلم والحضارة عما كانت عليه من قبل، أحاول النشر باللغة العربية، وحث الناس على الركوب في  سفينة العلم فطوفان التجهيل يعصف بنا من كل حدب وصوب.</description>
       <content:encoded><![CDATA[<h4 id="توزيعات-لينكس-">توزيعات لينكس 🐧:</h4>
 <ul>
 <li><a href="https://www.debian.org/">Debian GNU/Linux.</a></li>

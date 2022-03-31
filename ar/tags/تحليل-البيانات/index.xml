@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>تحليل البيانات مع بايثون</title>
+      <title>مصادر لتعلم تحليل البيانات مع بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -53,10 +53,14 @@
 <li><a href="https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e">حسام الحوراني.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6">مدرسة السايبر: تحليل البيانات.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5">إيهاب دياب: Data Analyst Course.</a></li>
-<li><a href="https://www.rwaq.org/courses/sea_python_level1">منصة رواق: مدخل إلى علم البيانات.</a></li>
+<li><a href="https://www.rwaq.org/courses/sea_python_level1-2">منصة رواق: مدخل إلى علم البيانات.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB">Ons أنس: Data Science and Machine Learning.</a></li>
 <li><a href="https://www.youtube.com/watch?v=hJZWy-VpDGI&amp;list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM">الصافي حجازي: علم البيانات - Data Science.</a></li>
 <li><a href="https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/">مدونة بايثونات: مكتبات علم البيانات بالبايثون.</a></li>
+</ul>
+<h3 id="منوع">منوع:</h3>
+<ul>
+<li><a href="https://pythonat.com/articles/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA/">تحليل البيانات باستخدام بايثون – سجلات الوفيات والاصابات بفيروس كورونا كمثال.</a></li>
 </ul>
 <br>
 <blockquote>

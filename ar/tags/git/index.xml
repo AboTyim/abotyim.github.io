@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>تعلم نظام إدارة النسخ Git</title>
+      <title>مصادر لتعلم Git</title>
       <link>https://abotyim.github.io/ar/posts/resources/git/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -20,13 +20,18 @@
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h3 id="المصادر-المرئية">المصادر المرئية:</h3>
 <ul>
-<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC">محمد عيسى: دورة Git.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
 <li><a href="https://satr.codes/courses/ZlKLfufzmW/view">منصة سطر: Git 101.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
+<li>
+<ul>
+<li><a href="https://www.flexcourses.com/courses/git-basics/">Flex Courses: دورة إدارة نسخ البرمجة باستخدام git - مدفوعة.</a></li>
+</ul>
+</li>
 </ul>
 <br>
 <h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
@@ -39,9 +44,9 @@
 </ul>
 <br>
 <blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<p>« قال النبي صلى الله عليه وسلم: اللهم إني أعوذ بك من العجز والكسل »</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+<li>رواه البخاري ومسلم.</li>
 </ul>
 </blockquote>
 ]]></content:encoded>

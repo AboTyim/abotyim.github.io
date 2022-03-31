@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OPNSense on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/opnsense/</link>
+    <description>Recent content in OPNSense on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/opnsense/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم OPNSense &amp; pfSense</title>
+      <link>https://abotyim.github.io/ar/posts/resources/firewall/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/firewall/</guid>
+      <description>مصادر عربية لتعلم جدار الحماية pfSense و OPNSense.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pfsense">pfSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ_en3BNcffq2-Lg2mu0BtnS">pfSense شرح بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ8tRlJq6G5Cwt2c_l2GvEWk">pfSense By Eng-Abdallah Mousa - Arabic.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xksxLcrysqy7J50vRT6HDQi">المهندس أحمد: شرح Firewall PFsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xm5eMQ5bBLqSmN35BDouVf2">المهندس أحمد: PFsense Real Scenario.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbI5WInq9BkakI-cNEyJ1ba">حمد العبسي: pfSense FireWall.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLoaiVxx0lqPMolHAJjUvpDlG4vWgirI-x"> SALAMI-TECH : Pfsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLpN4oO_ivZXt-oFf3KoUqXvzzk8rwuZBM">المهندس عبد الله موسى: Pfsense.</a></li>
+</ul>
+<br>
+<h3 id="opnsense">OPNSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFaKQ619N3MBd8jkldqxt7uW">حمد العبسي: OPNSense Firewall.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« لا ينبغي للعاقل أن يُرى إلا ساعيًا في تحصيل حسنة لمعاده أو درهم لمعاشه »</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,14 +9,89 @@
       <link>https://abotyim.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D8%B1-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%84%D9%8A%D9%86%D9%83%D8%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D8%B1-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%84%D9%8A%D9%86%D9%83%D8%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>نظام التشغيل جنو لينكس GNU/Linux</title>
+      <title>مصادر لتعلم OPNSense &amp; pfSense</title>
+      <link>https://abotyim.github.io/ar/posts/resources/firewall/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/firewall/</guid>
+      <description>مصادر عربية لتعلم جدار الحماية pfSense و OPNSense.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="pfsense">pfSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ_en3BNcffq2-Lg2mu0BtnS">pfSense شرح بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ8tRlJq6G5Cwt2c_l2GvEWk">pfSense By Eng-Abdallah Mousa - Arabic.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xksxLcrysqy7J50vRT6HDQi">المهندس أحمد: شرح Firewall PFsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnw6_YqQO2xm5eMQ5bBLqSmN35BDouVf2">المهندس أحمد: PFsense Real Scenario.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbI5WInq9BkakI-cNEyJ1ba">حمد العبسي: pfSense FireWall.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLoaiVxx0lqPMolHAJjUvpDlG4vWgirI-x"> SALAMI-TECH : Pfsense.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLpN4oO_ivZXt-oFf3KoUqXvzzk8rwuZBM">المهندس عبد الله موسى: Pfsense.</a></li>
+</ul>
+<br>
+<h3 id="opnsense">OPNSense:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFaKQ619N3MBd8jkldqxt7uW">حمد العبسي: OPNSense Firewall.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« لا ينبغي للعاقل أن يُرى إلا ساعيًا في تحصيل حسنة لمعاده أو درهم لمعاشه »</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم تقنية الـ Kubernetes</title>
+      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
+      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
+<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« إني لأمقت الرجل أراه فارغًا ليس في شيء من عمل دنيا ولا آخرة »</p>
+<ul>
+<li>الصحابي الجليل: عبدالله بن مسعود رضي الله عنه</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
       <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
-      <description>هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
+      <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h3 id="المصادر-المرئية">المصادر المرئية:</h3>
 <ol>
@@ -74,6 +149,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg">Ansible Capsules بالعربي لوليد حسين.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE">arab Devops: Ansible in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=-86oMSw6pSc">ansible-playbook شرح.</a></li>
+<li><a href="https://academy.hsoub.com/devops/deployment/ansible/">أكادمية حسوب: Ansible.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg">دورة تعلم نظام اللينكس للمهندس نادر</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7">دورة أساسيات لينكس من تكناوي دوت نت</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">KVM</a></li>
@@ -81,6 +157,8 @@
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi">Jenkins بالعربي</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-">Jenkins in arabic (with Salem)</a></li>
 <li><a href="https://www.flexcourses.com/courses/linux">FlexCourses: دورة إدارة أنظمة لينكس Linux مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_pZoCY7J3oBFixwgv_J55G">محمد عيسى: حجز واستضافة مواقع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_EBkl8yQsfRFaNIb-0LOXO">محمد عيسى: دورة DevOps.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLBpclpRCG39qvWLuW94qCBzsr_iGTAyam">linux distributions reviews مراجعات</a></li>
 </ul>
 <br>
@@ -103,6 +181,7 @@
 <li><a href="https://linux-2-day.com/">لينكس اليوم</a></li>
 <li><a href="https://io.hsoub.com/linux/">مجتمع لينكس في حسوب</a></li>
 <li><a href="https://www.2linuxdz.com/">مدونة لينكس التقنية</a></li>
+<li><a href="https://discourse.aosus.org/c/linux/">مجتمع أسس.</a></li>
 </ul>
 <br>
 <h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
@@ -135,7 +214,7 @@
 </ul>
 <br>
 <blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
+<p>« كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
 </ul>
@@ -144,7 +223,7 @@
     </item>
     
     <item>
-      <title>تقنية الـ Docker</title>
+      <title>مصادر لتعلم تقنية الـ Docker</title>
       <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -172,6 +251,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
 <li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH">Learn Docker from Zero من عبد الباسط بوشقري.</a></li>
 </ul>
 <br>
 <h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
@@ -193,51 +273,6 @@
 <p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
-</ul>
-</blockquote>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>تقنية الـ Kubernetes</title>
-      <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
-      <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
-      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
-<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq">Kubernetes in Arabic من Ziyaad Qasem.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k">Kubernetes and cloud native apps.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG">Kubernetes in Arabic (With Salem)</a></li>
-<li><a href="https://www.youtube.com/watch?v=zvYmxUPuJyM">GDGMENA: مقدمة إلى تقنية الحاويات بال Kubernates.</a></li>
-<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDCHijCrMO5F-oHg52rRBpl">Kubernetes بالعربي.</a></li>
-</ul>
-<br>
-<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
-<ul>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-kubernetes-r467/">حسوب: مدخل إلى Kubernetes.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D8%AA%D8%B9%D9%84%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-kubernetes-r468/">حسوب: تعلم أساسيات Kubernetes.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%86%D8%B8%D8%A7%D9%85-%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D8%AA%D8%B3-kubernetes-%D9%88%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%87-r598/">حسوب: نظام كوبيرنتس Kubernetes وكيفية عمله.</a></li>
-<li><a href="https://academy.hsoub.com/devops/cloud-computing/%D9%85%D8%AF%D8%AE%D9%84-%D8%A5%D9%84%D9%89-helm-%D9%85%D8%AF%D9%8A%D8%B1-%D8%AD%D8%B2%D9%85-kubernetes-r470/">حسوب: مدخل إلى Helm مدير حزم Kubernetes.</a></li>
-</ul>
-<br>
-<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
-<ul>
-<li><a href="https://www.youtube.com/channel/UCdsl5KATIPh9dThQM09PAdg">Kubernetes بالعربي</a></li>
-</ul>
-<br>
-<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
-<ul>
-<li><a href="https://t.me/k8saraby">Kubernetes بالعربي.</a></li>
-</ul>
-<br>
-<blockquote>
-<p>كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
 </ul>
 </blockquote>
 ]]></content:encoded>
