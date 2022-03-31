@@ -1,5 +1,5 @@
 ---
-title: "تقنية الـ Kubernetes"
+title: "مصادر لتعلم تقنية الـ Kubernetes"
 
 description: "تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها."
 
@@ -14,7 +14,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2022-03-25"
-lastmod: "2022-03-25"
+lastmod: "2022-03-31"
 tags: ["kubernetes", "k8s"]
 categories: ["DevOps"]
 series: 
@@ -42,7 +42,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 30
+weight: 1
 ---
 
 
@@ -84,6 +84,6 @@ weight: 30
 
 <br>
 
-> كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا
+> « إني لأمقت الرجل أراه فارغًا ليس في شيء من عمل دنيا ولا آخرة »
 >
-> * [حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي](https://www.youtube.com/watch?v=nKW2rLJ2Ezw)
+> * الصحابي الجليل: عبدالله بن مسعود رضي الله عنه
