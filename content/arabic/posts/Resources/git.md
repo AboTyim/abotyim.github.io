@@ -1,5 +1,5 @@
 ---
-title: "تعلم نظام إدارة النسخ Git"
+title: "مصادر لتعلم Git"
 
 description: "برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية."
 
@@ -12,7 +12,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2022-03-26"
-lastmod: "2022-03-26"
+lastmod: "2022-03-31"
 tags: ["Programming", "git", "code"]
 categories: ["git", "Programming"]
 
@@ -50,13 +50,14 @@ weight: 1
 
 ### المصادر المرئية:
 
-- [Flex Courses: دورة إدارة نسخ البرمجة باستخدام git.](https://www.flexcourses.com/courses/git-basics/)
+- [محمد عيسى: دورة Git.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC)
 - [Devops Arabi: Git - بالعربي.](https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk)
 - [Ahmad Ezzeir: Git.](https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj)
 - [منصة سطر: Git 101.](https://satr.codes/courses/ZlKLfufzmW/view)
 - [Never Git Stuck.](https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc)
 - [Mohammed Gh: Learn Git & GitHub in Arabic.](https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0)
 - [Algorithm Academy: learn Git in Arabic.](https://www.youtube.com/watch?v=_6pQ6JXo_bM&list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK)
+- - [Flex Courses: دورة إدارة نسخ البرمجة باستخدام git - مدفوعة.](https://www.flexcourses.com/courses/git-basics/)
 
 <br>
 
@@ -70,6 +71,6 @@ weight: 1
 
 <br>
 
-> كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا
+> « قال النبي صلى الله عليه وسلم: اللهم إني أعوذ بك من العجز والكسل »
 >
-> * [حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي](https://www.youtube.com/watch?v=nKW2rLJ2Ezw)
+> * رواه البخاري ومسلم.

@@ -1,5 +1,5 @@
 ---
-title: "تقنية الـ Docker"
+title: "مصادر لتعلم تقنية الـ Docker"
 
 description: "صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع."
 
@@ -14,7 +14,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2021-07-14"
-lastmod: "2021-07-27"
+lastmod: "2022-03-31"
 tags: ["Docker", "دوكر"]
 categories: ["دوكر"]
 series: 
@@ -42,7 +42,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 20
+weight: 1
 # draft: false
 ---
 
@@ -73,6 +73,7 @@ weight: 20
 - [Docker in arabic من arab Devops.](https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V)
 - [منصة سطر: Docker 101.](https://satr.codes/courses/FdteTVpysF/view)
 - [دوكر كونتينر - Docker container.](https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC)
+- [Learn Docker from Zero من عبد الباسط بوشقري.](https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH)
 
 <br>
 

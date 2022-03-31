@@ -1,5 +1,5 @@
 ---
-title: "تحليل البيانات مع بايثون"
+title: "مصادر لتعلم تحليل البيانات مع بايثون"
 
 description: "تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة."
 
@@ -13,7 +13,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2021-07-28"
-lastmod: "2021-08-02"
+lastmod: "2022-03-31"
 tags: ["Data Analysis", "تحليل البيانات"]
 categories: ["تحليل البيانات"]
 series: 
@@ -42,7 +42,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 20
+weight: 1
 ---
 
 
@@ -94,10 +94,15 @@ weight: 20
 - [حسام الحوراني.](https://www.youtube.com/playlist?list=PLYW0LRZ3ePo6IYDS2K5IhmuP5qY3dmI9e)
 - [مدرسة السايبر: تحليل البيانات.](https://www.youtube.com/playlist?list=PLH0em1f_fBoQCPsgroUfTVwVU53lRg0D6)
 - [إيهاب دياب: Data Analyst Course.](https://www.youtube.com/playlist?list=PLZsT1OBQY_15SdjSQAQy-QIkgAYwHRct5)
-- [منصة رواق: مدخل إلى علم البيانات.](https://www.rwaq.org/courses/sea_python_level1)
+- [منصة رواق: مدخل إلى علم البيانات.](https://www.rwaq.org/courses/sea_python_level1-2)
 - [Ons أنس: Data Science and Machine Learning.](https://www.youtube.com/playlist?list=PLuRv1IekA3YWfALrW_D7z5TYsG-fJSeCB)
 - [الصافي حجازي: علم البيانات - Data Science.](https://www.youtube.com/watch?v=hJZWy-VpDGI&list=PLdZYzC8fohELCp-cTk0RCMCFjd460EuPM)
 - [مدونة بايثونات: مكتبات علم البيانات بالبايثون.](https://pythonat.com/articles/%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a8%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-5-%d9%85%d9%83%d8%aa%d8%a8%d8%a7%d8%aa/)
+
+
+
+### منوع:
+- [تحليل البيانات باستخدام بايثون – سجلات الوفيات والاصابات بفيروس كورونا كمثال.](https://pythonat.com/articles/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA/)
 
 
 

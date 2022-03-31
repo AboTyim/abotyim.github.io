@@ -1,5 +1,5 @@
 ---
-title: "إطار العمل Django"
+title: "مصادر لتعلم إطار العمل Django"
 
 description: "هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له."
 
@@ -12,7 +12,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2021-07-27"
-lastmod: "2021-07-28"
+lastmod: "2022-03-31"
 tags: ["Django", "دجانغو"]
 categories: ["دجانغو"]
 series: 
@@ -41,7 +41,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 30
+weight: 1
 ---
 
 

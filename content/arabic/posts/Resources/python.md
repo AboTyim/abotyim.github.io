@@ -1,5 +1,5 @@
 ---
-title: "لغة البرمجة بايثون"
+title: "مصادر لتعلم لغة البرمجة بايثون"
 
 description: "تعتبر لغة البرمجة بايثون سهلة الفهم وتتميز بالقوة والبساطة في آن واحد، وتتمتع بشيفرة سهلة القراءة، وتستخدم بشكل واسع في العديد من المجالات، وتعتبر من أسرع اللغات البرمجية تعلماً."
 
@@ -12,7 +12,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2021-07-27"
-lastmod: "2021-07-28"
+lastmod: "2022-03-31"
 tags: ["Python", "بايثون"]
 categories: ["بايثون"]
 series: 
@@ -42,7 +42,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 10
+weight: 1
 ---
 
 
@@ -55,6 +55,8 @@ weight: 10
 
 - [أكاديمية الزيرو: Mastering Python.](https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs)
 - [كودزيلا: Master Python from Beginner to Advanced.](https://www.youtube.com/playlist?list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ)
+- [عبد الرحمن جمال: كورس cs50 بالعربي كامل | Cs50 Tutorial In Arabic](https://www.youtube.com/playlist?list=PLknwEmKsW8OvMsFbU9zo8oJCprAsgc4LO)
+- [عبد الرحمن جمال: Python for Beginners.](https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE)
 - [منصة برمج: مسار بايثون.](https://app.barmej.com/%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D8%B9%D9%86-%D9%84%D8%BA%D8%A9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86)
 - [محمد عيسى: دورة Python 3 أساسيات ومتقدم.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN98I0nEXOuR_gK8b4w-NJcN)
 - [حسين الربيعي: دورة برمجة بايثون Python Tutorials Arabic.](https://www.youtube.com/watch?v=rzqjYKyciUM&list=PLF8OvnCBlEY1j4hxoqXqJk08ASU7D_W87)
@@ -62,7 +64,6 @@ weight: 10
 - [أكاديمية حسونة: بايثون الكل.](https://www.youtube.com/playlist?list=PLHIfW1KZRIfnM9y0sQRwjVz2-IwvnEJep)
 - [شبكة علوم: أساسيات Python.](https://www.youtube.com/playlist?list=PLTcPeoMjkuCwV-ZUabT5HVhLliTT9of2I)
 - [يونس: دورة بايثون.](https://www.youtube.com/playlist?list=PLGmkOBY-mRWn51JDXe4_QKeqCSN0pfP3J)
-- [عبد الرحمن جمال: Python for Beginners.](https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE)
 - [أكاديمية الخوارزميات: دورة تعلم بايثون.](https://www.youtube.com/playlist?list=PLfDx4cQoUNOazcliAXXivOrg9GiAVuoQg)
 - [نور حمصي: البايثون بيتكلم عربي.](https://www.youtube.com/playlist?list=PLPTNqXpQ2tbiesxZbUuG-kxi7_dKBYkcY)
 - [فتحي العامري: دورة أساسيات Python.](https://www.youtube.com/playlist?list=PLs97GbUOC82kmwTurwN1v7HgB9piMJrHS)
@@ -117,6 +118,8 @@ weight: 10
 ### Kivy:
 
 - [محمود رؤوف.](https://www.youtube.com/playlist?list=PLUgHGaXGKJGkerqrnl_u9woXKdtUH_hfs)
+-  [Mohamed Al-Kainai: أساسيات Kivy & Kivymd.](https://www.youtube.com/playlist?list=PLV5tcx8nnuVLRJ5E9iD0QWEcTcafZUtS_)
+-  [Mohamed Al-Kainai: تصميم تطبيقات Kivy & Kivymd.](https://www.youtube.com/playlist?list=PLV5tcx8nnuVJ1t_ycHFeHvlgM-B4NPZfm)
 
 
 
@@ -171,6 +174,7 @@ weight: 10
 
 - [عمر عز الدين.](https://www.youtube.com/playlist?list=PLAI6JViu7Xmdc6dc9YuFmGTk3Kn5WvMZL)
 - [حازم خالد.](https://www.youtube.com/playlist?list=PLImVLP5cXFNS-TAKeRHpp0_SzGuwBUFnT)
+- [كريم الجزار.](https://www.youtube.com/playlist?list=PLO1D3YWS7ep3Pfjls3LjBtp5XdvGpBD6Z)
 
 
 
@@ -249,6 +253,8 @@ weight: 10
 - [منصة سطر: Python 104.](https://satr.codes/courses/BDtmFNpFMp/view)
 - [مجتمع بايثون العربي: لغة بايثون 🐍.](https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj)
 - [عبد الله نصر: التعرف على الوجوه Face recognition.](https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc)
+- [كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.](https://www.youtube.com/watch?v=apXivooJwoo&list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ)
+- [كريم الجزار: مشاريع إبصار الآلة.](https://www.youtube.com/watch?v=rixaB3-8OSQ&list=PLO1D3YWS7ep0rsgm301QaSXjvEX0FHImw)
 
 
 

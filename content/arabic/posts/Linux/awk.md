@@ -1018,4 +1018,3 @@ Field 4
 ## المراجع:
 
 - [Awk Tutorial.](https://www.tutorialspoint.com/awk/)
-

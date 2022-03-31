@@ -1,9 +1,9 @@
 ---
-title: "نظام التشغيل جنو لينكس GNU/Linux"
+title: "مصادر لتعلم نظام التشغيل جنو لينكس"
 
-description: "هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
+description: "GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
 
-summary: "هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
+summary: "GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
 
 slug: "linux"
 aliases: 
@@ -14,7 +14,7 @@ aliases:
 
 author: ["AboTyim"]
 date: "2022-03-25"
-lastmod: "2022-03-25"
+lastmod: "2022-03-31"
 tags: ["Linux", "GNU/Linux", "لينكس"]
 categories: ["نظام التشغيل لينكس"]
 series: 
@@ -102,6 +102,7 @@ weight: 1
 - [Ansible Capsules بالعربي لوليد حسين.](https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg)
 - [arab Devops: Ansible in Arabic.](https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE)
 - [ansible-playbook شرح.](https://www.youtube.com/watch?v=-86oMSw6pSc)
+- [أكادمية حسوب: Ansible.](https://academy.hsoub.com/devops/deployment/ansible/)
 - [دورة تعلم نظام اللينكس للمهندس نادر](https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg)
 - [دورة أساسيات لينكس من تكناوي دوت نت](https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7)
 - [KVM](https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3)
@@ -109,6 +110,8 @@ weight: 1
 - [Jenkins بالعربي](https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi)
 - [Jenkins in arabic (with Salem)](https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-)
 - [FlexCourses: دورة إدارة أنظمة لينكس Linux مدفوعة.](https://www.flexcourses.com/courses/linux)
+- [محمد عيسى: حجز واستضافة مواقع.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_pZoCY7J3oBFixwgv_J55G)
+- [محمد عيسى: دورة DevOps.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_EBkl8yQsfRFaNIb-0LOXO)
 - [linux distributions reviews مراجعات](https://www.youtube.com/playlist?list=PLBpclpRCG39qvWLuW94qCBzsr_iGTAyam)
 
 <br>
@@ -133,6 +136,7 @@ weight: 1
 - [لينكس اليوم](https://linux-2-day.com/)
 - [مجتمع لينكس في حسوب](https://io.hsoub.com/linux/)
 - [مدونة لينكس التقنية](https://www.2linuxdz.com/)
+- [مجتمع أسس.](https://discourse.aosus.org/c/linux/)
 
 <br>
 
@@ -167,6 +171,6 @@ weight: 1
 
 <br>
 
-> كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا
+> « كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا »
 >
 > * [حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي](https://www.youtube.com/watch?v=nKW2rLJ2Ezw)
