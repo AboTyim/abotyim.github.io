@@ -35,7 +35,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/python/python.svg"
+    image: "posts/python/python.png"
     alt: "شعار بايثون"
     caption: "مصدر الصورة [python.org](https://www.python.org/community/logos/)"
     relative: false # when using page bundles set this to true

@@ -35,7 +35,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/linux/docker.svg"
+    image: "posts/linux/docker.png"
     alt: "شعار دوكر"
     caption: "مصدر الصورة [wikimedia.org](https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.png)"
     relative: false # when using page bundles set this to true

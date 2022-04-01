@@ -34,7 +34,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/python/django.svg"
+    image: "posts/python/django.png"
     alt: "شعار جانغو"
     caption: "مصدر الصورة [djangoproject.com](https://www.djangoproject.com/community/logos/)"
     relative: false # when using page bundles set this to true
