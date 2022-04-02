@@ -15,7 +15,7 @@ author: ["AboTyim"]
 date: "2021-07-28"
 lastmod: "2022-03-31"
 tags: ["Data Analysis", "تحليل البيانات"]
-categories: ["تحليل البيانات"]
+categories: ["Data Analysis"]
 series: 
 - "مسار تحليل البيانات"
 - "مسار مبرمج بايثون"
@@ -35,7 +35,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/python/data-analysis.png"
+    image: "posts/python/data-analysis.jpg"
     alt: "Data Analysis from freecodecamp.org"
     caption: "مصدر الصورة [freecodecamp.org](https://www.freecodecamp.org/news/data-analysis-with-python-for-excel-users-course/)"
     relative: false # when using page bundles set this to true
@@ -58,6 +58,7 @@ weight: 1
 - [أبو بكر سليمان.](https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F)
 -  [Easy Programming.](https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC)
 - [شرح بالعربي.](https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T)
+- [Ahmed ibrahim.](https://www.youtube.com/playlist?list=PLyhJeMedQd9QLQ2yPbJqVhAdkU44QD7um)
 
 
 
@@ -103,6 +104,7 @@ weight: 1
 
 ### منوع:
 - [تحليل البيانات باستخدام بايثون – سجلات الوفيات والاصابات بفيروس كورونا كمثال.](https://pythonat.com/articles/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA/)
+- [شرح أمثلة عملية من موقع Kaggle.](https://www.youtube.com/playlist?list=PLyhJeMedQd9QJ4AFcyA0H7PT3QIdBgcT4)
 
 
 

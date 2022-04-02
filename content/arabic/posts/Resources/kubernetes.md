@@ -35,7 +35,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/linux/k8s-logo.png"
+    image: "posts/k8s-logo.png"
     alt: "شعار kubernetes"
     caption: "مصدر الصورة [mirantis.com](https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/)"
     relative: false # when using page bundles set this to true

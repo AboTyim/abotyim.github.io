@@ -16,7 +16,7 @@ author: ["AboTyim"]
 date: "2021-07-14"
 lastmod: "2022-03-31"
 tags: ["Docker", "دوكر"]
-categories: ["دوكر"]
+categories: ["DevOps"]
 series: 
 - "مسار مدير أنظمة لينكس"
 
@@ -35,7 +35,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/linux/docker.png"
+    image: "posts/docker.png"
     alt: "شعار دوكر"
     caption: "مصدر الصورة [wikimedia.org](https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.png)"
     relative: false # when using page bundles set this to true
@@ -74,6 +74,7 @@ weight: 1
 - [منصة سطر: Docker 101.](https://satr.codes/courses/FdteTVpysF/view)
 - [دوكر كونتينر - Docker container.](https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC)
 - [Learn Docker from Zero من عبد الباسط بوشقري.](https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH)
+- [Docker and Kubernetes.](https://www.youtube.com/watch?v=PrusdhS2lmo)
 
 <br>
 

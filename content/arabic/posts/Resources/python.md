@@ -14,7 +14,7 @@ author: ["AboTyim"]
 date: "2021-07-27"
 lastmod: "2022-03-31"
 tags: ["Python", "بايثون"]
-categories: ["بايثون"]
+categories: ["Python", "Programming"]
 series: 
 - "مسار تطوير تطبيقات الويب"
 - "مسار تحليل البيانات"

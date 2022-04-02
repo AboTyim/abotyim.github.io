@@ -16,7 +16,7 @@ author: ["AboTyim"]
 date: "2022-03-25"
 lastmod: "2022-03-31"
 tags: ["Linux", "GNU/Linux", "لينكس"]
-categories: ["نظام التشغيل لينكس"]
+categories: ["Linux", "OS"]
 series: 
 - "مسار مدير أنظمة لينكس"
 - "مسار سطر أوامر لينكس"
@@ -105,7 +105,6 @@ weight: 1
 - [أكادمية حسوب: Ansible.](https://academy.hsoub.com/devops/deployment/ansible/)
 - [دورة تعلم نظام اللينكس للمهندس نادر](https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg)
 - [دورة أساسيات لينكس من تكناوي دوت نت](https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7)
-- [KVM](https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3)
 - [NFTables](https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnp3m4Mg2QyJoqDWygdwLck4)
 - [Jenkins بالعربي](https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi)
 - [Jenkins in arabic (with Salem)](https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-)

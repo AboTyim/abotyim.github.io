@@ -34,7 +34,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/linux/firewall.png"
+    image: "posts/firewall.png"
     alt: "شعار firewall"
     caption: "مصدر الصورة [wikimedia.org](https://en.wikipedia.org/wiki/File:Firewall.png)"
     relative: false # when using page bundles set this to true

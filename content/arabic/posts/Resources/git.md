@@ -14,7 +14,7 @@ author: ["AboTyim"]
 date: "2022-03-26"
 lastmod: "2022-03-31"
 tags: ["Programming", "git", "code"]
-categories: ["git", "Programming"]
+categories: ["Programming"]
 
 
 hidemeta: false

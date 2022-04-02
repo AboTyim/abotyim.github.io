@@ -33,7 +33,7 @@ TocOpen: true
 comments: true
 
 cover:
-    image: "posts/linux/mikrotik.jpg"
+    image: "posts/mikrotik.jpg"
     alt: "شعار mikrotik"
     caption: "مصدر الصورة [mikrotik.com](https://designs.mikrotik.com/wallpapers.php)"
     relative: false # when using page bundles set this to true
@@ -71,6 +71,7 @@ weight: 1
 
 - [حمد العبسي: MikroTik Routers مايكروتك.](https://www.youtube.com/playlist?list=PL_fM3hPRoGFaLiqBBTNnt8lzBmCBlE4AQ)
 - [أحمد عزيز: دورة مايكروتك Api.](https://www.youtube.com/watch?v=zNbcdldop3c&list=PLgEjCx61Ee7O0e3qE3N4C1-5XiVWgPAGR).
+- [جديد تك: شبكات - مايكروتك.](https://www.youtube.com/playlist?list=PLrRaeViYshBF1vuhxvKCF8z4cZ04s1FWm)
 
 <br>
 
