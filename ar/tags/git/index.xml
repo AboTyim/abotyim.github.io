@@ -73,17 +73,17 @@
 <li>يقوم بعمل <strong>commit</strong>، والتي بدورها تقوم بأخذ جميع التعديلات الموجودة في <strong>Staging Area</strong> ومن ثم تخزينها بشكل دائم إلى المستودع <strong>Repository</strong>.</li>
 </ol>
 <br>
-<h3 id="المتغير-init">المتغير <code>init</code>:</h3>
+<h3 id="الأمر-init">الأمر <code>init</code>:</h3>
 <p>يستخدم لإنشاء مستودع ‫‪<strong>Repository</strong>‬‬ جديد، وهو المكان الي سيقوم <code>git</code> بتخزين قائمة التعديلات فيه للمشروع، يجب أن نكون في مجلد المشروع الرئيسي وكتابة الأمر التالي.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
 </span></span></code></pre></div><p><mark>ملاحظة:</mark> إنشاء المستودع الفارغ لايعني أنه سيقوم بتخزين الملفات أو التعديلات في مشروعك.</p>
 <br>
-<h3 id="المتغير-config">المتغير <code>config</code>:</h3>
+<h3 id="الأمر-config">الأمر <code>config</code>:</h3>
 <p>إضافة معلوماتك على <strong>git</strong>، لكي يظهر هوية المستخدم الذي قام بالتعديلات:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.email <span style="color:#f1fa8c">&#34;myemail@email.com&#34;</span>
 </span></span><span style="display:flex;"><span>git config --global user.name <span style="color:#f1fa8c">&#34;myname&#34;</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-add">المتغير <code>add</code>:</h3>
+<h3 id="الأمر-add">الأمر <code>add</code>:</h3>
 <p>يستخدم لمتابعة التعديلات على المف ونقله من حالة <strong>Untracked</strong> إلى حالة <strong>Tracked</strong> وله استخدام آخر هو نقل الملفات التي تم تعديلها من منطقة <strong>Staging Area</strong> إلى المستودع <strong>Repository</strong> بشكل دائم.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add views.py
 </span></span><span style="display:flex;"><span>git add models.py
@@ -92,26 +92,26 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
 </span></span></code></pre></div><p><mark>ملاحظة:</mark> سيتم متابعة التعديلات التي تجري على كافة الملفات في المجلد الحالي الذي نفذت فيه هذا الأمر.</p>
 <br>
-<h3 id="المتغير-status">المتغير <code>status</code>:</h3>
+<h3 id="الأمر-status">الأمر <code>status</code>:</h3>
 <p>يستخدم الأمر <code>status</code> لمعرفة الملفات التي تم التعديل عليها، ومعرفة الفرع <strong>branch</strong> الحالي.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
 </span></span></code></pre></div><br>
-<h3 id="المتغير-commit">المتغير <code>commit</code>:</h3>
+<h3 id="الأمر-commit">الأمر <code>commit</code>:</h3>
 <p>هذا الأمر ببساطة هو الذي يلتقط الصورة أو حالة الملفات والخيار <strong>m</strong> خاص بوضع رسالة يقوم المبرمج بوضعها لتحفظ مع تلك الصورة، وهي توضح سبب التعديلات أو الخطأ الذي تم إصلاحه أو أي رسالة تبين الهدف من تلك التعديلات.
 أما الخيار <strong>a</strong> يستخدم لإضافة الملفات التي تم التعديل عليها إلى منطقة <strong>Staging Area</strong> ثم عمل <strong>commit</strong> للملفات ونقلها إلى المستودع <strong>Repository</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>‫‪git‬‬ ‫‪commit‬‬ ‫‪-m‬‬ ‫‪<span style="color:#f1fa8c">&#39;My‬‬ ‫&#39;</span>‪message‬‬
 </span></span><span style="display:flex;"><span>‫‪git‬‬ ‫‪commit‬‬ ‫‪-a -m‬‬ ‫‪<span style="color:#f1fa8c">&#39;My‬‬ ‫&#39;</span>‪message
 </span></span></code></pre></div><br>
-<h3 id="المتغير-diff">المتغير <code>diff</code>:</h3>
-<p>يستخدم لإظهار التعديلات التي أجريت على الملفات الحالية ومقارنتها بآخر commit:</p>
+<h3 id="الأمر-diff">الأمر <code>diff</code>:</h3>
+<p>يستخدم لإظهار التعديلات التي أجريت على الملفات الحالية ومقارنتها بآخر <strong>commit</strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff
 </span></span></code></pre></div><br>
-<h3 id="المتغير-reset">المتغير <code>reset</code>:</h3>
+<h3 id="الأمر-reset">الأمر <code>reset</code>:</h3>
 <p>عند استخدام <code>add</code>، فنحن نقوم بنقل التعديلات إلى <strong>Staging Area</strong> لتصبح جاهزة لتخزينها بشكل دائم في المستودع من خلال <code>commit</code>، وهنا قد يحتاج المبرمج إلى إعادتها من تلك المنطقة، أي ما قبل <code>add</code>، أي التراجع عن التعديلات التي قان بها المبرمج، أي تتحول حالة الملف أو مجموعة الملفات من <strong>Unstaged</strong> إلى <strong>Modified</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git reset HEAD models.py
-</span></span></code></pre></div><p>يمتلك المتغيير <code>reset</code> أحد الخيارات المسماة <code>--hard</code>، واستخدام هذا الخيار قد يكون خطير للغاية كونه قد يتسبب في التراجع عن التعديلات التي قمت بها ليس فقط من <strong>Staging Area</strong> بل من <strong>Repository</strong>.</p>
+</span></span></code></pre></div><p>يمتلك الأمر <code>reset</code> أحد الخيارات المسماة <code>--hard</code>، واستخدام هذا الخيار قد يكون خطير للغاية كونه قد يتسبب في التراجع عن التعديلات التي قمت بها ليس فقط من <strong>Staging Area</strong> بل من <strong>Repository</strong>.</p>
 <br>
-<h3 id="المتغير-checkout">المتغير <code>checkout</code>:</h3>
+<h3 id="الأمر-checkout">الأمر <code>checkout</code>:</h3>
 <p>قد تقوم بإجراء تعديلات على ملف أو مجموعة ملفات، وبعد فترة تكتشف لأي سبب أنك تريد إلغاء كل تلك التعديلات والعودة إلى الوضع التي كانت عليه تلك الملفات قبل إجراء تلك التعديلات الأخيرة أي عودة الملف لحالته لآخر <strong>commit</strong>، هنا يوفر <strong>git</strong> أسلوب مبسط لإجراء تلك العملية.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout models.py
 </span></span></code></pre></div><p><mark>ملاحظة:</mark> يستخدم الأمر <code>checkout</code> أيضًا للتنقل من <strong>Branch</strong> لآخر.</p>
@@ -120,7 +120,7 @@
 </span></span></code></pre></div><p>إنشاء فرع <strong>Branch</strong> جديد والإنتقال إليه بشكل مباشر:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-branch">المتغير <code>branch</code>:</h3>
+<h3 id="الأمر-branch">الأمر <code>branch</code>:</h3>
 <p>عرض كافة الفروع <strong>Branches</strong> الحالية للمستودع المحلي:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch
 </span></span></code></pre></div><p>عرض كافة الفروع <strong>Branches</strong> الحالية للمستودع المحلي والبعيد:</p>
@@ -133,11 +133,11 @@
 </span></span></code></pre></div><p>حذف فرع <strong>Branch</strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-merge">المتغير <code>merge</code>:</h3>
+<h3 id="الأمر-merge">الأمر <code>merge</code>:</h3>
 <p>دمج فرع <strong>Branch</strong> إلى الفرع الحالي:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge <span style="color:#ff79c6">{{</span>branch_name<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-rm">المتغير <code>rm</code>:</h3>
+<h3 id="الأمر-rm">الأمر <code>rm</code>:</h3>
 <p>لحذف ملف بشكل مباشر من مجلد المشروع ومن المستودع:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm models.py
 </span></span></code></pre></div><p>لحذف مجلد بشكل مباشر من المشروع ومن المستودع:</p>
@@ -145,13 +145,13 @@
 </span></span></code></pre></div><p>لحذف ملف من git كمتابعة فقط، أي من <strong>Staged Area</strong> ولكن لا تريد حذفه من مجلد المشروع:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm --cached models.py
 </span></span></code></pre></div><br>
-<h3 id="المتغير-mv">المتغير <code>mv</code>:</h3>
+<h3 id="الأمر-mv">الأمر <code>mv</code>:</h3>
 <p>يستخدم لنقل الملفات من مجلد إلى مكان آخر داخل مشروعك:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv <span style="color:#ff79c6">{{</span>path/to/file<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new/path/to/file<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><p>يستخدم أيضًا لإعادة تسمية الملفات:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv <span style="color:#ff79c6">{{</span>filename<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_filename<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-log">المتغير <code>log</code>:</h3>
+<h3 id="الأمر-log">الأمر <code>log</code>:</h3>
 <p>لرؤية سجل العمليات التي حدثت على المستودع الذي تعمل عليه:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log
 </span></span></code></pre></div><p>سيتم عرض عدد <strong>commits</strong> التي تمت على المستودع الذي تعمل عليه، بالإضافة إلى تفاصيل كل <strong>commit</strong> من خلال عرض رقمها ومن قام بها والتاريخ والرسالة التي توضح سبب أو وصف <strong>commit</strong>، شيء مشابه لما يلي:</p>
@@ -173,7 +173,7 @@
 </span></span></code></pre></div><p>للبحث برسائل <strong>commits</strong> التي تحتوي على نص معين:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log -i --grep <span style="color:#ff79c6">{{</span>search_string<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-remote">المتغير <code>remote</code>:</h3>
+<h3 id="الأمر-remote">الأمر <code>remote</code>:</h3>
 <p>لعرض المستودعات التي نتعامل معها عن بعد:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
 </span></span></code></pre></div><p>لعرض معلومات المستودع البعيد:</p>
@@ -187,19 +187,19 @@
 </span></span></code></pre></div><p>لتغير رابط مستودع بعيد:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote set-url <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>new_url<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-clone">المتغير <code>clone</code>:</h3>
+<h3 id="الأمر-clone">الأمر <code>clone</code>:</h3>
 <p>لنسخ مشروع بشكل كامل والحصول على نسخة من المستودع بشكل خاص:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone <span style="color:#ff79c6">{{</span>remote_repository_location<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-pull">المتغير <code>pull</code>:</h3>
+<h3 id="الأمر-pull">الأمر <code>pull</code>:</h3>
 <p>لتحميل نسخة التغيرات التي حصلت في المستودع البعيد مع عمل دمج لها:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull
 </span></span></code></pre></div><br>
-<h3 id="المتغير-push">المتغير <code>push</code>:</h3>
+<h3 id="الأمر-push">الأمر <code>push</code>:</h3>
 <p>لرفع التعديلات الموجودة في المستودع المحلي <strong>Local Repository</strong> الموجود في جهازك إلى المستودع البعيد:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push <span style="color:#ff79c6">{{</span>remote_name<span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span>local_branch<span style="color:#ff79c6">}}</span>
 </span></span></code></pre></div><br>
-<h3 id="المتغير-stash">المتغير <code>stash</code>:</h3>
+<h3 id="الأمر-stash">الأمر <code>stash</code>:</h3>
 <p>يستخدم لحفظ حالة المستودع الحالية، قد تود حفظ حالة المشروع والإنتقال لفرع آخر <strong>Branch</strong> دون أن تقوم بعمل <strong>commit</strong> لأنك لم تنهي التعديلات الحالية فهنا بإمكانك استخدام <strong>Stash</strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash
 </span></span></code></pre></div><p><mark>ملاحظة:</mark> تستطيع تخزين أكثر من حالة.</p>
@@ -210,7 +210,7 @@
 </span></span></code></pre></div><p>لحذف كل الحالات:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash clear
 </span></span></code></pre></div><br>
-<h3 id="المتغير-clean">المتغير <code>clean</code>:</h3>
+<h3 id="الأمر-clean">الأمر <code>clean</code>:</h3>
 <p>قد تحتاج أحيانًا إلى إزالة جميع الملفات التي تكون حالتها <strong>Untracked</strong> في مشروعك وغير موجودة في ملف <code>.gitignore</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean -f
 </span></span></code></pre></div><p>الأمر التالي نفس الأمر السابق ولكن مع حذف المجلدات:</p>
@@ -230,7 +230,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clean --dry-run -d
 </span></span><span style="display:flex;"><span>git clean -n -d
 </span></span></code></pre></div><br>
-<h3 id="المتغير-tag">المتغير <code>tag</code>:</h3>
+<h3 id="الأمر-tag">الأمر <code>tag</code>:</h3>
 <p>يستخدم لإنشاء تسميات للنسخ أو لإصدارات الكود.</p>
 <p>عرض كافة الوسوم:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag

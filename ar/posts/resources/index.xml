@@ -9,7 +9,42 @@
       <link>https://abotyim.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/resources/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم تقنية الـ Virtualization</title>
+      <link>https://abotyim.github.io/ar/posts/resources/virtualization/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/virtualization/</guid>
+      <description>عملية Virtualization هي فصل نظام التشغيل عن الهاردوير الذي يعمل عليه، بحيث يصبح النظام التشغيلي يعمل في بيئة تخيلية وكأنها حاسوب منفصل. هذه التقنية تتيح لنا أولا مشاركة الموارد/الهاردوير الحقيقية وثانيا تشغيل أكثر من نظام تشغيل على نفس الموارد/الهاردوير وبنفس اللحظة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="proxmox">Proxmox:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ9Y83aqytv72S9-gN1fNYzC">Emad Adel Eskander.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbSOL7hdXlDq7RhCq4rY5SC">حمد العبسي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLrAxDfIBG1dCck2NaWGDoUMGj-ewDt5JD">محمد عمر.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLjvWb2BEYOV5sulhXIBnS1Gy6BIJL3AiE">Sicherheitpro.</a></li>
+</ul>
+<br>
+<h3 id="xcp-ng">XCP-NG:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbJgCK5_kKAPJ3pPZkGfItL">حمد العبسي.</a></li>
+</ul>
+<br>
+<h3 id="kvm">KVM:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">zer0err0r.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« لقاح الهِمَّة العالية: النية الصحيحة، فإذا اجتمعا بلغ العبد غاية المراد »</p>
+<ul>
+<li>ابن القيم رحمه الله [الفوائد].</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>مصادر لتعلم مايكروتك Mikrotik</title>
       <link>https://abotyim.github.io/ar/posts/resources/mikrotik/</link>
@@ -38,6 +73,7 @@
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFaLiqBBTNnt8lzBmCBlE4AQ">حمد العبسي: MikroTik Routers مايكروتك.</a></li>
 <li><a href="https://www.youtube.com/watch?v=zNbcdldop3c&amp;list=PLgEjCx61Ee7O0e3qE3N4C1-5XiVWgPAGR">أحمد عزيز: دورة مايكروتك Api.</a>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLrRaeViYshBF1vuhxvKCF8z4cZ04s1FWm">جديد تك: شبكات - مايكروتك.</a></li>
 </ul>
 <br>
 <blockquote>
@@ -233,7 +269,6 @@
 <li><a href="https://academy.hsoub.com/devops/deployment/ansible/">أكادمية حسوب: Ansible.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg">دورة تعلم نظام اللينكس للمهندس نادر</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7">دورة أساسيات لينكس من تكناوي دوت نت</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">KVM</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnp3m4Mg2QyJoqDWygdwLck4">NFTables</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi">Jenkins بالعربي</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-">Jenkins in arabic (with Salem)</a></li>
@@ -318,6 +353,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLvLvlVqNQGHCb2_ygmr1DQOMOv0yXp84F">أبو بكر سليمان.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyhJeMedQd9QLQ2yPbJqVhAdkU44QD7um">Ahmed ibrahim.</a></li>
 </ul>
 <h3 id="numpy">Numpy:</h3>
 <ul>
@@ -354,6 +390,7 @@
 <h3 id="منوع">منوع:</h3>
 <ul>
 <li><a href="https://pythonat.com/articles/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA/">تحليل البيانات باستخدام بايثون – سجلات الوفيات والاصابات بفيروس كورونا كمثال.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyhJeMedQd9QJ4AFcyA0H7PT3QIdBgcT4">شرح أمثلة عملية من موقع Kaggle.</a></li>
 </ul>
 <br>
 <blockquote>
@@ -700,6 +737,7 @@
 <li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH">Learn Docker from Zero من عبد الباسط بوشقري.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
 </ul>
 <br>
 <h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>

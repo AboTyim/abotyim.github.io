@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>proxmox on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/proxmox/</link>
+    <description>Recent content in proxmox on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم تقنية الـ Virtualization</title>
+      <link>https://abotyim.github.io/ar/posts/resources/virtualization/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/virtualization/</guid>
+      <description>عملية Virtualization هي فصل نظام التشغيل عن الهاردوير الذي يعمل عليه، بحيث يصبح النظام التشغيلي يعمل في بيئة تخيلية وكأنها حاسوب منفصل. هذه التقنية تتيح لنا أولا مشاركة الموارد/الهاردوير الحقيقية وثانيا تشغيل أكثر من نظام تشغيل على نفس الموارد/الهاردوير وبنفس اللحظة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="proxmox">Proxmox:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ9Y83aqytv72S9-gN1fNYzC">Emad Adel Eskander.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbSOL7hdXlDq7RhCq4rY5SC">حمد العبسي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLrAxDfIBG1dCck2NaWGDoUMGj-ewDt5JD">محمد عمر.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLjvWb2BEYOV5sulhXIBnS1Gy6BIJL3AiE">Sicherheitpro.</a></li>
+</ul>
+<br>
+<h3 id="xcp-ng">XCP-NG:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFbJgCK5_kKAPJ3pPZkGfItL">حمد العبسي.</a></li>
+</ul>
+<br>
+<h3 id="kvm">KVM:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnq5iZ1AOItsODys4IWeCDS3">zer0err0r.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« لقاح الهِمَّة العالية: النية الصحيحة، فإذا اجتمعا بلغ العبد غاية المراد »</p>
+<ul>
+<li>ابن القيم رحمه الله [الفوائد].</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

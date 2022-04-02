@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OS on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/categories/os/</link>
+    <description>Recent content in OS on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.png</url>
+      <link>https://abotyim.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
+      <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
+      <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ol>
+<li>محمد عيسى:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN88blfl7hvm-wZ-sWtMeTQk">دورة فيدورا للمبتدئين</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN8d2mjL1Nrgj7UPG9nFKIzP">CentOS 7 Server</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-LCv0FUOEol9rkpCu9SdAV">RHEL7 RedHat - RHCSA</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_HT_N4ZutZMmN98C1-7qUP">RHCE 7 RedHat</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9jgJCc3-saDdZRO7Bo29MV">Security Enhanced Linux لتوزيعات ريدهات بالعربية</a></li>
+</ul>
+<br>
+<ol start="2">
+<li>فتحي العامري:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82mPezSNRYO-7zzk66_sAZHU">سطر أوامر لينكس</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs97GbUOC82lIo7sn2JyxWtq8jmHte5Aq">دورة أوبنتو Ubuntu</a></li>
+</ul>
+<br>
+<ol start="3">
+<li>مصطفى حمودة:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLy1Fx2HfcmWBpD_PI4AQpjeDK5-5q6TG7">Linux System Administration</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLy1Fx2HfcmWCqqK9nmfsbNVnLMifsgWL5">OpenStack</a></li>
+</ul>
+<br>
+<ol start="4">
+<li>سالم يسلم:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=YreoSmDv4Kk">تثبيت OpenStack مع Yggdrasil.</a></li>
+<li><a href="https://www.youtube.com/watch?v=6eUMIVmpjDs">تثبيت وإعداد Yggdrasil لتخطي CGNAT.</a></li>
+</ul>
+<br>
+<ol start="5">
+<li>محمد الدسوقي:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=x0ogzuMFyoI&amp;list=PLOeEp3fYj7rrfSQVPVrZI8TJLnBW9pLvp">Containerization Thoughts</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOeEp3fYj7rojjhsYYgtM_iOOaPnigrmT">Ansible Administration Course</a></li>
+</ul>
+<br>
+<ol start="6">
+<li>منوع:</li>
+</ol>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EY7KO6xlKBY&amp;list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ">RHCE 8 Complete Course in Arabic لكيرولس خليل</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha">Linux Certified System Administrator 8 (Arabic)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu">Linux Troubleshooting in Arabic آلاء زيدان</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-_imc-4LszS9u5zzSsjQ1_">Red Hat Enterprise Linux 7 (Admin 3) RH254 By Eng-Abeer Hosni</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnznAJG6RAI9RguTMpwJOEmltF689hDL6">أتمتة العمل بإستخدام Ansible لمحمد النجدي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg">Ansible Capsules بالعربي لوليد حسين.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE">arab Devops: Ansible in Arabic.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-86oMSw6pSc">ansible-playbook شرح.</a></li>
+<li><a href="https://academy.hsoub.com/devops/deployment/ansible/">أكادمية حسوب: Ansible.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAZ__zcDB1IaNaVNOckNpgEpjghSHr8Gg">دورة تعلم نظام اللينكس للمهندس نادر</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs6emGC4vqRK0buaLWzZkxdNX6-WW0eh7">دورة أساسيات لينكس من تكناوي دوت نت</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL2Z9mQ8mdWnp3m4Mg2QyJoqDWygdwLck4">NFTables</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tLSokfozb34-1DN3nRQ6uDi">Jenkins بالعربي</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwElFiFmvyk2cyU0o1ISHsG-">Jenkins in arabic (with Salem)</a></li>
+<li><a href="https://www.flexcourses.com/courses/linux">FlexCourses: دورة إدارة أنظمة لينكس Linux مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_pZoCY7J3oBFixwgv_J55G">محمد عيسى: حجز واستضافة مواقع.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN_EBkl8yQsfRFaNIb-0LOXO">محمد عيسى: دورة DevOps.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLBpclpRCG39qvWLuW94qCBzsr_iGTAyam">linux distributions reviews مراجعات</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://itwadi.com/node/2765">كتاب سطر أوامر لينكس</a></li>
+<li><a href="https://librebooks.org/ubuntu-server-guide-arabic/">كتاب دليل إدارة خواديم أوبنتو 14.04</a></li>
+<li><a href="https://librebooks.org/gnu-linux-advanced-administration/">كتاب الإدارة المتقدمة لجنو/لينكس</a></li>
+<li><a href="https://librebooks.org/simply-ubuntu/">كتاب أوبنتو ببساطة</a></li>
+<li><a href="https://librebooks.org/libreoffice-arabic-manual/">كتاب دليل المستخدم في ليبر أوفيس</a></li>
+</ul>
+<br>
+<h3 id="مواقع-ويب">مواقع ويب:</h3>
+<ul>
+<li><a href="https://itwadi.com/">وادي التقنية</a></li>
+<li><a href="https://gnulinuxsa.org/">جنو/لينكس</a></li>
+<li><a href="https://linuxarabia.co/">لينكس العرب</a></li>
+<li><a href="https://linuxaw.com/">عالم لينكس العربي</a></li>
+<li><a href="https://aosus.org/">أسس</a></li>
+<li><a href="https://linux-2-day.com/">لينكس اليوم</a></li>
+<li><a href="https://io.hsoub.com/linux/">مجتمع لينكس في حسوب</a></li>
+<li><a href="https://www.2linuxdz.com/">مدونة لينكس التقنية</a></li>
+<li><a href="https://discourse.aosus.org/c/linux/">مجتمع أسس.</a></li>
+</ul>
+<br>
+<h3 id="قنوات-اليوتيوب">قنوات اليوتيوب:</h3>
+<ul>
+<li><a href="https://www.youtube.com/c/Linuxtopia">Linuxtopia</a></li>
+<li><a href="https://www.youtube.com/c/iamlinux">I&rsquo;m Linux</a></li>
+<li><a href="https://www.youtube.com/channel/UCYkWmRBvj9sVlRW3ahIxE2g">Alaa Zidan</a></li>
+<li><a href="https://www.youtube.com/channel/UCxUVBDLTSaVxjg0EyCWfFug">Arab Linux Community</a></li>
+<li><a href="https://www.youtube.com/channel/UCiEzlPeTjGHXZlqFV7KxZEQ">Shako Mako Tech شكو ماكو</a></li>
+<li><a href="https://www.youtube.com/user/abdulmogeeb">عرب جنو/لينكس</a></li>
+<li><a href="https://www.youtube.com/c/GnuTux">Gnu Tux</a></li>
+<li><a href="https://www.youtube.com/channel/UCsX5z40As3fslwarTan4C8w">zer0err0r</a></li>
+<li><a href="https://www.youtube.com/channel/UCw-JnwpGHlboG0b9wNYvZ2Q">مفاتيح الحوسبة</a></li>
+<li><a href="https://www.youtube.com/channel/UCMoMDhWBeMZhQ2axH8A1FIw">ITSoft</a></li>
+<li><a href="https://www.youtube.com/channel/UCzNSX45GeudSt-8xcU7wtQw">عالم لينكس العربي</a></li>
+<li><a href="https://www.youtube.com/c/mmbesar/">محمد بيصار.</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-التلغرام">مجتمعات التلغرام:</h3>
+<ul>
+<li><a href="https://t.me/Arab_Linux">مجموعة جنو/لينكس</a></li>
+<li><a href="https://t.me/AGLGUT">إتحاد مجموعات غنو/لينكس والبرمجيات الحرة</a></li>
+<li><a href="https://t.me/linuxac_org">مجموعة مجتمع لينكس العربي</a></li>
+<li><a href="https://t.me/arabfossusers">مجموعة مستخدمي البرمجيات المفتوحة</a></li>
+<li><a href="https://t.me/aosus">مجموعة مجتمع أُسُس</a></li>
+<li><a href="https://t.me/gnugeeksgroup">مجموعة مهووسو جنو Gnu Geeks</a></li>
+<li><a href="https://t.me/gnugeeks">قناة مهووسو جنو Gnu Geeks</a></li>
+<li><a href="https://t.me/GNUTUX">قناة GNUTUX</a></li>
+<li><a href="https://t.me/linuxaw">قناة عالم لينكس العربي</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
