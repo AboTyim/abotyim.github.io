@@ -88,10 +88,14 @@ weight: 1
 
 - [كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.](https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/)
 - [سلسلة مقالات في أكادمية حسوب.](https://academy.hsoub.com/devops/cloud-computing/docker/)
-- [سلسلة مقالات للأخ وجدي عصام عبد الرحيم.](https://informatic-ar.com/category/programming/docker/)
 - [سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.](https://3alam.pro/3mmarg97/series/introduction-to-docker)
 - [مقال يشرح Docker Containers.](https://www.r1sk.net/docker-containers/)
 - [مقدمة في حاويات دوكر من مايكروسوفت.](https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/)
+- [كيفية تثبيت Docker و Docker-compose.](https://discourse.aosus.org/t/topic/2223)
+- [أساسيات عالم الحاويات docker / docker-compose والحوسبة السحابية.](https://discourse.aosus.org/t/topic/2332)
+- [تشغيل دوكر بدون الحاجة للوصول للجذر Rootless docker.](https://discourse.aosus.org/t/topic/2228)
+- [عزل حاويات دوكر باستخدام نطاق المستخدم Docker User Namespace Remapping.](https://discourse.aosus.org/t/topic/2253)
+- [تثبيت Portainer.](https://discourse.aosus.org/t/topic/2346)
 
 <br>
 
