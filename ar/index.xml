@@ -37,9 +37,9 @@
 </ul>
 <br>
 <blockquote>
-<p>« لقاح الهِمَّة العالية: النية الصحيحة، فإذا اجتمعا بلغ العبد غاية المراد »</p>
+<p>« إِذا غامَرتَ في شَرَفٍ مَرومٍ … فَلا تَقنَع بِما دونَ النُجومِ »</p>
 <ul>
-<li>ابن القيم رحمه الله [الفوائد].</li>
+<li>المتنبي.</li>
 </ul>
 </blockquote>
 ]]></content:encoded>
@@ -952,10 +952,14 @@
 <ul>
 <li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
 <li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
-<li><a href="https://informatic-ar.com/category/programming/docker/">سلسلة مقالات للأخ وجدي عصام عبد الرحيم.</a></li>
 <li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
 <li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
 <li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2223">كيفية تثبيت Docker و Docker-compose.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2332">أساسيات عالم الحاويات docker / docker-compose والحوسبة السحابية.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2228">تشغيل دوكر بدون الحاجة للوصول للجذر Rootless docker.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2253">عزل حاويات دوكر باستخدام نطاق المستخدم Docker User Namespace Remapping.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2346">تثبيت Portainer.</a></li>
 </ul>
 <br>
 <blockquote>
