@@ -57,7 +57,8 @@ weight: 1
 - [Never Git Stuck.](https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc)
 - [Mohammed Gh: Learn Git & GitHub in Arabic.](https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0)
 - [Algorithm Academy: learn Git in Arabic.](https://www.youtube.com/watch?v=_6pQ6JXo_bM&list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK)
-- - [Flex Courses: دورة إدارة نسخ البرمجة باستخدام git - مدفوعة.](https://www.flexcourses.com/courses/git-basics/)
+- [Flex Courses: دورة إدارة نسخ البرمجة باستخدام git - مدفوعة.](https://www.flexcourses.com/courses/git-basics/)
+- [Git and GitHub | شخبط وانت متطمن.](https://www.youtube.com/watch?v=Q6G-J54vgKc)
 
 <br>
 
