@@ -53,6 +53,7 @@ weight: 1
 
 ### المصادر المرئية:
 
+- [Kubernetes From Scratch من أحمد البكري.](https://www.youtube.com/playlist?list=PLTbS-zwfzODB7RVIedHNql5u0ObBgbjjH)
 - [Kubernetes in Arabic من Ziyaad Qasem.](https://www.youtube.com/playlist?list=PLCsn73jgrZ7cfrxxA5NU65G90-v9k8otq)
 - [Kubernetes and cloud native apps.](https://www.youtube.com/playlist?list=PLD-8BxYdf6QlGKoNQoxzPURQYKjVnls0k)
 - [Kubernetes in Arabic (With Salem)](https://www.youtube.com/playlist?list=PLRUBR7bRwCwE3jgAgo3IHVpwHzS0NKhhG)
