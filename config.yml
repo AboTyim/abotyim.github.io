@@ -137,7 +137,7 @@ params:
     ShowToc: true
     TocOpen: false
     comments: true
-    images: ["cover.png"]
+    images: ["cover.jpg"]
 
 
     socialIcons:
