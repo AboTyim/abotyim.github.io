@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>containers on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/containers/</link>
+    <description>Recent content in containers on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.jpg</url>
+      <link>https://abotyim.github.io/cover.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تشغيل أي توزيعة لينكس بواسطة DistroBox</title>
+      <link>https://abotyim.github.io/ar/posts/linux/distrobox/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/distrobox/</guid>
+      <description>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس المفضلة لديك باستخدام <code>Docker</code> أو <code>Podman</code>. تصبح الحاوية التي تم إطلاقها متكاملة بشكل كبير مع النظام الأساسي (المضيف)، مع إمكانية مشاركة دليل المستخدم <strong>HOME</strong> جنبًا إلى جنب مع أقراص التخزين الخارجي وأجهزة <strong>USB</strong> والتطبيقات الرسومية.
+يقوم <strong>DistroBox</strong> باستخدام الصور المتوفر على <strong>Docker Hub</strong> أو مستودع فيه صور <strong>Images</strong> لكي يتم إنشاء منها حاويات.</p>
+<h2 id="المتطلبات-قبل-البدء">المتطلبات قبل البدء:</h2>
+<p>يجب تثبيت <code>Docker</code> أو <code>Podman</code> لكي يتم التعامل مع الحاويات وإدارتها في الخلفية:</p>
+<ul>
+<li>أقل إصدار من <code>Docker</code> يجب أن يكون 18.06.1.</li>
+<li>أقل إصدار من <code>Podman</code> يجب أن يكون 2.1.0.</li>
+</ul>
+<h2 id="تثبيت-distrobox-على-التوزيعات-الديبيانية">تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+</span></span></code></pre></div><h2 id="إلغاء-تثبيت-distrobox-على-التوزيعات-الديبيانية">إلغاء تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/uninstall | sudo sh
+</span></span></code></pre></div><h2 id="إنشاء-حاوية-من-صورة">إنشاء حاوية من صورة:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name container-name --image os-image:version
+</span></span></code></pre></div><p>في المثال التالي سيتم إنشاء حاوية من صورة كالي لينكس:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --image kalilinux/kali-last-release --name kalilinux
+</span></span></code></pre></div><h2 id="عرض-قائمة-الحاويات-التي-تم-إنشاءها-بواسطة-distrobox">عرض قائمة الحاويات التي تم إنشاءها بواسطة DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-list
+</span></span></code></pre></div><h2 id="الدخول-لحاوية-تم-إنشاءها">الدخول لحاوية تم إنشاءها:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span></code></pre></div><p>للدخول إلى حاوية كالي لينكس التي تم إنشاءها مسبقًا:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-بداخل-حاوية-distrobox">تنفيذ الأوامر بداخل حاوية DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name  -- <span style="color:#8be9fd;font-style:italic">command</span>
+</span></span></code></pre></div><p>في المثال التالي سيتم تحديث المستودعات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux -- sudo apt update
+</span></span></code></pre></div><h2 id="تصدير-التطبيقات-من-الحاوية-إلى-المضيف">تصدير التطبيقات من الحاوية إلى المضيف:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span><span style="display:flex;"><span>distrobox-export --app appname
+</span></span></code></pre></div><p>في البداية يجب الدخول إلى الحاوية التي نريد تصدير التطبيق منه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><p>بعد ذلك قم بتثبيت التطبيق المراد تصديره، هنا في مثالنا التالي نريد تصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install flameshot
+</span></span></code></pre></div><p>أمرتصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-export --app flameshot
+</span></span></code></pre></div><p>للخروج من الحاوية الحالية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">logout</span>
+</span></span></code></pre></div><p>بعد ذلك سنجد تطبيق flameshot في النظام الأساسي (المضيف).</p>
+<h2 id="إيقاف-حاوية-تعمل-في-الخلفية">إيقاف حاوية تعمل في الخلفية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop container-name
+</span></span></code></pre></div><p>إيقاف حاوية كالي لينكس التي تعمل في الخلفية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop kalilinux
+</span></span></code></pre></div><h2 id="حذف-حاوية-موجودة-بشكل-سابق">حذف حاوية موجودة بشكل سابق:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm kalilinux
+</span></span></code></pre></div><h2 id="إنشاء-نسخة-عن-حاوية-موجودة-بشكل-سابق">إنشاء نسخة عن حاوية موجودة بشكل سابق:</h2>
+<p><mark>تنويه</mark>: قبل ذلك يجب أن يتم إيقاف الحاوية المراد إنشاء نسخة عنها، وتم شرح ذلك أعلاه.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name new-container-name --clone container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name kalilinux-clone --clone kalilinux
+</span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tecmint.com/distrobox-run-any-linux-distribution/">Run Any Linux Distribution Inside Linux Terminal.</a></li>
+<li><a href="https://distrobox.privatedns.org/">Use any linux distribution inside your terminal.</a></li>
+<li><a href="https://www.youtube.com/watch?v=x5sAY8D28fA">Run ANY Linux App on ANY Distro! (No VM) | Distrobox Tutorial.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>مصادر لتعلم تقنية الـ Docker</title>
+      <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
+      <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h3 id="المصادر-المرئية">المصادر المرئية:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLxNoJq6k39G8zg-t26bV-JGLokr0mgNKk">Containerization من Garage Education.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLcWvtt1Kdxjdbz8JzGdR5wgsTfx9Mo4Ei">Docker - Build, Ship, Run - Arabic من Mohamed Rezk.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXgJ7cArk9uTER4dTdOxbryfx-cz6YkoA">Docker Practical Course من عبد العزيز الزعابي </a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC">دوكر باللغة العربية من محمد عيسى.</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYVdPnqpdUc&amp;list=PLCsn73jgrZ7fQOGpnb_KY3ackH9LUjFtC">Docker in Arabic من Ziyaad Qasem.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_fM3hPRoGFalxKLBVQc1uASZH5BfbMRj">Docker and Containers من حمد العبسي.</a></li>
+<li><a href="https://www.udemy.com/course/docker-ar/">Learn Docker مدفوعة.</a></li>
+<li><a href="https://www.youtube.com/watch?v=nQ6tflsf0aU">فيديو يشرح مقدمة في Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=wRl4Zzpcblk">GDGMENA: مقدمة إلى تقنية الحاويات.</a></li>
+<li><a href="https://www.youtube.com/watch?v=-N3Ob7hHUD4">GDGMENA: ضع تطبيقاتك في حاويات باستخدام Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_vMoUyBr3srNzFgQXbAjcxMfb-JpRyIN">سلسلة تعليم دوكر من صوت المبرمج.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOY76BQBReTszByDaUiOEhC7">تعلم Docker.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLdYYj2XLw5Bmx7lN1flO4eXGGyieUkfBa">Docker For Developers Docker.</a></li>
+<li><a href="https://www.youtube.com/watch?v=oxRjGqjUXFA">ورشة تعليم دوكر بالعربي.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
+<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH">Learn Docker from Zero من عبد الباسط بوشقري.</a></li>
+<li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المسموعة">المصادر المسموعة:</h3>
+<ul>
+<li><a href="https://nullplus.plus/episodes/episode5-docker-intro-quick-tips">شرح من بودكاست null++</a></li>
+</ul>
+<br>
+<h3 id="المصادر-المقروءة">المصادر المقروءة:</h3>
+<ul>
+<li><a href="https://informatic-ar.com/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%D9%83-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%81%D9%8A-%D8%AF%D9%88%D9%83%D8%B1/">كتاب خطواتك الأولى في Docker للأخ وجدي عصام عبد الرحيم.</a></li>
+<li><a href="https://academy.hsoub.com/devops/cloud-computing/docker/">سلسلة مقالات في أكادمية حسوب.</a></li>
+<li><a href="https://3alam.pro/3mmarg97/series/introduction-to-docker">سلسلة مقالات مقدمة إلى Docker مقدمة من عالم البرمجة.</a></li>
+<li><a href="https://www.r1sk.net/docker-containers/">مقال يشرح Docker Containers.</a></li>
+<li><a href="https://docs.microsoft.com/ar-sa/learn/modules/intro-to-docker-containers/">مقدمة في حاويات دوكر من مايكروسوفت.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2223">كيفية تثبيت Docker و Docker-compose.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2332">أساسيات عالم الحاويات docker / docker-compose والحوسبة السحابية.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2228">تشغيل دوكر بدون الحاجة للوصول للجذر Rootless docker.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2253">عزل حاويات دوكر باستخدام نطاق المستخدم Docker User Namespace Remapping.</a></li>
+<li><a href="https://discourse.aosus.org/t/topic/2346">تثبيت Portainer.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

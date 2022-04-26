@@ -9,7 +9,57 @@
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containers</title>
+      <link>https://abotyim.github.io/ar/tags/containers/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/containers/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>distrobox</title>
+      <link>https://abotyim.github.io/ar/tags/distrobox/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/distrobox/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://abotyim.github.io/ar/tags/docker/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/docker/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://abotyim.github.io/ar/tags/linux/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/linux/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>podman</title>
+      <link>https://abotyim.github.io/ar/tags/podman/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/podman/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
     <item>
       <title>proxmox</title>
       <link>https://abotyim.github.io/ar/tags/proxmox/</link>
@@ -101,7 +151,7 @@
     </item>
     
     <item>
-      <title>Programming</title>
+      <title>programming</title>
       <link>https://abotyim.github.io/ar/tags/programming/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -131,16 +181,6 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://abotyim.github.io/ar/tags/linux/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/tags/linux/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>لينكس</title>
       <link>https://abotyim.github.io/ar/tags/%D9%84%D9%8A%D9%86%D9%83%D8%B3/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
@@ -156,16 +196,6 @@
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/tags/awk/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Linux Commands</title>
-      <link>https://abotyim.github.io/ar/tags/linux-commands/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/tags/linux-commands/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -191,11 +221,21 @@
     </item>
     
     <item>
-      <title>Data Analysis</title>
+      <title>data analysis</title>
       <link>https://abotyim.github.io/ar/tags/data-analysis/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/tags/data-analysis/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://abotyim.github.io/ar/tags/python/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/tags/python/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -211,21 +251,11 @@
     </item>
     
     <item>
-      <title>Django</title>
+      <title>django</title>
       <link>https://abotyim.github.io/ar/tags/django/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/tags/django/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://abotyim.github.io/ar/tags/python/</link>
-      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/tags/python/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -246,16 +276,6 @@
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://abotyim.github.io/ar/tags/%D8%AF%D8%AC%D8%A7%D9%86%D8%BA%D9%88/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://abotyim.github.io/ar/tags/docker/</link>
-      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abotyim.github.io/ar/tags/docker/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://abotyim.github.io/ar/posts/linux/distrobox/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://abotyim.github.io/ar/posts/resources/virtualization/</loc>
     <lastmod>2022-04-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -22,6 +25,12 @@
   </url><url>
     <loc>https://abotyim.github.io/ar/posts/programming/git/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/posts/linux/awk/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/posts/linux/find/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/posts/resources/data-analysis/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
@@ -55,23 +64,26 @@
     <loc>https://abotyim.github.io/ar/posts/resources/docker/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/posts/linux/find/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+    <loc>https://abotyim.github.io/ar/tags/containers/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/posts/linux/awk/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+    <loc>https://abotyim.github.io/ar/categories/containers/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/tags/proxmox/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <loc>https://abotyim.github.io/ar/tags/distrobox/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/categories/virtualization/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <loc>https://abotyim.github.io/ar/tags/docker/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/tags/xcp-ng/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <loc>https://abotyim.github.io/ar/tags/linux/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/tags/podman/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -84,7 +96,7 @@
                 />
   </url><url>
     <loc>https://abotyim.github.io/ar/posts/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -97,7 +109,7 @@
                 />
   </url><url>
     <loc>https://abotyim.github.io/ar/categories/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -110,7 +122,7 @@
                 />
   </url><url>
     <loc>https://abotyim.github.io/ar/tags/</loc>
-    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -121,6 +133,18 @@
                 hreflang="ar"
                 href="https://abotyim.github.io/ar/tags/"
                 />
+  </url><url>
+    <loc>https://abotyim.github.io/ar/posts/linux/</loc>
+    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/tags/proxmox/</loc>
+    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/categories/virtualization/</loc>
+    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/tags/xcp-ng/</loc>
+    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/posts/resources/</loc>
     <lastmod>2022-04-02T00:00:00+00:00</lastmod>
@@ -193,9 +217,6 @@
     <loc>https://abotyim.github.io/ar/tags/kubernetes/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/tags/linux/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://abotyim.github.io/ar/categories/linux/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -217,16 +238,7 @@
     <loc>https://abotyim.github.io/ar/tags/awk/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://abotyim.github.io/ar/tags/linux-commands/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://abotyim.github.io/ar/tags/%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/categories/%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/posts/linux/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/tags/find/</loc>
@@ -250,25 +262,6 @@
   </url><url>
     <loc>https://abotyim.github.io/ar/categories/data-analysis/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/tags/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/tags/django/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://abotyim.github.io/en/tags/django/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://abotyim.github.io/ar/tags/django/"
-                />
   </url><url>
     <loc>https://abotyim.github.io/ar/tags/python/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
@@ -296,6 +289,25 @@
                 href="https://abotyim.github.io/ar/categories/python/"
                 />
   </url><url>
+    <loc>https://abotyim.github.io/ar/tags/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</loc>
+    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</loc>
+    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://abotyim.github.io/ar/tags/django/</loc>
+    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://abotyim.github.io/en/tags/django/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://abotyim.github.io/ar/tags/django/"
+                />
+  </url><url>
     <loc>https://abotyim.github.io/ar/tags/%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -303,9 +315,6 @@
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://abotyim.github.io/ar/tags/docker/</loc>
     <lastmod>2022-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://abotyim.github.io/ar/tags/%D8%AF%D9%88%D9%83%D8%B1/</loc>

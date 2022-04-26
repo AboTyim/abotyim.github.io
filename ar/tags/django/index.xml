@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Django on أبو تيم</title>
+    <title>django on أبو تيم</title>
     <link>https://abotyim.github.io/ar/tags/django/</link>
-    <description>Recent content in Django on أبو تيم</description>
+    <description>Recent content in django on أبو تيم</description>
     <image>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>

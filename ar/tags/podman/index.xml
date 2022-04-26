@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>podman on أبو تيم</title>
+    <link>https://abotyim.github.io/ar/tags/podman/</link>
+    <description>Recent content in podman on أبو تيم</description>
+    <image>
+      <url>https://abotyim.github.io/cover.jpg</url>
+      <link>https://abotyim.github.io/cover.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/podman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تشغيل أي توزيعة لينكس بواسطة DistroBox</title>
+      <link>https://abotyim.github.io/ar/posts/linux/distrobox/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/distrobox/</guid>
+      <description>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس المفضلة لديك باستخدام <code>Docker</code> أو <code>Podman</code>. تصبح الحاوية التي تم إطلاقها متكاملة بشكل كبير مع النظام الأساسي (المضيف)، مع إمكانية مشاركة دليل المستخدم <strong>HOME</strong> جنبًا إلى جنب مع أقراص التخزين الخارجي وأجهزة <strong>USB</strong> والتطبيقات الرسومية.
+يقوم <strong>DistroBox</strong> باستخدام الصور المتوفر على <strong>Docker Hub</strong> أو مستودع فيه صور <strong>Images</strong> لكي يتم إنشاء منها حاويات.</p>
+<h2 id="المتطلبات-قبل-البدء">المتطلبات قبل البدء:</h2>
+<p>يجب تثبيت <code>Docker</code> أو <code>Podman</code> لكي يتم التعامل مع الحاويات وإدارتها في الخلفية:</p>
+<ul>
+<li>أقل إصدار من <code>Docker</code> يجب أن يكون 18.06.1.</li>
+<li>أقل إصدار من <code>Podman</code> يجب أن يكون 2.1.0.</li>
+</ul>
+<h2 id="تثبيت-distrobox-على-التوزيعات-الديبيانية">تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+</span></span></code></pre></div><h2 id="إلغاء-تثبيت-distrobox-على-التوزيعات-الديبيانية">إلغاء تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/uninstall | sudo sh
+</span></span></code></pre></div><h2 id="إنشاء-حاوية-من-صورة">إنشاء حاوية من صورة:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name container-name --image os-image:version
+</span></span></code></pre></div><p>في المثال التالي سيتم إنشاء حاوية من صورة كالي لينكس:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --image kalilinux/kali-last-release --name kalilinux
+</span></span></code></pre></div><h2 id="عرض-قائمة-الحاويات-التي-تم-إنشاءها-بواسطة-distrobox">عرض قائمة الحاويات التي تم إنشاءها بواسطة DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-list
+</span></span></code></pre></div><h2 id="الدخول-لحاوية-تم-إنشاءها">الدخول لحاوية تم إنشاءها:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span></code></pre></div><p>للدخول إلى حاوية كالي لينكس التي تم إنشاءها مسبقًا:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-بداخل-حاوية-distrobox">تنفيذ الأوامر بداخل حاوية DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name  -- <span style="color:#8be9fd;font-style:italic">command</span>
+</span></span></code></pre></div><p>في المثال التالي سيتم تحديث المستودعات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux -- sudo apt update
+</span></span></code></pre></div><h2 id="تصدير-التطبيقات-من-الحاوية-إلى-المضيف">تصدير التطبيقات من الحاوية إلى المضيف:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span><span style="display:flex;"><span>distrobox-export --app appname
+</span></span></code></pre></div><p>في البداية يجب الدخول إلى الحاوية التي نريد تصدير التطبيق منه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><p>بعد ذلك قم بتثبيت التطبيق المراد تصديره، هنا في مثالنا التالي نريد تصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install flameshot
+</span></span></code></pre></div><p>أمرتصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-export --app flameshot
+</span></span></code></pre></div><p>للخروج من الحاوية الحالية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">logout</span>
+</span></span></code></pre></div><p>بعد ذلك سنجد تطبيق flameshot في النظام الأساسي (المضيف).</p>
+<h2 id="إيقاف-حاوية-تعمل-في-الخلفية">إيقاف حاوية تعمل في الخلفية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop container-name
+</span></span></code></pre></div><p>إيقاف حاوية كالي لينكس التي تعمل في الخلفية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop kalilinux
+</span></span></code></pre></div><h2 id="حذف-حاوية-موجودة-بشكل-سابق">حذف حاوية موجودة بشكل سابق:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm kalilinux
+</span></span></code></pre></div><h2 id="إنشاء-نسخة-عن-حاوية-موجودة-بشكل-سابق">إنشاء نسخة عن حاوية موجودة بشكل سابق:</h2>
+<p><mark>تنويه</mark>: قبل ذلك يجب أن يتم إيقاف الحاوية المراد إنشاء نسخة عنها، وتم شرح ذلك أعلاه.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name new-container-name --clone container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name kalilinux-clone --clone kalilinux
+</span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tecmint.com/distrobox-run-any-linux-distribution/">Run Any Linux Distribution Inside Linux Terminal.</a></li>
+<li><a href="https://distrobox.privatedns.org/">Use any linux distribution inside your terminal.</a></li>
+<li><a href="https://www.youtube.com/watch?v=x5sAY8D28fA">Run ANY Linux App on ANY Distro! (No VM) | Distrobox Tutorial.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,165 +9,70 @@
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>الأمر find</title>
-      <link>https://abotyim.github.io/ar/posts/linux/find/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      <title>تشغيل أي توزيعة لينكس بواسطة DistroBox</title>
+      <link>https://abotyim.github.io/ar/posts/linux/distrobox/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
-      <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
+      <guid>https://abotyim.github.io/ar/posts/linux/distrobox/</guid>
+      <description>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h2 id="مقدمة">مقدمة:</h2>
-<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
-<h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
-</span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
+<p>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس المفضلة لديك باستخدام <code>Docker</code> أو <code>Podman</code>. تصبح الحاوية التي تم إطلاقها متكاملة بشكل كبير مع النظام الأساسي (المضيف)، مع إمكانية مشاركة دليل المستخدم <strong>HOME</strong> جنبًا إلى جنب مع أقراص التخزين الخارجي وأجهزة <strong>USB</strong> والتطبيقات الرسومية.
+يقوم <strong>DistroBox</strong> باستخدام الصور المتوفر على <strong>Docker Hub</strong> أو مستودع فيه صور <strong>Images</strong> لكي يتم إنشاء منها حاويات.</p>
+<h2 id="المتطلبات-قبل-البدء">المتطلبات قبل البدء:</h2>
+<p>يجب تثبيت <code>Docker</code> أو <code>Podman</code> لكي يتم التعامل مع الحاويات وإدارتها في الخلفية:</p>
 <ul>
-<li><code>-name</code>: يستخدم للبحث عن الاسم وهو حساس لحالة الأحرف كما يقال <mark>Case sensitivity</mark> أي عندما تبحث عن كلمة <code>Main.py</code> هي ليست مطابقة لـ <code>main.py</code>.</li>
-<li><code>-iname</code>: يستخدم للبحث عن الاسم أيضاًَ وهو مشابه لما سبق مع تجاهل حالة الأحرف، فعندما تبحث عن كلمة <code>MAin.PY</code> سيطابق اسم الملف <code>main.py</code> و &hellip; إلخ.</li>
-<li>ملاحظة: بإمكاننا استخدام <code>*</code> في أي مكان من موقع الكلمة.</li>
+<li>أقل إصدار من <code>Docker</code> يجب أن يكون 18.06.1.</li>
+<li>أقل إصدار من <code>Podman</code> يجب أن يكون 2.1.0.</li>
 </ul>
-<p><strong>استخدام المعاملات المنطقية:</strong></p>
+<h2 id="تثبيت-distrobox-على-التوزيعات-الديبيانية">تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+</span></span></code></pre></div><h2 id="إلغاء-تثبيت-distrobox-على-التوزيعات-الديبيانية">إلغاء تثبيت DistroBox على التوزيعات الديبيانية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/uninstall | sudo sh
+</span></span></code></pre></div><h2 id="إنشاء-حاوية-من-صورة">إنشاء حاوية من صورة:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name container-name --image os-image:version
+</span></span></code></pre></div><p>في المثال التالي سيتم إنشاء حاوية من صورة كالي لينكس:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --image kalilinux/kali-last-release --name kalilinux
+</span></span></code></pre></div><h2 id="عرض-قائمة-الحاويات-التي-تم-إنشاءها-بواسطة-distrobox">عرض قائمة الحاويات التي تم إنشاءها بواسطة DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-list
+</span></span></code></pre></div><h2 id="الدخول-لحاوية-تم-إنشاءها">الدخول لحاوية تم إنشاءها:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span></code></pre></div><p>للدخول إلى حاوية كالي لينكس التي تم إنشاءها مسبقًا:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-بداخل-حاوية-distrobox">تنفيذ الأوامر بداخل حاوية DistroBox:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name  -- <span style="color:#8be9fd;font-style:italic">command</span>
+</span></span></code></pre></div><p>في المثال التالي سيتم تحديث المستودعات:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux -- sudo apt update
+</span></span></code></pre></div><h2 id="تصدير-التطبيقات-من-الحاوية-إلى-المضيف">تصدير التطبيقات من الحاوية إلى المضيف:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name container-name
+</span></span><span style="display:flex;"><span>distrobox-export --app appname
+</span></span></code></pre></div><p>في البداية يجب الدخول إلى الحاوية التي نريد تصدير التطبيق منه:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-enter --name kalilinux
+</span></span></code></pre></div><p>بعد ذلك قم بتثبيت التطبيق المراد تصديره، هنا في مثالنا التالي نريد تصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install flameshot
+</span></span></code></pre></div><p>أمرتصدير تطبيق <code>flameshot</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-export --app flameshot
+</span></span></code></pre></div><p>للخروج من الحاوية الحالية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">logout</span>
+</span></span></code></pre></div><p>بعد ذلك سنجد تطبيق flameshot في النظام الأساسي (المضيف).</p>
+<h2 id="إيقاف-حاوية-تعمل-في-الخلفية">إيقاف حاوية تعمل في الخلفية:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop container-name
+</span></span></code></pre></div><p>إيقاف حاوية كالي لينكس التي تعمل في الخلفية:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-stop kalilinux
+</span></span></code></pre></div><h2 id="حذف-حاوية-موجودة-بشكل-سابق">حذف حاوية موجودة بشكل سابق:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-rm kalilinux
+</span></span></code></pre></div><h2 id="إنشاء-نسخة-عن-حاوية-موجودة-بشكل-سابق">إنشاء نسخة عن حاوية موجودة بشكل سابق:</h2>
+<p><mark>تنويه</mark>: قبل ذلك يجب أن يتم إيقاف الحاوية المراد إنشاء نسخة عنها، وتم شرح ذلك أعلاه.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name new-container-name --clone container-name
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>distrobox-create --name kalilinux-clone --clone kalilinux
+</span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
 <ul>
-<li><code>-not</code>:  تعبر عن المعامل المنطقي <code>NOT</code> بإمكاننا استخدام <code>-not</code>  أو <code>!</code> عندما تريد العثور على كل الملفّات الّتي <strong>لا تُوافق</strong> نمطًا Pattern مُحدّدًا، في حال استخدام <code>!</code> يجب تخليصها Escape حتى لا يحاول سطر الأمر تفسيرها قبل بدء عمل find.</li>
-<li><code>-or</code>: تعبر عن المعامل المنطقي <code>OR</code> بإمكاننا استخدام <code>-or</code> أو <code>-o</code>.</li>
-<li><code>-and</code>: تعبر عن المعامل المنطقي <code>AND</code> بإمكاننا استخدام <code>-and</code> أو <code>-a</code>.</li>
-<li>ملاحظة: في حال لم تضع <code>OR</code> أو <code>AND</code> فسيكون الخيار بشكل تلقائي <code>AND</code>.</li>
-</ul>
-<h3 id="البحث-بواسطة-اسم-الملف-في-المجلد-الحالي">البحث بواسطة اسم الملف في المجلد الحالي:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -name main.py
-</span></span></code></pre></div><h3 id="البحث-بواسطة-اسم-الملف-مع-تجاهل-حالة-الأحرف">البحث بواسطة اسم الملف مع تجاهل حالة الأحرف:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -iname Main.py
-</span></span></code></pre></div><h3 id="البحث-فقط-عن-المجلدات">البحث فقط عن المجلدات:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type d -name Books
-</span></span></code></pre></div><h3 id="البحث-فقط-عن-الملفات">البحث فقط عن الملفات:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name main.py
-</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-ذات-اللاحقة-py">البحث عن كل الملفات ذات اللاحقة <code>py</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;*.py&#34;</span>
-</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-التي-تبدأ-بـ-mian-مع-استثناء-اللاحقة-php">البحث عن كل الملفات التي تبدأ بـ <code>mian</code> مع استثناء اللاحقة <code>php</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;main*&#34;</span> -not -name <span style="color:#f1fa8c">&#34;*.php&#34;</span>
-</span></span></code></pre></div><h2 id="البحث-بناء-على-عدد-المجلدات-الفرعية">البحث بناءً على عدد المجلدات الفرعية:</h2>
-<ul>
-<li><code>-mindepth</code>: تحدد القيمة الصغرى لعدد مستويات المجلدات التي سيبدأ منها البحث، وسيتم تجاهل المجلد الحالي.</li>
-<li><code>-maxdepth</code>: تحدد القيمة الكبرى لعدد مستويات المجلدات التي سينتهي فيها البحث.</li>
-</ul>
-<h3 id="البحث-بعمق-كحد-أدنى-4-مجلدات">البحث بعمق كحد أدنى 4 مجلدات:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -mindepth <span style="color:#bd93f9">4</span>
-</span></span></code></pre></div><h3 id="البحث-بعمق-كحد-أقصى-5-مجلدات">البحث بعمق كحد أقصى 5 مجلدات:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -maxdepth <span style="color:#bd93f9">5</span>
-</span></span></code></pre></div><h2 id="البحث-عن-المجلدات-والملفات-الفارغة-وحذفها">البحث عن المجلدات والملفات الفارغة وحذفها:</h2>
-<ul>
-<li><code>-type</code>: تستخدم لتحديد النوع، لو أردنا عرض النتائج للملفات فقط نستخدم <code>f</code>، ونستخدم <code>d</code> لعرض المجلدات فقط، ونستخدم <code>s</code> لعرض ملفات socket.</li>
-<li><code>-empty</code>: لعرض الملفات أو المجلدات الفارغة.</li>
-<li><code>-print</code>: لبطاعة النتائج فقط.</li>
-<li><code>-delete</code>: تستخدم للحذف.</li>
-</ul>
-<h3 id="البحث-عن-المجلدات-الفارغة">البحث عن المجلدات الفارغة:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -print 
-</span></span></code></pre></div><h3 id="حذف-المجلدات-الفارغة">حذف المجلدات الفارغة:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -delete 
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-الفارغة">البحث عن الملفات الفارغة:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -print
-</span></span></code></pre></div><h3 id="حذف-الملفات-الفارغة">حذف الملفات الفارغة:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -delete
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المخفية">البحث عن الملفات المخفية:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -name <span style="color:#f1fa8c">&#34;.*&#34;</span>
-</span></span></code></pre></div><h2 id="البحث-بناء-على-الأذونات">البحث بناءً على الأذونات:</h2>
-<p><code>-perm</code>: وهي اختصار لكلمة permission.</p>
-<h3 id="البحث-عن-الملفات-ذات-الأذونات-777">البحث عن الملفات ذات الأذونات <code>777</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -perm <span style="color:#bd93f9">0777</span> -print
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-بدون-الأذونات-777">البحث عن الملفات بدون الأذونات <code>777</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f ! -perm <span style="color:#bd93f9">0777</span> -print
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-للقراءة-فقط">البحث عن الملفات للقراءة فقط:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /u<span style="color:#ff79c6">=</span>r
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التنفيذية">البحث عن الملفات التنفيذية:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /a<span style="color:#ff79c6">=</span>x
-</span></span></code></pre></div><h2 id="البحث-بناء-على-المالكين-والمجموعات">البحث بناءً على المالكين والمجموعات:</h2>
-<ul>
-<li><code>-user</code>: للبحث عن الملفات التي تعود لمستخدم ما.</li>
-<li><code>-group</code>: للبحث عن الملفات التي تعود لمجموعة ما.</li>
-<li><code>-uid</code>: للبحث عن الملفات التي تعود لمستخدم ما بواسطة القيمة الرقمية للمالك.</li>
-<li><code>-gid</code>: للبحث عن الملفات التي تعود لمجموعة ما بواسطة القيمة الرقمية للمجموعة.</li>
-</ul>
-<h3 id="البحث-بناء-على-المالك-ahmed">البحث بناءً على المالك <code>ahmed</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -user ahmed
-</span></span></code></pre></div><h3 id="البحث-بناء-على-المجموعة-muslim">البحث بناءً على المجموعة <code>muslim</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -group muslim
-</span></span></code></pre></div><h2 id="البحث-بناء-على-التاريخ-والوقت">البحث بناءً على التاريخ والوقت:</h2>
-<p>يخزن لينكس بيانات عن تواريخ الوصول Access time، وتواريخ التعديل Modification، وتواريخ التّبديل Change:</p>
-<ul>
-<li>
-<p><strong>تاريخ الوصول:</strong> آخر مرّة قُرئ من الملفّ أو كُتب فيه.</p>
-</li>
-<li>
-<p><strong>تاريخ التّعديل:</strong> آخر مرّة عُدِّل فيها على محتوى الملفّ.</p>
-</li>
-<li>
-<p><strong>تاريخ التّبديل:</strong> آخر مرّة غُيّرت فيها البيانات الوصفيّة Meta-data المُتعلّقة بوضع الملفّ ضمن نظام الملفّات.</p>
-</li>
-<li>
-<p><code>-mtime</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها باليوم.</p>
-</li>
-<li>
-<p><code>-mmin</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها بالدقيقة.</p>
-</li>
-<li>
-<p><code>-atime</code>: للبحث عن الملفّات المقروءة إليها باليوم.</p>
-</li>
-<li>
-<p><code>-amin</code>: للبحث عن الملفّات المقروءة بالدقيقة.</p>
-</li>
-<li>
-<p><code>-ctime</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة باليوم.</p>
-</li>
-<li>
-<p><code>-cmin</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة بالدقيقة.</p>
-</li>
-<li>
-<p>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكثر من، وعند استخدام <code>-</code> تعني أقل من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</p>
-</li>
-</ul>
-<h3 id="البحث-عن-الملفات-المعدلة-آخر-50-يوما">البحث عن الملفات المعدلة آخر 50 يوماً:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime -50
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-أكثر-من-50-يوما">البحث عن الملفات المعدلة أكثر من 50 يوماً:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +50
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-من-20-إلى-50-يوما">البحث عن الملفات المعدلة من 20 إلى 50 يوماً:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +20 -mtime -50
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تم-الوصول-إليها-آخر-50-يوما">البحث عن الملفات التي تم الوصول إليها آخر 50 يوماً:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime -50
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-الوصول-إليها-أكثر-من-50-يوما">البحث عن الملفات التي الوصول إليها أكثر من 50 يوماً:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime +50
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تغييرت-بيانات-التعريف-الخاصة-بها--آخر-50-دقيقة">البحث عن الملفات التي تغييرت بيانات التعريف الخاصة بها  آخر 50 دقيقة:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find / -cmin -50
-</span></span></code></pre></div><h2 id="البحث-بناء-على-الحجم">البحث بناءً على الحجم:</h2>
-<ul>
-<li><code>c</code>: الحجم بالبايت.</li>
-<li><code>k</code>: الحجم بالكيلوبايت (1024 بت).</li>
-<li><code>M</code>: الحجم بالميغابايت (1048576 بت).</li>
-<li><code>G</code>: الحجم بالجيغابايت (1073741824 بت).</li>
-<li>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكبر من، وعند استخدام <code>-</code> تعني أصغر من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</li>
-</ul>
-<h3 id="البحث-عن-الملفات-المطابقة-للحجم-10mb">البحث عن الملفات المطابقة للحجم 10MB:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size 10M
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-أكبر-من-2mb-وأصغر-من-10mb">البحث عن الملفات أكبر من 2MB وأصغر من 10MB:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size +2M -size-10M
-</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-على-نتائج-البحث">تنفيذ الأوامر على نتائج البحث:</h2>
-<p>يُتيح الأمر <code>find</code> إمكانيّة تنفيذ أوامر على نتائج البحث مباشرةً عن طريق مُعطَى <code>exec-</code>.</p>
-<p>ملاحظة: نستخدم علامة <code>{}</code> هي ماسك مكان Placeholder، تحلّ محلَّ الملفّات المُطابقة لخيارات البحث. تُشير علامة <code>;\</code> إلى نهاية الأمر.</p>
-<h3 id="البحث-عن-الملفات-الفارغة-والتأكد-من-مساحة-كل-ملف">البحث عن الملفات الفارغة والتأكد من مساحة كل ملف:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -empty -exec du <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span>
-</span></span></code></pre></div><h3 id="البحث-عن-ملفات-pdf-بناء-على-نوع-الملف">البحث عن ملفات <code>PDF</code> بناء على نوع الملف:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file -i <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep -i <span style="color:#f1fa8c">&#34;application/pdf&#34;</span>
-</span></span></code></pre></div><h3 id="البحث-عن-الملفات-ذات-التنسيق-data">البحث عن الملفات ذات التنسيق <code>data</code>:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep <span style="color:#f1fa8c">&#39;\data$&#39;</span>
-</span></span></code></pre></div><p><mark>تنويه</mark>: تستطيع استخدام <code>-ok</code> بدل من <code>-exec</code> والفرق الوحيد بينهما أنها تعرض رسالة موافقة على تنفيذ الأمر على كل ملف، وهي مفيدة جداً في حال استخدمت أمر الحذف حتى لا تمسح أي ملف بطريقة الخطأ.</p>
-<h2 id="المراجع">المراجع:</h2>
-<ul>
-<li><a href="https://www.tecmint.com/35-practical-examples-of-linux-find-command/">35 Practical Examples of Linux Find Command.</a></li>
-<li><a href="https://academy.hsoub.com/devops/linux/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%AA%D8%AE%D8%AF%D9%90%D9%85-%D8%A3%D9%85%D8%B1%D9%8E%D9%8A-find-%D9%88-locate-%D9%84%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%81%D9%91%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-linux-r43/">كيف تستخدِم أمرَي find و locate للبحث عن الملفّات على Linux.</a></li>
-<li><a href="https://abgoor.blogspot.com/2010/10/find.html">البحث بواسطة الأمر find في لينكس.</a></li>
-<li></li>
+<li><a href="https://www.tecmint.com/distrobox-run-any-linux-distribution/">Run Any Linux Distribution Inside Linux Terminal.</a></li>
+<li><a href="https://distrobox.privatedns.org/">Use any linux distribution inside your terminal.</a></li>
+<li><a href="https://www.youtube.com/watch?v=x5sAY8D28fA">Run ANY Linux App on ANY Distro! (No VM) | Distrobox Tutorial.</a></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -521,6 +426,168 @@
 </span></span></code></pre></div><h2 id="المراجع">المراجع:</h2>
 <ul>
 <li><a href="https://www.tutorialspoint.com/awk/">Awk Tutorial.</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>الأمر find</title>
+      <link>https://abotyim.github.io/ar/posts/linux/find/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
+      <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<h2 id="مقدمة">مقدمة:</h2>
+<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
+<h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
+<ul>
+<li><code>-name</code>: يستخدم للبحث عن الاسم وهو حساس لحالة الأحرف كما يقال <mark>Case sensitivity</mark> أي عندما تبحث عن كلمة <code>Main.py</code> هي ليست مطابقة لـ <code>main.py</code>.</li>
+<li><code>-iname</code>: يستخدم للبحث عن الاسم أيضاًَ وهو مشابه لما سبق مع تجاهل حالة الأحرف، فعندما تبحث عن كلمة <code>MAin.PY</code> سيطابق اسم الملف <code>main.py</code> و &hellip; إلخ.</li>
+<li>ملاحظة: بإمكاننا استخدام <code>*</code> في أي مكان من موقع الكلمة.</li>
+</ul>
+<p><strong>استخدام المعاملات المنطقية:</strong></p>
+<ul>
+<li><code>-not</code>:  تعبر عن المعامل المنطقي <code>NOT</code> بإمكاننا استخدام <code>-not</code>  أو <code>!</code> عندما تريد العثور على كل الملفّات الّتي <strong>لا تُوافق</strong> نمطًا Pattern مُحدّدًا، في حال استخدام <code>!</code> يجب تخليصها Escape حتى لا يحاول سطر الأمر تفسيرها قبل بدء عمل find.</li>
+<li><code>-or</code>: تعبر عن المعامل المنطقي <code>OR</code> بإمكاننا استخدام <code>-or</code> أو <code>-o</code>.</li>
+<li><code>-and</code>: تعبر عن المعامل المنطقي <code>AND</code> بإمكاننا استخدام <code>-and</code> أو <code>-a</code>.</li>
+<li>ملاحظة: في حال لم تضع <code>OR</code> أو <code>AND</code> فسيكون الخيار بشكل تلقائي <code>AND</code>.</li>
+</ul>
+<h3 id="البحث-بواسطة-اسم-الملف-في-المجلد-الحالي">البحث بواسطة اسم الملف في المجلد الحالي:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -name main.py
+</span></span></code></pre></div><h3 id="البحث-بواسطة-اسم-الملف-مع-تجاهل-حالة-الأحرف">البحث بواسطة اسم الملف مع تجاهل حالة الأحرف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -iname Main.py
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-المجلدات">البحث فقط عن المجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type d -name Books
+</span></span></code></pre></div><h3 id="البحث-فقط-عن-الملفات">البحث فقط عن الملفات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name main.py
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-ذات-اللاحقة-py">البحث عن كل الملفات ذات اللاحقة <code>py</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;*.py&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-كل-الملفات-التي-تبدأ-بـ-mian-مع-استثناء-اللاحقة-php">البحث عن كل الملفات التي تبدأ بـ <code>mian</code> مع استثناء اللاحقة <code>php</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -name <span style="color:#f1fa8c">&#34;main*&#34;</span> -not -name <span style="color:#f1fa8c">&#34;*.php&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-عدد-المجلدات-الفرعية">البحث بناءً على عدد المجلدات الفرعية:</h2>
+<ul>
+<li><code>-mindepth</code>: تحدد القيمة الصغرى لعدد مستويات المجلدات التي سيبدأ منها البحث، وسيتم تجاهل المجلد الحالي.</li>
+<li><code>-maxdepth</code>: تحدد القيمة الكبرى لعدد مستويات المجلدات التي سينتهي فيها البحث.</li>
+</ul>
+<h3 id="البحث-بعمق-كحد-أدنى-4-مجلدات">البحث بعمق كحد أدنى 4 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -mindepth <span style="color:#bd93f9">4</span>
+</span></span></code></pre></div><h3 id="البحث-بعمق-كحد-أقصى-5-مجلدات">البحث بعمق كحد أقصى 5 مجلدات:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home/user -maxdepth <span style="color:#bd93f9">5</span>
+</span></span></code></pre></div><h2 id="البحث-عن-المجلدات-والملفات-الفارغة-وحذفها">البحث عن المجلدات والملفات الفارغة وحذفها:</h2>
+<ul>
+<li><code>-type</code>: تستخدم لتحديد النوع، لو أردنا عرض النتائج للملفات فقط نستخدم <code>f</code>، ونستخدم <code>d</code> لعرض المجلدات فقط، ونستخدم <code>s</code> لعرض ملفات socket.</li>
+<li><code>-empty</code>: لعرض الملفات أو المجلدات الفارغة.</li>
+<li><code>-print</code>: لبطاعة النتائج فقط.</li>
+<li><code>-delete</code>: تستخدم للحذف.</li>
+</ul>
+<h3 id="البحث-عن-المجلدات-الفارغة">البحث عن المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -print 
+</span></span></code></pre></div><h3 id="حذف-المجلدات-الفارغة">حذف المجلدات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type d -empty -delete 
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-الفارغة">البحث عن الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -print
+</span></span></code></pre></div><h3 id="حذف-الملفات-الفارغة">حذف الملفات الفارغة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/Work -type f -empty -delete
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المخفية">البحث عن الملفات المخفية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -name <span style="color:#f1fa8c">&#34;.*&#34;</span>
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الأذونات">البحث بناءً على الأذونات:</h2>
+<p><code>-perm</code>: وهي اختصار لكلمة permission.</p>
+<h3 id="البحث-عن-الملفات-ذات-الأذونات-777">البحث عن الملفات ذات الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-بدون-الأذونات-777">البحث عن الملفات بدون الأذونات <code>777</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f ! -perm <span style="color:#bd93f9">0777</span> -print
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-للقراءة-فقط">البحث عن الملفات للقراءة فقط:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /u<span style="color:#ff79c6">=</span>r
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التنفيذية">البحث عن الملفات التنفيذية:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -type f -perm /a<span style="color:#ff79c6">=</span>x
+</span></span></code></pre></div><h2 id="البحث-بناء-على-المالكين-والمجموعات">البحث بناءً على المالكين والمجموعات:</h2>
+<ul>
+<li><code>-user</code>: للبحث عن الملفات التي تعود لمستخدم ما.</li>
+<li><code>-group</code>: للبحث عن الملفات التي تعود لمجموعة ما.</li>
+<li><code>-uid</code>: للبحث عن الملفات التي تعود لمستخدم ما بواسطة القيمة الرقمية للمالك.</li>
+<li><code>-gid</code>: للبحث عن الملفات التي تعود لمجموعة ما بواسطة القيمة الرقمية للمجموعة.</li>
+</ul>
+<h3 id="البحث-بناء-على-المالك-ahmed">البحث بناءً على المالك <code>ahmed</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -user ahmed
+</span></span></code></pre></div><h3 id="البحث-بناء-على-المجموعة-muslim">البحث بناءً على المجموعة <code>muslim</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /home -group muslim
+</span></span></code></pre></div><h2 id="البحث-بناء-على-التاريخ-والوقت">البحث بناءً على التاريخ والوقت:</h2>
+<p>يخزن لينكس بيانات عن تواريخ الوصول Access time، وتواريخ التعديل Modification، وتواريخ التّبديل Change:</p>
+<ul>
+<li>
+<p><strong>تاريخ الوصول:</strong> آخر مرّة قُرئ من الملفّ أو كُتب فيه.</p>
+</li>
+<li>
+<p><strong>تاريخ التّعديل:</strong> آخر مرّة عُدِّل فيها على محتوى الملفّ.</p>
+</li>
+<li>
+<p><strong>تاريخ التّبديل:</strong> آخر مرّة غُيّرت فيها البيانات الوصفيّة Meta-data المُتعلّقة بوضع الملفّ ضمن نظام الملفّات.</p>
+</li>
+<li>
+<p><code>-mtime</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها باليوم.</p>
+</li>
+<li>
+<p><code>-mmin</code>: للبحث عن الملفّات الّتي عُدِّل على محتواها بالدقيقة.</p>
+</li>
+<li>
+<p><code>-atime</code>: للبحث عن الملفّات المقروءة إليها باليوم.</p>
+</li>
+<li>
+<p><code>-amin</code>: للبحث عن الملفّات المقروءة بالدقيقة.</p>
+</li>
+<li>
+<p><code>-ctime</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة باليوم.</p>
+</li>
+<li>
+<p><code>-cmin</code>: للبحث عن الملفّات التي غيرت بياناتها الوصفيّة الخاصة بالدقيقة.</p>
+</li>
+<li>
+<p>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكثر من، وعند استخدام <code>-</code> تعني أقل من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</p>
+</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المعدلة-آخر-50-يوما">البحث عن الملفات المعدلة آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-أكثر-من-50-يوما">البحث عن الملفات المعدلة أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-المعدلة-من-20-إلى-50-يوما">البحث عن الملفات المعدلة من 20 إلى 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -mtime +20 -mtime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تم-الوصول-إليها-آخر-50-يوما">البحث عن الملفات التي تم الوصول إليها آخر 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime -50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-الوصول-إليها-أكثر-من-50-يوما">البحث عن الملفات التي الوصول إليها أكثر من 50 يوماً:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -atime +50
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-التي-تغييرت-بيانات-التعريف-الخاصة-بها--آخر-50-دقيقة">البحث عن الملفات التي تغييرت بيانات التعريف الخاصة بها  آخر 50 دقيقة:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find / -cmin -50
+</span></span></code></pre></div><h2 id="البحث-بناء-على-الحجم">البحث بناءً على الحجم:</h2>
+<ul>
+<li><code>c</code>: الحجم بالبايت.</li>
+<li><code>k</code>: الحجم بالكيلوبايت (1024 بت).</li>
+<li><code>M</code>: الحجم بالميغابايت (1048576 بت).</li>
+<li><code>G</code>: الحجم بالجيغابايت (1073741824 بت).</li>
+<li>ملاحظة: عند استخدام اشارة <code>+</code> تعني أكبر من، وعند استخدام <code>-</code> تعني أصغر من، وعند عدم وضع أي أشارة فقط الرقم تعني المطابقة.</li>
+</ul>
+<h3 id="البحث-عن-الملفات-المطابقة-للحجم-10mb">البحث عن الملفات المطابقة للحجم 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size 10M
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-أكبر-من-2mb-وأصغر-من-10mb">البحث عن الملفات أكبر من 2MB وأصغر من 10MB:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -size +2M -size-10M
+</span></span></code></pre></div><h2 id="تنفيذ-الأوامر-على-نتائج-البحث">تنفيذ الأوامر على نتائج البحث:</h2>
+<p>يُتيح الأمر <code>find</code> إمكانيّة تنفيذ أوامر على نتائج البحث مباشرةً عن طريق مُعطَى <code>exec-</code>.</p>
+<p>ملاحظة: نستخدم علامة <code>{}</code> هي ماسك مكان Placeholder، تحلّ محلَّ الملفّات المُطابقة لخيارات البحث. تُشير علامة <code>;\</code> إلى نهاية الأمر.</p>
+<h3 id="البحث-عن-الملفات-الفارغة-والتأكد-من-مساحة-كل-ملف">البحث عن الملفات الفارغة والتأكد من مساحة كل ملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -empty -exec du <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-ملفات-pdf-بناء-على-نوع-الملف">البحث عن ملفات <code>PDF</code> بناء على نوع الملف:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file -i <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep -i <span style="color:#f1fa8c">&#34;application/pdf&#34;</span>
+</span></span></code></pre></div><h3 id="البحث-عن-الملفات-ذات-التنسيق-data">البحث عن الملفات ذات التنسيق <code>data</code>:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type f -exec file <span style="color:#ff79c6">{}</span> <span style="color:#f1fa8c">\;</span> | grep <span style="color:#f1fa8c">&#39;\data$&#39;</span>
+</span></span></code></pre></div><p><mark>تنويه</mark>: تستطيع استخدام <code>-ok</code> بدل من <code>-exec</code> والفرق الوحيد بينهما أنها تعرض رسالة موافقة على تنفيذ الأمر على كل ملف، وهي مفيدة جداً في حال استخدمت أمر الحذف حتى لا تمسح أي ملف بطريقة الخطأ.</p>
+<h2 id="المراجع">المراجع:</h2>
+<ul>
+<li><a href="https://www.tecmint.com/35-practical-examples-of-linux-find-command/">35 Practical Examples of Linux Find Command.</a></li>
+<li><a href="https://academy.hsoub.com/devops/linux/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%AA%D8%AE%D8%AF%D9%90%D9%85-%D8%A3%D9%85%D8%B1%D9%8E%D9%8A-find-%D9%88-locate-%D9%84%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%81%D9%91%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-linux-r43/">كيف تستخدِم أمرَي find و locate للبحث عن الملفّات على Linux.</a></li>
+<li><a href="https://abgoor.blogspot.com/2010/10/find.html">البحث بواسطة الأمر find في لينكس.</a></li>
+<li></li>
 </ul>
 ]]></content:encoded>
     </item>
