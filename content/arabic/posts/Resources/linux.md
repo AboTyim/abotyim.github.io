@@ -15,8 +15,8 @@ aliases:
 author: ["AboTyim"]
 date: "2022-03-25"
 lastmod: "2022-03-31"
-tags: ["Linux", "GNU/Linux", "لينكس"]
-categories: ["Linux", "OS"]
+tags: ["linux", "GNU/Linux", "لينكس"]
+categories: ["linux", "OS"]
 series: 
 - "مسار مدير أنظمة لينكس"
 - "مسار سطر أوامر لينكس"

@@ -12,8 +12,8 @@ aliases:
 author: ["AboTyim"]
 date: "2021-08-05"
 lastmod: "2021-08-09"
-tags: ["Linux Commands", "أوامر لينكس", "find"]
-categories: ["أوامر لينكس"]
+tags: ["linux", "أوامر لينكس", "find"]
+categories: ["linux"]
 series: 
 - "مسار سطر أوامر لينكس"
 
@@ -39,7 +39,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 20
+weight: 1
 ---
 
 

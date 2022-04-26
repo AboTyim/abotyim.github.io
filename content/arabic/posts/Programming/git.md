@@ -13,8 +13,8 @@ aliases:
 author: ["AboTyim"]
 date: "2022-03-21"
 lastmod: "2022-03-31"
-tags: ["Programming", "git", "code"]
-categories: ["Programming"]
+tags: ["programming", "git", "code"]
+categories: ["programming"]
 series: 
 - "مسار مبرمج بايثون"
 

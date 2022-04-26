@@ -14,8 +14,8 @@ aliases:
 author: ["AboTyim"]
 date: "2021-07-28"
 lastmod: "2022-03-31"
-tags: ["Data Analysis", "تحليل البيانات"]
-categories: ["Data Analysis"]
+tags: ["data analysis", "تحليل البيانات", "python", "programming"]
+categories: ["data analysis", "python", "programming"]
 series: 
 - "مسار تحليل البيانات"
 - "مسار مبرمج بايثون"

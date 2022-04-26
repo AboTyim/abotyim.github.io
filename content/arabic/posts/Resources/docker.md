@@ -15,8 +15,8 @@ aliases:
 author: ["AboTyim"]
 date: "2021-07-14"
 lastmod: "2022-03-31"
-tags: ["Docker", "دوكر"]
-categories: ["DevOps"]
+tags: ["docker", "دوكر", "containers"]
+categories: ["DevOps", "containers"]
 series: 
 - "مسار مدير أنظمة لينكس"
 

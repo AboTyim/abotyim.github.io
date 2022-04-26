@@ -12,8 +12,8 @@ aliases:
 author: ["AboTyim"]
 date: "2021-08-06"
 lastmod: "2021-08-09"
-tags: ["Linux Commands", "أوامر لينكس", "awk"]
-categories: ["أوامر لينكس"]
+tags: ["linux", "أوامر لينكس", "awk"]
+categories: ["linux"]
 series: 
 - "مسار سطر أوامر لينكس"
 
@@ -39,7 +39,7 @@ cover:
     hidden: false # only hide on current single page
 
 
-weight: 21
+weight: 1
 ---
 
 

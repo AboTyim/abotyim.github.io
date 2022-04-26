@@ -13,8 +13,8 @@ aliases:
 author: ["AboTyim"]
 date: "2021-07-27"
 lastmod: "2022-03-31"
-tags: ["Python", "بايثون"]
-categories: ["Python", "Programming"]
+tags: ["python", "بايثون"]
+categories: ["python", "programming"]
 series: 
 - "مسار تطوير تطبيقات الويب"
 - "مسار تحليل البيانات"
