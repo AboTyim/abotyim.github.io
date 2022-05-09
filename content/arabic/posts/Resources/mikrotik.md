@@ -57,6 +57,13 @@ weight: 1
 
 <br>
 
+###  Wisam Abdullah:
+
+- [تعلم وعلم مايكروتك MTCNA.](https://www.youtube.com/playlist?list=PLPsYdj90_GzDJUwJSQN4wgblYKujduhpV)
+- [MikroTik Labs.](https://www.youtube.com/playlist?list=PLPsYdj90_GzDbl-mQERq8nYS329c4I7CT)
+
+<br>
+
 ### Ahmed PC:
 
 - [MTCNA - Mikrotik.](https://www.youtube.com/playlist?list=PL9eI2I9Wu9rRRj8LYRHDHGdx7IYs-a0BG)
