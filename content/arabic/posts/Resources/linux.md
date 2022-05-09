@@ -92,12 +92,20 @@ weight: 1
 
 <br>
 
-6. منوع:
+6. عبير حسني:
+
+- [Red Hat Enterprise Linux 7 (Admin1) RH124 By Eng-Abeer Hosni.](https://www.youtube.com/watch?v=j01lOh3DzOU&list=PLCIJjtzQPZJ9YCutDheynFtxIUziNKcVk)
+- [Red Hat Enterprise Linux 7 (Admin 2) RH134 By Eng-Abeer Hosni.](https://www.youtube.com/watch?v=dLjZt9Ozz-I&list=PLCIJjtzQPZJ-hrrJo_k3IGCbV2CM16imu)
+- [Red Hat Enterprise Linux 7 (Admin 3) RH254 By Eng-Abeer Hosni.](https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-_imc-4LszS9u5zzSsjQ1_)
+- [RHCSA Exam By Eng-Abeer Hosni.](https://www.youtube.com/watch?v=ezATKsrbTz8&list=PLCIJjtzQPZJ-rVC26ZIS6LdhFa-dWLCPt)
+
+<br>
+
+7. منوع:
 
 - [RHCE 8 Complete Course in Arabic لكيرولس خليل](https://www.youtube.com/watch?v=EY7KO6xlKBY&list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ)
 - [Linux Certified System Administrator 8 (Arabic)](https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha)
 - [Linux Troubleshooting in Arabic آلاء زيدان](https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu)
-- [Red Hat Enterprise Linux 7 (Admin 3) RH254 By Eng-Abeer Hosni](https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-_imc-4LszS9u5zzSsjQ1_)
 - [أتمتة العمل بإستخدام Ansible لمحمد النجدي.](https://www.youtube.com/playlist?list=PLnznAJG6RAI9RguTMpwJOEmltF689hDL6)
 - [Ansible Capsules بالعربي لوليد حسين.](https://www.youtube.com/playlist?list=PLu5l21g10I5UENlfO2KSPh7nXhQbbRgEg)
 - [arab Devops: Ansible in Arabic.](https://www.youtube.com/playlist?list=PLRUBR7bRwCwHNx2LFVH7uVXuqIWjeqFSE)
