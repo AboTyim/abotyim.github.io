@@ -62,6 +62,8 @@ weight: 2
 - [Corey Schafer:](https://www.youtube.com/c/Coreyms)
 - [Pretty Printed](https://www.youtube.com/c/PrettyPrintedTutorials):
 - [Django Lessons:](https://www.youtube.com/channel/UC3YTUJaWjmCHll2O9w0CrJw)
+- [BugBytes:](https://www.youtube.com/channel/UCTwxaBjziKfy6y_uWu30orA)
+- [Ssali Jonathan:](https://www.youtube.com/channel/UC4AYRvDw3yh-ChonxxW6VLA)
 
 <br>
 
@@ -111,6 +113,12 @@ weight: 2
 - [Authentication with Django & React](https://www.youtube.com/playlist?list=PL-51WBLyFTg1gPEHotYAhNAPsisChkyTc).
 - [Next.js | GraphQL | Django - Ecommerce Project](https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxq5Zw2yEKnbDSs1qqD87ko).
 - [GraphQL](https://www.youtube.com/playlist?list=PLOLrQ9Pn6caxz00JcLeOR-Rtq0Yi01oBH).
+
+
+
+#### Django-Ninja:
+
+- 
 
 
 
