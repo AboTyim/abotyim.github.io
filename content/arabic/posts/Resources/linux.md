@@ -103,6 +103,7 @@ weight: 1
 
 7. منوع:
 
+- [منصة سطر التعليمية | أنظمة Linux](https://satr.codes/paths/PLtvzGeADM/view)
 - [RHCE 8 Complete Course in Arabic لكيرولس خليل](https://www.youtube.com/watch?v=EY7KO6xlKBY&list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ)
 - [Linux Certified System Administrator 8 (Arabic)](https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha)
 - [Linux Troubleshooting in Arabic آلاء زيدان](https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu)
