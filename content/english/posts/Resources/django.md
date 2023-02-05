@@ -222,6 +222,7 @@ weight: 2
 - [Django Wednesdays](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy).
 - [Django 3](https://www.youtube.com/playlist?list=PLgnySyq8qZmr9HInLBkLT-67cVPNxBq1u).
 - [Django Tutorials](https://www.youtube.com/playlist?list=PLgnySyq8qZmqqsuIXn1haUU2zF9fPSp0N).
+- [Learn Django in Detail](https://www.scaler.com/topics/django/).
 - [Question Answer Website in Django](https://www.youtube.com/playlist?list=PLgnySyq8qZmppPt0OINwCY6pEz__71lrw).
 - [Practical Django](https://www.youtube.com/playlist?list=PLgjw1dR712jr9OIvqyKntapFHndc0SwsP).
 - [Beyond the basics of Django](https://www.youtube.com/playlist?list=PLgjw1dR712jqq75ZDdow9Cx0L2ahUaE6G).
