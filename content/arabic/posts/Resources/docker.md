@@ -1,31 +1,30 @@
 ---
-title: "مصادر لتعلم تقنية الـ Docker"
-
-description: "صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع."
-
-summary: "صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع."
-
-slug: "docker"
-aliases: 
-- "/Learn-Docker-Arabic/"
-- مصادر عربية لتعلم تقنية الدوكر
-- مصادر عربية لتعلم Docker
-- مصادر عربية لتعلم تقنية Docker
-
-author: ["AboTyim"]
-date: "2021-07-14"
-lastmod: "2022-03-31"
-tags: ["docker", "دوكر", "containers"]
-categories: ["DevOps", "containers"]
-series: 
-- "مسار مدير أنظمة لينكس"
-
+title: مصادر لتعلم تقنية الـ Docker
+description: صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.
+summary: صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.
+slug: docker
+aliases:
+  - /Learn-Docker-Arabic/
+  - مصادر عربية لتعلم تقنية الدوكر
+  - مصادر عربية لتعلم Docker
+  - مصادر عربية لتعلم تقنية Docker
+author:
+  - AboTyim
+date: 2021-07-14
+lastmod: 2025-01-20
+tags:
+  - docker
+  - دوكر
+  - containers
+categories:
+  - DevOps
+  - containers
+series:
+  - مسار مدير أنظمة لينكس
 hidemeta: false
 hideSummary: false
-disableHLJS: false # to disable highlightjs
+disableHLJS: false
 disableShare: false
-#canonicalURL: "https://canonical.url/to/page"
-
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -33,17 +32,13 @@ searchHidden: false
 ShowToc: true
 TocOpen: true
 comments: true
-
 cover:
-    image: "posts/docker.png"
-    alt: "شعار دوكر"
-    caption: "مصدر الصورة [wikimedia.org](https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.png)"
-    relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
-
-
+  image: posts/docker.png
+  alt: شعار دوكر
+  caption: مصدر الصورة [wikimedia.org](https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.png)
+  relative: false
+  hidden: false
 weight: 1
-# draft: false
 ---
 
 
@@ -71,7 +66,8 @@ weight: 1
 - [Docker سلسلة تعلم.](https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ)
 - [Docker and Kubernetes Deep Dive.](https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN)
 - [Docker in arabic من arab Devops.](https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V)
-- [منصة سطر: Docker 101.](https://satr.codes/courses/FdteTVpysF/view)
+- [منصة سطر التعليمية | Docker101](https://satr.codes/course/RWuHfOReeA/view)
+- [منصة سطر التعليمية | Docker102](https://satr.codes/course/sZvvvDJlNy/view)
 - [دوكر كونتينر - Docker container.](https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC)
 - [Learn Docker from Zero من عبد الباسط بوشقري.](https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH)
 - [Docker and Kubernetes.](https://www.youtube.com/watch?v=PrusdhS2lmo)

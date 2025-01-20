@@ -1,6 +1,5 @@
 baseURL: "https://abotyim.github.io"
 title: AboTyim
-paginate: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -15,36 +14,40 @@ defaultContentLanguageInSubdir: true
 # copyright: Everything is mine
 # googleAnalytics: UA-123-45
 
+pagination:
+  pagerSize: 5
+
 minify:
     disableXML: true
     # minifyOutput: true
 
 languages:
     ar:
-        # languageName: ":flag-sa:"
+        # languageName: ":flag-sy:"
         languageName: "AR"
         languagedirection: rtl
         weight: 1
         contentDir: content/arabic
-        title: أبو تيم
-                
-        homeInfoParams:
-            Title: <img align="right" alt="السلام عليكم &nbsp;"> <img src="/welcome.gif" width="50" >
-            Content: أنقل لكم زبدة التجارب متضمنة النصائح والحيل.
+        title: "أبو تيم ☕"
 
-        # profileMode:
-            # enabled: true
-            # title: أبو تيم ☕
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageUrl: "/icon.jpg"
-            # subtitle: "🕵️ Python 🐍 | Django | Linux 🐧 | Forensics\n\n🐳 Self Hosted | Docker\n\n🤓 Coffee ☕ | Geek"
-            # imageHeight: 120
-            # buttons:
-                # - name: التدوينات
-                  # url: posts
-                # - name: الكاتب
-                  # url: about
+        params:
+            # profileMode:      
+                #     enabled: true
+                #     title: أبو تيم ☕
+                #     imageTitle: my image
+                #     imageWidth: 120
+                #     imageUrl: "/icon.jpg"
+                #     subtitle: "🕵️ Python 🐍 | Django | Linux 🐧 | Forensics\n\n🐳 Self Hosted | Docker\n\n🤓 Coffee ☕ | Geek"
+                #     imageHeight: 120
+                #     buttons:
+                #         - name: التدوينات
+                #           url: posts
+                #         - name: الكاتب
+                #           url: about
+            homeInfoParams:
+                Title: "السلام عليكم \U0001F44B"
+                # Content: "{عَسَىٰ رَبُّكُمْ أَن يُهْلِكَ عَدُوَّكُمْ وَيَسْتَخْلِفَكُمْ فِي الْأَرْضِ فَيَنظُرَ كَيْفَ تَعْمَلُونَ} [الأعراف: 129]"
+                Content: "<a href='https://baheth.ieasybooks.com/ar/media/%D8%AD%D9%84%D9%82%D8%A9-2-%D9%8A%D9%82%D8%B8%D8%A9-%D9%84%D9%85%D8%AC%D8%B1%D9%89-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%A8%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%AD%D8%A7%D8%B2%D9%85-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A3%D8%A8%D9%88-%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84?cue=20533867&turbo_frames_prefix=home'> {عَسَىٰ رَبُّكُمْ أَن يُهْلِكَ عَدُوَّكُمْ وَيَسْتَخْلِفَكُمْ فِي الْأَرْضِ فَيَنظُرَ كَيْفَ تَعْمَلُونَ} [الأعراف: 129] </a>"
 
         menu:
             main:
@@ -78,11 +81,12 @@ languages:
         languageName: "EN"
         weight: 2
         contentDir: content/english
-        title: Abo Tyim
+        title: "Abo Tyim ☕"
 
-        homeInfoParams:
-            Title: <img align="left" alt="Peace be upon you &nbsp;"> <img src="/welcome.gif" width="50" >
-            Content: I offer you the butter of experiments, including tips and tricks.
+        params:
+            homeInfoParams:
+                Title: "Peace be upon you \U0001F44B"
+                Content: I offer you the butter of experiments, including tips and tricks.
 
         menu:
             main:
@@ -144,13 +148,13 @@ params:
         - name: Github
           url: "https://github.com/AboTyim"
         - name: Twitter
-          url: "https://twitter.com/TyimAllah"
+          url: "https://x.com/TyimAllah"
         - name: Telegram
-          url: "https://t.me/TyimAllah"
+          url: "https://t.me/AboTyim"
         - name: RSS
           url: "index.xml"
         - name: Email
-          url: "AboTyim[at]protonmail[dot]com"
+          url: "mailto:AboTyim[at]ProtonMail[dot]com"
 
     # editPost:
         # URL: "https://github.com/AboTyim/abotyim.github.io/content"

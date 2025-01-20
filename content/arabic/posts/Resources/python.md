@@ -73,7 +73,7 @@ weight: 1
 - [محمد شوشان: بايثون المستوى الأول.](https://www.youtube.com/playlist?list=PLnzqK5HvcpwR1X4imwck6n1Pc0uXpToDn)
 - [مستر ماجد: Python.](https://www.youtube.com/playlist?list=PLUiXG1lgbv1Ekp8O5IrlfXCddUioSVtzq)
 - [Two Pi: Python course - Level 1.](https://www.youtube.com/playlist?list=PLEcIK87jo_7tJ42_STpXuZxHJ35VqaiaR)
-- [منصة سطر: Full-Stack Python.](https://satr.codes/paths/OTZExaETAH/view)
+- [منصة سطر التعليمية: Full-Stack Python.](https://satr.codes/path/OTZExaETAH/view)
 - [أكادمية حسوب: دورة تطوير التطبيقات باستخدام لغة Python مدفوعة.](https://academy.hsoub.com/learn/python-application-development/)
 - [أكاديمية حسوب: دورة علوم الحاسب - مدفوعة.](https://academy.hsoub.com/learn/computer-science/)
 - [فكلس كورسز: دورة برمجة بايثون - مدفوعة.](https://www.flexcourses.com/courses/python-intensive)
@@ -247,10 +247,10 @@ weight: 1
 - [سلسلة مكتبات بايثونية.](https://www.youtube.com/playlist?list=PLQM0-hCuSIZ3864Z90raxK7z8tR4q34XM)
 - [أكاديمية الخوارزميات: CLI Scripts.](https://www.youtube.com/playlist?list=PLfDx4cQoUNOZcOt2i5dnHcrFAGHPBpuEO)
 - [Mohammed Gh: Python3 crash course.](https://www.youtube.com/playlist?list=PLDCTk1kTFRGi0T-2WDopKsGbZhSMVZd-X)
-- [منصة سطر: Python 101.](https://satr.codes/courses/rRUQyVDkwQ/view)
-- [منصة سطر: Python 102.](https://satr.codes/courses/VIvMvhyCiV/view)
-- [منصة سطر: Python 103.](https://satr.codes/courses/MvNhowmHeB/view)
-- [منصة سطر: Python 104.](https://satr.codes/courses/BDtmFNpFMp/view)
+- [منصة سطر التعليمية: Python 101.](https://satr.codes/course/rRUQyVDkwQ/view)
+- [منصة سطر التعليمية: Python 102.](https://satr.codes/course/VIvMvhyCiV/view)
+- [منصة سطر التعليمية: Python 103.](https://satr.codes/course/MvNhowmHeB/view)
+- [منصة سطر التعليمية: Python 104.](https://satr.codes/course/BDtmFNpFMp/view)
 - [مجتمع بايثون العربي: لغة بايثون 🐍.](https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj)
 - [عبد الله نصر: التعرف على الوجوه Face recognition.](https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc)
 - [كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.](https://www.youtube.com/watch?v=apXivooJwoo&list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ)

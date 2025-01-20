@@ -1,31 +1,34 @@
 ---
-title: "مصادر لتعلم تحليل البيانات مع بايثون"
-
-description: "تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة."
-
-summary: "تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة."
-
-slug: "data-analysis"
-aliases: 
-- "/Learn-Data-Analysis-Arabic/"
-- مصادر عربية لتعلم تحليل البيانات
-- مصادر عربية لتعلم تحليل البيانات بواسطة لغة البرمجة بايثون
-
-author: ["AboTyim"]
-date: "2021-07-28"
-lastmod: "2022-03-31"
-tags: ["data analysis", "تحليل البيانات", "python", "programming"]
-categories: ["data analysis", "python", "programming"]
-series: 
-- "مسار تحليل البيانات"
-- "مسار مبرمج بايثون"
-
+title: مصادر لتعلم تحليل البيانات مع بايثون
+description: تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.
+summary: تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.
+slug: data-analysis
+aliases:
+  - /Learn-Data-Analysis-Arabic/
+  - مصادر عربية لتعلم تحليل البيانات
+  - مصادر عربية لتعلم تحليل البيانات بواسطة لغة البرمجة بايثون
+author:
+  - AboTyim
+date: 2021-07-28
+lastmod: 2025-01-20
+tags:
+  - data
+  - analysis
+  - تحليل
+  - البيانات
+  - python
+  - programming
+categories:
+  - data analysis
+  - python
+  - programming
+series:
+  - مسار تحليل البيانات
+  - مسار مبرمج بايثون
 hidemeta: false
 hideSummary: false
-disableHLJS: false # to disable highlightjs
+disableHLJS: false
 disableShare: false
-#canonicalURL: "https://canonical.url/to/page"
-
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -33,15 +36,12 @@ searchHidden: false
 ShowToc: true
 TocOpen: true
 comments: true
-
 cover:
-    image: "posts/python/data-analysis.jpg"
-    alt: "Data Analysis from freecodecamp.org"
-    caption: "مصدر الصورة [freecodecamp.org](https://www.freecodecamp.org/news/data-analysis-with-python-for-excel-users-course/)"
-    relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
-
-
+  image: posts/python/data-analysis.jpg
+  alt: Data Analysis from freecodecamp.org
+  caption: مصدر الصورة [freecodecamp.org](https://www.freecodecamp.org/news/data-analysis-with-python-for-excel-users-course/)
+  relative: false
+  hidden: false
 weight: 1
 ---
 
@@ -59,6 +59,7 @@ weight: 1
 -  [Easy Programming.](https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC)
 - [شرح بالعربي.](https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T)
 - [Ahmed ibrahim.](https://www.youtube.com/playlist?list=PLyhJeMedQd9QLQ2yPbJqVhAdkU44QD7um)
+- [منصة سطر التعليمية](https://satr.codes/course/ahWLuLGQrQ/view)
 
 
 
@@ -69,6 +70,7 @@ weight: 1
 - [محمد المالكي.](https://www.youtube.com/watch?v=mlgV3o3N7ow&list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh)
 -  [Easy Programming.](https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG)
 - [الأكاديمية الرقمية.](https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1)
+- [منصة سطر التعليمية | تحليل ومعالجة البيانات: مكتبة NumPy](https://satr.codes/course/qarivYaNvR/view)
 
 
 
@@ -77,18 +79,27 @@ weight: 1
 - [Ons أنس.](https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW)
 - [ArabPy.](https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU)
 - [Amjad Majid.](https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w)
+- [منصة سطر التعليمية](https://satr.codes/course/dqJmdFJufc/view)
 
 
 
 ### Seaborn:
 
 - [Ons أنس.](https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC)
+- [منصة سطر التعليمية](https://satr.codes/course/eJBdjpXlzC/view)
+
+
+
+### Tableau:
+- [منصة سطر التعليمية | مقدمة لتمثيل البيانات باستخدام Tableau](https://satr.codes/course/fdcDmJHLFG/view)
+- [منصة سطر التعليمية | تحليل البيانات باستخدام Tableau](https://satr.codes/course/BswbgmDtpk/view)
 
 
 
 ### علم البيانات:
 
 - [ورشة بايثون وعلم البيانات من جامعة القاهرة.](https://www.youtube.com/watch?v=aymZIo4uWRc&list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE)
+- [منصة سطر التعليمية | مقدمة في علم البيانات](https://satr.codes/course/uPOmcmqkpy/view)
 - [محمد عيسى: علم البيانات.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ)
 - [Python - For DataScience.](https://www.youtube.com/watch?v=o19Yfu8kM6o&list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6)
 - [مصطفى عثمان: Python for Data Analysis.](https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_)

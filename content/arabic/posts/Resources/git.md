@@ -1,28 +1,25 @@
 ---
-title: "مصادر لتعلم Git"
-
-description: "برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية."
-
-summary: "برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية."
-
-slug: "git"
-aliases: 
-- "/Learn-Git-Arabic/"
-- مصادر عربية لتعلم Git
-
-author: ["AboTyim"]
-date: "2022-03-26"
-lastmod: "2022-03-31"
-tags: ["programming", "git", "code"]
-categories: ["programming"]
-
-
+title: مصادر لتعلم Git
+description: برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.
+summary: برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.
+slug: git
+aliases:
+  - /Learn-Git-Arabic/
+  - مصادر عربية لتعلم Git
+author:
+  - AboTyim
+date: 2022-03-26
+lastmod: 2025-01-20
+tags:
+  - programming
+  - git
+  - code
+categories:
+  - programming
 hidemeta: false
 hideSummary: false
-disableHLJS: false # to disable highlightjs
+disableHLJS: false
 disableShare: false
-#canonicalURL: "https://canonical.url/to/page"
-
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -30,15 +27,12 @@ searchHidden: false
 ShowToc: true
 TocOpen: true
 comments: true
-
 cover:
-    image: "posts/programming/git-logo.jpeg"
-    alt: "Version Control with Git"
-    caption: "مصدر الصورة [notme20n.wordpress.com](https://notme20n.wordpress.com/2020/01/24/%d9%85%d8%a7%d9%87%d9%88-git-%d8%9f-%d9%88%d9%85%d8%a7%d9%87%d9%88-github-%d8%9f/)"
-    relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
-
-
+  image: posts/programming/git-logo.jpeg
+  alt: Version Control with Git
+  caption: مصدر الصورة [notme20n.wordpress.com](https://notme20n.wordpress.com/2020/01/24/%d9%85%d8%a7%d9%87%d9%88-git-%d8%9f-%d9%88%d9%85%d8%a7%d9%87%d9%88-github-%d8%9f/)
+  relative: false
+  hidden: false
 weight: 1
 ---
 
@@ -53,9 +47,12 @@ weight: 1
 - [محمد عيسى: دورة Git.](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC)
 - [Devops Arabi: Git - بالعربي.](https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk)
 - [Ahmad Ezzeir: Git.](https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj)
-- [منصة سطر: Git 101.](https://satr.codes/courses/nindivqslr/view)
-- [منصة سطر: Git 102.](https://satr.codes/courses/UFsXqimdgm/view)
-- [منصة سطر: Git 103.](https://satr.codes/courses/vZnxaKXPzw/view)
+- [منصة سطر التعليمية | أساسيات Git](https://satr.codes/course/ZlKLfufzmW/view)
+- [منصة سطر: Git 101.](https://satr.codes/course/nindivqslr/view)
+- [منصة سطر: Git 102.](https://satr.codes/course/UFsXqimdgm/view)
+- [منصة سطر: Git 103.](https://satr.codes/course/vZnxaKXPzw/view)
+- [منصة سطر التعليمية | Git 104](https://satr.codes/course/QpuMhOuMhW/view)
+- [منصة سطر التعليمية | Git 105](https://satr.codes/course/DFvxMALjfG/view)
 - [Never Git Stuck.](https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc)
 - [Mohammed Gh: Learn Git & GitHub in Arabic.](https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0)
 - [Algorithm Academy: learn Git in Arabic.](https://www.youtube.com/watch?v=_6pQ6JXo_bM&list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK)

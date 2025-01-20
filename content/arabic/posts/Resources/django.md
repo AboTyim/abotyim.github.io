@@ -116,9 +116,9 @@ weight: 1
 
 #### منصة سطر:
 
-- [Django 101.](https://satr.codes/courses/FymypsKhJJ/view)
-- [Django 102.](https://satr.codes/courses/wxLyJSBxeg/view)
-- [Django 103.](https://satr.codes/courses/MQnYIOzjAY/view)
+- [Django 101.](https://satr.codes/course/FymypsKhJJ/view)
+- [Django 102.](https://satr.codes/course/wxLyJSBxeg/view)
+- [Django 103.](https://satr.codes/course/MQnYIOzjAY/view)
 
 
 

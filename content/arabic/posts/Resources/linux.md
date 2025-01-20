@@ -1,32 +1,31 @@
 ---
-title: "مصادر لتعلم نظام التشغيل جنو لينكس"
-
-description: "GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
-
-summary: "GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة."
-
-slug: "linux"
-aliases: 
-- "/Learn-Linux-Arabic/"
-- مصادر عربية لتعلم نظام التشغيل لينكس
-- مصادر عربية لتعلم نظام الشغيل جنو لينكس
-- نظام التشغيل جنو لينكس
-
-author: ["AboTyim"]
-date: "2022-03-25"
-lastmod: "2022-03-31"
-tags: ["linux", "GNU/Linux", "لينكس"]
-categories: ["linux", "OS"]
-series: 
-- "مسار مدير أنظمة لينكس"
-- "مسار سطر أوامر لينكس"
-
+title: مصادر لتعلم نظام التشغيل جنو لينكس
+description: GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.
+summary: GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.
+slug: linux
+aliases:
+  - /Learn-Linux-Arabic/
+  - مصادر عربية لتعلم نظام التشغيل لينكس
+  - مصادر عربية لتعلم نظام الشغيل جنو لينكس
+  - نظام التشغيل جنو لينكس
+author:
+  - AboTyim
+date: 2022-03-25
+lastmod: 2025-01-20
+tags:
+  - linux
+  - GNU/Linux
+  - لينكس
+categories:
+  - linux
+  - OS
+series:
+  - مسار مدير أنظمة لينكس
+  - مسار سطر أوامر لينكس
 hidemeta: false
 hideSummary: false
-disableHLJS: false # to disable highlightjs
+disableHLJS: false
 disableShare: false
-#canonicalURL: "https://canonical.url/to/page"
-
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -34,15 +33,12 @@ searchHidden: false
 ShowToc: true
 TocOpen: true
 comments: true
-
 cover:
-    image: "posts/linux/linux.png"
-    alt: "شعار لينكس"
-    caption: "مصدر الصورة [pixabay.com](https://pixabay.com/vectors/linux-logo-penguin-tux-text-151619/)"
-    relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
-
-
+  image: posts/linux/linux.png
+  alt: شعار لينكس
+  caption: مصدر الصورة [pixabay.com](https://pixabay.com/vectors/linux-logo-penguin-tux-text-151619/)
+  relative: false
+  hidden: false
 weight: 1
 ---
 
@@ -103,7 +99,7 @@ weight: 1
 
 7. منوع:
 
-- [منصة سطر التعليمية | أنظمة Linux](https://satr.codes/paths/PLtvzGeADM/view)
+- [منصة سطر التعليمية | مسار نظام Linux](https://satr.codes/path/PLtvzGeADM/view)
 - [RHCE 8 Complete Course in Arabic لكيرولس خليل](https://www.youtube.com/watch?v=EY7KO6xlKBY&list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ)
 - [Linux Certified System Administrator 8 (Arabic)](https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha)
 - [Linux Troubleshooting in Arabic آلاء زيدان](https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu)
