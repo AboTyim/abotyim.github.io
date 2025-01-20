@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>برمجة on أبو تيم</title>
+    <title>برمجة on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/posts/programming/</link>
-    <description>Recent content in برمجة on أبو تيم</description>
+    <description>Recent content in برمجة on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/programming/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/posts/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>إدارة الشيفرات البرمجية Git</title>
       <link>https://abotyim.github.io/ar/posts/programming/git/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/programming/git/</guid>
       <description>شرح كيفية التعامل مع أوامر Git.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -212,6 +214,5 @@
 </div>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>OS on أبو تيم</title>
+    <title>OS on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/categories/os/</link>
-    <description>Recent content in OS on أبو تيم</description>
+    <description>Recent content in OS on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/categories/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
       <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
       <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -76,7 +78,7 @@
 <li>منوع:</li>
 </ol>
 <ul>
-<li><a href="https://satr.codes/paths/PLtvzGeADM/view">منصة سطر التعليمية | أنظمة Linux</a></li>
+<li><a href="https://satr.codes/path/PLtvzGeADM/view">منصة سطر التعليمية | مسار نظام Linux</a></li>
 <li><a href="https://www.youtube.com/watch?v=EY7KO6xlKBY&amp;list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ">RHCE 8 Complete Course in Arabic لكيرولس خليل</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha">Linux Certified System Administrator 8 (Arabic)</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu">Linux Troubleshooting in Arabic آلاء زيدان</a></li>
@@ -155,6 +157,5 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

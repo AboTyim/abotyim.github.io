@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>find on أبو تيم</title>
+    <title>Find on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/tags/find/</link>
-    <description>Recent content in find on أبو تيم</description>
+    <description>Recent content in Find on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/find/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/tags/find/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>الأمر find</title>
       <link>https://abotyim.github.io/ar/posts/linux/find/</link>
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
       <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h2 id="مقدمة">مقدمة:</h2>
-<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
+<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير &#x1f603;</p>
 <h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
 </span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
@@ -171,6 +173,5 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

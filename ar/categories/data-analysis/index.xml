@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>data analysis on أبو تيم</title>
+    <title>Data Analysis on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/categories/data-analysis/</link>
-    <description>Recent content in data analysis on أبو تيم</description>
+    <description>Recent content in Data Analysis on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/categories/data-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم تحليل البيانات مع بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
       <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -26,6 +28,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLyhJeMedQd9QLQ2yPbJqVhAdkU44QD7um">Ahmed ibrahim.</a></li>
+<li><a href="https://satr.codes/course/ahWLuLGQrQ/view">منصة سطر التعليمية</a></li>
 </ul>
 <h3 id="numpy">Numpy:</h3>
 <ul>
@@ -34,20 +37,29 @@
 <li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
+<li><a href="https://satr.codes/course/qarivYaNvR/view">منصة سطر التعليمية | تحليل ومعالجة البيانات: مكتبة NumPy</a></li>
 </ul>
 <h3 id="matplotlib">Matplotlib:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
+<li><a href="https://satr.codes/course/dqJmdFJufc/view">منصة سطر التعليمية</a></li>
 </ul>
 <h3 id="seaborn">Seaborn:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
+<li><a href="https://satr.codes/course/eJBdjpXlzC/view">منصة سطر التعليمية</a></li>
+</ul>
+<h3 id="tableau">Tableau:</h3>
+<ul>
+<li><a href="https://satr.codes/course/fdcDmJHLFG/view">منصة سطر التعليمية | مقدمة لتمثيل البيانات باستخدام Tableau</a></li>
+<li><a href="https://satr.codes/course/BswbgmDtpk/view">منصة سطر التعليمية | تحليل البيانات باستخدام Tableau</a></li>
 </ul>
 <h3 id="علم-البيانات">علم البيانات:</h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
+<li><a href="https://satr.codes/course/uPOmcmqkpy/view">منصة سطر التعليمية | مقدمة في علم البيانات</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
 <li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
@@ -73,6 +85,5 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

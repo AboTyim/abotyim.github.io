@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>linux on أبو تيم</title>
+    <title>Linux on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/tags/linux/</link>
-    <description>Recent content in linux on أبو تيم</description>
+    <description>Recent content in Linux on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>تشغيل أي توزيعة لينكس بواسطة DistroBox</title>
       <link>https://abotyim.github.io/ar/posts/linux/distrobox/</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/linux/distrobox/</guid>
       <description>هي أداة تسمح لك بإنشاء وإدارة الحاويات على توزيعة لينكس.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -76,12 +78,10 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
       <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
       <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -143,7 +143,7 @@
 <li>منوع:</li>
 </ol>
 <ul>
-<li><a href="https://satr.codes/paths/PLtvzGeADM/view">منصة سطر التعليمية | أنظمة Linux</a></li>
+<li><a href="https://satr.codes/path/PLtvzGeADM/view">منصة سطر التعليمية | مسار نظام Linux</a></li>
 <li><a href="https://www.youtube.com/watch?v=EY7KO6xlKBY&amp;list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ">RHCE 8 Complete Course in Arabic لكيرولس خليل</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha">Linux Certified System Administrator 8 (Arabic)</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu">Linux Troubleshooting in Arabic آلاء زيدان</a></li>
@@ -222,12 +222,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>الأمر awk</title>
       <link>https://abotyim.github.io/ar/posts/linux/awk/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/linux/awk/</guid>
       <description>awk هي لغة برمجة لقراءة النصوص ومعالجتها.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -243,10 +241,9 @@
 </ul>
 <h2 id="طريقة-عمل-awk">طريقة عمل <code>AWK</code>:</h2>
 <p>لكي نصبح على دراية في <code>AWK</code> ومعرفة قوية فأنت بحاجة إلى معرفة مكوناته الداخلية، هو يتبع سير عمل بسيط هو:</p>
-<pre><kbd>القراءة ⬅️ التنفيذ ⬅️ التكرار ​♻️​</kbd></pre>
+<pre><kbd>القراءة :arrow_left: التنفيذ :arrow_left: التكرار ​:recycle:​</kbd></pre>
 <p>يوضح المخطط <strong>Flowchart</strong> التالي سير عمل <code>AWK</code>:</p>
-<p><img loading="lazy" src="/posts/linux/awk/awk_workflow.jpg" alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg"  />
-</p>
+<p><img alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg" loading="lazy" src="/posts/linux/awk/awk_workflow.jpg"></p>
 <p>هنالك خمس كتل حسب المخطط <strong>Flowchart</strong> وهي:</p>
 <ul>
 <li><code>BEGIN</code>: يتم تنفيذ هذه الكتلة عند بدء تشغيل البرنامج فقط، ويتم تنفيذه مرة واحدة، تعتبر هذه الكتلة اختيارية،<code>BEGIN</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف الكبيرة.</li>
@@ -575,17 +572,15 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>الأمر find</title>
       <link>https://abotyim.github.io/ar/posts/linux/find/</link>
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/linux/find/</guid>
       <description>يعتبر الأمر find من أهم أدوات البحث في لينكس.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
 <h2 id="مقدمة">مقدمة:</h2>
-<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير 😃</p>
+<p>في هذا الدرس سنتعلم كيفية استخدام أمر <code>find</code> والذي يعتبر من أهم أدوات البحث في Linux، ولا يقتصر فائدته على البحث في الملفات فقط بل تستطيع تنظيم الملفات بواسطته، ومسح الملفات والمجلدات الفارغة، لا أبالغ لو قلت لك تستطيع فعل الكثير &#x1f603;</p>
 <h2 id="الطريقة-النحوية-لكتابة-الأمر-find">الطريقة النحوية لكتابة الأمر <code>find</code>:</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find <span style="color:#ff79c6">[</span>options<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>paths<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">[</span>expression<span style="color:#ff79c6">]</span>
 </span></span></code></pre></div><h2 id="البحث-بناء-على-الاسم">البحث بناءً على الاسم:</h2>
@@ -737,6 +732,5 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

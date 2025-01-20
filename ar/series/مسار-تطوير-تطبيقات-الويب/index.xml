@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>مسار تطوير تطبيقات الويب on أبو تيم</title>
+    <title>مسار تطوير تطبيقات الويب on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</link>
-    <description>Recent content in مسار تطوير تطبيقات الويب on أبو تيم</description>
+    <description>Recent content in مسار تطوير تطبيقات الويب on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم إطار العمل Django</title>
       <link>https://abotyim.github.io/ar/posts/resources/django/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/django/</guid>
       <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -69,9 +71,9 @@
 </ul>
 <h4 id="منصة-سطر">منصة سطر:</h4>
 <ul>
-<li><a href="https://satr.codes/courses/FymypsKhJJ/view">Django 101.</a></li>
-<li><a href="https://satr.codes/courses/wxLyJSBxeg/view">Django 102.</a></li>
-<li><a href="https://satr.codes/courses/MQnYIOzjAY/view">Django 103.</a></li>
+<li><a href="https://satr.codes/course/FymypsKhJJ/view">Django 101.</a></li>
+<li><a href="https://satr.codes/course/wxLyJSBxeg/view">Django 102.</a></li>
+<li><a href="https://satr.codes/course/MQnYIOzjAY/view">Django 103.</a></li>
 </ul>
 <h4 id="منوع">منوع:</h4>
 <ul>
@@ -106,12 +108,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم لغة البرمجة بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/python/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/python/</guid>
       <description>تعتبر لغة البرمجة بايثون سهلة الفهم وتتميز بالقوة والبساطة في آن واحد، وتتمتع بشيفرة سهلة القراءة، وتستخدم بشكل واسع في العديد من المجالات، وتعتبر من أسرع اللغات البرمجية تعلماً.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -137,7 +137,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwR1X4imwck6n1Pc0uXpToDn">محمد شوشان: بايثون المستوى الأول.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUiXG1lgbv1Ekp8O5IrlfXCddUioSVtzq">مستر ماجد: Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLEcIK87jo_7tJ42_STpXuZxHJ35VqaiaR">Two Pi: Python course - Level 1.</a></li>
-<li><a href="https://satr.codes/paths/OTZExaETAH/view">منصة سطر: Full-Stack Python.</a></li>
+<li><a href="https://satr.codes/path/OTZExaETAH/view">منصة سطر التعليمية: Full-Stack Python.</a></li>
 <li><a href="https://academy.hsoub.com/learn/python-application-development/">أكادمية حسوب: دورة تطوير التطبيقات باستخدام لغة Python مدفوعة.</a></li>
 <li><a href="https://academy.hsoub.com/learn/computer-science/">أكاديمية حسوب: دورة علوم الحاسب - مدفوعة.</a></li>
 <li><a href="https://www.flexcourses.com/courses/python-intensive">فكلس كورسز: دورة برمجة بايثون - مدفوعة.</a></li>
@@ -279,10 +279,10 @@
 <li><a href="https://www.youtube.com/playlist?list=PLQM0-hCuSIZ3864Z90raxK7z8tR4q34XM">سلسلة مكتبات بايثونية.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOZcOt2i5dnHcrFAGHPBpuEO">أكاديمية الخوارزميات: CLI Scripts.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGi0T-2WDopKsGbZhSMVZd-X">Mohammed Gh: Python3 crash course.</a></li>
-<li><a href="https://satr.codes/courses/rRUQyVDkwQ/view">منصة سطر: Python 101.</a></li>
-<li><a href="https://satr.codes/courses/VIvMvhyCiV/view">منصة سطر: Python 102.</a></li>
-<li><a href="https://satr.codes/courses/MvNhowmHeB/view">منصة سطر: Python 103.</a></li>
-<li><a href="https://satr.codes/courses/BDtmFNpFMp/view">منصة سطر: Python 104.</a></li>
+<li><a href="https://satr.codes/course/rRUQyVDkwQ/view">منصة سطر التعليمية: Python 101.</a></li>
+<li><a href="https://satr.codes/course/VIvMvhyCiV/view">منصة سطر التعليمية: Python 102.</a></li>
+<li><a href="https://satr.codes/course/MvNhowmHeB/view">منصة سطر التعليمية: Python 103.</a></li>
+<li><a href="https://satr.codes/course/BDtmFNpFMp/view">منصة سطر التعليمية: Python 104.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj">مجتمع بايثون العربي: لغة بايثون 🐍.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc">عبد الله نصر: التعرف على الوجوه Face recognition.</a></li>
 <li><a href="https://www.youtube.com/watch?v=apXivooJwoo&amp;list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ">كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.</a></li>
@@ -315,6 +315,5 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>mikrotik on أبو تيم</title>
+    <title>Mikrotik on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/tags/mikrotik/</link>
-    <description>Recent content in mikrotik on أبو تيم</description>
+    <description>Recent content in Mikrotik on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم مايكروتك Mikrotik</title>
       <link>https://abotyim.github.io/ar/posts/resources/mikrotik/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/mikrotik/</guid>
       <description>هي شركة معروفة عالميًا براوتر مايكروتك الشركة ذات أصول لاتيفية، وتقوم بتصنيع تجهيزات شبكات الحاسوب، وتبيع منتجات الشبكات اللاسلكية والموجهات أو ما يطلق عليها الراوتر. نشأت هذه الشركة في العام 1995 من أجل المنافسة في سوق شبكات الحاسوب الناشئة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -55,6 +57,5 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

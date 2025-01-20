@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>awk on أبو تيم</title>
+    <title>Awk on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/tags/awk/</link>
-    <description>Recent content in awk on أبو تيم</description>
+    <description>Recent content in Awk on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/awk/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/tags/awk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>الأمر awk</title>
       <link>https://abotyim.github.io/ar/posts/linux/awk/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/linux/awk/</guid>
       <description>awk هي لغة برمجة لقراءة النصوص ومعالجتها.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -30,10 +32,9 @@
 </ul>
 <h2 id="طريقة-عمل-awk">طريقة عمل <code>AWK</code>:</h2>
 <p>لكي نصبح على دراية في <code>AWK</code> ومعرفة قوية فأنت بحاجة إلى معرفة مكوناته الداخلية، هو يتبع سير عمل بسيط هو:</p>
-<pre><kbd>القراءة ⬅️ التنفيذ ⬅️ التكرار ​♻️​</kbd></pre>
+<pre><kbd>القراءة :arrow_left: التنفيذ :arrow_left: التكرار ​:recycle:​</kbd></pre>
 <p>يوضح المخطط <strong>Flowchart</strong> التالي سير عمل <code>AWK</code>:</p>
-<p><img loading="lazy" src="/posts/linux/awk/awk_workflow.jpg" alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg"  />
-</p>
+<p><img alt="https://www.tutorialspoint.com/awk/images/awk_workflow.jpg" loading="lazy" src="/posts/linux/awk/awk_workflow.jpg"></p>
 <p>هنالك خمس كتل حسب المخطط <strong>Flowchart</strong> وهي:</p>
 <ul>
 <li><code>BEGIN</code>: يتم تنفيذ هذه الكتلة عند بدء تشغيل البرنامج فقط، ويتم تنفيذه مرة واحدة، تعتبر هذه الكتلة اختيارية،<code>BEGIN</code> هي كلمة رئيسية في <code>AWK</code> وبالتالي يجب أن تكون بأحرف الكبيرة.</li>
@@ -362,6 +363,5 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -1,114 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>التصنيفات on أبو تيم</title>
+    <title>التصنيفات on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/categories/</link>
-    <description>Recent content in التصنيفات on أبو تيم</description>
+    <description>Recent content in التصنيفات on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>containers</title>
+      <title>Containers</title>
       <link>https://abotyim.github.io/ar/categories/containers/</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/containers/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>virtualization</title>
+      <title>Virtualization</title>
       <link>https://abotyim.github.io/ar/categories/virtualization/</link>
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/virtualization/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>network</title>
+      <title>Network</title>
       <link>https://abotyim.github.io/ar/categories/network/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/network/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>DevOps</title>
       <link>https://abotyim.github.io/ar/categories/devops/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/devops/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>firewall</title>
+      <title>Firewall</title>
       <link>https://abotyim.github.io/ar/categories/firewall/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/firewall/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>programming</title>
+      <title>Programming</title>
       <link>https://abotyim.github.io/ar/categories/programming/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/programming/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://abotyim.github.io/ar/categories/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/linux/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>OS</title>
       <link>https://abotyim.github.io/ar/categories/os/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/os/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>data analysis</title>
+      <title>Data Analysis</title>
       <link>https://abotyim.github.io/ar/categories/data-analysis/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/data-analysis/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://abotyim.github.io/ar/categories/python/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/categories/python/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

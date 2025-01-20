@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>مصادر بالعربي on أبو تيم</title>
+    <title>مصادر بالعربي on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/posts/resources/</link>
-    <description>Recent content in مصادر بالعربي on أبو تيم</description>
+    <description>Recent content in مصادر بالعربي on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/posts/resources/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/posts/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم تقنية الـ Virtualization</title>
       <link>https://abotyim.github.io/ar/posts/resources/virtualization/</link>
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/virtualization/</guid>
       <description>عملية Virtualization هي فصل نظام التشغيل عن الهاردوير الذي يعمل عليه، بحيث يصبح النظام التشغيلي يعمل في بيئة تخيلية وكأنها حاسوب منفصل. هذه التقنية تتيح لنا أولا مشاركة الموارد/الهاردوير الحقيقية وثانيا تشغيل أكثر من نظام تشغيل على نفس الموارد/الهاردوير وبنفس اللحظة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -44,12 +46,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم مايكروتك Mikrotik</title>
       <link>https://abotyim.github.io/ar/posts/resources/mikrotik/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/mikrotik/</guid>
       <description>هي شركة معروفة عالميًا براوتر مايكروتك الشركة ذات أصول لاتيفية، وتقوم بتصنيع تجهيزات شبكات الحاسوب، وتبيع منتجات الشبكات اللاسلكية والموجهات أو ما يطلق عليها الراوتر. نشأت هذه الشركة في العام 1995 من أجل المنافسة في سوق شبكات الحاسوب الناشئة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -90,12 +90,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم OPNSense &amp; pfSense</title>
       <link>https://abotyim.github.io/ar/posts/resources/firewall/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/firewall/</guid>
       <description>مصادر عربية لتعلم جدار الحماية pfSense و OPNSense.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -120,12 +118,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم Git</title>
       <link>https://abotyim.github.io/ar/posts/resources/git/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/git/</guid>
       <description>برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -134,9 +130,12 @@
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC">محمد عيسى: دورة Git.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
-<li><a href="https://satr.codes/courses/nindivqslr/view">منصة سطر: Git 101.</a></li>
-<li><a href="https://satr.codes/courses/UFsXqimdgm/view">منصة سطر: Git 102.</a></li>
-<li><a href="https://satr.codes/courses/vZnxaKXPzw/view">منصة سطر: Git 103.</a></li>
+<li><a href="https://satr.codes/course/ZlKLfufzmW/view">منصة سطر التعليمية | أساسيات Git</a></li>
+<li><a href="https://satr.codes/course/nindivqslr/view">منصة سطر: Git 101.</a></li>
+<li><a href="https://satr.codes/course/UFsXqimdgm/view">منصة سطر: Git 102.</a></li>
+<li><a href="https://satr.codes/course/vZnxaKXPzw/view">منصة سطر: Git 103.</a></li>
+<li><a href="https://satr.codes/course/QpuMhOuMhW/view">منصة سطر التعليمية | Git 104</a></li>
+<li><a href="https://satr.codes/course/DFvxMALjfG/view">منصة سطر التعليمية | Git 105</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
@@ -162,12 +161,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم تقنية الـ Kubernetes</title>
       <link>https://abotyim.github.io/ar/posts/resources/kubernetes/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/kubernetes/</guid>
       <description>تعد Kubernetes أو k8s حلاً مفتوح المصدر يعمل على التشغيل الآلي لنشر التطبيقات الموضوعة في حاويات وتوسيع نطاقها ومراقبتها.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -208,12 +205,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم نظام التشغيل جنو لينكس</title>
       <link>https://abotyim.github.io/ar/posts/resources/linux/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/linux/</guid>
       <description>GNU/Linux هو نظام تشغيل حر ومفتوح المصدر، منتشر بشكل واسع، يستخدم في الحواسيب الشخصية والخوادم والحواسيب العملاقة والأجهزة المحمولة والمضمنة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -275,7 +270,7 @@
 <li>منوع:</li>
 </ol>
 <ul>
-<li><a href="https://satr.codes/paths/PLtvzGeADM/view">منصة سطر التعليمية | أنظمة Linux</a></li>
+<li><a href="https://satr.codes/path/PLtvzGeADM/view">منصة سطر التعليمية | مسار نظام Linux</a></li>
 <li><a href="https://www.youtube.com/watch?v=EY7KO6xlKBY&amp;list=PLdTZTP1X_y5o3p7mpMy4T-3X8ukgFg9kJ">RHCE 8 Complete Course in Arabic لكيرولس خليل</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLm7oacl7P6nsVdEhZ8wiB9RWabTUmPjha">Linux Certified System Administrator 8 (Arabic)</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLvMWV2u1t1TSMVvP8Vba55sEXYh9W6HXu">Linux Troubleshooting in Arabic آلاء زيدان</a></li>
@@ -354,12 +349,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم تحليل البيانات مع بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/data-analysis/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/data-analysis/</guid>
       <description>تحليل البيانات هو القدرة على تنظيم البيانات وترجمتها إلى معلومات مفيدة.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -371,6 +364,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvtaA62mvVS07NJsfz3_pCC">Easy Programming.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGbveotLUlylUVw3MbxnACUhzDNOy9U2T">شرح بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLyhJeMedQd9QLQ2yPbJqVhAdkU44QD7um">Ahmed ibrahim.</a></li>
+<li><a href="https://satr.codes/course/ahWLuLGQrQ/view">منصة سطر التعليمية</a></li>
 </ul>
 <h3 id="numpy">Numpy:</h3>
 <ul>
@@ -379,20 +373,29 @@
 <li><a href="https://www.youtube.com/watch?v=mlgV3o3N7ow&amp;list=PLwerRebku82FDvyhN6eVYjS_nnosXX_yh">محمد المالكي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL0VnwAq9oYFvJntNJUweP07QYJXk2lQsG">Easy Programming.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLsNfqtb1rfnP0LUiuoOVTI3M4Sn74YhJ1">الأكاديمية الرقمية.</a></li>
+<li><a href="https://satr.codes/course/qarivYaNvR/view">منصة سطر التعليمية | تحليل ومعالجة البيانات: مكتبة NumPy</a></li>
 </ul>
 <h3 id="matplotlib">Matplotlib:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YUdhJNrsn-nK71yvTc45OlW">Ons أنس.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLIA_seGogbkHUeb_S0qaqSGmGAhfk89zU">ArabPy.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLyNwGBYwNE2QngvDp59GbsZhVExfrT04w">Amjad Majid.</a></li>
+<li><a href="https://satr.codes/course/dqJmdFJufc/view">منصة سطر التعليمية</a></li>
 </ul>
 <h3 id="seaborn">Seaborn:</h3>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLuRv1IekA3YVKE4ZEAJn7r0a_vYTRlqlC">Ons أنس.</a></li>
+<li><a href="https://satr.codes/course/eJBdjpXlzC/view">منصة سطر التعليمية</a></li>
+</ul>
+<h3 id="tableau">Tableau:</h3>
+<ul>
+<li><a href="https://satr.codes/course/fdcDmJHLFG/view">منصة سطر التعليمية | مقدمة لتمثيل البيانات باستخدام Tableau</a></li>
+<li><a href="https://satr.codes/course/BswbgmDtpk/view">منصة سطر التعليمية | تحليل البيانات باستخدام Tableau</a></li>
 </ul>
 <h3 id="علم-البيانات">علم البيانات:</h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=aymZIo4uWRc&amp;list=PL1B5MFiEjZtqXiLMfe9jNC6H97sTA9hJE">ورشة بايثون وعلم البيانات من جامعة القاهرة.</a></li>
+<li><a href="https://satr.codes/course/uPOmcmqkpy/view">منصة سطر التعليمية | مقدمة في علم البيانات</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN9oTARJ9BE1EChtcsPjPEZQ">محمد عيسى: علم البيانات.</a></li>
 <li><a href="https://www.youtube.com/watch?v=o19Yfu8kM6o&amp;list=PLGbveotLUlymwx7VBs4guLuJ2rlfWYFS6">Python - For DataScience.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLWd4nYaF_Vx7Db9uFWf_Df-UrP8ArF4L_">مصطفى عثمان: Python for Data Analysis.</a></li>
@@ -418,12 +421,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم إطار العمل Django</title>
       <link>https://abotyim.github.io/ar/posts/resources/django/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/django/</guid>
       <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر الأمان من الأولويات القصوى له.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -478,9 +479,9 @@
 </ul>
 <h4 id="منصة-سطر">منصة سطر:</h4>
 <ul>
-<li><a href="https://satr.codes/courses/FymypsKhJJ/view">Django 101.</a></li>
-<li><a href="https://satr.codes/courses/wxLyJSBxeg/view">Django 102.</a></li>
-<li><a href="https://satr.codes/courses/MQnYIOzjAY/view">Django 103.</a></li>
+<li><a href="https://satr.codes/course/FymypsKhJJ/view">Django 101.</a></li>
+<li><a href="https://satr.codes/course/wxLyJSBxeg/view">Django 102.</a></li>
+<li><a href="https://satr.codes/course/MQnYIOzjAY/view">Django 103.</a></li>
 </ul>
 <h4 id="منوع">منوع:</h4>
 <ul>
@@ -515,12 +516,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم لغة البرمجة بايثون</title>
       <link>https://abotyim.github.io/ar/posts/resources/python/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/python/</guid>
       <description>تعتبر لغة البرمجة بايثون سهلة الفهم وتتميز بالقوة والبساطة في آن واحد، وتتمتع بشيفرة سهلة القراءة، وتستخدم بشكل واسع في العديد من المجالات، وتعتبر من أسرع اللغات البرمجية تعلماً.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -546,7 +545,7 @@
 <li><a href="https://www.youtube.com/playlist?list=PLnzqK5HvcpwR1X4imwck6n1Pc0uXpToDn">محمد شوشان: بايثون المستوى الأول.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUiXG1lgbv1Ekp8O5IrlfXCddUioSVtzq">مستر ماجد: Python.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLEcIK87jo_7tJ42_STpXuZxHJ35VqaiaR">Two Pi: Python course - Level 1.</a></li>
-<li><a href="https://satr.codes/paths/OTZExaETAH/view">منصة سطر: Full-Stack Python.</a></li>
+<li><a href="https://satr.codes/path/OTZExaETAH/view">منصة سطر التعليمية: Full-Stack Python.</a></li>
 <li><a href="https://academy.hsoub.com/learn/python-application-development/">أكادمية حسوب: دورة تطوير التطبيقات باستخدام لغة Python مدفوعة.</a></li>
 <li><a href="https://academy.hsoub.com/learn/computer-science/">أكاديمية حسوب: دورة علوم الحاسب - مدفوعة.</a></li>
 <li><a href="https://www.flexcourses.com/courses/python-intensive">فكلس كورسز: دورة برمجة بايثون - مدفوعة.</a></li>
@@ -688,10 +687,10 @@
 <li><a href="https://www.youtube.com/playlist?list=PLQM0-hCuSIZ3864Z90raxK7z8tR4q34XM">سلسلة مكتبات بايثونية.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLfDx4cQoUNOZcOt2i5dnHcrFAGHPBpuEO">أكاديمية الخوارزميات: CLI Scripts.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGi0T-2WDopKsGbZhSMVZd-X">Mohammed Gh: Python3 crash course.</a></li>
-<li><a href="https://satr.codes/courses/rRUQyVDkwQ/view">منصة سطر: Python 101.</a></li>
-<li><a href="https://satr.codes/courses/VIvMvhyCiV/view">منصة سطر: Python 102.</a></li>
-<li><a href="https://satr.codes/courses/MvNhowmHeB/view">منصة سطر: Python 103.</a></li>
-<li><a href="https://satr.codes/courses/BDtmFNpFMp/view">منصة سطر: Python 104.</a></li>
+<li><a href="https://satr.codes/course/rRUQyVDkwQ/view">منصة سطر التعليمية: Python 101.</a></li>
+<li><a href="https://satr.codes/course/VIvMvhyCiV/view">منصة سطر التعليمية: Python 102.</a></li>
+<li><a href="https://satr.codes/course/MvNhowmHeB/view">منصة سطر التعليمية: Python 103.</a></li>
+<li><a href="https://satr.codes/course/BDtmFNpFMp/view">منصة سطر التعليمية: Python 104.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLUQDw_ve-LUCP6fg2MtbccnSqcLjBMFZj">مجتمع بايثون العربي: لغة بايثون 🐍.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL7qS7o4UUqxtSVrikzg-7o2b08Jd6FBTc">عبد الله نصر: التعرف على الوجوه Face recognition.</a></li>
 <li><a href="https://www.youtube.com/watch?v=apXivooJwoo&amp;list=PLO1D3YWS7ep3jxdTIy9VLWyOAmu898-mQ">كريم الجزار: إبصار الآلة مع النصوص Computer Vision with Text.</a></li>
@@ -724,12 +723,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>مصادر لتعلم تقنية الـ Docker</title>
       <link>https://abotyim.github.io/ar/posts/resources/docker/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/docker/</guid>
       <description>صُممت هذه التقنية لجعل عجلة تطوير البرامج وتشغيلها بشكل أسرع.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -752,7 +749,8 @@
 <li><a href="https://www.youtube.com/playlist?list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ">Docker سلسلة تعلم.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrP_HAqTQjPayqmRDv4mLTgN">Docker and Kubernetes Deep Dive.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLRUBR7bRwCwHyFFxVwIpjkKlon2u_KM5V">Docker in arabic من arab Devops.</a></li>
-<li><a href="https://satr.codes/courses/FdteTVpysF/view">منصة سطر: Docker 101.</a></li>
+<li><a href="https://satr.codes/course/RWuHfOReeA/view">منصة سطر التعليمية | Docker101</a></li>
+<li><a href="https://satr.codes/course/sZvvvDJlNy/view">منصة سطر التعليمية | Docker102</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLs4DLoAA60YgWBrEu4v9mtIWUYYVsYNnC">دوكر كونتينر - Docker container.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLnFytj01OW2hTyfcAibo-6DjMGzsiDEMH">Learn Docker from Zero من عبد الباسط بوشقري.</a></li>
 <li><a href="https://www.youtube.com/watch?v=PrusdhS2lmo">Docker and Kubernetes.</a></li>
@@ -785,6 +783,5 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

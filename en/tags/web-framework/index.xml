@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Web Framework on Abo Tyim</title>
+    <title>Web Framework on Abo Tyim ☕</title>
     <link>https://abotyim.github.io/en/tags/web-framework/</link>
-    <description>Recent content in Web Framework on Abo Tyim</description>
+    <description>Recent content in Web Framework on Abo Tyim ☕</description>
     <image>
+      <title>Abo Tyim ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/en/tags/web-framework/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/en/tags/web-framework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django Web Framework</title>
       <link>https://abotyim.github.io/en/posts/resources/django/</link>
       <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/en/posts/resources/django/</guid>
       <description>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.</description>
       <content:encoded><![CDATA[<h3 id="youtube">Youtube:</h3>
@@ -190,6 +192,5 @@
 </ul>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

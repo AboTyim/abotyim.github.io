@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>code on أبو تيم</title>
+    <title>Code on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/tags/code/</link>
-    <description>Recent content in code on أبو تيم</description>
+    <description>Recent content in Code on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مصادر لتعلم Git</title>
       <link>https://abotyim.github.io/ar/posts/resources/git/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/resources/git/</guid>
       <description>برنامج لتعقب التغييرات على الملفات، وإدارة الشيفرات البرمجية.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -23,9 +25,12 @@
 <li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN-UmfmBY8f-zutGmzwhTsPC">محمد عيسى: دورة Git.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLLX4WuTjm3tJr3br0H1-kUDkxVUpD4ELk">Devops Arabi: Git - بالعربي.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLxAkp1S6wJyD8EbcoocoLZboCbwfzS-bj">Ahmad Ezzeir: Git.</a></li>
-<li><a href="https://satr.codes/courses/nindivqslr/view">منصة سطر: Git 101.</a></li>
-<li><a href="https://satr.codes/courses/UFsXqimdgm/view">منصة سطر: Git 102.</a></li>
-<li><a href="https://satr.codes/courses/vZnxaKXPzw/view">منصة سطر: Git 103.</a></li>
+<li><a href="https://satr.codes/course/ZlKLfufzmW/view">منصة سطر التعليمية | أساسيات Git</a></li>
+<li><a href="https://satr.codes/course/nindivqslr/view">منصة سطر: Git 101.</a></li>
+<li><a href="https://satr.codes/course/UFsXqimdgm/view">منصة سطر: Git 102.</a></li>
+<li><a href="https://satr.codes/course/vZnxaKXPzw/view">منصة سطر: Git 103.</a></li>
+<li><a href="https://satr.codes/course/QpuMhOuMhW/view">منصة سطر التعليمية | Git 104</a></li>
+<li><a href="https://satr.codes/course/DFvxMALjfG/view">منصة سطر التعليمية | Git 105</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDz4D4ch3hrNZ5N5xoZykcT8SSWAgWMbc">Never Git Stuck.</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLDCTk1kTFRGiABmCZmMXamVYVCW-D2UQ0">Mohammed Gh: Learn Git &amp; GitHub in Arabic.</a></li>
 <li><a href="https://www.youtube.com/watch?v=_6pQ6JXo_bM&amp;list=PLfDx4cQoUNOYVfQs_NFNyykcqkaJ_plmK">Algorithm Academy: learn Git in Arabic.</a></li>
@@ -51,12 +56,10 @@
 </blockquote>
 ]]></content:encoded>
     </item>
-    
     <item>
       <title>إدارة الشيفرات البرمجية Git</title>
       <link>https://abotyim.github.io/ar/posts/programming/git/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/posts/programming/git/</guid>
       <description>شرح كيفية التعامل مع أوامر Git.</description>
       <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
@@ -254,6 +257,5 @@
 </div>
 ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

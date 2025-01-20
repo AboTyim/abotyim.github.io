@@ -1,64 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>السلاسل on أبو تيم</title>
+    <title>السلاسل on أبو تيم ☕</title>
     <link>https://abotyim.github.io/ar/series/</link>
-    <description>Recent content in السلاسل on أبو تيم</description>
+    <description>Recent content in السلاسل on أبو تيم ☕</description>
     <image>
+      <title>أبو تيم ☕</title>
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://abotyim.github.io/ar/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.141.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abotyim.github.io/ar/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>مسار مدير أنظمة لينكس</title>
       <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D8%B1-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D8%B1-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>مسار سطر أوامر لينكس</title>
       <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%B3%D8%B7%D8%B1-%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%B3%D8%B7%D8%B1-%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D9%84%D9%8A%D9%86%D9%83%D8%B3/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>مسار مبرمج بايثون</title>
       <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>مسار تحليل البيانات</title>
       <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
     <item>
       <title>مسار تطوير تطبيقات الويب</title>
       <link>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
-    
   </channel>
 </rss>
