@@ -141,7 +141,6 @@ weight: 1
 
 - [أكاديمية حسوب.](https://academy.hsoub.com/programming/python/django/)
 - [عالم البرمجة: دورة إطار عمل جانغو.](https://3alam.pro/albader/series/django)
-- [مدونة محمود أحمد.](https://code4learn.teachable.com/blog)
 
 
 

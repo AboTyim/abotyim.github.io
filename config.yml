@@ -47,33 +47,37 @@ languages:
             homeInfoParams:
                 Title: "السلام عليكم \U0001F44B"
                 # Content: "{عَسَىٰ رَبُّكُمْ أَن يُهْلِكَ عَدُوَّكُمْ وَيَسْتَخْلِفَكُمْ فِي الْأَرْضِ فَيَنظُرَ كَيْفَ تَعْمَلُونَ} [الأعراف: 129]"
-                Content: "<a href='https://baheth.ieasybooks.com/ar/media/%D8%AD%D9%84%D9%82%D8%A9-2-%D9%8A%D9%82%D8%B8%D8%A9-%D9%84%D9%85%D8%AC%D8%B1%D9%89-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%A8%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%AD%D8%A7%D8%B2%D9%85-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A3%D8%A8%D9%88-%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84?cue=20533867&turbo_frames_prefix=home'> {عَسَىٰ رَبُّكُمْ أَن يُهْلِكَ عَدُوَّكُمْ وَيَسْتَخْلِفَكُمْ فِي الْأَرْضِ فَيَنظُرَ كَيْفَ تَعْمَلُونَ} [الأعراف: 129] </a>"
+                Content: "<a href='https://baheth.ieasybooks.com/ar/media/%D8%AD%D9%84%D9%82%D8%A9-2-%D9%8A%D9%82%D8%B8%D8%A9-%D9%84%D9%85%D8%AC%D8%B1%D9%89-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%A8%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%AD%D8%A7%D8%B2%D9%85-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A3%D8%A8%D9%88-%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84?cue=20533867&turbo_frames_prefix=home'> { عَسَىٰ رَبُّكُمْ أَن يُهْلِكَ عَدُوَّكُمْ وَيَسْتَخْلِفَكُمْ فِي الْأَرْضِ فَيَنظُرَ كَيْفَ تَعْمَلُونَ } [الأعراف: 129] </a>"
 
         menu:
             main:
+                - name: تدوينات
+                  url: posts/personal
+                  weight: 1
+
                 - name: التصنيفات 📚
                   url: categories/
-                  weight: 1
+                  weight: 2
                   
                 - name: الوسوم 🏷️
                   url: tags/
-                  weight: 2
+                  weight: 3
                   
                 - name: السلاسل 🧵
                   url: series/
-                  weight: 3
+                  weight: 4
             
                 - name: الأرشيف 🗄️
                   url: archives/
-                  weight: 4
+                  weight: 5
                                   
                 - name: البحث 🔎
                   url: search/
-                  weight: 5
+                  weight: 6
 
                 - name: من 👨‍💻
                   url: /about/
-                  weight: 6
+                  weight: 7
 
 
     en:
@@ -90,29 +94,33 @@ languages:
 
         menu:
             main:
+                # - name: Blogs
+                #   url: posts/personal
+                #   weight: 1
+
                 - name: Categories 📚
                   url: categories/
-                  weight: 1
+                  weight: 2
 
                 - name: Tags 🏷️
                   url: tags/
-                  weight: 2
+                  weight: 3
 
                 - name: Series 🧵
                   url: series/
-                  weight: 3
+                  weight: 4
                   
                 - name: Archive 🗄️
                   url: archives/
-                  weight: 4
+                  weight: 5
                   
                 - name: Search 🔍
                   url: search/
-                  weight: 5
+                  weight: 6
 
                 - name: About 👨‍💻
                   url: about/
-                  weight: 6
+                  weight: 7
 
 
 outputs:
