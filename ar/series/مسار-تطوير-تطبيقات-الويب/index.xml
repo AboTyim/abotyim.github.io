@@ -9,10 +9,37 @@
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>ar</language>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://abotyim.github.io/ar/series/%D9%85%D8%B3%D8%A7%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم إطار العمل FastAPI</title>
+      <link>https://abotyim.github.io/ar/posts/resources/fastapi/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://abotyim.github.io/ar/posts/resources/fastapi/</guid>
+      <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر السرعة من الأولويات القصوى له.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<p>هذه التدوينة الأولى التي يتم نشرها بعد تحرير سوريا من النظام المجرم، على الرغم من صغرها وضيق الوقت لابد من نشرها لعلها تكون فاتحة وبداية خير إن شاء الله.</p>
+<h3 id="المصادر-المرئية">المصادر المرئية</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN92fpoOpEMC19VafTXzC8xQ">FastAPI Python web دورة بايثون ويب - YouTube</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGbzY-VLUfcpzhB-iyGvju-NMMez_NNP9">سلسلة شرح كامل ل FastApi | خطوة بخطوة - YouTube</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLYymOhvP9Z6_mVLPKEHh8QY3MFUutF70U">FastAPI Course [Arabic] - YouTube</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-fastapi-العربية">مجتمعات FastAPI العربية</h3>
+<ul>
+<li><a href="https://t.me/FastAPIar">تيليغرام: FastAPI بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« وَإِذا كانَتِ النُفوسُ كِباراً … تَعِبَت في مُرادِها الأَجسامُ »</p>
+<ul>
+<li>المتنبي.</li>
+</ul></blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>مصادر لتعلم إطار العمل Django</title>
       <link>https://abotyim.github.io/ar/posts/resources/django/</link>
@@ -91,7 +118,6 @@
 <ul>
 <li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
 <li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
-<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
 </ul>
 <br>
 <h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
@@ -104,8 +130,7 @@
 <p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
 <ul>
 <li>أبو العلاء المعري</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -311,8 +336,7 @@
 <p>« ليس المهم نوع المضمار الذي تسلكه، لكن المهم إذا اخترتَ مضماراً .. أن تكون بطله ! »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=GQfy_wLbKx8">عمار بن ناصر العتيبي</a></li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
   </channel>

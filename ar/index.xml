@@ -9,10 +9,37 @@
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>ar</language>
-    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://abotyim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مصادر لتعلم إطار العمل FastAPI</title>
+      <link>https://abotyim.github.io/ar/posts/resources/fastapi/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://abotyim.github.io/ar/posts/resources/fastapi/</guid>
+      <description>هو إطار عمل ويب حر ومفتوح المصدر، كتب بلغة البرمجة بايثون، يهدف لتسهيل عملية تطوير مواقع الويب التي تعتمد على قواعد البيانات، ويعتبر السرعة من الأولويات القصوى له.</description>
+      <content:encoded><![CDATA[<p>بسم الله الرحمن الرحيم، الحمد لله الذي علم بالقلم، علم الإنسان مالم يعلم والصلاة والسلام على خير معلم الناس الخير محمد أما بعد:</p>
+<p>هذه التدوينة الأولى التي يتم نشرها بعد تحرير سوريا من النظام المجرم، على الرغم من صغرها وضيق الوقت لابد من نشرها لعلها تكون فاتحة وبداية خير إن شاء الله.</p>
+<h3 id="المصادر-المرئية">المصادر المرئية</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLMYF6NkLrdN92fpoOpEMC19VafTXzC8xQ">FastAPI Python web دورة بايثون ويب - YouTube</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGbzY-VLUfcpzhB-iyGvju-NMMez_NNP9">سلسلة شرح كامل ل FastApi | خطوة بخطوة - YouTube</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLYymOhvP9Z6_mVLPKEHh8QY3MFUutF70U">FastAPI Course [Arabic] - YouTube</a></li>
+</ul>
+<br>
+<h3 id="مجتمعات-fastapi-العربية">مجتمعات FastAPI العربية</h3>
+<ul>
+<li><a href="https://t.me/FastAPIar">تيليغرام: FastAPI بالعربي.</a></li>
+</ul>
+<br>
+<blockquote>
+<p>« وَإِذا كانَتِ النُفوسُ كِباراً … تَعِبَت في مُرادِها الأَجسامُ »</p>
+<ul>
+<li>المتنبي.</li>
+</ul></blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>تشغيل أي توزيعة لينكس بواسطة DistroBox</title>
       <link>https://abotyim.github.io/ar/posts/linux/distrobox/</link>
@@ -107,8 +134,7 @@
 <p>« إِذا غامَرتَ في شَرَفٍ مَرومٍ … فَلا تَقنَع بِما دونَ النُجومِ »</p>
 <ul>
 <li>المتنبي.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -151,8 +177,7 @@
 <p>« لقاح الهِمَّة العالية: النية الصحيحة، فإذا اجتمعا بلغ العبد غاية المراد »</p>
 <ul>
 <li>ابن القيم رحمه الله [الفوائد].</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -179,8 +204,7 @@
 </ul>
 <br>
 <blockquote>
-<p>« لا ينبغي للعاقل أن يُرى إلا ساعيًا في تحصيل حسنة لمعاده أو درهم لمعاشه »</p>
-</blockquote>
+<p>« لا ينبغي للعاقل أن يُرى إلا ساعيًا في تحصيل حسنة لمعاده أو درهم لمعاشه »</p></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -222,8 +246,7 @@
 <p>« قال النبي صلى الله عليه وسلم: اللهم إني أعوذ بك من العجز والكسل »</p>
 <ul>
 <li>رواه البخاري ومسلم.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -266,8 +289,7 @@
 <p>« إني لأمقت الرجل أراه فارغًا ليس في شيء من عمل دنيا ولا آخرة »</p>
 <ul>
 <li>الصحابي الجليل: عبدالله بن مسعود رضي الله عنه</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -410,8 +432,7 @@
 <p>« كفى بِحفظِ وَقتكَ عن فضول الإنشغال بالناس مغنمًا »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=nKW2rLJ2Ezw">حفظ الوقت لفضيلة الشيخ محمد المختار الشنقيطي</a></li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -424,8 +445,7 @@
 <h2 id="مقدمة">مقدمة:</h2>
 <p>عملية كتابة الكود البرمجي تمر بعدة مراحل وهي الكتابة والتعديل والمسح و إضافة المزيد من الأكواد وهكذا، وتصل لمرحلة ما، تود أن تتراجع عن هذه التعديلات أو تريد معرفة التعديلات التي أجريت على الملف والتراجع عن تعديل بسيط مثلًا، تعتبر هذه الأشياء من أبسط الأمور التي يقدمها لك <code>git</code>.</p>
 <blockquote>
-<p>يمكن النظر له  بشكل مبسط على أنه ((قاعدة بيانات <strong>Database</strong>)) أو نظام ملفات ((<strong>File System</strong>)) يقوم بتخزين العمليات التي نقوم بها على الملف أو مجموعة الملفات بحيث يمكنك العودة لتلك التعديلات في أي وقت. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p>يمكن النظر له  بشكل مبسط على أنه ((قاعدة بيانات <strong>Database</strong>)) أو نظام ملفات ((<strong>File System</strong>)) يقوم بتخزين العمليات التي نقوم بها على الملف أو مجموعة الملفات بحيث يمكنك العودة لتلك التعديلات في أي وقت. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <br>
 <h3 id="مخطط-سير-عمل-git-workflow">مخطط سير عمل <strong>Git Workflow</strong>:</h3>
 <ol>
@@ -1193,8 +1213,7 @@
 <p><a href="http://www.saaid.net/Doat/sudies/35.htm">« لا يستطاع العلم براحة الجسم »</a></p>
 <ul>
 <li>الإمام الحافظ: يحيى بن أبي كثير</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -1275,7 +1294,6 @@
 <ul>
 <li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
 <li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
-<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
 </ul>
 <br>
 <h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
@@ -1288,8 +1306,7 @@
 <p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
 <ul>
 <li>أبو العلاء المعري</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -1495,8 +1512,7 @@
 <p>« ليس المهم نوع المضمار الذي تسلكه، لكن المهم إذا اخترتَ مضماراً .. أن تكون بطله ! »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=GQfy_wLbKx8">عمار بن ناصر العتيبي</a></li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -1555,8 +1571,7 @@
 <p>« أطلبُ العِلمَ ولا تكسَلْ فمـا &hellip; أبعـدَ الخيرَ على أهـلِ الكَسَلْ »</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=CzGfuo-k6Q4">لامية ابن الوردي</a></li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>

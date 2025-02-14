@@ -9,7 +9,7 @@
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>ar</language>
     <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://abotyim.github.io/ar/tags/git/index.xml" rel="self" type="application/rss+xml" />
@@ -52,8 +52,7 @@
 <p>« قال النبي صلى الله عليه وسلم: اللهم إني أعوذ بك من العجز والكسل »</p>
 <ul>
 <li>رواه البخاري ومسلم.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -66,8 +65,7 @@
 <h2 id="مقدمة">مقدمة:</h2>
 <p>عملية كتابة الكود البرمجي تمر بعدة مراحل وهي الكتابة والتعديل والمسح و إضافة المزيد من الأكواد وهكذا، وتصل لمرحلة ما، تود أن تتراجع عن هذه التعديلات أو تريد معرفة التعديلات التي أجريت على الملف والتراجع عن تعديل بسيط مثلًا، تعتبر هذه الأشياء من أبسط الأمور التي يقدمها لك <code>git</code>.</p>
 <blockquote>
-<p>يمكن النظر له  بشكل مبسط على أنه ((قاعدة بيانات <strong>Database</strong>)) أو نظام ملفات ((<strong>File System</strong>)) يقوم بتخزين العمليات التي نقوم بها على الملف أو مجموعة الملفات بحيث يمكنك العودة لتلك التعديلات في أي وقت. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p>يمكن النظر له  بشكل مبسط على أنه ((قاعدة بيانات <strong>Database</strong>)) أو نظام ملفات ((<strong>File System</strong>)) يقوم بتخزين العمليات التي نقوم بها على الملف أو مجموعة الملفات بحيث يمكنك العودة لتلك التعديلات في أي وقت. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <br>
 <h3 id="مخطط-سير-عمل-git-workflow">مخطط سير عمل <strong>Git Workflow</strong>:</h3>
 <ol>

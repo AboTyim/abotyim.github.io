@@ -9,7 +9,7 @@
       <url>https://abotyim.github.io/cover.jpg</url>
       <link>https://abotyim.github.io/cover.jpg</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>ar</language>
     <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://abotyim.github.io/ar/tags/%D8%AF%D8%AC%D8%A7%D9%86%D8%BA%D9%88/index.xml" rel="self" type="application/rss+xml" />
@@ -91,7 +91,6 @@
 <ul>
 <li><a href="https://academy.hsoub.com/programming/python/django/">أكاديمية حسوب.</a></li>
 <li><a href="https://3alam.pro/albader/series/django">عالم البرمجة: دورة إطار عمل جانغو.</a></li>
-<li><a href="https://code4learn.teachable.com/blog">مدونة محمود أحمد.</a></li>
 </ul>
 <br>
 <h3 id="مجتمعات-جانغو-العربية">مجتمعات جانغو العربية:</h3>
@@ -104,8 +103,7 @@
 <p>« وإني وإن كنتُ الأخيرَ زمانهُ … لآتٍ بما لم تستطعهُ الأوائلُ »</p>
 <ul>
 <li>أبو العلاء المعري</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 ]]></content:encoded>
     </item>
   </channel>
